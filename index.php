@@ -8,6 +8,8 @@
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <!-- Header CSS -->
     <link rel="stylesheet" href="assets/css/header.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Hero Slider CSS -->
     <link rel="stylesheet" href="assets/css/hero.css">
     <!-- Footer CSS -->

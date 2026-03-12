@@ -9,7 +9,7 @@
             <!-- Residential Vastu -->
             <div class="service-card">
                 <div class="service-image">
-                    <img src="assets/images/service_residential.png" alt="Residential Vastu">
+                    <img src="assets/images/residential-vastu.jpg" alt="Residential Vastu">
                     <div class="service-overlay">
                         <a href="services.php#residential" class="service-btn">Enquire Now</a>
                     </div>
@@ -24,7 +24,7 @@
             <!-- Commercial Vastu -->
             <div class="service-card">
                 <div class="service-image">
-                    <img src="assets/images/service_commercial.png" alt="Commercial Vastu">
+                    <img src="assets/images/commercial-vastu.jpg" alt="Commercial Vastu">
                     <div class="service-overlay">
                         <a href="services.php#commercial" class="service-btn">Enquire Now</a>
                     </div>
@@ -39,7 +39,7 @@
             <!-- Industrial Vastu -->
             <div class="service-card">
                 <div class="service-image">
-                    <img src="assets/images/service_industrial.png" alt="Industrial Vastu">
+                    <img src="assets/images/industrial-vastu.jpg" alt="Industrial Vastu">
                     <div class="service-overlay">
                         <a href="services.php#industrial" class="service-btn">Enquire Now</a>
                     </div>
@@ -54,7 +54,7 @@
             <!-- Personal Vastu -->
             <div class="service-card">
                 <div class="service-image">
-                    <img src="assets/images/service_personal.png" alt="Personal Vastu">
+                    <img src="assets/images/personal-vastu.jpg" alt="Personal Vastu">
                     <div class="service-overlay">
                         <a href="services.php#personal" class="service-btn">Enquire Now</a>
                     </div>

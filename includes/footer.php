@@ -19,8 +19,8 @@
                     <select name="country">
                         <option value="">--Select your country*--</option>
                         <option value="India">India</option>
-                        <option value="USA">USA</option>
-                        <option value="UK">UK</option>
+                        <!-- <option value="USA">USA</option>
+                        <option value="UK">UK</option> -->
                     </select>
                 </div>
                 <div class="form-row full-width">
@@ -29,6 +29,7 @@
                         <option value="Residential">Residential Vastu</option>
                         <option value="Commercial">Commercial Vastu</option>
                         <option value="Industrial">Industrial Vastu</option>
+                        <option value="Personalized Vastu">Personalized Vastu</option>
                     </select>
                 </div>
                 <div class="form-row full-width file-input">
@@ -100,10 +101,10 @@
                 </div>
                 <div class="links-column contact-details">
                     <h4>Vastu Mitra Abhishek</h4>
-                    <p><strong>Registered Office address:</strong> UPTC-0114, UPOHAR TOWN CENTER, First Floor, 2052, Budherhat Rd, Kolkata, West Bengal 700094</p>
+                    <p><strong>Registered Office address:</strong> B-119, First Floor, Main, Mall Rd, Greenfield Colony, Sector 41, Faridabad, Haryana 121010</p>
                     <p><strong>GST NUMBER:</strong> 19COIPD3746Q1ZA</p>
-                    <p><strong>Call:</strong> +918240453521 & +918777614891</p>
-                    <p><strong>Email:</strong> appliedvastu@gmail.com</p>
+                    <p><strong>Call:</strong> +91-9971799858 & +91-9971799858</p>
+                    <p><strong>Email:</strong> info@vastumitraabhishek.in</p>
                 </div>
             </div>
 
@@ -132,7 +133,7 @@
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest"></a>
         </div>
         <div class="copyright">
-            <p>(C) Copyright 2019-2026, All Rights Reserved. by AppliedVastu</p>
+            <p>(C) Copyright 2019-2026, All Rights Reserved. A Website Powerd By Mineib Creative Technology</p>
         </div>
     </div>
 </footer>

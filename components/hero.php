@@ -2,32 +2,17 @@
     <div class="slider-container">
         <!-- Slide 1 -->
         <div class="slide active">
-            <img src="assets/slider/slider_1.png" alt="Vastu Consultancy">
-            <div class="slide-content">
-                <h2>Transform Your Space with Vastu</h2>
-                <p>Bringing harmony and prosperity to your home and workplace.</p>
-                <a href="services.php" class="btn-primary">Our Services</a>
-            </div>
+            <img src="assets/slider/hero-slider-1.png" alt="Vastu Consultancy">
         </div>
         
         <!-- Slide 2 -->
         <div class="slide">
-            <img src="assets/slider/slider_2.png" alt="Astrology Guidance">
-            <div class="slide-content">
-                <h2>Unlock Your Destiny</h2>
-                <p>Expert astrological insights for a clearer path in life.</p>
-                <a href="services.php" class="btn-primary">Book Consultation</a>
-            </div>
+            <img src="assets/slider/hero-slider-1.png" alt="Astrology Guidance">
         </div>
         
         <!-- Slide 3 -->
         <div class="slide">
-            <img src="assets/slider/slider_3.png" alt="Product Shop">
-            <div class="slide-content">
-                <h2>Vastu & Spiritual Products</h2>
-                <p>Handpicked items to enhance positive energy in your surroundings.</p>
-                <a href="shop.php" class="btn-primary">Explore Shop</a>
-            </div>
+            <img src="assets/slider/hero-slider-1.png" alt="Product Shop">
         </div>
 
         <!-- Navigation Arrows -->

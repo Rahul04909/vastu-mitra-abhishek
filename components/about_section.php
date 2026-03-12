@@ -8,10 +8,6 @@
                     <button class="play-btn" aria-label="Play Video">
                         <span class="play-icon"></span>
                     </button>
-                    <div class="play-text">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3114/3114883.png" alt="arrow" class="curved-arrow">
-                        <span>Play Video</span>
-                    </div>
                 </div>
             </div>
         </div>

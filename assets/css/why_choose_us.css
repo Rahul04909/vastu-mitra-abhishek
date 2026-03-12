@@ -130,10 +130,25 @@
 
 @media screen and (max-width: 576px) {
     .benefits-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
     .benefit-card {
-        padding: 30px 20px;
+        padding: 20px 15px;
+    }
+    .benefit-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .benefit-card h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .benefit-card p {
+        font-size: 12px;
+        line-height: 1.5;
     }
     .animated-title {
         font-size: 26px;

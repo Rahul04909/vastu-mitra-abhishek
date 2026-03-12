@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="assets/css/footer.css">
     <!-- About Section CSS -->
     <link rel="stylesheet" href="assets/css/about_section.css">
+    <!-- Services Section CSS -->
+    <link rel="stylesheet" href="assets/css/services_section.css">
 </head>
 <body>
 
     <?php include 'includes/header.php'; ?>
     <?php include 'components/hero.php'; ?>
     <?php include 'components/about_section.php'; ?>
+    <?php include 'components/services_section.php'; ?>
 
     <?php include 'includes/footer.php'; ?>
 

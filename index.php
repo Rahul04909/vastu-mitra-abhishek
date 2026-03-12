@@ -10,11 +10,20 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <!-- Hero Slider CSS -->
     <link rel="stylesheet" href="assets/css/hero.css">
+    <!-- Footer CSS -->
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
 
     <?php include 'includes/header.php'; ?>
     <?php include 'components/hero.php'; ?>
+    
+    <!-- Content Placeholder -->
+    <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
+        <h1 style="color: var(--primary-color);">Welcome to Vastu Mitra Abhishek</h1>
+    </div>
+
+    <?php include 'includes/footer.php'; ?>
 
     <!-- Scripts -->
     <script src="assets/js/header.js"></script>

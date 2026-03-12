@@ -3,7 +3,6 @@
     margin-top: var(--header-height);
     position: relative;
     overflow: hidden;
-    background: #000;
 }
 
 .slider-container {
@@ -93,20 +92,11 @@
     .slider-container {
         height: 450px;
     }
-    .slide-content h2 {
-        font-size: 2.5rem;
-    }
 }
 
 @media screen and (max-width: 768px) {
     .slider-container {
         height: 400px;
-    }
-    .slide-content h2 {
-        font-size: 2rem;
-    }
-    .slide-content p {
-        font-size: 1rem;
     }
     .prev-btn, .next-btn {
         padding: 15px 10px;
@@ -117,13 +107,6 @@
 @media screen and (max-width: 480px) {
     .slider-container {
         height: 350px;
-    }
-    .slide-content h2 {
-        font-size: 1.8rem;
-    }
-    .btn-primary {
-        padding: 12px 30px;
-        font-size: 14px;
     }
     .prev-btn, .next-btn {
         display: none; /* Hide arrows on small mobile to maximize content */

@@ -8,12 +8,16 @@
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <!-- Header CSS -->
     <link rel="stylesheet" href="assets/css/header.css">
+    <!-- Hero Slider CSS -->
+    <link rel="stylesheet" href="assets/css/hero.css">
 </head>
 <body>
 
     <?php include 'includes/header.php'; ?>
+    <?php include 'components/hero.php'; ?>
 
-    <!-- Header JS -->
+    <!-- Scripts -->
     <script src="assets/js/header.js"></script>
+    <script src="assets/js/hero.js"></script>
 </body>
 </html>

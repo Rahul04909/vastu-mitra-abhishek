@@ -109,6 +109,7 @@ CREATE TABLE `phpauth_users` (
   `email` varchar(100) DEFAULT NULL,
   `password` VARCHAR(255) CHARACTER SET latin1 COLLATE latin1_general_ci DEFAULT NULL,
   `profile_image` VARCHAR(255) DEFAULT NULL,
+  `role` VARCHAR(50) DEFAULT 'Administrator',
   `isactive` tinyint(1) NOT NULL DEFAULT '0',
   `dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),

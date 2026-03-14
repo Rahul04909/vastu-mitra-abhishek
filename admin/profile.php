@@ -112,7 +112,7 @@ $profileImgSrc = $profileImgDb ? './uploads/' . $profileImgDb : './src/images/us
             </div>
 
             <h3 class="profile-username text-center"><?= htmlspecialchars($currentUser['email']) ?></h3>
-            <p class="text-muted text-center">Administrator</p>
+            <p class="text-muted text-center"><?= htmlspecialchars($currentUser['role'] ?? 'Administrator') ?></p>
 
             <form action="profile.php" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="action" value="update_image">

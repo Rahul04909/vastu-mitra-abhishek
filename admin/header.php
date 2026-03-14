@@ -434,12 +434,18 @@ $active_page = $active_pageInfo['active_page'] ?? null;
             </a>
             <div class="sidebar">
                 <div class="user-panel mt-3 pb-3 mb-3">
-                    <a href="./profile.php" class="d-flex">
-                        <div class="image">
-                            <img src="./src/images/user-avtar.png" class="img-circle elevation-2 bg-white" alt="User Image">
+                    <?php
+                    $userImg = !empty($currentUser['profile_image']) ? './uploads/' . $currentUser['profile_image'] : './src/images/user-avtar.png';
+                    $userEmail = $currentUser['email'] ?? 'Admin';
+                    $userRole = $currentUser['role'] ?? 'Administrator';
+                    ?>
+                    <a href="./profile.php" class="d-flex flex-column align-items-center text-center">
+                        <div class="image mb-2">
+                            <img src="<?= htmlspecialchars($userImg) ?>" class="img-circle elevation-2 bg-white" alt="User Image" style="width: 60px; height: 60px; object-fit: cover;">
                         </div>
                         <div class="info">
-                            Rahul
+                            <span class="d-block font-weight-bold text-dark"><?= htmlspecialchars($userEmail) ?></span>
+                            <small class="text-muted"><?= htmlspecialchars($userRole) ?></small>
                         </div>
                     </a>
                 </div>

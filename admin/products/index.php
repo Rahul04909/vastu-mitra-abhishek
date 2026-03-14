@@ -179,19 +179,24 @@ include __DIR__ . '/../header.php';
                                 <tr>
                                     <td><?= $p['id'] ?></td>
                                     <td>
-                                        <img src="<?= ADMIN_URL ?>/../uploads/products/<?= htmlspecialchars($p['main_image']) ?>" 
-                                             class="img-thumbnail" style="width: 60px; height: 60px; object-fit: cover;">
+                                        <img src="<?= BASE_URL ?>/admin/uploads/products/<?= htmlspecialchars($p['main_image']) ?>" 
+                                             class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
                                     </td>
-                                    <td><?= htmlspecialchars($p['name']) ?></td>
-                                    <td><span class="badge badge-info"><?= htmlspecialchars($p['category_name']) ?></span></td>
+                                    <td><strong><?= htmlspecialchars($p['name']) ?></strong></td>
+                                    <td><span class="badge badge-info shadow-sm" style="background-color: #28a645;"><?= htmlspecialchars($p['category_name']) ?></span></td>
                                     <td><?= date('d M Y', strtotime($p['created_at'])) ?></td>
                                     <td>
-                                        <a href="edit-product.php?id=<?= $p['id'] ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Edit</a>
-                                        <a href="index.php?delete=<?= $p['id'] ?>" 
-                                           class="btn btn-sm btn-danger" 
-                                           onclick="return confirm('Delete this product and all its images?')">
-                                           <i class="fas fa-trash"></i> Delete
-                                        </a>
+                                        <div class="d-flex" style="gap: 5px;">
+                                            <a href="edit-product.php?id=<?= $p['id'] ?>" class="btn btn-sm btn-outline-primary" title="Edit Product">
+                                                <i class="fas fa-edit"></i> Edit
+                                            </a>
+                                            <a href="index.php?delete=<?= $p['id'] ?>" 
+                                               class="btn btn-sm btn-outline-danger" 
+                                               onclick="return confirm('Delete this product and all its images?')"
+                                               title="Delete Product">
+                                               <i class="fas fa-trash-alt"></i> Delete
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

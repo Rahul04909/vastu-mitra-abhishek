@@ -9,9 +9,7 @@
         <nav class="nav-menu">
             <ul>
                 <li><a href="index.php" class="nav-link">Home</a></li>
-                <li><a href="services.php" class="nav-link">Vastu Services</a></li>
-                <li><a href="../../shop.php" class="nav-link">Shop</a></li>
-                <li><a href="about.php" class="nav-link">About us</a></li>
+                <li><a href="shop.php" class="nav-link">Shop</a></li>
                 <li><a href="contact.php" class="nav-link">Contact us</a></li>
                 <li><a href="blog.php" class="nav-link">Blog</a></li>
             </ul>

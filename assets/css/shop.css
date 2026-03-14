@@ -1,8 +1,7 @@
-/* Shop Layout */
 .shop-container {
     display: flex;
     gap: 30px;
-    padding: 40px 0;
+    padding: 120px 0 40px; /* Top padding to account for fixed header (80px + 40px gap) */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -146,6 +145,7 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
 }
 

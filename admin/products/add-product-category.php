@@ -85,7 +85,7 @@ include __DIR__ . '/../header.php';
             <!-- Add Category Form -->
             <div class="col-md-4">
                 <div class="card card-primary">
-                    <div class="card-header">
+                    <div class="card-header" style="color: #28a645">
                         <h3 class="card-title">Add New Category</h3>
                     </div>
                     <form action="add-product-category.php" method="POST">

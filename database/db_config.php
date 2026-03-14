@@ -24,3 +24,13 @@ if (!$conn->select_db($db_name)) {
     die("Error selecting database ($db_name): " . $conn->error);
 }
 
+// PDO Connection for PHPAuth
+try {
+    $dsn = "mysql:host={$db_host};dbname={$db_name};charset=utf8mb4";
+    $dbh = new PDO($dsn, $db_user, $db_pass);
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $dbh->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    die("PDO Connection failed: " . $e->getMessage());
+}
+

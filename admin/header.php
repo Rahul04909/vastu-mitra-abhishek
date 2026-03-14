@@ -1,4 +1,11 @@
 <?php
+require_once __DIR__ . '/auth_init.php';
+
+// Protect admin pages (except for login/logout pages if they were ever included here, but header is usually for protected pages)
+if (!$auth->isLogged() && basename($_SERVER['SCRIPT_NAME']) !== 'login.php') {
+    header('Location: login.php');
+    exit;
+}
 $currentPage = basename($_SERVER['SCRIPT_NAME']);
 
 $menuItems = [
@@ -462,8 +469,8 @@ $active_page = $active_pageInfo['active_page'] ?? null;
                                 <?php endif; ?>
                             </li>
                         <?php endforeach; ?>
-                        <li class="nav-item" onclick="logout()">
-                            <a href="javascript:void(0);" class="nav-link">
+                        <li class="nav-item">
+                            <a href="logout.php" class="nav-link">
                                 <i class="nav-icon fas fa-sign-out-alt"></i>
                                 <p>Logout</p>
                             </a>

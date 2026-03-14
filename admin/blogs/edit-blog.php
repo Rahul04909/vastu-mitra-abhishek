@@ -121,8 +121,8 @@ include __DIR__ . '/../header.php';
 ?>
 
 <!-- Summernote & Scripts -->
-<link rel="stylesheet" href="<?= BASE_URL ?>/vendor/summernote/summernote-bs4.min.css">
-<script src="<?= BASE_URL ?>/vendor/summernote/summernote-bs4.min.js"></script>
+<link rel="stylesheet" href="<?= BASE_URL ?>/vendor/summernote/summernote/dist/summernote-bs4.css">
+<script src="<?= BASE_URL ?>/vendor/summernote/summernote/dist/summernote-bs4.min.js"></script>
 
 <div class="content-header">
     <div class="container-fluid">

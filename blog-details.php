@@ -50,9 +50,9 @@ $page_title = $blog['seo_title'] ?: $blog['title'] . " - Vastu Mitra Abhishek";
     <meta property="og:title" content="<?= htmlspecialchars($blog['title']) ?>">
     <meta property="og:description" content="<?= htmlspecialchars($blog['seo_desc']) ?>">
     <?php if ($blog['og_image']): ?>
-    <meta property="og:image" content="<?= BASE_URL ?>/admin/uploads/blogs/seo/<?= htmlspecialchars($blog['og_image']) ?>">
+    <meta property="og:image" content="admin/uploads/blogs/seo/<?= htmlspecialchars($blog['og_image']) ?>">
     <?php else: ?>
-    <meta property="og:image" content="<?= BASE_URL ?>/admin/uploads/blogs/<?= htmlspecialchars($blog['featured_image']) ?>">
+    <meta property="og:image" content="admin/uploads/blogs/<?= htmlspecialchars($blog['featured_image']) ?>">
     <?php endif; ?>
     <meta property="og:type" content="article">
     

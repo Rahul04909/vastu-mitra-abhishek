@@ -17,6 +17,13 @@ $menuItems = [
         ],
     ],
     [
+        "menuTitle" => "Products",
+        "icon" => "fas fa-box",
+        "pages" => [
+            ["title" => "Categories", "url" => "products/add-product-category.php"]
+        ],
+    ],
+    [
         "menuTitle" => "Settings",
         "icon" => "fas fa-cog",
         "pages" => [

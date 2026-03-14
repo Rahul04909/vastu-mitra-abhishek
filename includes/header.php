@@ -8,10 +8,11 @@
         
         <nav class="nav-menu">
             <ul>
-                <li><a href="index.php" class="nav-link">Home</a></li>
-                <li><a href="shop.php" class="nav-link">Shop</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="shop.php">Shop</a></li>
+                <li><a href="blog.php">Blog</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="contact.php" class="nav-link">Contact us</a></li>
-                <li><a href="blog.php" class="nav-link">Blog</a></li>
             </ul>
         </nav>
 

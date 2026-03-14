@@ -286,8 +286,8 @@ include __DIR__ . '/../header.php';
 </section>
 
 <!-- Include Summernote -->
-<link rel="stylesheet" href="<?= ADMIN_URL ?>/../vendor/summernote/summernote-bs4.min.css">
-<script src="<?= ADMIN_URL ?>/../vendor/summernote/summernote-bs4.min.js"></script>
+<link rel="stylesheet" href="<?= BASE_URL ?>/vendor/summernote/summernote/dist/summernote-bs4.css">
+<script src="<?= BASE_URL ?>/vendor/summernote/summernote/dist/summernote-bs4.min.js"></script>
 
 <script>
 $(function () {

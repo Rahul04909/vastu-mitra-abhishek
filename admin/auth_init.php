@@ -28,6 +28,10 @@ $normalized_admin_dir = str_replace('\\', '/', $admin_dir);
 $relative_admin_path = str_replace($normalized_doc_root, '', $normalized_admin_dir);
 define('ADMIN_URL', $protocol . '://' . $host . $relative_admin_path);
 
+// Define Base URL for project root
+$relative_project_path = str_replace($normalized_doc_root, '', str_replace('\\', '/', dirname($admin_dir)));
+define('BASE_URL', $protocol . '://' . $host . $relative_project_path);
+
 // Start PHP session
 if (session_status() === PHP_SESSION_NONE) {
     session_start();

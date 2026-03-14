@@ -10,17 +10,18 @@ $conn = new mysqli($db_host, $db_user, $db_pass);
 
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Connection failed (" . $conn->connect_errno . "): " . $conn->connect_error);
 }
 
 // Create database if it doesn't exist
 $sql = "CREATE DATABASE IF NOT EXISTS " . $db_name;
 if ($conn->query($sql) !== TRUE) {
-    die("Error creating database: " . $conn->error);
+    die("Error creating database ($db_name): " . $conn->error);
 }
 
 // Select the database
 if (!$conn->select_db($db_name)) {
-    die("Error selecting database: " . $conn->error);
+    die("Error selecting database ($db_name): " . $conn->error);
 }
+
 ?>

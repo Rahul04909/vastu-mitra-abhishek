@@ -1,6 +1,6 @@
 <?php
 // Include the database configuration file
-require_once '../database/db_config.php';
+require_once __DIR__ . '/../database/db_config.php';
 
 echo "<h2>Admin Table Setup</h2>";
 

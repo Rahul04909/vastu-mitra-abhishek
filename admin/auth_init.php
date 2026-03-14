@@ -16,6 +16,12 @@ if (!file_exists($base_path . '/vendor/autoload.php')) {
     $base_path = dirname(__DIR__); // Fallback to parent directory
 }
 
+// Define Admin Base URL for absolute paths
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+$host = $_SERVER['HTTP_HOST'];
+$admin_path = '/vastu-mitra-abhishek/admin'; // Direct path for this project structure
+define('ADMIN_URL', $protocol . '://' . $host . $admin_path);
+
 // Start PHP session
 if (session_status() === PHP_SESSION_NONE) {
     session_start();

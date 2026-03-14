@@ -3,7 +3,7 @@ require_once __DIR__ . '/auth_init.php';
 
 // Protect admin pages (except for login/logout pages if they were ever included here, but header is usually for protected pages)
 if (!$auth->isLogged() && basename($_SERVER['SCRIPT_NAME']) !== 'login.php') {
-    header('Location: login.php');
+    header('Location: ' . ADMIN_URL . '/login.php');
     exit;
 }
 $currentPage = basename($_SERVER['SCRIPT_NAME']);
@@ -64,7 +64,7 @@ $active_page = $active_pageInfo['active_page'] ?? null;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
     <title><?= htmlspecialchars($page_title) ?></title>
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?= ADMIN_URL ?>/favicon.ico" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css" rel="stylesheet">
@@ -388,7 +388,7 @@ $active_page = $active_pageInfo['active_page'] ?? null;
                     </div>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="./" class="nav-link">Home</a>
+                    <a href="<?= ADMIN_URL ?>/index.php" class="nav-link">Home</a>
                 </li>
             </ul>
             <form class="form-inline ml-3">
@@ -426,7 +426,10 @@ $active_page = $active_pageInfo['active_page'] ?? null;
                         <ol class="breadcrumb float-sm-right">
                             <?php foreach ($breadcrumb_Items as $item): ?>
                                 <li class="breadcrumb-item <?= $item['url'] === '#' ? 'active' : '' ?>">
-                                    <?= $item['url'] === '#' ? $item['title'] : "<a href='{$item['url']}'>{$item['title']}</a>" ?>
+                                    <?php 
+                                        $bUrl = ($item['url'] === '#') ? '#' : ADMIN_URL . '/' . ltrim($item['url'], './');
+                                        echo ($item['url'] === '#') ? $item['title'] : "<a href='{$bUrl}'>{$item['title']}</a>";
+                                    ?>
                                 </li>
                             <?php endforeach; ?>
                         </ol>
@@ -436,17 +439,17 @@ $active_page = $active_pageInfo['active_page'] ?? null;
         </div>
 
         <aside class="main-sidebar sidebar-light-primary elevation-4">
-            <a href="./" class="brand-link">
-                <img src="./src/images/logo.png" alt="Logo" class="brand-image">
+            <a href="<?= ADMIN_URL ?>/index.php" class="brand-link">
+                <img src="<?= ADMIN_URL ?>/src/images/logo.png" alt="Logo" class="brand-image">
             </a>
             <div class="sidebar">
                 <div class="user-panel mt-3 pb-3 mb-3">
                     <?php
-                    $userImg = !empty($currentUser['profile_image']) ? './uploads/' . $currentUser['profile_image'] : './src/images/user-avtar.png';
+                    $userImg = !empty($currentUser['profile_image']) ? ADMIN_URL . '/uploads/' . $currentUser['profile_image'] : ADMIN_URL . '/src/images/user-avtar.png';
                     $userEmail = $currentUser['email'] ?? 'Admin';
                     $userRole = $currentUser['role'] ?? 'Administrator';
                     ?>
-                    <a href="./profile.php" class="d-flex flex-column align-items-center text-center">
+                    <a href="<?= ADMIN_URL ?>/profile.php" class="d-flex flex-column align-items-center text-center">
                         <div class="image mb-2">
                             <img src="<?= htmlspecialchars($userImg) ?>" class="img-circle elevation-2 bg-white" alt="User Image" style="width: 60px; height: 60px; object-fit: cover;">
                         </div>
@@ -471,7 +474,7 @@ $active_page = $active_pageInfo['active_page'] ?? null;
                                     <ul class="nav nav-treeview">
                                         <?php foreach ($menuItem['pages'] as $page): ?>
                                             <li class="nav-item">
-                                                <a href="<?= $page['url'] ?>"
+                                                <a href="<?= ADMIN_URL . '/' . ltrim($page['url'], './') ?>"
                                                     class="nav-link <?= $page === $active_page ? 'active' : '' ?>">
                                                     <i class="fas fa-minus nav-icon submenu-icon"></i>
                                                     <p><?= $page['title'] ?></p>
@@ -483,7 +486,7 @@ $active_page = $active_pageInfo['active_page'] ?? null;
                             </li>
                         <?php endforeach; ?>
                         <li class="nav-item">
-                            <a href="logout.php" class="nav-link">
+                            <a href="<?= ADMIN_URL ?>/logout.php" class="nav-link">
                                 <i class="nav-icon fas fa-sign-out-alt"></i>
                                 <p>Logout</p>
                             </a>

@@ -1,17 +1,5 @@
 <?php
-session_start();
-$base_path = $_SERVER['DOCUMENT_ROOT'] . '/vastu-mitra-abhishek';
-if (!file_exists($base_path . '/vendor/autoload.php')) {
-    $base_path = dirname(__DIR__);
-}
-require_once $base_path . '/vendor/autoload.php';
-require_once $base_path . '/database/db_config.php';
-
-use PHPAuth\Config as PHPAuthConfig;
-use PHPAuth\Auth as PHPAuth;
-
-$config = new PHPAuthConfig($dbh);
-$auth   = new PHPAuth($dbh, $config);
+require_once __DIR__ . '/auth_init.php';
 
 // If already logged in, redirect to dashboard
 if ($auth->isLogged()) {
@@ -79,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="login-box">
   <div class="login-logo">
     <a href="../">
-        <img src="./src/images/logo.png" alt="Vastu Mitra Logo">
+        <img src="<?= ADMIN_URL ?>/src/images/logo.png" alt="Vastu Mitra Logo">
     </a>
   </div>
   <!-- /.login-logo -->

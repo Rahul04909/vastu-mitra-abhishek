@@ -20,6 +20,7 @@ $menuItems = [
         "menuTitle" => "Products",
         "icon" => "fas fa-box",
         "pages" => [
+            ["title" => "Manage Products", "url" => "products/index.php"],
             ["title" => "Categories", "url" => "products/add-product-category.php"]
         ],
     ],

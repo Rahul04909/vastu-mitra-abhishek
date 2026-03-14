@@ -1,5 +1,6 @@
 {
     "require": {
-        "phpauth/phpauth": "^1.6"
+        "phpauth/phpauth": "^1.6",
+        "summernote/summernote": "^0.8.8"
     }
 }

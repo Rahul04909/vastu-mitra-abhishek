@@ -10,17 +10,23 @@ register_shutdown_function(function() {
     }
 });
 
-// Establish base path reliably
-$base_path = $_SERVER['DOCUMENT_ROOT'] . '/vastu-mitra-abhishek';
-if (!file_exists($base_path . '/vendor/autoload.php')) {
-    $base_path = dirname(__DIR__); // Fallback to parent directory
-}
+// Establish base path reliably using the current file's directory
+// Since auth_init.php is in /admin, dirname(__DIR__) is the project root
+$base_path = dirname(__DIR__);
 
-// Define Admin Base URL for absolute paths
+// Define Admin Base URL for absolute paths dynamically
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
 $host = $_SERVER['HTTP_HOST'];
-$admin_path = '/vastu-mitra-abhishek/admin'; // Direct path for this project structure
-define('ADMIN_URL', $protocol . '://' . $host . $admin_path);
+
+// Get the directory of the current file (which is the admin directory)
+$admin_dir = __DIR__;
+// Normalize paths for Windows/Linux consistency
+$normalized_doc_root = str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']);
+$normalized_admin_dir = str_replace('\\', '/', $admin_dir);
+
+// Calculate the relative path from DOCUMENT_ROOT to the admin directory
+$relative_admin_path = str_replace($normalized_doc_root, '', $normalized_admin_dir);
+define('ADMIN_URL', $protocol . '://' . $host . $relative_admin_path);
 
 // Start PHP session
 if (session_status() === PHP_SESSION_NONE) {

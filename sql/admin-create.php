@@ -1,6 +1,12 @@
 <?php
 // Include the database configuration file
-require_once __DIR__ . '/../database/db_config.php';
+// Determine the base path robustly
+$base_path = $_SERVER['DOCUMENT_ROOT'] . '/vastu-mitra-abhishek';
+if (!file_exists($base_path . '/database/db_config.php')) {
+    // Fallback for different server configurations (like shared hosting where document root might differ)
+    $base_path = dirname(__DIR__);
+}
+require_once $base_path . '/database/db_config.php';
 
 echo "<h2>Admin Table Setup</h2>";
 

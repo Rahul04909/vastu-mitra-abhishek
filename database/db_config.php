@@ -24,4 +24,3 @@ if (!$conn->select_db($db_name)) {
     die("Error selecting database ($db_name): " . $conn->error);
 }
 
-?>

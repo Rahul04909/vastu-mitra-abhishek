@@ -102,10 +102,6 @@ $og_image = $product['og_image'] ? "admin/uploads/products/seo/" . $product['og_
                 <span class="product-category-label"><?= htmlspecialchars($product['category_name']) ?></span>
                 <h1 class="product-title"><?= htmlspecialchars($product['name']) ?></h1>
                 
-                <div class="product-description">
-                    <?= $product['description'] // Render HTML from Summernote ?>
-                </div>
-
                 <!-- Enquiry Form Card -->
                 <div class="enquiry-card">
                     <h3>Enquire About This Product</h3>
@@ -113,14 +109,15 @@ $og_image = $product['og_image'] ? "admin/uploads/products/seo/" . $product['og_
                         <input type="hidden" name="product_id" value="<?= $product['id'] ?>">
                         <input type="hidden" name="product_name" value="<?= htmlspecialchars($product['name']) ?>">
                         
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                        <div class="form-group row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
                         </div>
                         
                         <div class="form-group">
@@ -130,13 +127,24 @@ $og_image = $product['og_image'] ? "admin/uploads/products/seo/" . $product['og_
                         
                         <div class="form-group">
                             <label for="message">Your Message</label>
-                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="How can we help you with this product?" required></textarea>
+                            <textarea id="message" name="message" class="form-control" rows="3" placeholder="How can we help you with this product?" required></textarea>
                         </div>
                         
                         <button type="submit" class="submit-btn text-white">
                             <i class="fas fa-paper-plane text-white"></i> Send Enquiry
                         </button>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full Width Description Section -->
+        <div class="product-description-row">
+            <div class="description-card">
+                <h3>Product Description</h3>
+                <hr>
+                <div class="description-content">
+                    <?= $product['description'] // Render HTML from Summernote ?>
                 </div>
             </div>
         </div>

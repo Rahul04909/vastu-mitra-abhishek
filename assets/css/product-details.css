@@ -78,31 +78,77 @@
 }
 
 .product-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #1a1a40;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-weight: 700;
 }
 
-.product-description {
+/* Full Width Description */
+.product-description-row {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.description-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    border: 1px solid #f0f0f0;
+}
+
+.description-card h3 {
+    font-size: 1.5rem;
+    color: #1a1a40;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.description-card hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-bottom: 25px;
+}
+
+.description-content {
     color: #555;
-    line-height: 1.7;
-    margin-bottom: 30px;
+    line-height: 1.8;
     font-size: 1.05rem;
 }
 
-.product-description ul {
+.description-content ul {
     padding-left: 20px;
+    margin-bottom: 15px;
 }
 
 /* Enquiry Form Container */
 .enquiry-card {
-    background: #fff;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    background: #fdfdfd;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     border: 1px solid #f0f0f0;
+}
+
+.row {
+    display: flex;
+    margin: 0 -10px;
+    flex-wrap: wrap;
+}
+
+.col-md-6 {
+    padding: 0 10px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 .enquiry-card h3 {

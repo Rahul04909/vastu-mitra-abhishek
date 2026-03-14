@@ -25,6 +25,14 @@ $menuItems = [
         ],
     ],
     [
+        "menuTitle" => "Blogs",
+        "icon" => "fas fa-newspaper",
+        "pages" => [
+            ["title" => "Manage Blogs", "url" => "blogs/index.php"],
+            ["title" => "Blog Categories", "url" => "blogs/add-blog-category.php"]
+        ],
+    ],
+    [
         "menuTitle" => "Settings",
         "icon" => "fas fa-cog",
         "pages" => [

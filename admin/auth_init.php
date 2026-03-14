@@ -19,9 +19,17 @@ require_once $base_path . '/database/db_config.php';
 use PHPAuth\Config as PHPAuthConfig;
 use PHPAuth\Auth as PHPAuth;
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 // Initialize PHPAuth with the PDO connection ($dbh)
-$config = new PHPAuthConfig($dbh);
-$auth   = new PHPAuth($dbh, $config);
+try {
+    $config = new PHPAuthConfig($dbh);
+    $auth   = new PHPAuth($dbh, $config);
+} catch (Exception $e) {
+    die("PHPAuth Initialization Error: " . $e->getMessage());
+}
+
 
 // Get current logged-in user details if available
 $currentUser = null;

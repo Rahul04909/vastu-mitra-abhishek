@@ -84,9 +84,9 @@ include __DIR__ . '/../header.php';
         <div class="row mt-4">
             <!-- Add Category Form -->
             <div class="col-md-4">
-                <div class="card card-primary">
-                    <div class="card-header" style="background: #28a645>
-                        <h3 class="card-title"">Add New Category</h3>
+                <div class="card card-success">
+                    <div class="card-header" style="background-color: #28a645;">
+                        <h3 class="card-title">Add New Category</h3>
                     </div>
                     <form action="add-product-category.php" method="POST">
                         <input type="hidden" name="action" value="add_category">
@@ -97,7 +97,7 @@ include __DIR__ . '/../header.php';
                             </div>
                         </div>
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary btn-block">Add Category</button>
+                            <button type="submit" class="btn btn-success btn-block" style="background-color: #28a645; border-color: #28a645;">Add Category</button>
                         </div>
                     </form>
                 </div>

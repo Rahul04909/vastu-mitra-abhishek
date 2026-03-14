@@ -1,4 +1,15 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+// Register fatal error handler to catch stealthy 500 errors
+register_shutdown_function(function() {
+    $error = error_get_last();
+    if ($error !== NULL && in_array($error['type'], [E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR])) {
+        echo "<b>Fatal Error Handled:</b> " . $error['message'] . " in <b>" . $error['file'] . "</b> on line <b>" . $error['line'] . "</b>";
+    }
+});
+
 // Establish base path reliably
 $base_path = $_SERVER['DOCUMENT_ROOT'] . '/vastu-mitra-abhishek';
 if (!file_exists($base_path . '/vendor/autoload.php')) {

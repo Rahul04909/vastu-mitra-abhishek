@@ -81,11 +81,11 @@
                 <div class="links-column">
                     <h4>Important Links</h4>
                     <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Refund Policy</a></li>
-                        <li><a href="#">Terms and Condition</a></li>
-                        <li><a href="#">Payment Details</a></li>
-                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="<?= BASE_URL ?>/privacy-policy.php">Privacy Policy</a></li>
+                        <li><a href="<?= BASE_URL ?>/refund-policy.php">Refund Policy</a></li>
+                        <li><a href="<?= BASE_URL ?>/terms-and-conditions.php">Terms and Condition</a></li>
+                        <li><a href="<?= BASE_URL ?>/payment-details.php">Payment Details</a></li>
+                        <li><a href="<?= BASE_URL ?>/disclaimer.php">Disclaimer</a></li>
                     </ul>
                 </div>
                 <div class="links-column">

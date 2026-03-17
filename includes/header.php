@@ -35,7 +35,7 @@
 <aside class="sidebar">
     <button class="sidebar-close">&times;</button>
     <div class="sidebar-logo">
-        <img src="assets/logo/logo.png" alt="Logo" style="height: 50px;">
+        <img src="<?= BASE_URL ?>/assets/logo/logo.png" alt="Logo" style="height: 50px;">
     </div>
     <ul class="sidebar-menu">
         <li><a href="<?= BASE_URL ?>/index.php" class="sidebar-link">Home</a></li>

@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer-logo-container">
         <div class="footer-logo">
-            <img src="assets/logo/logo.png" alt="AppliedVastu Logo">
+            <img src="<?= BASE_URL ?>/assets/logo/logo.png" alt="AppliedVastu Logo">
         </div>
     </div>
     
@@ -71,11 +71,11 @@
                 <div class="links-column">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="about.php">About Us</a></li>
-                        <li><a href="services.php">Vastu Plan</a></li>
-                        <li><a href="blog.php">Blog</a></li>
-                        <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="<?= BASE_URL ?>/index.php">Home</a></li>
+                        <li><a href="<?= BASE_URL ?>/about.php">About Us</a></li>
+                        <li><a href="<?= BASE_URL ?>/services.php">Vastu Plan</a></li>
+                        <li><a href="<?= BASE_URL ?>/blog.php">Blog</a></li>
+                        <li><a href="<?= BASE_URL ?>/contact.php">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="links-column">

@@ -38,9 +38,14 @@ try {
 if (!defined('BASE_URL')) {
     $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
     $host = $_SERVER['HTTP_HOST'];
-    $script_name = $_SERVER['SCRIPT_NAME'];
-    $base_dir = str_replace('\\', '/', dirname(dirname($script_name)));
-    if ($base_dir == '/') $base_dir = '';
-    define('BASE_URL', $protocol . '://' . $host . $base_dir);
+    
+    // Get project root folder relative to document root
+    $project_root = str_replace('\\', '/', dirname(__DIR__));
+    $document_root = str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']);
+    $relative_path = str_replace($document_root, '', $project_root);
+    
+    // Ensure leading slash but no trailing slash
+    $base_url = $protocol . '://' . $host . rtrim($relative_path, '/');
+    define('BASE_URL', $base_url);
 }
 

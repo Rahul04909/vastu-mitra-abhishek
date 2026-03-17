@@ -1,0 +1,224 @@
+/* About Page Styles */
+:root {
+    --about-primary: #1a1a40;
+    --about-secondary: #ff9933;
+    --about-text: #444;
+    --about-bg-light: #f9f9fc;
+    --about-transition: all 0.3s ease;
+}
+
+.about-hero {
+    padding: 160px 0 80px;
+    background: linear-gradient(rgba(26, 26, 64, 0.9), rgba(26, 26, 64, 0.9)), url('../images/expert-industrial.jpg'); /* Using an existing image as background */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.about-intro-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.about-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image-wrapper {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+}
+
+.about-image-wrapper img {
+    width: 100%;
+    display: block;
+}
+
+.about-experience-badge {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: var(--about-secondary);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(255, 153, 51, 0.3);
+}
+
+.about-experience-badge span {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.about-experience-badge small {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-intro-content h2 {
+    font-size: 2.5rem;
+    color: var(--about-primary);
+    margin-bottom: 25px;
+}
+
+.about-intro-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--about-text);
+    margin-bottom: 20px;
+}
+
+.about-vision-section {
+    padding: 80px 0;
+    background: var(--about-bg-light);
+}
+
+.vision-vision-box {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.vision-vision-box h2 {
+    font-size: 2.5rem;
+    color: var(--about-primary);
+    margin-bottom: 20px;
+}
+
+.vision-vision-box p {
+    font-size: 1.5rem;
+    color: var(--about-secondary);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.about-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.about-benefit-card {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    transition: var(--about-transition);
+    border: 1px solid #f0f0f0;
+}
+
+.about-benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+}
+
+.about-benefit-card i {
+    font-size: 2.5rem;
+    color: var(--about-secondary);
+    margin-bottom: 25px;
+    display: block;
+}
+
+.about-benefit-card h3 {
+    font-size: 1.4rem;
+    color: var(--about-primary);
+    margin-bottom: 15px;
+}
+
+.about-benefit-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-cta-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.btn-shop {
+    display: inline-block;
+    padding: 20px 50px;
+    background: var(--about-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: var(--about-transition);
+    box-shadow: 0 10px 25px rgba(26, 26, 64, 0.2);
+}
+
+.btn-shop:hover {
+    background: var(--about-secondary);
+    transform: scale(1.05);
+}
+
+/* Map Section */
+.about-map-section {
+    padding: 80px 0;
+}
+
+.about-map-container {
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+
+.about-map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .about-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .about-intro-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-intro-content {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    .about-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-map-container {
+        height: 350px;
+    }
+}

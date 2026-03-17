@@ -96,9 +96,9 @@
                         <li><a href="<?= BASE_URL ?>/pages/industrial-vastu.php">Industrial Vastu</a></li>
                         <li><a href="<?= BASE_URL ?>/pages/personal-vastu.php">Personal Vastu</a></li>
                         <li><a href="<?= BASE_URL ?>/pages/vastu-logo-design.php">Vastu Logo Design</a></li>
-                        <li><a href="#">Astro Vastu</a></li>
+                        <!-- <li><a href="#">Astro Vastu</a></li>
                         <li><a href="#">Vastu Planning & Design</a></li>
-                        <li><a href="#">Vastu Consultant</a></li>
+                        <li><a href="#">Vastu Consultant</a></li> -->
                     </ul>
                 </div>
                 <div class="links-column contact-details">

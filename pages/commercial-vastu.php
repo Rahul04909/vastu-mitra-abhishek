@@ -43,51 +43,63 @@ $meta_keywords = "commercial vastu, business vastu, vastu for office, vastu mitr
         <div class="container">
             <div class="section-title">
                 <h2>Why is Commercial Vastu Important?</h2>
+                <p>Aligning your business environment with the five elements for unparalleled success and harmony.</p>
             </div>
             
-            <div class="content-info-box">
-                <p>In India, many businesses believe in the importance of commercial Vastu for business success. Commercial Vastu is the ancient Indian practice of aligning buildings and objects with the five elements of nature: earth, water, fire, air, and space. The goal of Commercial Vastu is to create balance and harmony in the workplace, which in turn leads to success in business.</p>
-            </div>
-
-            <div class="benefits-grid">
-                <!-- Benefit 1 -->
-                <div class="benefit-card">
-                    <div class="benefit-number">01</div>
-                    <h3>Improved Productivity</h3>
-                    <p>A balanced and harmonious workplace is more conducive to productivity than a chaotic one, reinforcing the importance of Commercial Vastu even more.</p>
-                </div>
-
-                <!-- Benefit 2 -->
-                <div class="benefit-card">
-                    <div class="benefit-number">02</div>
-                    <h3>Improved Employee Morale</h3>
-                    <p>Happy and content employees are more likely to be productive and stay with the company for longer.</p>
-                </div>
-
-                <!-- Benefit 3 -->
-                <div class="benefit-card">
-                    <div class="benefit-number">03</div>
-                    <h3>Enhanced Customer Satisfaction</h3>
-                    <p>Satisfied customers are more likely to return and recommend the company to others.</p>
-                </div>
-
-                <!-- Benefit 4 -->
-                <div class="benefit-card">
-                    <div class="benefit-number">04</div>
-                    <h3>Improved Business Prospects</h3>
-                    <p>A well-balanced business is more likely to attract investors and partners.</p>
-                </div>
-
-                <!-- Benefit 5 -->
-                <div class="benefit-card">
-                    <div class="benefit-number">05</div>
-                    <h3>Reduced Stress Levels</h3>
-                    <p>A calm and peaceful work environment helps to reduce stress levels and promote a healthy lifestyle.</p>
+            <div class="intro-container">
+                <div class="intro-content">
+                    <p>In India, many businesses believe in the importance of commercial Vastu for business success. Commercial Vastu is the ancient Indian practice of aligning buildings and objects with the five elements of nature: earth, water, fire, air, and space. The goal of Commercial Vastu is to create balance and harmony in the workplace, which in turn leads to success in business.</p>
+                    
+                    <div class="intro-highlight">
+                        <p>"Vastu Mitra Abhishek helps you create a balanced and harmonious workplace all over the world, ensuring prosperity for your business venture."</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="content-info-box mt-5" style="border-left: 0; border-right: 5px solid var(--service-secondary); text-align: right; margin-top: 50px;">
-                <p>Commercial Vastu is not only important for businesses in India but for businesses all over the world. If you want to create a successful and prosperous business, it is important to create a balanced and harmonious workplace using Vastu Mitra Abhishek and his expertise in commercial Vastu.</p>
+            <div class="benefits-section">
+                <div class="benefits-grid">
+                    <!-- Benefit 1 -->
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper"><i class="fas fa-chart-line"></i></div>
+                        <h3>Improved Productivity</h3>
+                        <p>A balanced and harmonious workplace is more conducive to productivity than a chaotic one, reinforcing the importance of Commercial Vastu even more.</p>
+                    </div>
+
+                    <!-- Benefit 2 -->
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper"><i class="fas fa-smile-beam"></i></div>
+                        <h3>Employee Morale</h3>
+                        <p>Happy and content employees are more likely to be productive and stay with the company for longer.</p>
+                    </div>
+
+                    <!-- Benefit 3 -->
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper"><i class="fas fa-users"></i></div>
+                        <h3>Customer Satisfaction</h3>
+                        <p>Satisfied customers are more likely to return and recommend the company to others.</p>
+                    </div>
+
+                    <!-- Benefit 4 -->
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper"><i class="fas fa-rocket"></i></div>
+                        <h3>Business Prospects</h3>
+                        <p>A well-balanced business is more likely to attract investors and partners.</p>
+                    </div>
+
+                    <!-- Benefit 5 -->
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper"><i class="fas fa-leaf"></i></div>
+                        <h3>Reduced Stress</h3>
+                        <p>A calm and peaceful work environment helps to reduce stress levels and promote a healthy lifestyle.</p>
+                    </div>
+
+                    <!-- Benefit 6 -->
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper"><i class="fas fa-globe"></i></div>
+                        <h3>Global Relevance</h3>
+                        <p>Commercial Vastu is not only important for businesses in India but for businesses all over the world.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -95,19 +107,22 @@ $meta_keywords = "commercial vastu, business vastu, vastu for office, vastu mitr
     <!-- Expert Section -->
     <section class="expert-section">
         <div class="container">
-            <div class="expert-container">
-                <div class="expert-image">
-                    <img src="<?= BASE_URL ?>/assets/images/expert-commercial.jpg" alt="Vastu Mitra Abhishek - Commercial Vastu Expert" onerror="this.src='https://via.placeholder.com/400x500?text=Commercial+Vastu+Expert'">
+            <div class="expert-card">
+                <div class="expert-img-side">
+                    <img src="<?= BASE_URL ?>/assets/images/expert-commercial.jpg" alt="Vastu Mitra Abhishek - Commercial Vastu Expert">
                 </div>
-                <div class="expert-info">
-                    <h2>Vastu Mitra Abhishek- The Commercial Vastu expert</h2>
-                    <p>Despite being thousands of years old, the importance of commercial Vastu is still relevant in today’s world. In India, commercial Vastu Shastra is a popular belief system that is followed by many business owners. For the past few decades, interest in utilizing commercial Vastu for workplace harmony has skyrocketed.</p>
+                <div class="expert-content-side">
+                    <span class="expert-tag">The Commercial Vastu Expert</span>
+                    <h2>Vastu Mitra Abhishek</h2>
+                    <p>Despite being thousands of years old, the importance of commercial Vastu is still relevant in today’s world. In India, commercial Vastu Shastra is a popular belief system followed by many business owners.</p>
                     <p>If you are looking to bring harmony and prosperity using commercial vastu, then you should consider following the principles of commercial vastu shastra under the able guidance of Vastu Mitra Abhishek, the leading commercial Vastu expert in India.</p>
-                    <p>Vastu Mitra Abhishek is the best commercial Vastu expert in India, helping businesses and business owners from every industry and sector find solutions to real-time commercial Vastu problems. Vastu Mitra Abhishek, the best commercial Vastu expert in India, is coveted in the field of commercial Vastu with decades of experience as well as a successful record of solving commercial Vastu problems.</p>
+                    <p>Vastu Mitra Abhishek helps business owners from every industry and sector find solutions to real-time commercial Vastu problems, with decades of experience and a successful record of accomplishment.</p>
                     
-                    <a href="<?= BASE_URL ?>/contact.php" class="btn" style="background: var(--service-secondary); color: white; padding: 15px 35px; border-radius: 30px; text-decoration: none; display: inline-block; font-weight: 600; margin-top: 20px; transition: 0.3s; box-shadow: 0 10px 20px rgba(255, 153, 51, 0.3);">
-                        Get Expert Consultation <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
+                    <div class="expert-cta">
+                        <a href="<?= BASE_URL ?>/contact.php" class="btn-primary">
+                            Get Expert Consultation <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,21 +133,34 @@ $meta_keywords = "commercial vastu, business vastu, vastu for office, vastu mitr
     <!-- Scripts -->
     <script src="<?= BASE_URL ?>/assets/js/header.js"></script>
     <script>
-        // Scroll Animation for Benefit Cards
+        // Simple Scroll Reveal
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.classList.add('reveal');
+                    observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1 });
+        }, observerOptions);
 
-        document.querySelectorAll('.benefit-card').forEach(card => {
+        document.querySelectorAll('.benefit-card').forEach((card, index) => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px)';
-            card.style.transition = 'all 0.6s ease-out';
-            observer.observe(card);
+            card.style.transition = `all 0.6s ease-out ${index * 0.1}s`;
+            
+            // IntersectionObserver doesn't add 'reveal' class itself here, we'll just use the entry check
+            const obs = new IntersectionObserver((entries) => {
+                if(entries[0].isIntersecting) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            }, {threshold: 0.1});
+            obs.observe(card);
         });
     </script>
 </body>

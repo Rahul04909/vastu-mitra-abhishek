@@ -120,6 +120,60 @@ header.scrolled .logo img {
     width: 100%;
 }
 
+/* Dropdown Styles */
+.nav-menu ul li {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 220px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: var(--transition);
+    display: block !important; /* Override flex */
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.dropdown-menu li a:hover {
+    background: var(--bg-light);
+    color: var(--secondary-color);
+    padding-left: 25px;
+}
+
+.small {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
 /* Mobile Toggle */
 .mobile-toggle {
     display: none;

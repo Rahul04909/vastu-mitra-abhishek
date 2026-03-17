@@ -1,0 +1,206 @@
+/* Service Page Specific Styles */
+
+:root {
+    --service-primary: #1a1a40;
+    --service-secondary: #ff9933;
+    --service-accent: #f4e04d;
+    --service-text: #333333;
+    --service-bg: #ffffff;
+    --service-muted: #f8f9fa;
+    --service-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.service-hero {
+    padding: 180px 0 100px;
+    background: linear-gradient(135deg, var(--service-primary) 0%, #2a2a60 100%);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../logo/logo.png') no-repeat center;
+    background-size: 40%;
+    opacity: 0.05;
+    transform: rotate(-15deg);
+}
+
+.service-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.service-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+    line-height: 1.6;
+}
+
+.service-content-section {
+    padding: 80px 0;
+    background: var(--service-bg);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--service-primary);
+    margin-bottom: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--service-secondary);
+    border-radius: 2px;
+}
+
+.content-info-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    margin-bottom: 50px;
+    border-left: 5px solid var(--service-secondary);
+}
+
+.content-info-box p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--service-text);
+}
+
+/* Benefits Grid */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.benefit-card {
+    background: var(--service-muted);
+    padding: 35px;
+    border-radius: 15px;
+    transition: var(--service-transition);
+    border: 1px solid transparent;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    background: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border-color: var(--service-secondary);
+}
+
+.benefit-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgba(255, 153, 51, 0.2);
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.benefit-card h3 {
+    font-size: 1.3rem;
+    color: var(--service-primary);
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Expert Section */
+.expert-section {
+    padding: 100px 0;
+    background: var(--service-muted);
+}
+
+.expert-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.expert-image {
+    flex: 0 0 400px;
+}
+
+.expert-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.expert-info {
+    flex: 1;
+}
+
+.expert-info h2 {
+    font-size: 2.2rem;
+    color: var(--service-primary);
+    margin-bottom: 25px;
+}
+
+.expert-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--service-text);
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .expert-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .expert-image {
+        flex: none;
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-hero h1 {
+        font-size: 2.5rem;
+    }
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-title h2 {
+        font-size: 2rem;
+    }
+}

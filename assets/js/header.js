@@ -48,3 +48,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Toggle Submenu for Mobile Sidebar
+function toggleSubmenu(event, submenuId) {
+    event.preventDefault();
+    event.stopPropagation();
+    const submenu = document.getElementById(submenuId);
+    const icon = event.currentTarget.querySelector('i');
+    
+    if (submenu.style.display === 'none' || submenu.style.display === '') {
+        submenu.style.display = 'block';
+        if (icon) icon.style.transform = 'rotate(180deg)';
+    } else {
+        submenu.style.display = 'none';
+        if (icon) icon.style.transform = 'rotate(0deg)';
+    }
+}

@@ -34,3 +34,13 @@ try {
     die("PDO Connection failed: " . $e->getMessage());
 }
 
+// Define Base URL globally
+if (!defined('BASE_URL')) {
+    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+    $host = $_SERVER['HTTP_HOST'];
+    $script_name = $_SERVER['SCRIPT_NAME'];
+    $base_dir = str_replace('\\', '/', dirname(dirname($script_name)));
+    if ($base_dir == '/') $base_dir = '';
+    define('BASE_URL', $protocol . '://' . $host . $base_dir);
+}
+

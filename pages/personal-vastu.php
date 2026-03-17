@@ -61,7 +61,7 @@ $meta_keywords = "personal vastu, vastu for well-being, vastu mitra abhishek, pe
                 <div class="benefits-grid">
                     <!-- Benefit 1 -->
                     <div class="benefit-card">
-                        <div class="benefit-icon-wrapper" style="background: rgba(26, 26, 64, 0.1); color: #1a1a40;"><i class="fas fa-meditation"></i></div>
+                        <div class="benefit-icon-wrapper" style="background: rgba(26, 26, 64, 0.1); color: #1a1a40;"><i class="fas fa-spa"></i></div>
                         <h3>Enhanced Well-being</h3>
                         <p>Promotes the alignment of your living space with natural energies, leading to improved physical and mental health. A balanced environment helps reduce stress and anxiety.</p>
                     </div>

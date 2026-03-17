@@ -91,9 +91,9 @@
                 <div class="links-column">
                     <h4>Our Service</h4>
                     <ul>
-                        <li><a href="#">Residential Vastu</a></li>
-                        <li><a href="#">Commercial Vastu</a></li>
-                        <li><a href="#">Industrial Vastu</a></li>
+                        <li><a href="<?= BASE_URL ?>/pages/residential-vastu.php">Residential Vastu</a></li>
+                        <li><a href="<?= BASE_URL ?>/pages/commercial-vastu.php">Commercial Vastu</a></li>
+                        <li><a href="<?= BASE_URL ?>/pages/industrial-vastu.php">Industrial Vastu</a></li>
                         <li><a href="#">Astro Vastu</a></li>
                         <li><a href="#">Vastu Planning & Design</a></li>
                         <li><a href="#">Vastu Consultant</a></li>

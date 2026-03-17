@@ -14,6 +14,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="<?= BASE_URL ?>/pages/commercial-vastu.php">Commercial Vastu</a></li>
                         <li><a href="<?= BASE_URL ?>/pages/residential-vastu.php">Residential Vastu</a></li>
+                        <li><a href="<?= BASE_URL ?>/pages/industrial-vastu.php">Industrial Vastu</a></li>
                     </ul>
                 </li>
                 <li><a href="<?= BASE_URL ?>/shop.php" class="nav-link">Shop</a></li>
@@ -45,6 +46,7 @@
             <ul id="submenu-services" class="list-unstyled pl-3" style="display: none;">
                 <li><a href="<?= BASE_URL ?>/pages/commercial-vastu.php" class="sidebar-link border-0">Commercial Vastu</a></li>
                 <li><a href="<?= BASE_URL ?>/pages/residential-vastu.php" class="sidebar-link border-0">Residential Vastu</a></li>
+                <li><a href="<?= BASE_URL ?>/pages/industrial-vastu.php" class="sidebar-link border-0">Industrial Vastu</a></li>
             </ul>
         </li>
         <li><a href="<?= BASE_URL ?>/shop.php" class="sidebar-link">Shop</a></li>

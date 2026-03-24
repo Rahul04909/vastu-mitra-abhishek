@@ -21,6 +21,7 @@ $menuItems = [
         "icon" => "fas fa-box",
         "pages" => [
             ["title" => "Manage Products", "url" => "products/index.php"],
+            ["title" => "Product Enquiries", "url" => "products/enquiries.php"],
             ["title" => "Categories", "url" => "products/add-product-category.php"]
         ],
     ],

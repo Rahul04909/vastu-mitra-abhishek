@@ -152,7 +152,8 @@ $og_image = $product['og_image'] ? "admin/uploads/products/seo/" . $product['og_
 
     <?php include 'includes/footer.php'; ?>
 
-    <!-- Scripts -->
+    <!-- SweetAlert2 for professional notifications -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/header.js"></script>
     <script>
         function changeImage(src, element) {
@@ -162,12 +163,57 @@ $og_image = $product['og_image'] ? "admin/uploads/products/seo/" . $product['og_
             element.classList.add('active');
         }
 
-        // Handle Form Submission with SweetAlert (assuming it's available or user will add)
-        document.getElementById('enquiryForm').onsubmit = function(e) {
-            // This is a placeholder for actual backend processing
-            // For now, it shows the professional intent
-            console.log('Enquiry sent for: <?= htmlspecialchars($product['name']) ?>');
-        };
+        // Handle Form Submission with AJAX and SweetAlert2
+        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const submitBtn = form.querySelector('.submit-btn');
+            const originalBtnContent = submitBtn.innerHTML;
+            
+            // UI Feedback: Loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+            
+            const formData = new FormData(form);
+            
+            fetch('<?= BASE_URL ?>/product_enquiry_handler.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Success!',
+                        text: data.message,
+                        confirmButtonColor: '#28a745'
+                    });
+                    form.reset();
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: data.message || 'Something went wrong!',
+                        confirmButtonColor: '#d33'
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'System Error',
+                    text: 'Unable to connect to the server. Please try again later.',
+                    confirmButtonColor: '#d33'
+                });
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnContent;
+            });
+        });
     </script>
 </body>
 </html>

@@ -61,6 +61,5 @@ try {
 // Get current logged-in user details if available
 $currentUser = null;
 if ($auth->isLogged()) {
-    $sessionHash = $_COOKIE[$config->cookie_name] ?? null;
-    $currentUser = $auth->getCurrentUser($sessionHash);
+    $currentUser = $auth->getCurrentUser(false);
 }

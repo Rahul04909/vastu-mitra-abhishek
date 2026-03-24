@@ -33,6 +33,13 @@ $menuItems = [
         ],
     ],
     [
+        "menuTitle" => "Enquiries",
+        "icon" => "fas fa-envelope",
+        "pages" => [
+            ["title" => "Manage Enquiries", "url" => "enquiries/index.php"]
+        ],
+    ],
+    [
         "menuTitle" => "Settings",
         "icon" => "fas fa-cog",
         "pages" => [

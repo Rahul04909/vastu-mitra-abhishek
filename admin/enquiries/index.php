@@ -153,105 +153,118 @@ include __DIR__ . '/../header.php';
             <div class="card-header">
                 <h3 class="card-title">Enquiries List</h3>
             </div>
-            <div class="card-body p-0 table-responsive">
-                <table class="table table-hover text-nowrap">
-                    <thead>
+            <div class="card-body p-0">
+                <table class="table table-hover table-striped mb-0">
+                    <thead class="bg-light">
                         <tr>
-                            <th>ID</th>
-                            <th>Date</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Mobile</th>
-                            <th>Service</th>
-                            <th>Mode</th>
-                            <th>Attachment</th>
-                            <th style="width: 150px">Actions</th>
+                            <th style="width: 50px" class="text-center">ID</th>
+                            <th>Client Details</th>
+                            <th>Requirement</th>
+                            <th style="width: 120px">Date</th>
+                            <th style="width: 100px" class="text-center">Attach</th>
+                            <th style="width: 80px" class="text-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php if (empty($enquiries)): ?>
                             <tr>
-                                <td colspan="9" class="text-center">No enquiries found.</td>
+                                <td colspan="6" class="text-center py-4 text-muted">No enquiries found.</td>
                             </tr>
                         <?php else: ?>
                             <?php foreach ($enquiries as $e): ?>
                                 <tr>
-                                    <td><?= $e['id'] ?></td>
-                                    <td><?= date('d M Y, H:i', strtotime($e['created_at'])) ?></td>
-                                    <td><strong><?= htmlspecialchars($e['name']) ?></strong></td>
-                                    <td><?= htmlspecialchars($e['email']) ?></td>
-                                    <td><?= htmlspecialchars($e['mobile']) ?></td>
-                                    <td><span class="badge badge-info"><?= htmlspecialchars($e['service_type']) ?></span></td>
+                                    <td class="text-center text-muted small"><?= $e['id'] ?></td>
                                     <td>
-                                        <span class="badge <?= $e['service_mode'] == 'Online' ? 'badge-primary' : 'badge-warning' ?>">
-                                            <?= htmlspecialchars($e['service_mode']) ?>
-                                        </span>
+                                        <div class="d-flex flex-column">
+                                            <a href="#" class="text-primary font-weight-bold" data-toggle="modal" data-target="#modal-view-<?= $e['id'] ?>">
+                                                <?= htmlspecialchars($e['name']) ?>
+                                            </a>
+                                            <small class="text-muted">
+                                                <i class="fas fa-envelope mr-1"></i> <?= htmlspecialchars($e['email']) ?>
+                                                <?php if ($e['mobile']): ?>
+                                                    <span class="mx-1">|</span> <i class="fas fa-phone mr-1"></i> <?= htmlspecialchars($e['mobile']) ?>
+                                                <?php endif; ?>
+                                            </small>
+                                        </div>
                                     </td>
                                     <td>
+                                        <div class="d-flex flex-column">
+                                            <span class="badge badge-info shadow-sm py-1 mb-1" style="width: fit-content;"><?= htmlspecialchars($e['service_type']) ?></span>
+                                            <small class="text-uppercase font-weight-bold" style="font-size: 0.65rem; color: <?= $e['service_mode'] == 'Online' ? '#007bff' : '#fd7e14' ?>;">
+                                                <i class="fas <?= $e['service_mode'] == 'Online' ? 'fa-globe' : 'fa-building' ?> mr-1"></i> <?= htmlspecialchars($e['service_mode']) ?>
+                                            </small>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <small class="font-weight-bold d-block"><?= date('d M Y', strtotime($e['created_at'])) ?></small>
+                                        <small class="text-muted"><?= date('H:i', strtotime($e['created_at'])) ?></small>
+                                    </td>
+                                    <td class="text-center">
                                         <?php if ($e['attachment']): ?>
-                                            <a href="<?= BASE_URL ?>/<?= htmlspecialchars($e['attachment']) ?>" target="_blank" class="btn btn-xs btn-outline-info">
-                                                <i class="fas fa-paperclip"></i> View
+                                            <a href="<?= BASE_URL ?>/<?= htmlspecialchars($e['attachment']) ?>" target="_blank" class="btn btn-xs btn-outline-info rounded-pill px-2" title="View Attachment">
+                                                <i class="fas fa-paperclip"></i>
                                             </a>
                                         <?php else: ?>
-                                            <span class="text-muted">None</span>
+                                            <span class="text-muted small">-</span>
                                         <?php endif; ?>
                                     </td>
-                                    <td>
-                                        <div class="d-flex" style="gap: 5px;">
-                                            <button type="button" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#modal-view-<?= $e['id'] ?>">
-                                                <i class="fas fa-eye"></i> View
-                                            </button>
-                                            <a href="index.php?delete=<?= $e['id'] ?>" 
-                                               class="btn btn-sm btn-outline-danger" 
-                                               onclick="return confirm('Delete this enquiry?')">
-                                               <i class="fas fa-trash-alt"></i>
-                                            </a>
-                                        </div>
-
-                                        <!-- View Modal -->
-                                        <div class="modal fade" id="modal-view-<?= $e['id'] ?>">
-                                            <div class="modal-dialog modal-lg">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h4 class="modal-title">Enquiry Details #<?= $e['id'] ?></h4>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
+                                    <td class="text-center">
+                                        <a href="index.php?delete=<?= $e['id'] ?>" 
+                                           class="btn btn-xs btn-outline-danger rounded-circle" 
+                                           onclick="return confirm('Permanently delete this enquiry?')"
+                                           title="Delete Enquiry">
+                                           <i class="fas fa-trash-alt"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                
+                                <!-- View Modal maintained for detailed view -->
+                                <div class="modal fade shadow" id="modal-view-<?= $e['id'] ?>" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                                        <div class="modal-content border-0">
+                                            <div class="modal-header bg-primary text-white">
+                                                <h5 class="modal-title font-weight-bold"><i class="fas fa-envelope-open-text mr-2"></i> Enquiry Detail #<?= $e['id'] ?></h5>
+                                                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body p-4">
+                                                <div class="row mb-4 bg-light p-3 rounded mx-0">
+                                                    <div class="col-md-6 border-right">
+                                                        <label class="text-muted text-uppercase small font-weight-bold mb-1 d-block">Client Information</label>
+                                                        <p class="mb-1"><strong><i class="fas fa-user-circle mr-1"></i> Name:</strong> <?= htmlspecialchars($e['name']) ?></p>
+                                                        <p class="mb-1"><strong><i class="fas fa-envelope mr-1"></i> Email:</strong> <a href="mailto:<?= htmlspecialchars($e['email']) ?>"><?= htmlspecialchars($e['email']) ?></a></p>
+                                                        <p class="mb-1"><strong><i class="fas fa-phone-alt mr-1"></i> Mobile:</strong> <?= htmlspecialchars($e['mobile']) ?></p>
+                                                        <p class="mb-0"><strong><i class="fas fa-map-marker-alt mr-1"></i> Country:</strong> <?= htmlspecialchars($e['country']) ?></p>
                                                     </div>
-                                                    <div class="modal-body">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <p><strong>Name:</strong> <?= htmlspecialchars($e['name']) ?></p>
-                                                                <p><strong>Email:</strong> <?= htmlspecialchars($e['email']) ?></p>
-                                                                <p><strong>Mobile:</strong> <?= htmlspecialchars($e['mobile']) ?></p>
-                                                                <p><strong>Country:</strong> <?= htmlspecialchars($e['country']) ?></p>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <p><strong>Service Type:</strong> <?= htmlspecialchars($e['service_type']) ?></p>
-                                                                <p><strong>Service Mode:</strong> <?= htmlspecialchars($e['service_mode']) ?></p>
-                                                                <p><strong>Received At:</strong> <?= date('d M Y, H:i', strtotime($e['created_at'])) ?></p>
-                                                            </div>
-                                                            <div class="col-12 mt-3">
-                                                                <h6><strong>Message:</strong></h6>
-                                                                <div class="p-3 bg-light border rounded">
-                                                                    <?= nl2br(htmlspecialchars($e['message'])) ?>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <div class="col-md-6 pl-md-4">
+                                                        <label class="text-muted text-uppercase small font-weight-bold mb-1 d-block">Service Requested</label>
+                                                        <p class="mb-1"><strong><i class="fas fa-th-large mr-1"></i> Category:</strong> <?= htmlspecialchars($e['service_type']) ?></p>
+                                                        <p class="mb-1"><strong><i class="fas fa-concierge-bell mr-1"></i> Mode:</strong> <span class="badge <?= $e['service_mode'] == 'Online' ? 'badge-primary' : 'badge-warning' ?>"><?= htmlspecialchars($e['service_mode']) ?></span></p>
+                                                        <p class="mb-0"><strong><i class="fas fa-clock mr-1"></i> Received:</strong> <?= date('d M Y, H:i A', strtotime($e['created_at'])) ?></p>
                                                     </div>
-                                                    <div class="modal-footer justify-content-between">
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                        <?php if ($e['attachment']): ?>
-                                                            <a href="<?= BASE_URL ?>/<?= htmlspecialchars($e['attachment']) ?>" target="_blank" class="btn btn-primary">
-                                                                Download Attachment
-                                                            </a>
-                                                        <?php endif; ?>
+                                                </div>
+                                                <div class="col-12 p-0">
+                                                    <label class="text-muted text-uppercase small font-weight-bold mb-2 d-block">Client Message</label>
+                                                    <div class="p-3 border rounded font-italic text-secondary" style="background-color: #fafafa; line-height: 1.6;">
+                                                        "<?= nl2br(htmlspecialchars($e['message'] ?: 'No message provided.')) ?>"
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="modal-footer bg-light">
+                                                <button type="button" class="btn btn-secondary btn-sm px-3" data-dismiss="modal">Close</button>
+                                                <?php if ($e['attachment']): ?>
+                                                    <a href="<?= BASE_URL ?>/<?= htmlspecialchars($e['attachment']) ?>" target="_blank" class="btn btn-info btn-sm px-3 shadow-sm">
+                                                        <i class="fas fa-download mr-1"></i> Download Attachment
+                                                    </a>
+                                                <?php endif; ?>
+                                                <a href="mailto:<?= htmlspecialchars($e['email']) ?>?subject=Re: Vastu Enquiry" class="btn btn-success btn-sm px-3 shadow-sm">
+                                                    <i class="fas fa-reply mr-1"></i> Reply via Email
+                                                </a>
+                                            </div>
                                         </div>
-                                    </td>
-                                </tr>
+                                    </div>
+                                </div>
                             <?php endforeach; ?>
                         <?php endif; ?>
                     </tbody>

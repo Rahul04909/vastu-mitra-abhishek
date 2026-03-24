@@ -41,6 +41,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     try {
+        // Self-healing: Ensure table exists
+        $table_sql = "CREATE TABLE IF NOT EXISTS `footer_enquiries` (
+            `id` INT AUTO_INCREMENT PRIMARY KEY,
+            `name` VARCHAR(255) NOT NULL,
+            `email` VARCHAR(255) NOT NULL,
+            `mobile` VARCHAR(20),
+            `country` VARCHAR(100),
+            `service_type` VARCHAR(100),
+            `attachment` VARCHAR(255),
+            `service_mode` ENUM('Online', 'Onsite') DEFAULT 'Online',
+            `message` TEXT,
+            `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;";
+        $dbh->exec($table_sql);
+
         $sql = "INSERT INTO footer_enquiries (name, email, mobile, country, service_type, attachment, service_mode, message) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = $dbh->prepare($sql);

@@ -56,7 +56,7 @@
         <!-- Right Section: Info & Links -->
         <div class="footer-info-section">
             <div class="info-group">
-                <h3>Vastu consultant Online</h3>
+                <h3>Online Vastu Consultancy</h3>
                 <p>We realize that finding a good <strong>Vastu consultant</strong> online is very difficult. That is why Vastu Mitra Abhishek decides to offer world-class accurate online Vastu consultancy services. It is straightforward for anyone to take our online Vastu consultancy services wherever they are in the world. <a href="#">Read More</a></p>
             </div>
 

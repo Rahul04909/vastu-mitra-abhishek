@@ -5,14 +5,14 @@ require_once __DIR__ . '/database/db_config.php';
 $response = ['status' => 'error', 'message' => 'Something went wrong. Please try again.'];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Sanitize inputs
-    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-    $mobile = filter_input(INPUT_POST, 'mobile', FILTER_SANITIZE_STRING);
-    $country = filter_input(INPUT_POST, 'country', FILTER_SANITIZE_STRING);
-    $service_type = filter_input(INPUT_POST, 'service_type_select', FILTER_SANITIZE_STRING);
-    $service_mode = filter_input(INPUT_POST, 'service_mode', FILTER_SANITIZE_STRING);
-    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+    // Sanitize inputs (FILTER_SANITIZE_STRING is deprecated in newer PHP)
+    $name = isset($_POST['name']) ? htmlspecialchars(trim($_POST['name'])) : '';
+    $email = isset($_POST['email']) ? filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL) : '';
+    $mobile = isset($_POST['mobile']) ? htmlspecialchars(trim($_POST['mobile'])) : '';
+    $country = isset($_POST['country']) ? htmlspecialchars(trim($_POST['country'])) : '';
+    $service_type = isset($_POST['service_type_select']) ? htmlspecialchars(trim($_POST['service_type_select'])) : '';
+    $service_mode = isset($_POST['service_mode']) ? htmlspecialchars(trim($_POST['service_mode'])) : '';
+    $message = isset($_POST['message']) ? htmlspecialchars(trim($_POST['message'])) : '';
 
     if (empty($name) || empty($email)) {
         $response['message'] = "Name and Email are required.";
@@ -59,14 +59,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $sql = "INSERT INTO footer_enquiries (name, email, mobile, country, service_type, attachment, service_mode, message) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = $dbh->prepare($sql);
-        $stmt->execute([$name, $email, $mobile, $country, $service_type, $attachment_path, $service_mode, $message]);
+        $result = $stmt->execute([$name, $email, $mobile, $country, $service_type, $attachment_path, $service_mode, $message]);
 
-        $response['status'] = 'success';
-        $response['message'] = "Thank you! Your enquiry has been submitted successfully. We will contact you soon.";
-    } catch (PDOException $e) {
-        $response['message'] = "Database Error: " . $e->getMessage();
+        if ($result) {
+            $response['status'] = 'success';
+            $response['message'] = "Thank you! Your enquiry has been submitted successfully.";
+        } else {
+            throw new Exception("Execution failed.");
+        }
+    } catch (Exception $e) {
+        error_log("Enquiry Error: " . $e->getMessage());
+        $response['message'] = "Error: " . $e->getMessage();
     }
 }
+
+// Log outgoing response for debugging
+// error_log("Enquiry Response: " . json_encode($response));
 
 echo json_encode($response);
 exit;

@@ -1,3 +1,11 @@
+<?php
+// PHP Fallback for non-AJAX submissions
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['footer_enquiry_submit'])) {
+    require_once __DIR__ . '/../enquiry_handler.php';
+    // The handler will return JSON, but for standard POST we might want to stay on the page.
+    // However, the AJAX script below is the preferred method.
+}
+?>
 <footer class="footer">
     <div class="footer-logo-container">
         <!-- <div class="footer-logo">
@@ -132,3 +140,66 @@
         </div>
     </div>
 </footer>
+
+<script>
+    document.querySelector('.guidance-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const form = this;
+        const btn = document.getElementById('footer-submit-btn');
+        const responseDiv = document.getElementById('enquiry-response');
+        const formData = new FormData(form);
+        formData.append('footer_enquiry_submit', '1');
+        
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+        
+        // Ensure accurate path to enquiry_handler.php relative to the current page
+        // Since footer is included, BASE_URL is the safest bet
+        fetch('<?= BASE_URL ?>/enquiry_handler.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            responseDiv.style.display = 'block';
+            responseDiv.className = 'alert ' + (data.status === 'success' ? 'alert-success' : 'alert-danger');
+            responseDiv.innerHTML = data.message;
+            responseDiv.style.padding = '15px';
+            responseDiv.style.borderRadius = '5px';
+            responseDiv.style.marginBottom = '20px';
+            responseDiv.style.color = 'white';
+            responseDiv.style.backgroundColor = data.status === 'success' ? '#28a745' : '#dc3545';
+            
+            if (data.status === 'success') {
+                form.reset();
+                document.getElementById('file-name').innerText = 'No file chosen';
+                // Optional: hide message after 5 seconds
+                setTimeout(() => { responseDiv.style.display = 'none'; }, 5000);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            responseDiv.style.display = 'block';
+            responseDiv.style.color = 'white';
+            responseDiv.style.backgroundColor = '#dc3545';
+            responseDiv.style.padding = '15px';
+            responseDiv.style.borderRadius = '5px';
+            responseDiv.innerHTML = 'An unexpected error occurred. Please try again.';
+        })
+        .finally(() => {
+            btn.disabled = false;
+            btn.innerHTML = 'Submit';
+        });
+    });
+
+    // File name display enhancement
+    const fileInput = document.getElementById('file-upload');
+    if (fileInput) {
+        fileInput.addEventListener('change', function() {
+            var fileName = this.files[0] ? this.files[0].name : "No file chosen";
+            const fileNameDisplay = document.getElementById('file-name');
+            if (fileNameDisplay) fileNameDisplay.innerText = fileName;
+        });
+    }
+</script>

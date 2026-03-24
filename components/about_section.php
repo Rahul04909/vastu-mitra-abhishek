@@ -24,11 +24,11 @@
 
             <div class="stats-grid">
                 <div class="stat-item">
-                    <h3 class="stat-number">15,000+</h3>
+                    <h3 class="stat-number">5,000+</h3>
                     <p class="stat-label">Happy Clients</p>
                 </div>
                 <div class="stat-item">
-                    <h3 class="stat-number">40+</h3>
+                    <h3 class="stat-number">16+</h3>
                     <p class="stat-label">Experience</p>
                 </div>
             </div>

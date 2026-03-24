@@ -47,16 +47,9 @@
                 
                 <textarea name="message" placeholder="Enter Message Here"></textarea>
                 
-                <div class="captcha-placeholder">
-                    <!-- Placeholder for reCAPTCHA -->
-                    <div class="dummy-captcha">
-                        <input type="checkbox" id="captcha">
-                        <label for="captcha">I'm not a robot</label>
-                        <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA">
-                    </div>
-                </div>
+                <div id="enquiry-response" style="margin-bottom: 20px; display: none;"></div>
                 
-                <button type="submit" class="footer-submit-btn">Submit</button>
+                <button type="submit" class="footer-submit-btn" id="footer-submit-btn">Submit</button>
             </form>
         </div>
 

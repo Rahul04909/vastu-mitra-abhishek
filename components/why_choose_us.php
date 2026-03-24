@@ -30,7 +30,7 @@
                     <i class="fas fa-globe"></i>
                 </div>
                 <h3>Global Consultation</h3>
-                <p>We provide world-class online Vastu services to clients across India, USA, UK, and beyond.</p>
+                <p>We provide world-class online Vastu services to clients across India, Australia, Middle East, USA, UK, and beyond.</p>
             </div>
 
             <!-- Benefit 4 -->

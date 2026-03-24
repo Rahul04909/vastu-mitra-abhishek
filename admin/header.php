@@ -397,37 +397,32 @@ $active_page = $active_pageInfo['active_page'] ?? null;
     <div class="wrapper">
         <!-- Wrapper started -->
 
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <div class="nav-link">
-                        <i class="fas fa-th-large"></i>
-                    </div>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="<?= ADMIN_URL ?>/index.php" class="nav-link">Home</a>
-                </li>
-            </ul>
-            <form class="form-inline ml-3">
-                <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search" name="search">
-                    <div class="input-group-append">
-                        <button class="btn btn-navbar" type="submit">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light px-3 shadow-none border-bottom">
+            <!-- Left Side: News Ticker -->
+            <div class="d-flex align-items-center flex-grow-1 overflow-hidden">
+                <div class="bg-primary text-white px-3 py-1 rounded-pill small font-weight-bold mr-3 shadow-sm" style="white-space: nowrap; font-size: 0.75rem;">
+                    <i class="fas fa-bullhorn mr-1"></i> DASHBOARD UPDATE
                 </div>
-            </form>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#messages">
-                        <i class="far fa-comments"></i>
-                        <span class="badge badge-danger navbar-badge">2</span>
+                <marquee class="text-primary font-weight-bold" scrollamount="5" behavior="scroll" direction="left" style="font-size: 0.9rem; opacity: 0.8;">
+                   Welcome to Vastu Mitra Abhishek Admin Dashboard! You can now manage your residential, commercial, industrial and personal vastu enquiries efficiently.
+                </marquee>
+            </div>
+
+            <!-- Right Side: Quick Action Buttons -->
+            <ul class="navbar-nav ml-auto align-items-center" style="gap: 8px;">
+                <li class="nav-item d-none d-lg-block">
+                    <a href="<?= ADMIN_URL ?>/products/index.php" class="btn btn-sm btn-outline-success font-weight-bold px-3 rounded-pill shadow-sm">
+                        <i class="fas fa-plus-circle mr-1"></i> Add Product
                     </a>
                 </li>
-                <li class="nav-item dropdown"><a class="nav-link" href="#notifications">
-                        <i class="far fa-bell"></i>
-                        <span class="badge badge-warning navbar-badge">5</span>
+                <li class="nav-item d-none d-lg-block">
+                    <a href="<?= ADMIN_URL ?>/blogs/index.php" class="btn btn-sm btn-outline-info font-weight-bold px-3 rounded-pill shadow-sm">
+                        <i class="fas fa-edit mr-1"></i> New Blog
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= ADMIN_URL ?>/enquiries/index.php" class="btn btn-sm btn-primary font-weight-bold px-4 rounded-pill shadow-sm">
+                        <i class="fas fa-envelope mr-1"></i> Enquiries
                     </a>
                 </li>
             </ul>

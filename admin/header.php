@@ -397,35 +397,65 @@ $active_page = $active_pageInfo['active_page'] ?? null;
     <div class="wrapper">
         <!-- Wrapper started -->
 
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light px-3 shadow-none border-bottom">
-            <!-- Left Side: News Ticker -->
-            <div class="d-flex align-items-center flex-grow-1 overflow-hidden">
-                <div class="bg-primary text-white px-3 py-1 rounded-pill small font-weight-bold mr-3 shadow-sm" style="white-space: nowrap; font-size: 0.75rem;">
-                    <i class="fas fa-bullhorn mr-1"></i> DASHBOARD UPDATE
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light px-3 border-bottom shadow-sm">
+            <!-- Left Side: Professional News Ticker -->
+            <div class="d-flex align-items-center flex-grow-1 overflow-hidden" style="max-width: 60%;">
+                <div class="ticker-container w-100">
+                    <div class="ticker-text font-weight-normal text-primary">
+                        Welcome to Vastu Mitra Abhishek Admin Dashboard! Manage your residential, commercial, industrial and personal vastu enquiries efficiently.
+                    </div>
                 </div>
-                <marquee class="text-primary font-weight-bold" scrollamount="5" behavior="scroll" direction="left" style="font-size: 0.9rem; opacity: 0.8;">
-                   Welcome to Vastu Mitra Abhishek Admin Dashboard! You can now manage your residential, commercial, industrial and personal vastu enquiries efficiently.
-                </marquee>
             </div>
 
-            <!-- Right Side: Quick Action Buttons -->
-            <ul class="navbar-nav ml-auto align-items-center" style="gap: 8px;">
-                <li class="nav-item d-none d-lg-block">
-                    <a href="<?= ADMIN_URL ?>/products/index.php" class="btn btn-sm btn-outline-success font-weight-bold px-3 rounded-pill shadow-sm">
-                        <i class="fas fa-plus-circle mr-1"></i> Add Product
+            <!-- Right Side: Professional Quick Actions -->
+            <ul class="navbar-nav ml-auto align-items-center">
+                <li class="nav-item d-none d-lg-block mr-2">
+                    <a href="<?= ADMIN_URL ?>/products/index.php" class="btn btn-sm btn-outline-primary border-0 rounded-0">
+                        <i class="fas fa-plus mr-1"></i> Add Product
                     </a>
                 </li>
-                <li class="nav-item d-none d-lg-block">
-                    <a href="<?= ADMIN_URL ?>/blogs/index.php" class="btn btn-sm btn-outline-info font-weight-bold px-3 rounded-pill shadow-sm">
+                <li class="nav-item d-none d-lg-block mr-2">
+                    <a href="<?= ADMIN_URL ?>/blogs/index.php" class="btn btn-sm btn-outline-primary border-0 rounded-0">
                         <i class="fas fa-edit mr-1"></i> New Blog
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= ADMIN_URL ?>/enquiries/index.php" class="btn btn-sm btn-primary font-weight-bold px-4 rounded-pill shadow-sm">
+                    <a href="<?= ADMIN_URL ?>/enquiries/index.php" class="btn btn-sm btn-primary px-3 rounded-0 shadow-sm">
                         <i class="fas fa-envelope mr-1"></i> Enquiries
                     </a>
                 </li>
             </ul>
+
+            <style>
+                .ticker-container {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    position: relative;
+                }
+                .ticker-text {
+                    display: inline-block;
+                    padding-left: 100%;
+                    animation: ticker 30s linear infinite;
+                    font-size: 0.95rem;
+                }
+                @keyframes ticker {
+                    0% { transform: translate3d(0, 0, 0); }
+                    100% { transform: translate3d(-200%, 0, 0); }
+                }
+                .ticker-text:hover {
+                    animation-play-state: paused;
+                }
+                .navbar-nav .btn {
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    transition: all 0.3s;
+                }
+                .navbar-nav .btn-outline-primary:hover {
+                    background: transparent;
+                    color: #007bff;
+                    text-decoration: underline;
+                }
+            </style>
         </nav>
 
         <div class="main-header" style="padding: 0px 10px; background-color: #f4f6f9; border-bottom: none !important;">

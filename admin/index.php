@@ -1,17 +1,20 @@
 <?php 
 include './header.php'; 
 
-// Fetch real-time stats
-$total_products = $dbh->query("SELECT COUNT(*) FROM products")->fetchColumn();
-$total_blogs = $dbh->query("SELECT COUNT(*) FROM blogs")->fetchColumn();
-$total_enquiries = $dbh->query("SELECT COUNT(*) FROM enquiries")->fetchColumn();
-
-// Self-healing check for product_enquiries table (just in case)
-try {
-    $total_product_enquiries = $dbh->query("SELECT COUNT(*) FROM product_enquiries")->fetchColumn();
-} catch (Exception $e) {
-    $total_product_enquiries = 0;
+// Fetch real-time stats with robust error handling (self-healing)
+function getCount($dbh, $table) {
+    try {
+        $stmt = $dbh->query("SELECT COUNT(*) FROM `$table` shadow_none");
+        return $stmt ? (int)$stmt->fetchColumn() : 0;
+    } catch (Exception $e) {
+        return 0;
+    }
 }
+
+$total_products = getCount($dbh, 'products');
+$total_blogs = getCount($dbh, 'blogs');
+$total_enquiries = getCount($dbh, 'footer_enquiries');
+$total_product_enquiries = getCount($dbh, 'product_enquiries');
 ?>
 
 <div class="row pt-3">

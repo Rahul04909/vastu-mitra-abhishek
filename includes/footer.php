@@ -1,8 +1,8 @@
 <footer class="footer">
     <div class="footer-logo-container">
-        <div class="footer-logo">
+        <!-- <div class="footer-logo">
             <img src="<?= BASE_URL ?>/assets/logo/logo.png" alt="AppliedVastu Logo">
-        </div>
+        </div> -->
     </div>
     
     <div class="container footer-content">

@@ -1,6 +1,7 @@
 <?php require_once __DIR__ . '/database/db_config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +22,8 @@
     <link rel="stylesheet" href="assets/css/services_section.css">
     <!-- Why Choose Us CSS -->
     <link rel="stylesheet" href="assets/css/why_choose_us.css">
-    <!-- Ads Banner CSS -->
-    <link rel="stylesheet" href="assets/css/ads-banner.css">
 </head>
+
 <body>
 
     <?php include 'includes/header.php'; ?>
@@ -31,7 +31,6 @@
     <?php include 'components/about_section.php'; ?>
     <?php include 'components/services_section.php'; ?>
     <?php include 'components/why_choose_us.php'; ?>
-    <?php include 'components/ads-banner.php'; ?>
 
     <?php include 'includes/footer.php'; ?>
 
@@ -39,4 +38,5 @@
     <script src="assets/js/header.js"></script>
     <script src="assets/js/hero.js"></script>
 </body>
+
 </html>

@@ -21,6 +21,7 @@ $meta_keywords = "vastu logo design, business logo vastu, brand identity vastu, 
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/header.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/footer.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/service-page.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/ads-banner.css">
     
     <!-- Icons & Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -33,39 +34,7 @@ $meta_keywords = "vastu logo design, business logo vastu, brand identity vastu, 
             --vastu-light: #f8faff;
         }
 
-        /* Unique Hero Enhancement */
-        .unique-hero {
-            padding: 180px 0 120px;
-            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
-            color: white;
-            text-align: center;
-            position: relative;
-            z-index: 10;
-        }
-
-        .unique-hero::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZD0iTTUwIDUgTDUgNTAgTDUwIDk1IEw5NSA1MCBaIiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+');
-            opacity: 0.3;
-            z-index: -1;
-        }
-
-        .unique-hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 800;
-            margin-bottom: 25px;
-            text-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-
-        .unique-hero p {
-            font-size: 1.25rem;
-            max-width: 800px;
-            margin: 0 auto;
-            opacity: 0.9;
-            line-height: 1.8;
-        }
+        /* Unique Layout Enhancements */
 
         /* Deep Content Sections */
         .deep-content-wrap {
@@ -184,7 +153,6 @@ $meta_keywords = "vastu logo design, business logo vastu, brand identity vastu, 
         @media (max-width: 768px) {
             .accent-box { padding: 30px; }
             .step-item { flex-direction: column; gap: 15px; }
-            .unique-hero { padding: 150px 0 80px; }
         }
     </style>
 </head>
@@ -192,14 +160,7 @@ $meta_keywords = "vastu logo design, business logo vastu, brand identity vastu, 
 
     <?php include __DIR__ . '/../includes/header.php'; ?>
 
-    <!-- Hero Section -->
-    <header class="unique-hero">
-        <div class="container animate-up">
-            <span class="expert-tag" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); margin-bottom: 20px;">Premium Branding & Energy Sync</span>
-            <h1>Sacred Branding: Vastu Logo Design Expert</h1>
-            <p>Transform your business identity into a powerful energy instrument. At Vastu Mitra Abhishek, we don't just design logos—we align your brand's face with the cosmic vibrations of success, growth, and prosperity.</p>
-        </div>
-    </header>
+    <?php include __DIR__ . '/../components/ads-banner.php'; ?>
 
     <main class="deep-content-wrap">
         <div class="container">

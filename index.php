@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/services_section.css">
     <!-- Why Choose Us CSS -->
     <link rel="stylesheet" href="assets/css/why_choose_us.css">
+    <!-- Ads Banner CSS -->
+    <link rel="stylesheet" href="assets/css/ads-banner.css">
 </head>
 <body>
 
@@ -29,6 +31,7 @@
     <?php include 'components/about_section.php'; ?>
     <?php include 'components/services_section.php'; ?>
     <?php include 'components/why_choose_us.php'; ?>
+    <?php include 'components/ads-banner.php'; ?>
 
     <?php include 'includes/footer.php'; ?>
 

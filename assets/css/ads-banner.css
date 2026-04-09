@@ -1,15 +1,11 @@
 .ads-banner-section {
     padding: 60px 0;
     background-color: #f9fbfd;
-}
-
-.ads-banner-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    overflow: hidden; /* Prevent any potential overflow */
 }
 
 .ads-banner-img {
+    max-width: 100%;
     width: 100%;
     height: auto;
     display: block;
@@ -18,17 +14,7 @@
     transition: transform 0.3s ease;
 }
 
-.ads-banner-img:hover {
-    transform: scale(1.01);
-}
-
 /* Responsive adjustments */
-@media screen and (max-width: 1200px) {
-    .ads-banner-container {
-        max-width: 100%;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .ads-banner-section {
         padding: 40px 0;

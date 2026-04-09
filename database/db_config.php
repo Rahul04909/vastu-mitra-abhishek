@@ -1,9 +1,9 @@
 <?php
 // Database configuration
 $db_host = 'localhost';
-$db_user = 'jghfrodu_vastu-mitra'; // default XAMPP/WAMP username
+$db_user = 'bargain1_vastu-mitra'; // default XAMPP/WAMP username
 $db_pass = 'Rd14072003@./';     // default XAMPP/WAMP password
-$db_name = 'jghfrodu_vastu-mitra';
+$db_name = 'bargain1_vastu-mitra';
 
 // Create connection
 $conn = new mysqli($db_host, $db_user, $db_pass);
@@ -38,12 +38,12 @@ try {
 if (!defined('BASE_URL')) {
     $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
     $host = $_SERVER['HTTP_HOST'];
-    
+
     // Get project root folder relative to document root
     $project_root = str_replace('\\', '/', dirname(__DIR__));
     $document_root = str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']);
     $relative_path = str_replace($document_root, '', $project_root);
-    
+
     // Ensure leading slash but no trailing slash
     $base_url = $protocol . '://' . $host . rtrim($relative_path, '/');
     define('BASE_URL', $base_url);

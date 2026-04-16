@@ -141,12 +141,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['footer_enquiry_submit
                     src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
             <a href="https://linkedin.com" target="_blank"><img
                     src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
-            <a href="https://twitter.com" target="_blank"><img
-                    src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="X"></a>
+            <!-- <a href="https://twitter.com" target="_blank"><img
+                    src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="X"></a> -->
             <a href="https://youtube.com" target="_blank"><img
                     src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
-            <a href="https://pinterest.com" target="_blank"><img
-                    src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest"></a>
+            <!-- <a href="https://pinterest.com" target="_blank"><img
+                    src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest"></a> -->
         </div>
         <div class="copyright">
             <p>(C) Copyright 2019-2026, All Rights Reserved. A Website Powered By <a href="https://www.mineib.com"

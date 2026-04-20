@@ -11,8 +11,8 @@
 }
 
 .service-hero {
-    padding: 160px 0 80px;
-    background: linear-gradient(135deg, var(--service-primary) 0%, #25255a 100%);
+    padding: 140px 0 120px;
+    background: #151535;
     color: white;
     text-align: center;
     position: relative;
@@ -31,19 +31,19 @@
 }
 
 .service-hero h1 {
-    font-size: 3.2rem;
+    font-size: 3.8rem;
     font-weight: 700;
-    margin-bottom: 25px;
-    letter-spacing: -1px;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
 }
 
 .service-hero p {
-    font-size: 1.25rem;
-    max-width: 750px;
+    font-size: 1.3rem;
+    max-width: 800px;
     margin: 0 auto;
-    opacity: 0.85;
+    opacity: 0.95;
     line-height: 1.6;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .service-content-section {

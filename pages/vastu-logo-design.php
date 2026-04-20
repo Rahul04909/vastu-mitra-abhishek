@@ -21,7 +21,6 @@ $meta_keywords = "vastu logo design, business logo vastu, brand identity vastu, 
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/header.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/footer.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/service-page.css">
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/ads-banner.css">
     
     <!-- Icons & Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -160,7 +159,13 @@ $meta_keywords = "vastu logo design, business logo vastu, brand identity vastu, 
 
     <?php include __DIR__ . '/../includes/header.php'; ?>
 
-    <?php include __DIR__ . '/../components/ads-banner.php'; ?>
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <h1>Scientific Vastu Logo Design</h1>
+            <p>Unlock business prosperity with a scientifically designed Vastu Logo that aligns with your energy and mirrors your brand's destiny.</p>
+        </div>
+    </section>
 
     <main class="deep-content-wrap">
         <div class="container">

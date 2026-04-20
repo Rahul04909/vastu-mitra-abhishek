@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="assets/css/services_section.css">
     <!-- Why Choose Us CSS -->
     <link rel="stylesheet" href="assets/css/why_choose_us.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -37,6 +39,8 @@
     <!-- Scripts -->
     <script src="assets/js/header.js"></script>
     <script src="assets/js/hero.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

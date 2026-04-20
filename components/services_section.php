@@ -14,13 +14,13 @@
                         <div class="service-image">
                             <img src="assets/images/residential-vastu.jpg" alt="Residential Vastu">
                             <div class="service-overlay">
-                                <a href="pages/residential-vastu.php" class="service-btn">Enquire Now</a>
+                                <a href="<?= BASE_URL ?>/pages/residential-vastu.php" class="service-btn">Enquire Now</a>
                             </div>
                         </div>
                         <div class="service-info">
                             <h3>Residential Vastu</h3>
                             <p>Harmonize your home environment to invite health, wealth, and happiness for your family.</p>
-                            <a href="pages/residential-vastu.php" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="<?= BASE_URL ?>/pages/residential-vastu.php" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -31,13 +31,13 @@
                         <div class="service-image">
                             <img src="assets/images/commercial-vastu.jpg" alt="Commercial Vastu">
                             <div class="service-overlay">
-                                <a href="pages/commercial-vastu.php" class="service-btn">Enquire Now</a>
+                                <a href="<?= BASE_URL ?>/pages/commercial-vastu.php" class="service-btn">Enquire Now</a>
                             </div>
                         </div>
                         <div class="service-info">
                             <h3>Commercial Vastu</h3>
                             <p>Expert guidance for shops and showrooms to ensure business growth and customer footfall.</p>
-                            <a href="pages/commercial-vastu.php" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="<?= BASE_URL ?>/pages/commercial-vastu.php" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -48,13 +48,13 @@
                         <div class="service-image">
                             <img src="assets/images/industrial-vastu.jpg" alt="Industrial Vastu">
                             <div class="service-overlay">
-                                <a href="pages/industrial-vastu.php" class="service-btn">Enquire Now</a>
+                                <a href="<?= BASE_URL ?>/pages/industrial-vastu.php" class="service-btn">Enquire Now</a>
                             </div>
                         </div>
                         <div class="service-info">
                             <h3>Industrial Vastu</h3>
                             <p>Optimizing energy flow in factories and plants to improve production and reduce losses.</p>
-                            <a href="pages/industrial-vastu.php" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="<?= BASE_URL ?>/pages/industrial-vastu.php" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -65,13 +65,13 @@
                         <div class="service-image">
                             <img src="assets/images/personal-vastu.jpg" alt="Personal Vastu">
                             <div class="service-overlay">
-                                <a href="pages/personal-vastu.php" class="service-btn">Enquire Now</a>
+                                <a href="<?= BASE_URL ?>/pages/personal-vastu.php" class="service-btn">Enquire Now</a>
                             </div>
                         </div>
                         <div class="service-info">
                             <h3>Personal Vastu</h3>
                             <p>Individualized Vastu consultation to align your personal space with your unique destiny.</p>
-                            <a href="pages/personal-vastu.php" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="<?= BASE_URL ?>/pages/personal-vastu.php" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -82,13 +82,13 @@
                         <div class="service-image">
                             <img src="assets/images/service-logo-design.jpg" alt="Vastu Logo Design">
                             <div class="service-overlay">
-                                <a href="pages/vastu-logo-design.php" class="service-btn">Enquire Now</a>
+                                <a href="<?= BASE_URL ?>/pages/vastu-logo-design.php" class="service-btn">Enquire Now</a>
                             </div>
                         </div>
                         <div class="service-info">
                             <h3>Vastu Logo Design</h3>
                             <p>Unlock business prosperity with a scientifically designed Vastu Logo that aligns with your energy.</p>
-                            <a href="pages/vastu-logo-design.php" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="<?= BASE_URL ?>/pages/vastu-logo-design.php" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

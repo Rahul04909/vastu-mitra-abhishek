@@ -105,8 +105,6 @@ $testimonials = [
                 </div>
                 <?php endforeach; ?>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
         </div>
 
         <div class="google-reviews-widget">
@@ -127,10 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
         },
         breakpoints: {
             768: {

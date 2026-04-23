@@ -27,7 +27,7 @@
 }
 
 .testimonials-swiper {
-    padding: 80px 10px 100px; /* Increased top padding for avatars and bottom for dots */
+    padding: 80px 10px 60px; /* Reduced bottom padding since dots are gone */
     width: 100%;
     overflow: visible !important; /* Critical for overlapping avatars */
 }
@@ -131,23 +131,6 @@
 }
 
 /* Swiper custom */
-.testimonials-section .swiper-pagination {
-    bottom: 30px !important;
-}
-.testimonials-section .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background: var(--primary-color);
-    opacity: 0.2;
-}
-
-.testimonials-section .swiper-pagination-bullet-active {
-    background: var(--secondary-color) !important;
-    opacity: 1;
-    width: 30px;
-    border-radius: 6px;
-}
-
 /* Google Widget Button */
 .google-reviews-widget {
     text-align: center;

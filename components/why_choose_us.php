@@ -21,7 +21,7 @@
                     <i class="fas fa-check-circle"></i>
                 </div>
                 <h3>Accurate Results</h3>
-                <p>With 40+ years of experience, we provide precise guidance that has transformed 15,000+ lives.</p>
+                <p>With 16+ years of experience, we provide precise guidance that has transformed 5000+ lives.</p>
             </div>
 
             <!-- Benefit 3 -->

@@ -2,17 +2,17 @@
     <div class="slider-container">
         <!-- Slide 1 -->
         <div class="slide active">
-            <img src="assets/slider/hero-slider-1.png" alt="Vastu Consultancy">
+            <img src="assets/slider/hero-slider.jpeg" alt="Vastu Consultancy">
         </div>
-        
+
         <!-- Slide 2 -->
         <div class="slide">
             <img src="assets/slider/hero-slider-1.png" alt="Astrology Guidance">
         </div>
-        
+
         <!-- Slide 3 -->
         <div class="slide">
-            <img src="assets/slider/hero-slider-1.png" alt="Product Shop">
+            <img src="assets/slider/hero-slider.jpeg" alt="Product Shop">
         </div>
 
         <!-- Navigation Arrows -->

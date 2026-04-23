@@ -23,6 +23,7 @@ $meta_keywords = "best vastu consultant india, vastu mitra abhishek, vastu exper
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/footer.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/about.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/services_section.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/testimonials.css">
 
     <!-- Icons & Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -116,6 +117,9 @@ $meta_keywords = "best vastu consultant india, vastu mitra abhishek, vastu exper
 
     <!-- Services Component -->
     <?php include __DIR__ . '/components/services_section.php'; ?>
+
+    <!-- Testimonials Component -->
+    <?php include __DIR__ . '/components/testimonials.php'; ?>
 
     <!-- Map Section -->
     <section class="about-map-section">

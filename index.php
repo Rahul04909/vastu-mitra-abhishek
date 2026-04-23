@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="assets/css/services_section.css">
     <!-- Why Choose Us CSS -->
     <link rel="stylesheet" href="assets/css/why_choose_us.css">
+    <!-- Testimonials CSS -->
+    <link rel="stylesheet" href="assets/css/testimonials.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
@@ -33,6 +35,7 @@
     <?php include 'components/about_section.php'; ?>
     <?php include 'components/services_section.php'; ?>
     <?php include 'components/why_choose_us.php'; ?>
+    <?php include 'components/testimonials.php'; ?>
 
     <?php include 'includes/footer.php'; ?>
 

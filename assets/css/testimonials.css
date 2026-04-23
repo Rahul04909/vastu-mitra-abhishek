@@ -27,13 +27,23 @@
 }
 
 .testimonials-swiper {
-    padding: 60px 10px 80px;
+    padding: 80px 10px 100px; /* Increased top padding for avatars and bottom for dots */
     width: 100%;
+    overflow: visible !important; /* Critical for overlapping avatars */
+}
+
+.testimonials-swiper .swiper-wrapper {
+    overflow: visible !important;
+}
+
+.testimonials-swiper .swiper-slide {
+    height: auto;
+    overflow: visible !important;
 }
 
 .testimonial-card {
-    background: #0d1b11; /* Dark Greenish/Indigo like sample */
-    padding: 60px 30px 40px;
+    background: #0d1b11; /* Dark Greenish like sample */
+    padding: 70px 30px 40px;
     border-radius: 30px;
     text-align: center;
     position: relative;
@@ -41,6 +51,9 @@
     height: 100%;
     transition: var(--transition);
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .testimonial-card:hover {
@@ -68,53 +81,59 @@
 }
 
 .quote-icon {
-    font-size: 24px;
-    color: rgba(255, 255, 255, 0.2);
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.1);
     position: absolute;
+    font-family: serif; /* More classic quote look */
 }
 
 .quote-left {
-    top: 30px;
-    left: 30px;
+    top: 25px;
+    left: 25px;
 }
 
 .quote-right {
-    top: 30px;
-    right: 30px;
+    bottom: 25px;
+    right: 25px;
 }
 
 .testimonial-content {
-    font-size: 16px;
-    line-height: 1.8;
+    font-size: 17px;
+    line-height: 1.7;
     font-style: italic;
-    color: #cbd5e0;
-    margin-bottom: 30px;
+    color: #e2e8f0;
+    margin: 20px 0 30px;
     position: relative;
+    font-weight: 300;
 }
 
 .testimonial-content::after {
     content: '';
     display: block;
-    width: 50px;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 20px auto;
+    width: 60px;
+    height: 2px;
+    background: var(--secondary-color);
+    margin: 25px auto 0;
+    opacity: 0.5;
 }
 
 .testimonial-info h3 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     color: #fff;
     margin-bottom: 5px;
 }
 
 .testimonial-info p {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--secondary-color);
     font-weight: 500;
 }
 
 /* Swiper custom */
+.testimonials-section .swiper-pagination {
+    bottom: 30px !important;
+}
 .testimonials-section .swiper-pagination-bullet {
     width: 12px;
     height: 12px;

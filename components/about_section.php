@@ -5,9 +5,9 @@
             <div class="video-thumb">
                 <img src="assets/images/vastu-banner.jpeg" alt="Know Your Vastu Abhishek">
                 <div class="play-btn-overlay">
-                    <button class="play-btn" aria-label="Play Video">
+                    <a href="https://youtu.be/Lb1re-Balng?si=cYGCWxJ6NVHaiqva" target="_blank" class="play-btn" aria-label="Play Video">
                         <span class="play-icon"></span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

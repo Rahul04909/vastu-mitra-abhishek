@@ -52,7 +52,7 @@ $meta_keywords = "best vastu consultant india, vastu mitra abhishek, vastu exper
                 <div class="about-image-wrapper">
                     <img src="<?= BASE_URL ?>/assets/slider/about.jpeg" alt="Vastu Mitra Abhishek">
                     <div class="about-experience-badge">
-                        <span>12+</span>
+                        <span>16+</span>
                         <small>Years Experience</small>
                     </div>
                 </div>

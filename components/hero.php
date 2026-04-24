@@ -7,7 +7,7 @@
 
         <!-- Slide 2 -->
         <div class="slide">
-            <img src="assets/slider/hero-slider-1.png" alt="Astrology Guidance">
+            <img src="assets/slider/hero-slider.jpeg" alt="Astrology Guidance">
         </div>
 
         <!-- Slide 3 -->

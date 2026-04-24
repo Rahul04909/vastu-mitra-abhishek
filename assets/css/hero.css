@@ -90,25 +90,44 @@
 /* Responsive */
 @media screen and (max-width: 991px) {
     .slider-container {
-        height: 450px;
+        height: 400px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .slider-container {
-        height: 400px;
+        height: auto;
+        aspect-ratio: 16 / 9; /* Common banner aspect ratio */
+        min-height: 250px;
     }
+    
+    .slide img {
+        object-fit: fill; /* Forces the image to fit the aspect ratio container on mobile */
+    }
+
     .prev-btn, .next-btn {
-        padding: 15px 10px;
-        font-size: 18px;
+        padding: 12px 8px;
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .slider-container {
-        height: 350px;
+        aspect-ratio: 4 / 3; /* Slightly taller for small mobile screens to keep content readable */
+        min-height: 200px;
     }
+    
     .prev-btn, .next-btn {
         display: none; /* Hide arrows on small mobile to maximize content */
+    }
+    
+    .slider-dots {
+        bottom: 15px;
+        gap: 10px;
+    }
+    
+    .dot {
+        width: 8px;
+        height: 8px;
     }
 }

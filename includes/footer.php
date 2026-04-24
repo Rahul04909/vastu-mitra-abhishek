@@ -135,15 +135,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['footer_enquiry_submit
     <!-- Social & Copyright Section -->
     <div class="footer-bottom">
         <div class="social-icons">
-            <a href="https://facebook.com" target="_blank"><img
+            <a href="https://www.facebook.com/VastuMitraAbhishek" target="_blank"><img
                     src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-            <a href="https://instagram.com" target="_blank"><img
+            <a href="https://www.instagram.com/vastu_mitra_abhishek/" target="_blank"><img
                     src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
-            <a href="https://linkedin.com" target="_blank"><img
+            <a href="https://in.linkedin.com/in/vastumitraabhishek" target="_blank"><img
                     src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
             <!-- <a href="https://twitter.com" target="_blank"><img
                     src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="X"></a> -->
-            <a href="https://youtube.com" target="_blank"><img
+            <a href="https://youtu.be/Lb1re-Balng?si=cYGCWxJ6NVHaiqva" target="_blank"><img
                     src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
             <!-- <a href="https://pinterest.com" target="_blank"><img
                     src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest"></a> -->

@@ -4,75 +4,77 @@ $testimonials = [
         'name' => 'Rajesh Sharma',
         'role' => 'Businessman, Delhi',
         'content' => 'Vastu Mitra Abhishek changed the energy of my office completely. Within 3 months, our footfall increased by 40%. His scientific approach is truly impressive.',
-        'image' => 'https://randomuser.me/api/portraits/men/1.jpg'
+        'image' => 'assets/images/testimonials/male_1.png'
     ],
     [
         'name' => 'Priya Verma',
         'role' => 'IT Professional, Bangalore',
         'content' => 'I was facing continuous health issues in my new apartment. Abhishek identified the kitchen dosha and suggested simple remedies. I feel much better now!',
-        'image' => 'https://randomuser.me/api/portraits/women/2.jpg'
+        'image' => 'assets/images/testimonials/female_1.png'
     ],
     [
         'name' => 'Amit Khanna',
         'role' => 'Industrialist, Mumbai',
         'content' => 'The Industrial Vastu consultation was eye-opening. We optimized our machine placement as per his advice, and the production efficiency has improved significantly.',
-        'image' => 'https://randomuser.me/api/portraits/men/3.jpg'
+        'image' => 'assets/images/testimonials/male_2.png'
     ],
     [
         'name' => 'Sneha Gupta',
         'role' => 'Home Maker, Jaipur',
         'content' => 'Very professional and polite. He explains everything logically. Our family life has become much more harmonious after following his Vastu tips.',
-        'image' => 'https://randomuser.me/api/portraits/women/4.jpg'
+        'image' => 'assets/images/testimonials/female_2.png'
     ],
     [
         'name' => 'Vikram Singh',
         'role' => 'Real Estate Developer, Gurgaon',
         'content' => 'I always consult Abhishek before starting any new project. His guidance on site planning is invaluable for the success of my buildings.',
-        'image' => 'https://randomuser.me/api/portraits/men/5.jpg'
+        'image' => 'assets/images/testimonials/male_3.png'
     ],
     [
         'name' => 'Anjali Desai',
         'role' => 'Doctor, Pune',
         'content' => 'Scientific Vastu is real! Abhishek proved it with his precise calculations. Highly recommended for anyone looking for authentic Vastu solutions.',
-        'image' => 'https://randomuser.me/api/portraits/women/6.jpg'
+        'image' => 'assets/images/testimonials/female_3.png'
     ],
     [
         'name' => 'Sandeep Reddy',
         'role' => 'Software Engineer, Hyderabad',
         'content' => 'Amazing experience. He didn\'t ask for major structural changes, just simple yet powerful remedies. My career growth has been phenomenal since then.',
-        'image' => 'https://randomuser.me/api/portraits/men/7.jpg'
+        'image' => 'assets/images/testimonials/male_4.png'
     ],
     [
         'name' => 'Meera Nair',
         'role' => 'Interior Designer, Kochi',
         'content' => 'I collaborate with Abhishek for my clients. His ability to blend Vastu with modern aesthetics is what makes him the best in the field.',
-        'image' => 'https://randomuser.me/api/portraits/women/8.jpg'
+        'image' => 'assets/images/testimonials/female_4.png'
     ],
     [
         'name' => 'Rohan Mehta',
         'role' => 'Shop Owner, Ahmedabad',
         'content' => 'Commercial Vastu works! My shop was struggling for 2 years. After Abhishek\'s visit and corrections, business is booming. Thank you, sir!',
-        'image' => 'https://randomuser.me/api/portraits/men/9.jpg'
+        'image' => 'assets/images/testimonials/male_5.png'
     ],
     [
         'name' => 'Kavita Joshi',
         'role' => 'Teacher, Lucknow',
         'content' => 'Deeply satisfied with the Personal Vastu consultation. It helped me clear my mental blocks and brought peace to my living space.',
-        'image' => 'https://randomuser.me/api/portraits/women/10.jpg'
+        'image' => 'assets/images/testimonials/female_5.png'
     ],
     [
         'name' => 'Arun Goel',
         'role' => 'CEO, Tech Startup, Noida',
         'content' => 'Vastu Mitra Abhishek is a genius. His scientific reasoning behind every Vastu principle convinced me to try his services, and the results are proof.',
-        'image' => 'https://randomuser.me/api/portraits/men/11.jpg'
+        'image' => 'assets/images/testimonials/male_6.png'
     ],
     [
         'name' => 'Pooja Kapoor',
         'role' => 'Fashion Designer, Chandigarh',
         'content' => 'The positive vibes in my studio are now palpable. Abhishek\'s expertise is unmatched. Highly professional and result-oriented!',
-        'image' => 'https://randomuser.me/api/portraits/women/12.jpg'
+        'image' => 'assets/images/testimonials/female_6.png'
     ]
 ];
+
+shuffle($testimonials);
 ?>
 
 <section class="testimonials-section">

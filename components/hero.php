@@ -5,15 +5,15 @@
             <img src="assets/slider/hero-slider.jpeg" alt="Vastu Consultancy">
         </div>
 
-        <!-- Slide 2 -->
+        <!-- Slide 2
         <div class="slide">
             <img src="assets/slider/hero-slider.jpeg" alt="Astrology Guidance">
         </div>
 
-        <!-- Slide 3 -->
-        <div class="slide">
+        Slide 3 -->
+        <!-- <div class="slide">
             <img src="assets/slider/hero-slider.jpeg" alt="Product Shop">
-        </div>
+        </div> -->
 
         <!-- Navigation Arrows -->
         <button class="prev-btn" aria-label="Previous Slide">&#10094;</button>

@@ -5,7 +5,8 @@
             <div class="video-thumb">
                 <img src="assets/images/vastu-banner.jpeg" alt="Know Your Vastu Abhishek">
                 <div class="play-btn-overlay">
-                    <a href="https://youtu.be/Lb1re-Balng?si=cYGCWxJ6NVHaiqva" target="_blank" class="play-btn" aria-label="Play Video">
+                    <a href="https://youtu.be/Lb1re-Balng?si=cYGCWxJ6NVHaiqva" target="_blank" class="play-btn"
+                        aria-label="Play Video">
                         <span class="play-icon"></span>
                     </a>
                 </div>
@@ -14,14 +15,18 @@
 
         <!-- Right Side: Content -->
         <div class="about-content">
-            <h2 class="section-title">Know Your Vastu Abhishek?</h2>
+            <h2 class="section-title">Know Your Astro Vastu Abhishek?</h2>
             <div class="section-desc">
-                <p>Vastu Mitra Abhishek is a highly experienced and acclaimed expert in Vastu shastra with incredible
-                    results in implementing Vastu solutions in solving personal life problems such as health, happiness,
-                    and finance, as well as performing Vastu for office space and industrial workplaces.</p>
-                <p>His expertise, experience, and approach truly make him the best vastu consultant in Delhi-NCR as well
-                    as in India. Get in touch with Vastu Mitra Abhishek for residential and personal Vastu, as well as
-                    Vastu for offices.</p>
+                <p>Vastu Mitra Abhishek is a highly experienced and acclaimed expert in Astro Vastu shastra with
+                    incredible
+                    results in implementing Astro Vastu solutions in solving personal life problems such as health,
+                    happiness,
+                    and finance, as well as performing Astro Vastu for office space and industrial workplaces.</p>
+                <p>His expertise, experience, and approach truly make him the best Astro vastu consultant in Delhi-NCR
+                    as well
+                    as in India. Get in touch with Vastu Mitra Abhishek for residential and personal Astro Vastu, as
+                    well as
+                    Astro Vastu for offices.</p>
             </div>
 
             <a href="about.php" class="btn-read-more">Read More</a>

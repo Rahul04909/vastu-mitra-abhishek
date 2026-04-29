@@ -2,7 +2,8 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title animated-title">Why Choose Vastu Mitra Abhishek?</h2>
-            <p class="section-subtitle">We blend ancient wisdom with modern living to create spaces that inspire prosperity and well-being.</p>
+            <p class="section-subtitle">We blend ancient wisdom with modern living to create spaces that inspire
+                prosperity and well-being.</p>
         </div>
 
         <div class="benefits-grid">
@@ -12,7 +13,8 @@
                     <i class="fas fa-microscope"></i>
                 </div>
                 <h3>100% Scientific Approach</h3>
-                <p>Our solutions are based on logical Vastu principles that align with modern architectural standards.</p>
+                <p>Our solutions are based on logical Astro Vastu principles that align with modern architectural
+                    standards.</p>
             </div>
 
             <!-- Benefit 2 -->
@@ -30,7 +32,8 @@
                     <i class="fas fa-globe"></i>
                 </div>
                 <h3>Global Consultation</h3>
-                <p>We provide world-class online Vastu services to clients across India, Australia, Middle East, USA, UK, and beyond.</p>
+                <p>We provide world-class online Astro Vastu services to clients across India, Australia, Middle East,
+                    USA, UK, and beyond.</p>
             </div>
 
             <!-- Benefit 4 -->
@@ -39,7 +42,8 @@
                     <i class="fas fa-hand-holding-heart"></i>
                 </div>
                 <h3>Personalized Solutions</h3>
-                <p>Every space is unique. We provide tailored Vastu remedies that suit your specific lifestyle and goals.</p>
+                <p>Every space is unique. We provide tailored Vastu remedies that suit your specific lifestyle and
+                    goals.</p>
             </div>
 
             <!-- Benefit 5 -->
@@ -48,7 +52,8 @@
                     <i class="fas fa-coins"></i>
                 </div>
                 <h3>Affordable & Effective</h3>
-                <p>Quality Vastu guidance shouldn't be a luxury. We offer premium services at competitive rates.</p>
+                <p>Quality Astro Vastu guidance shouldn't be a luxury. We offer premium services at competitive rates.
+                </p>
             </div>
 
             <!-- Benefit 6 -->
@@ -57,7 +62,8 @@
                     <i class="fas fa-headset"></i>
                 </div>
                 <h3>Lifetime Support</h3>
-                <p>Our relationship doesn't end after consultation. We provide ongoing support for your peace of mind.</p>
+                <p>Our relationship doesn't end after consultation. We provide ongoing support for your peace of mind.
+                </p>
             </div>
         </div>
     </div>

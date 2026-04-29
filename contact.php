@@ -34,7 +34,7 @@ $meta_keywords = "contact vastu mitra abhishek, vastu consultant faridabad, vast
     <section class="contact-hero">
         <div class="container">
             <h1>Contact Us</h1>
-            <p>Have questions about Vastu? We're here to help you harmonize your living and workspaces for success and peace.</p>
+            <p>Have questions about AstroVastu? We're here to help you harmonize your living and workspaces for success and peace.</p>
         </div>
     </section>
 

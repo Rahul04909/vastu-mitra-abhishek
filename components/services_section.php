@@ -1,7 +1,7 @@
 <section class="services-section">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Our Expert Vastu Services</h2>
+            <h2 class="section-title">Our Expert Astro Vastu Services</h2>
             <p class="section-subtitle">Comprehensive Vastu solutions tailored for your growth, prosperity, and peace of mind.</p>
         </div>
 
@@ -70,7 +70,7 @@
                         </div>
                         <div class="service-info">
                             <h3>Personal Vastu</h3>
-                            <p>Individualized Vastu consultation to align your personal space with your unique destiny.</p>
+                            <p>Individualized Astro Vastu consultation to align your personal space with your unique destiny.</p>
                             <a href="<?= BASE_URL ?>/pages/personal-vastu.php" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                         </div>
                         <div class="service-info">
                             <h3>Vastu Logo Design</h3>
-                            <p>Unlock business prosperity with a scientifically designed Vastu Logo that aligns with your energy.</p>
+                            <p>Unlock business prosperity with a scientifically designed Astro Vastu Logo that aligns with your energy.</p>
                             <a href="<?= BASE_URL ?>/pages/vastu-logo-design.php" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>

@@ -1,0 +1,16 @@
+[09-Apr-2026 07:16:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'jghfrodu_vastu-mitra'@'localhost' (using password: YES) in /home2/bargain1/vastu.bargainondeals.com/database/db_config.php:9
+Stack trace:
+#0 /home2/bargain1/vastu.bargainondeals.com/database/db_config.php(9): mysqli->__construct('localhost', 'jghfrodu_vastu-...', Object(SensitiveParameterValue))
+#1 /home2/bargain1/vastu.bargainondeals.com/admin/auth_init.php(44): require_once('/home2/bargain1...')
+#2 /home2/bargain1/vastu.bargainondeals.com/admin/header.php(2): require_once('/home2/bargain1...')
+#3 /home2/bargain1/vastu.bargainondeals.com/admin/index.php(2): include('/home2/bargain1...')
+#4 {main}
+  thrown in /home2/bargain1/vastu.bargainondeals.com/database/db_config.php on line 9
+[09-Apr-2026 07:16:41 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'jghfrodu_vastu-mitra'@'localhost' (using password: YES) in /home2/bargain1/vastu.bargainondeals.com/database/db_config.php:9
+Stack trace:
+#0 /home2/bargain1/vastu.bargainondeals.com/database/db_config.php(9): mysqli->__construct('localhost', 'jghfrodu_vastu-...', Object(SensitiveParameterValue))
+#1 /home2/bargain1/vastu.bargainondeals.com/admin/auth_init.php(44): require_once('/home2/bargain1...')
+#2 /home2/bargain1/vastu.bargainondeals.com/admin/header.php(2): require_once('/home2/bargain1...')
+#3 /home2/bargain1/vastu.bargainondeals.com/admin/index.php(2): include('/home2/bargain1...')
+#4 {main}
+  thrown in /home2/bargain1/vastu.bargainondeals.com/database/db_config.php on line 9

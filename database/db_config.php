@@ -1,9 +1,9 @@
 <?php
 // Database configuration
 $db_host = 'localhost';
-$db_user = 'bargain1_vastu-mitra'; // default XAMPP/WAMP username
+$db_user = 'mineib_i1_mineib'; // default XAMPP/WAMP username
 $db_pass = 'Rd14072003@./';     // default XAMPP/WAMP password
-$db_name = 'bargain1_vastu-mitra';
+$db_name = 'mineib_i1_vastu_mitra_abhishek';
 
 // Create connection
 $conn = new mysqli($db_host, $db_user, $db_pass);

@@ -7,25 +7,27 @@ $meta_keywords = "contact vastu mitra abhishek, vastu consultant faridabad, vast
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $page_title ?></title>
     <meta name="description" content="<?= $meta_desc ?>">
     <meta name="keywords" content="<?= $meta_keywords ?>">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="<?= BASE_URL ?>/favicon.png" type="image/x-icon">
-    
+
     <!-- External CSS -->
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/header.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/footer.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/contact.css">
-    
+
     <!-- Icons & Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <?php include __DIR__ . '/includes/header.php'; ?>
@@ -34,7 +36,8 @@ $meta_keywords = "contact vastu mitra abhishek, vastu consultant faridabad, vast
     <section class="contact-hero">
         <div class="container">
             <h1>Contact Us</h1>
-            <p>Have questions about AstroVastu? We're here to help you harmonize your living and workspaces for success and peace.</p>
+            <p>Have questions about AstroVastu? We're here to help you harmonize your living and workspaces for success
+                and peace.</p>
         </div>
     </section>
 
@@ -48,7 +51,8 @@ $meta_keywords = "contact vastu mitra abhishek, vastu consultant faridabad, vast
                         <div class="info-icon"><i class="fas fa-location-dot"></i></div>
                         <div class="info-details">
                             <h3>Our Office</h3>
-                            <p>B-119, First Floor, Main, Mall Rd, Greenfield Colony, Sector 41, Faridabad, Haryana 121010</p>
+                            <p>B-119, First Floor, Main, Mall Rd, Greenfield Colony, Sector 41, Faridabad, Haryana
+                                121010</p>
                         </div>
                     </div>
 
@@ -74,7 +78,7 @@ $meta_keywords = "contact vastu mitra abhishek, vastu consultant faridabad, vast
                         <div class="info-icon"><i class="fas fa-clock"></i></div>
                         <div class="info-details">
                             <h3>Working Hours</h3>
-                            <p>Mon - Sat: 10:00 AM - 7:00 PM</p>
+                            <p>Mon - Sat: 10:00 AM - 6:00 PM</p>
                             <p>Sunday: Closed</p>
                         </div>
                     </div>
@@ -85,15 +89,18 @@ $meta_keywords = "contact vastu mitra abhishek, vastu consultant faridabad, vast
                     <form action="#" method="POST" id="contactForm">
                         <div class="form-group">
                             <label for="name">Full Name*</label>
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                            <input type="text" id="name" name="name" class="form-control"
+                                placeholder="Enter your full name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address*</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number*</label>
-                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                            <input type="tel" id="phone" name="phone" class="form-control"
+                                placeholder="Enter your phone number" required>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
@@ -107,9 +114,11 @@ $meta_keywords = "contact vastu mitra abhishek, vastu consultant faridabad, vast
                         </div>
                         <div class="form-group">
                             <label for="message">Your Message*</label>
-                            <textarea id="message" name="message" class="form-control" placeholder="How can we help you?" required></textarea>
+                            <textarea id="message" name="message" class="form-control"
+                                placeholder="How can we help you?" required></textarea>
                         </div>
-                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                        <button type="submit" class="submit-btn">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
@@ -120,7 +129,9 @@ $meta_keywords = "contact vastu mitra abhishek, vastu consultant faridabad, vast
     <section class="map-section">
         <div class="container">
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112313.16016666874!2d77.243555!3d28.420455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cd99f1933f38d%3A0x423986a455f560e1!2sVastu%20Mitra%20Abhishek!5e0!3m2!1sen!2sin!4v1710662400000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112313.16016666874!2d77.243555!3d28.420455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cd99f1933f38d%3A0x423986a455f560e1!2sVastu%20Mitra%20Abhishek!5e0!3m2!1sen!2sin!4v1710662400000!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -131,10 +142,11 @@ $meta_keywords = "contact vastu mitra abhishek, vastu consultant faridabad, vast
     <script src="<?= BASE_URL ?>/assets/js/header.js"></script>
     <script>
         // Form Submission Handling (Optional/Placeholder)
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
             // e.preventDefault();
             // alert('Thank you for contacting us! We will get back to you soon.');
         });
     </script>
 </body>
+
 </html>

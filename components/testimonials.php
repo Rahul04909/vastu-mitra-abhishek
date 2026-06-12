@@ -1,28 +1,28 @@
 <?php
 $testimonials = [
     [
-        'name' => 'Rajesh Sharma',
-        'role' => 'Businessman, Delhi',
+        'name' => 'Mumkshu Shublaya',
+        'role' => 'client',
         'content' => 'Vastu Mitra Abhishek changed the energy of my office completely. Within 3 months, our footfall increased by 40%. His scientific approach is truly impressive.',
-        'image' => 'assets/images/testimonials/male_1.png'
+        'image' => 'assets/testimonial-1.jpeg'
     ],
     [
         'name' => 'Priya Verma',
         'role' => 'IT Professional, Bangalore',
         'content' => 'I was facing continuous health issues in my new apartment. Abhishek identified the kitchen dosha and suggested simple remedies. I feel much better now!',
-        'image' => 'assets/images/testimonials/female_1.png'
+        'image' => 'assets/testimonial-2.jpeg'
     ],
     [
         'name' => 'Amit Khanna',
         'role' => 'Industrialist, Mumbai',
         'content' => 'The Industrial Vastu consultation was eye-opening. We optimized our machine placement as per his advice, and the production efficiency has improved significantly.',
-        'image' => 'assets/images/testimonials/male_2.png'
+        'image' => 'assets/testimonial-3.jpeg'
     ],
     [
         'name' => 'Sneha Gupta',
         'role' => 'Home Maker, Jaipur',
         'content' => 'Very professional and polite. He explains everything logically. Our family life has become much more harmonious after following his Vastu tips.',
-        'image' => 'assets/images/testimonials/female_2.png'
+        'image' => 'assets/testimonial-4.jpeg'
     ],
     [
         'name' => 'Vikram Singh',

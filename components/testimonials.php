@@ -13,19 +13,19 @@ $testimonials = [
         'image' => 'assets/images/testimonials/test-2.jpeg'
     ],
     [
-        'name' => 'Amit Khanna',
+        'name' => 'Ruchi',
         'role' => 'Industrialist, Mumbai',
         'content' => 'The Industrial Vastu consultation was eye-opening. We optimized our machine placement as per his advice, and the production efficiency has improved significantly.',
         'image' => 'assets/images/testimonials/test-3.jpeg'
     ],
     [
-        'name' => 'Sneha Gupta',
+        'name' => 'Vivek Gupta',
         'role' => 'Home Maker, Jaipur',
         'content' => 'Very professional and polite. He explains everything logically. Our family life has become much more harmonious after following his Vastu tips.',
         'image' => 'assets/images/testimonials/test-4.jpeg'
     ],
     [
-        'name' => 'Vikram Singh',
+        'name' => 'Ranjhan Kapoor',
         'role' => 'Real Estate Developer, Gurgaon',
         'content' => 'I always consult Abhishek before starting any new project. His guidance on site planning is invaluable for the success of my buildings.',
         'image' => 'assets/images/testimonials/test-5.jpeg'

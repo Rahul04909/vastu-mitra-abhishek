@@ -1,13 +1,13 @@
 <?php
 $testimonials = [
     [
-        'name' => 'Mumkshu Shublaya',
+        'name' => 'Priya Verma',
         'role' => 'client',
         'content' => 'Vastu Mitra Abhishek changed the energy of my office completely. Within 3 months, our footfall increased by 40%. His scientific approach is truly impressive.',
         'image' => 'assets/images/testimonials/test-1.jpeg'
     ],
     [
-        'name' => 'Priya Verma',
+        'name' => 'Mumkshu Shublaya',
         'role' => 'IT Professional, Bangalore',
         'content' => 'I was facing continuous health issues in my new apartment. Abhishek identified the kitchen dosha and suggested simple remedies. I feel much better now!',
         'image' => 'assets/images/testimonials/test-2.jpeg'

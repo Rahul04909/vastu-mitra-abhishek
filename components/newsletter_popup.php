@@ -12,7 +12,7 @@
 
         <div class="newsletter-form-col">
             <div class="form-header">
-                <h2>Subscribe to Newsletter</h2>
+                <h2>Register for रुद्राभिषेक महापूजन</h2>
                 <p>Get Vastu tips &amp; exclusive offers straight to your inbox</p>
             </div>
 

@@ -3,10 +3,10 @@
         <button class="newsletter-close" id="newsletterClose" aria-label="Close">&times;</button>
 
         <div class="newsletter-image-col">
-            <img src="<?= BASE_URL ?>/assets/images/vastu-banner.jpeg" alt="Vastu Mitra Abhishek" loading="lazy">
+            <img src="<?= BASE_URL ?>/assets/images/newsletter.png" alt="Vastu Mitra Abhishek" loading="lazy">
             <div class="image-overlay-text">
-                <h3>Vastu Mitra Abhishek</h3>
-                <p>Get expert Vastu guidance for a harmonious &amp; prosperous life</p>
+                <h3></h3>
+                <p></p>
             </div>
         </div>
 

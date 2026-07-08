@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="assets/css/testimonials.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Newsletter Popup CSS -->
+    <link rel="stylesheet" href="assets/css/newsletter-popup.css">
 </head>
 
 <body>
@@ -39,11 +41,15 @@
 
     <?php include 'includes/footer.php'; ?>
 
+    <?php include 'components/newsletter_popup.php'; ?>
+
     <!-- Scripts -->
     <script src="assets/js/header.js"></script>
     <script src="assets/js/hero.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Newsletter Popup JS -->
+    <script src="assets/js/newsletter-popup.js"></script>
 </body>
 
 </html>

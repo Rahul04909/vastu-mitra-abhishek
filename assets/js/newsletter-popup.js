@@ -8,6 +8,40 @@
     var responseDiv = document.getElementById('newsletterResponse');
     var shownThisSession = sessionStorage.getItem('newsletterShown');
 
+    function setupQuantityStepper() {
+        var steppers = document.querySelectorAll('.quantity-stepper');
+        steppers.forEach(function (stepper) {
+            var input = stepper.querySelector('input[type="number"]');
+            var minusBtn = stepper.querySelector('.qty-minus');
+            var plusBtn = stepper.querySelector('.qty-plus');
+
+            if (!input) return;
+
+            function updateValue(change) {
+                var min = parseInt(input.getAttribute('min')) || 1;
+                var max = parseInt(input.getAttribute('max')) || 99;
+                var val = parseInt(input.value) || min;
+                val = Math.max(min, Math.min(max, val + change));
+                input.value = val;
+            }
+
+            if (minusBtn) {
+                minusBtn.addEventListener('click', function () { updateValue(-1); });
+            }
+            if (plusBtn) {
+                plusBtn.addEventListener('click', function () { updateValue(1); });
+            }
+
+            input.addEventListener('input', function () {
+                var min = parseInt(input.getAttribute('min')) || 1;
+                var max = parseInt(input.getAttribute('max')) || 99;
+                var val = parseInt(input.value);
+                if (isNaN(val) || val < min) input.value = min;
+                if (val > max) input.value = max;
+            });
+        });
+    }
+
     function openPopup() {
         if (overlay) {
             overlay.classList.add('active');
@@ -22,6 +56,8 @@
         }
         sessionStorage.setItem('newsletterShown', '1');
     }
+
+    setupQuantityStepper();
 
     if (!shownThisSession && overlay) {
         setTimeout(openPopup, 3000);

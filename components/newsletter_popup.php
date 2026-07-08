@@ -22,12 +22,11 @@
                 <input type="tel" name="mobile" placeholder="Mobile Number">
                 <input type="text" name="city" placeholder="City">
                 <input type="text" name="gotra" placeholder="Gotra">
-                <select name="num_persons">
-                    <option value="">Number of Persons</option>
-                    <?php for ($i = 1; $i <= 15; $i++): ?>
-                    <option value="<?= $i ?>"><?= $i . ' ' . ($i === 1 ? 'Person' : 'Persons') ?></option>
-                    <?php endfor; ?>
-                </select>
+                <div class="quantity-stepper">
+                    <button type="button" class="qty-btn qty-minus" aria-label="Decrease">&minus;</button>
+                    <input type="number" name="num_persons" id="numPersons" value="1" min="1" max="99">
+                    <button type="button" class="qty-btn qty-plus" aria-label="Increase">&plus;</button>
+                </div>
 
                 <div class="newsletter-response" id="newsletterResponse"></div>
 

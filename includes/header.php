@@ -24,7 +24,7 @@
                 <li><a href="<?= BASE_URL ?>/blog.php" class="nav-link">Blog</a></li>
                 <li><a href="<?= BASE_URL ?>/about.php" class="nav-link">About</a></li>
                 <li><a href="<?= BASE_URL ?>/contact.php" class="nav-link">Contact us</a></li>
-                <li><a href="<?= BASE_URL ?>/pages/rudraabhishek.php" class="nav-link">Rudraabhishek</a></li>
+                <li><a href="<?= BASE_URL ?>/pages/rudhraabhishek.php" class="nav-link">Rudraabhishek</a></li>
             </ul>
         </nav>
 

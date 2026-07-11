@@ -110,7 +110,7 @@ $meta_keywords = "rudrabhishek, rudrabhishek pooja, lord shiva worship, vastu mi
         <div class="container">
             <div class="expert-card">
                 <div class="expert-img-side">
-                    <img src="<?= BASE_URL ?>/assets/images/rabhishek.png" alt="Vastu Mitra Abhishek - Rudrabhishek Guidance">
+                    <img src="<?= BASE_URL ?>/assets/images/newsletter.png" alt="Vastu Mitra Abhishek - Rudrabhishek Guidance">
                 </div>
                 <div class="expert-content-side">
                     <span class="expert-tag">Divine Guidance & Rituals</span>

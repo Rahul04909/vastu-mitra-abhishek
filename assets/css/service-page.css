@@ -193,6 +193,8 @@
     flex: 0 0 450px;
     position: relative;
     height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .expert-img-side img {
@@ -200,6 +202,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center top;
+    border-radius: 12px;
 }
 
 .expert-content-side {

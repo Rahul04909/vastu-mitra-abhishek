@@ -68,7 +68,7 @@
   <div class="wrap mansarovar-inner">
     <figure class="photo mansarovar-photo">
       <div class="img-frame" style="aspect-ratio:16/9;">
-        <img src="assets/images/mansarovar.jpg" alt="कैलाश पर्वत पर ध्यानमग्न भगवान शिव">
+        <img src="../assets/images/mansarovar.jpg" alt="कैलाश पर्वत पर ध्यानमग्न भगवान शिव">
       </div>
       <figcaption>कैलाश — भगवान शिव का दिव्य निवास स्थान</figcaption>
     </figure>

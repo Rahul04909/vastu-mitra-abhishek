@@ -42,7 +42,7 @@
   <div class="wrap hero-inner">
     <div class="hero-portrait">
       <div class="frame">
-        <img src="assets/images/hero.jpg" alt="पुजारी द्वारा किया गया रुद्राभिषेक">
+        <img src="../assets/images/hero.jpg" alt="पुजारी द्वारा किया गया रुद्राभिषेक">
       </div>
     </div>
     <p class="hero-portrait-cap">भगवान शिव — घर पर रुद्राभिषेक पूजा</p>
@@ -88,7 +88,7 @@
     <p>हज़ारों श्रद्धालु अपने नाम और परिवार के कल्याण हेतु घर बैठे यह पवित्र सेवा ले चुके हैं। पूरी श्रद्धा और विधि-विधान के साथ, आपके भरोसे के लिए हम प्रतिबद्ध हैं।</p>
     <figure class="photo" style="max-width:520px;margin:28px auto 0;">
       <div class="img-frame" style="aspect-ratio:16/9;">
-        <img src="assets/images/testimonials.jpg" alt="विधि-विधान से किया गया रुद्राभिषेक">
+        <img src="../assets/images/testimonials.jpg" alt="विधि-विधान से किया गया रुद्राभिषेक">
       </div>
       <figcaption>श्रद्धा और पूरे विधि-विधान से किया गया रुद्राभिषेक पूजन</figcaption>
     </figure>
@@ -105,7 +105,7 @@
     <div class="reason-split">
       <figure class="photo">
         <div class="img-frame">
-          <img src="assets/images/about.jpg" alt="भव्य शिवलिंग">
+          <img src="../assets/images/about.jpg" alt="भव्य शिवलिंग">
         </div>
         <figcaption>मंदिर में विराजमान भव्य शिवलिंग</figcaption>
       </figure>
@@ -152,7 +152,7 @@
     </div>
     <figure class="photo" style="max-width:560px;margin:0 auto 40px;">
       <div class="img-frame" style="aspect-ratio:16/9;">
-        <img src="assets/images/experience.jpg" alt="परिवार सहित रुद्राभिषेक अनुभव">
+        <img src="../assets/images/experience.jpg" alt="परिवार सहित रुद्राभिषेक अनुभव">
       </div>
       <figcaption>परिवार सहित मिलकर किया गया रुद्राभिषेक अनुभव</figcaption>
     </figure>
@@ -191,7 +191,7 @@
     <p class="monday-dates">📅 सोमवार को विशेष श्रृंगार व पूजा — पूरी जानकारी नीचे "सोमवार स्पेशल पैकेज" सेक्शन में</p>
     <figure class="photo" style="max-width:520px;margin:0 auto 40px;">
       <div class="img-frame" style="aspect-ratio:16/9;">
-        <img src="assets/images/samagri.jpg" alt="पूजा सामग्री — रुद्राक्ष, भस्म, गंगाजल">
+        <img src="../assets/images/samagri.jpg" alt="पूजा सामग्री — रुद्राक्ष, भस्म, गंगाजल">
       </div>
       <figcaption>पूजा सामग्री — रुद्राक्ष, भस्म, गंगाजल और पंचामृत</figcaption>
     </figure>

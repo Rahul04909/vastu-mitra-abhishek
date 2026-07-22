@@ -560,10 +560,16 @@
   🔱 श्री रुद्राभिषेक सेवा — श्रावण मास 2026 · ॐ नमः शिवाय
 </footer>
 
-<!-- ============ STICKY MOBILE BAR ============ -->
+<!-- ============ STICKY BOTTOM BAR ============ -->
 <div class="sticky-bar" id="stickyBar">
-  <button class="btn btn-primary" onclick="scrollToPricing()">अभी बुक करें</button>
-  <a class="btn btn-ghost" href="https://wa.me/910000000000" target="_blank" rel="noopener">WhatsApp</a>
+  <button class="btn btn-primary" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+    बुक करें
+  </button>
+  <a class="btn btn-wa" href="https://wa.me/917428284357" target="_blank" rel="noopener">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
 </div>
 
 
@@ -785,22 +791,13 @@ document.querySelectorAll('.faq-q').forEach(function(btn){
   });
 });
 
-// Sticky bar
+// Sticky bar visibility (desktop: hide, mobile: show always)
 (function(){
   var bar = document.getElementById('stickyBar');
   if(!bar) return;
-  var pricing = document.getElementById('pricing');
-  if(!pricing) return;
-  var observer = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){
-        bar.classList.remove('show');
-      } else {
-        bar.classList.add('show');
-      }
-    });
-  }, {threshold:0});
-  observer.observe(pricing);
+  function updateBar(){bar.style.display = window.innerWidth <= 600 ? 'flex' : 'none';}
+  updateBar();
+  window.addEventListener('resize', updateBar);
 })();
 </script>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
@@ -1874,59 +1871,134 @@ document.querySelectorAll('.faq-q').forEach(function(btn){
     font-size:12.5px;
     border-top:1px solid var(--line);
   }
-  @media(max-width:768px){footer{padding-bottom:96px;}}
-
-  /* sticky mobile bar */
+  /* sticky bottom bar — always visible on mobile */
   .sticky-bar{
     position:fixed;
     bottom:0;left:0;right:0;
     z-index:50;
     display:none;
     gap:10px;
-    padding:12px 16px calc(12px + env(safe-area-inset-bottom));
-    background:rgba(21,10,5,0.92);
-    backdrop-filter:blur(10px);
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(21,10,5,0.96);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
     border-top:1px solid var(--line);
-    transform:translateY(100%);
-    transition:transform .3s ease;
+    box-shadow:0 -8px 30px rgba(0,0,0,0.5);
   }
-  .sticky-bar.show{transform:translateY(0);}
-  .sticky-bar .btn{flex:1;padding:13px 10px;font-size:14.5px;justify-content:center;}
+  .sticky-bar .btn{
+    flex:1;
+    padding:14px 12px;
+    font-size:15px;
+    font-weight:700;
+    justify-content:center;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    text-decoration:none;
+  }
+  .sticky-bar .btn-primary{
+    background:linear-gradient(135deg,var(--saffron),var(--saffron-deep));
+    color:#fff5e8;
+    box-shadow:0 6px 16px -4px rgba(255,122,41,0.5);
+  }
+  .sticky-bar .btn-wa{
+    background:#25D366;
+    color:#fff;
+    box-shadow:0 6px 16px -4px rgba(37,211,102,0.4);
+  }
+  .sticky-bar .btn-wa:hover{background:#20bd5a;}
+  .sticky-bar .btn svg{flex-shrink:0;}
 
-  /* ================ RESPONSIVE ================ */
+  /* ================ RESPONSIVE — EXPERT UI/UX ================ */
+
+  /* Tablet 768-1024 */
   @media(max-width:900px){
-    .plans{grid-template-columns:1fr;}
+    .plans{grid-template-columns:1fr;gap:18px;}
     .plan.featured{order:0;}
-    .steps{grid-template-columns:1fr 1fr;}
-    .kit-grid{grid-template-columns:repeat(3,1fr);}
-    .reason-split{grid-template-columns:1fr;}
+    .plan{padding:26px 22px 24px;}
+    .steps{grid-template-columns:1fr 1fr;gap:16px;}
+    .kit-grid{grid-template-columns:repeat(3,1fr);gap:14px;}
+    .reason-split{grid-template-columns:1fr;gap:30px;}
     .reason-split figure.photo{max-width:420px;margin:0 auto 8px;}
     .reason-split figure.photo .img-frame{aspect-ratio:16/10;}
-    .benefit-grid{grid-template-columns:repeat(2,1fr);}
+    .benefit-grid{grid-template-columns:repeat(2,1fr);gap:16px;}
+    .benefit-card{padding:24px 16px;}
+    .mansarovar-inner{grid-template-columns:1fr;gap:26px;}
+    .mansarovar-text{text-align:center;}
+    .hero h1{font-size:clamp(28px,5vw,44px);}
   }
+
+  /* Small tablet / large phone 600-768 */
   @media(max-width:700px){
-    .somwar-row{grid-template-columns:1fr; gap:10px; text-align:center;}
+    .somwar-row{grid-template-columns:1fr;gap:8px;text-align:center;}
     .somwar-row.somwar-head{display:none;}
-    .somwar-row:not(.somwar-head){border-radius:10px; margin-bottom:2px; padding:20px;}
-    .somwar-row span[data-label]::before{content:attr(data-label); display:block; font-size:10.5px; color:var(--gold-dim); letter-spacing:0.04em; margin-bottom:4px; font-weight:600;}
-    .somwar-row .s-pkg{font-size:16px;}
+    .somwar-row:not(.somwar-head){border-radius:12px;margin-bottom:2px;padding:18px 16px;}
+    .somwar-row span[data-label]::before{content:attr(data-label);display:block;font-size:10px;color:var(--gold-dim);letter-spacing:0.04em;margin-bottom:4px;font-weight:600;}
+    .somwar-row .s-pkg{font-size:17px;}
     .somwar-row .s-monday{justify-content:center;}
+    .section-head h2{font-size:clamp(20px,5vw,28px);}
+    .step{padding:22px 16px 20px;}
+    .step-icon{font-size:26px;}
+    .kit-item{padding:20px 10px;}
+    .kit-icon{font-size:26px;}
+    .benefit-card{padding:20px 14px;}
+    .benefit-icon{font-size:24px;margin-bottom:10px;}
+    .booking-form input,.booking-form select,.booking-form textarea{font-size:16px;padding:14px;} /* prevent iOS zoom */
+    .package-selector{gap:10px;}
+    .pkg-radio{padding:14px 10px 12px;}
+    .pkg-radio .pkg-price{font-size:20px;}
   }
+
+  /* Phone <600 */
   @media(max-width:600px){
-    .steps{grid-template-columns:1fr;}
-    .kit-grid{grid-template-columns:repeat(2,1fr);}
-    .benefit-grid{grid-template-columns:1fr;}
     .sticky-bar{display:flex;}
-    .section{padding:56px 0;}
-    .hero{padding:52px 0 64px;}
+    .section{padding:48px 0;}
+    .hero{padding:44px 0 56px;}
+    .hero-portrait{width:110px;height:110px;}
+    .hero .sub{font-size:15px;}
     .proof-inner{padding:0 4px;}
-    .calendar-weekdays, .calendar-month-grid{gap:4px;}
+    .proof h3{font-size:18px;}
+    .proof p{font-size:14px;}
+    .steps{grid-template-columns:1fr;gap:14px;}
+    .kit-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+    .benefit-grid{grid-template-columns:1fr;gap:12px;}
+    .calendar-weekdays,.calendar-month-grid{gap:4px;}
+    .calendar-month-grid{max-width:100%;}
     .cal-daynum{font-size:12px;}
     .cal-day-label{font-size:6.5px;}
     .cal-day.status-normal .cal-day-label{font-size:9px;}
-    .cal-day.status-red .cal-day-label, .cal-day.status-yellow .cal-day-label{font-size:6.2px; padding:1px 2px;}
-    .cal-day[data-tooltip]::after{width:130px; font-size:10px;}
-    .calendar-legend{gap:14px; font-size:11.5px;}
+    .cal-day.status-red .cal-day-label,.cal-day.status-yellow .cal-day-label{font-size:6.2px;padding:1px 2px;}
+    .cal-day[data-tooltip]::after{width:120px;font-size:10px;left:50%;transform:translateX(-50%) translateY(4px);}
+    .calendar-legend{gap:10px;font-size:11px;flex-wrap:wrap;}
+    .calendar-legend span{display:flex;align-items:center;gap:4px;}
+    .section-head{margin-bottom:32px;}
+    .section-head .tag{font-size:12px;}
+    .plans{gap:14px;}
+    .plan{padding:22px 18px 20px;}
+    .plan-name{font-size:20px;}
+    .plan-price .now{font-size:28px;}
+    .plan-list li{font-size:14px;}
+    .plan-btn{padding:15px 14px;font-size:15px;}
+    .booking-form .form-row.split{flex-direction:column;gap:14px;}
+    .booking-form .dob-selectors{gap:6px;}
+    .booking-form .dob-selectors select{padding:12px 8px;font-size:14px;}
+    .package-selector{grid-template-columns:1fr;gap:8px;}
+    .pkg-radio{flex-direction:row;padding:12px 16px;gap:8px;flex-wrap:wrap;justify-content:flex-start;}
+    .pkg-radio .pkg-label{font-size:15px;}
+    .pkg-radio .pkg-price{font-size:18px;margin-left:auto;}
+    .pkg-radio .pkg-mon{font-size:11px;width:100%;}
+    .book-slot-btn{font-size:16px;padding:16px 14px;}
+    .pkg-radio .pkg-badge{font-size:9px;padding:3px 8px;}
+    .modal-box{padding:28px 20px 24px;margin:0 12px;}
+    .modal-box h2{font-size:20px;}
+    .modal-box .icon{font-size:44px;}
+    footer{padding-bottom:80px;}
+    .final-cta{padding:60px 0 70px;}
+    .faq-q{font-size:14.5px;padding:16px 16px;text-align:left;}
+    .cta-row{gap:12px;flex-direction:column;align-items:stretch;}
+    .cta-row .btn{justify-content:center;}
+    .wrap{padding:0 16px;}
   }
 
   @media (prefers-reduced-motion: reduce){

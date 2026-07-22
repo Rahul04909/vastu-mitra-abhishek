@@ -6,7 +6,10 @@ if (!$auth->isLogged() && basename($_SERVER['SCRIPT_NAME']) !== 'login.php') {
     header('Location: ' . ADMIN_URL . '/login.php');
     exit;
 }
-$currentPage = basename($_SERVER['SCRIPT_NAME']);
+// Determine relative path from admin directory for proper menu matching
+$scriptName = str_replace('\\', '/', $_SERVER['SCRIPT_NAME']);
+$adminDir = str_replace(['\\', $_SERVER['DOCUMENT_ROOT']], ['/', ''], __DIR__);
+$currentPage = ltrim(str_replace($adminDir, '', $scriptName), '/');
 
 $menuItems = [
     [
@@ -38,6 +41,13 @@ $menuItems = [
         "icon" => "fas fa-envelope",
         "pages" => [
             ["title" => "Manage Enquiries", "url" => "enquiries/index.php"]
+        ],
+    ],
+    [
+        "menuTitle" => "Rudra Abhishek",
+        "icon" => "fas fa-pray",
+        "pages" => [
+            ["title" => "Bookings", "url" => "rudhraabhishek-bookings/index.php"]
         ],
     ],
     [

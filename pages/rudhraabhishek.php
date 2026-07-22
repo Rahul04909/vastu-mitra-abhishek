@@ -208,7 +208,7 @@
           <li>पूरी HD वीडियो रिकॉर्डिंग</li>
           <li>प्रसाद किट — रुद्राक्ष, भस्म, प्रसाद, गंगाजल</li>
         </ul>
-        <button class="plan-btn" onclick="bookPlan('बेसिक')">🙏 शिव कृपा - Book करें</button>
+        <a href="https://rzp.io/rzp/7v2Rqam" target="_blank" rel="noopener noreferrer" class="plan-btn" style="display:block;text-decoration:none;">🙏 शिव कृपा - Book करें</a>
       </div>
 
       <!-- Premium -->
@@ -224,7 +224,7 @@
           <li>प्रसाद किट — रुद्राक्ष, भस्म, प्रसाद, गंगाजल</li>
           <li>3 इंच महामृत्युंजय यंत्र</li>
         </ul>
-        <button class="plan-btn" onclick="bookPlan('प्रीमियम')">🙏 शिव कृपा - Book करें</button>
+        <a href="https://rzp.io/rzp/EiaTcxUM" target="_blank" rel="noopener noreferrer" class="plan-btn" style="display:block;text-decoration:none;">🙏 शिव कृपा - Book करें</a>
       </div>
 
       <!-- VIP -->
@@ -239,7 +239,7 @@
           <li>प्रसाद किट — रुद्राक्ष, भस्म, प्रसाद, गंगाजल</li>
           <li>5 इंच महामृत्युंजय यंत्र</li>
         </ul>
-        <button class="plan-btn" onclick="bookPlan('VIP')">🙏 शिव कृपा - Book करें</button>
+        <a href="https://rzp.io/rzp/aqtzoSr" target="_blank" rel="noopener noreferrer" class="plan-btn" style="display:block;text-decoration:none;">🙏 शिव कृपा - Book करें</a>
       </div>
     </div>
   </div>
@@ -248,40 +248,6 @@
 <!-- ============ SOMWAR SPECIAL PACKAGE + CALENDAR ============ -->
 <section class="section somwar-section" id="somwar">
   <div class="wrap">
-    <div class="section-head">
-      <span class="tag">विशेष ऑफर</span>
-      <h2>🌙 सोमवार स्पेशल रुद्राभिषेक पैकेज</h2>
-    </div>
-
-    <div class="somwar-table">
-      <div class="somwar-row somwar-head">
-        <span>पैकेज</span>
-        <span>सामान्य मूल्य</span>
-        <span>सोमवार मूल्य</span>
-        <span>अतिरिक्त</span>
-      </div>
-      <div class="somwar-row">
-        <span data-label="पैकेज" class="s-pkg">बेसिक <em>(11 लोग)</em></span>
-        <span data-label="सामान्य मूल्य" class="s-normal">₹1,100</span>
-        <span data-label="सोमवार मूल्य" class="s-monday">₹2,100 <span class="somwar-badge">सोमवार स्पेशल</span></span>
-        <span data-label="अतिरिक्त" class="s-extra">+ ₹1,000</span>
-      </div>
-      <div class="somwar-row">
-        <span data-label="पैकेज" class="s-pkg">प्रीमियम <em>(5 लोग)</em></span>
-        <span data-label="सामान्य मूल्य" class="s-normal">₹2,100</span>
-        <span data-label="सोमवार मूल्य" class="s-monday">₹3,100 <span class="somwar-badge">सोमवार स्पेशल</span></span>
-        <span data-label="अतिरिक्त" class="s-extra">+ ₹1,000</span>
-      </div>
-      <div class="somwar-row">
-        <span data-label="पैकेज" class="s-pkg">VIP <em>(1 व्यक्ति)</em></span>
-        <span data-label="सामान्य मूल्य" class="s-normal">₹5,100</span>
-        <span data-label="सोमवार मूल्य" class="s-monday">₹7,100 <span class="somwar-badge">सोमवार स्पेशल</span></span>
-        <span data-label="अतिरिक्त" class="s-extra">+ ₹2,000</span>
-      </div>
-    </div>
-
-    <p class="somwar-note">📌 हर सोमवार पर विशेष श्रृंगार, विशेष पूजा अर्चन और विशेष प्रसाद के कारण <b>बेसिक</b> और <b>प्रीमियम</b> पैकेज पर <b>₹1,000</b> और <b>VIP</b> पैकेज पर <b>₹2,000</b> अतिरिक्त लागू होंगे।</p>
-    <p class="somwar-timing">⏰ समय: हर सोमवार <b>सुबह 6 बजे से दोपहर 12 बजे तक</b></p>
 
     <div class="section-head calendar-head">
       <span class="tag">उपलब्धता</span>
@@ -344,7 +310,7 @@
       <span><i class="dot dot-green"></i> Available</span>
     </div>
 
-    <button class="plan-btn book-slot-btn" onclick="scrollToPricing()">🙏 Book My Slot</button>
+    <a href="https://rzp.io/rzp/3OquUVO" target="_blank" rel="noopener noreferrer" class="plan-btn book-slot-btn" style="display:block;text-decoration:none;">🙏 Book My Slot</a>
   </div>
 </section>
 

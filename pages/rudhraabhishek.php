@@ -208,7 +208,7 @@
           <li>पूरी HD वीडियो रिकॉर्डिंग</li>
           <li>प्रसाद किट — रुद्राक्ष, भस्म, प्रसाद, गंगाजल</li>
         </ul>
-        <a href="https://rzp.io/rzp/7v2Rqam" target="_blank" rel="noopener noreferrer" class="plan-btn" style="display:block;text-decoration:none;">🙏 शिव कृपा - Book करें</a>
+        <button type="button" class="plan-btn" onclick="selectPackage('basic')" style="width:100%;border:none;cursor:pointer;">🙏 शिव कृपा - Book करें</button>
       </div>
 
       <!-- Premium -->
@@ -224,7 +224,7 @@
           <li>प्रसाद किट — रुद्राक्ष, भस्म, प्रसाद, गंगाजल</li>
           <li>3 इंच महामृत्युंजय यंत्र</li>
         </ul>
-        <a href="https://rzp.io/rzp/EiaTcxUM" target="_blank" rel="noopener noreferrer" class="plan-btn" style="display:block;text-decoration:none;">🙏 शिव कृपा - Book करें</a>
+        <button type="button" class="plan-btn" onclick="selectPackage('premium')" style="width:100%;border:none;cursor:pointer;">🙏 शिव कृपा - Book करें</button>
       </div>
 
       <!-- VIP -->
@@ -239,9 +239,119 @@
           <li>प्रसाद किट — रुद्राक्ष, भस्म, प्रसाद, गंगाजल</li>
           <li>5 इंच महामृत्युंजय यंत्र</li>
         </ul>
-        <a href="https://rzp.io/rzp/aqtzoSr" target="_blank" rel="noopener noreferrer" class="plan-btn" style="display:block;text-decoration:none;">🙏 शिव कृपा - Book करें</a>
+        <button type="button" class="plan-btn" onclick="selectPackage('vip')" style="width:100%;border:none;cursor:pointer;">🙏 शिव कृपा - Book करें</button>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING FORM ============ -->
+<section class="section" id="booking">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">बुकिंग फॉर्म</span>
+      <h2>📝 अपनी बुकिंग की पुष्टि करें</h2>
+    </div>
+
+    <form id="bookingForm" class="booking-form" onsubmit="return false;">
+      <div class="form-group full">
+        <label>पैकेज चुनें *</label>
+        <div class="package-selector">
+          <label class="pkg-radio" data-pkg="basic">
+            <input type="radio" name="package" value="basic" required>
+            <span class="pkg-label">बेसिक</span>
+            <span class="pkg-price">₹1,100</span>
+            <span class="pkg-mon">सोमवार: ₹2,100</span>
+          </label>
+          <label class="pkg-radio" data-pkg="premium">
+            <input type="radio" name="package" value="premium">
+            <span class="pkg-badge">✦ सबसे लोकप्रिय</span>
+            <span class="pkg-label">प्रीमियम</span>
+            <span class="pkg-price">₹2,100</span>
+            <span class="pkg-mon">सोमवार: ₹3,100</span>
+          </label>
+          <label class="pkg-radio" data-pkg="vip">
+            <input type="radio" name="package" value="vip">
+            <span class="pkg-label">VIP</span>
+            <span class="pkg-price">₹5,100</span>
+            <span class="pkg-mon">सोमवार: ₹7,100</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>रुद्राभिषेक की तिथि *</label>
+          <input type="date" name="puja_date" id="puja_date" required>
+          <small class="mon-note" id="monNote" style="display:none;color:var(--saffron);margin-top:6px;">🌙 सोमवार — विशेष मूल्य लागू</small>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>पूरा नाम *</label>
+          <input type="text" name="name" placeholder="अपना पूरा नाम दर्ज करें" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>जन्म तिथि</label>
+          <div class="dob-selectors">
+            <select name="dob_day" id="dob_day"><option value="">दिन</option></select>
+            <select name="dob_month" id="dob_month"><option value="">महीना</option></select>
+            <select name="dob_year" id="dob_year"><option value="">साल</option></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>गोत्र</label>
+          <input type="text" name="gotra" placeholder="अपना गोत्र दर्ज करें">
+        </div>
+      </div>
+
+      <div class="form-row split">
+        <div class="form-group">
+          <label>ईमेल *</label>
+          <input type="email" name="email" placeholder="email@example.com" required>
+        </div>
+        <div class="form-group">
+          <label>मोबाइल नंबर *</label>
+          <input type="tel" name="mobile" placeholder="+91 98765 43210" required>
+        </div>
+      </div>
+
+      <div class="form-row split">
+        <div class="form-group">
+          <label>राज्य</label>
+          <input type="text" name="state" placeholder="राज्य">
+        </div>
+        <div class="form-group">
+          <label>शहर</label>
+          <input type="text" name="city" placeholder="शहर">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>पिन कोड</label>
+          <input type="text" name="pincode" placeholder="पिन कोड">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>पूरा पता</label>
+          <textarea name="address" placeholder="अपना पूरा पता लिखें" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div id="bookingError" style="display:none;color:#ff5b3d;text-align:center;margin-bottom:16px;font-weight:700;"></div>
+
+      <button type="submit" class="plan-btn book-slot-btn" id="bookSlotBtn" style="border:none;cursor:pointer;">🙏 Book My Slot</button>
+    </form>
   </div>
 </section>
 
@@ -310,7 +420,7 @@
       <span><i class="dot dot-green"></i> Available</span>
     </div>
 
-    <a href="https://rzp.io/rzp/3OquUVO" target="_blank" rel="noopener noreferrer" class="plan-btn book-slot-btn" style="display:block;text-decoration:none;">🙏 Book My Slot</a>
+    <button type="button" class="plan-btn book-slot-btn" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})" style="display:block;border:none;cursor:pointer;">🙏 Book My Slot</button>
   </div>
 </section>
 
@@ -457,8 +567,243 @@
 </div>
 
 
-<!-- Main JavaScript (FAQ accordion, smooth scroll, sticky CTA bar) -->
-<script src="assets/js/main.js" defer></script>
+<!-- ============ THANK YOU MODAL ============ -->
+<div class="modal-overlay" id="thankyouModal">
+  <div class="modal-box">
+    <div class="icon">🙏</div>
+    <h2>बुकिंग कन्फर्म!</h2>
+    <p>आपकी रुद्राभिषेक बुकिंग सफलतापूर्वक कन्फर्म हो गई है।</p>
+    <p>आपके रजिस्टर्ड ईमेल और WhatsApp पर पूजा की जानकारी भेज दी जाएगी।</p>
+    <div class="ref-id" id="confirmRefId"></div>
+    <p style="font-size:13px;color:var(--gold-dim);">🔱 ॐ नमः शिवाय</p>
+    <button class="btn btn-primary" onclick="closeThankyou()">ठीक है</button>
+  </div>
+</div>
+
+<!-- ============ JAVASCRIPT ============ -->
+<script>
+function scrollToPricing(){
+  var el = document.getElementById('pricing');
+  if(el) el.scrollIntoView({behavior:'smooth'});
+}
+
+function selectPackage(pkg){
+  var radio = document.querySelector('.package-selector input[value="'+pkg+'"]');
+  if(radio) radio.checked = true;
+  var el = document.getElementById('booking');
+  if(el) el.scrollIntoView({behavior:'smooth'});
+}
+
+(function(){
+  // Populate DOB selectors
+  var daySel = document.getElementById('dob_day');
+  var monthSel = document.getElementById('dob_month');
+  var yearSel = document.getElementById('dob_year');
+
+  if(daySel){
+    daySel.innerHTML = '<option value="">दिन</option>';
+    for(var d=1;d<=31;d++){
+      var opt = document.createElement('option');
+      opt.value = d;
+      opt.textContent = d;
+      daySel.appendChild(opt);
+    }
+  }
+  if(monthSel){
+    var months = ['','जनवरी','फरवरी','मार्च','अप्रैल','मई','जून','जुलाई','अगस्त','सितंबर','अक्टूबर','नवंबर','दिसंबर'];
+    monthSel.innerHTML = '<option value="">महीना</option>';
+    for(var m=1;m<=12;m++){
+      var opt = document.createElement('option');
+      opt.value = m;
+      opt.textContent = months[m];
+      monthSel.appendChild(opt);
+    }
+  }
+  if(yearSel){
+    yearSel.innerHTML = '<option value="">साल</option>';
+    var cy = new Date().getFullYear();
+    for(var y=cy-70;y<=cy;y++){
+      var opt = document.createElement('option');
+      opt.value = y;
+      opt.textContent = y;
+      yearSel.appendChild(opt);
+    }
+  }
+
+  // Monday pricing hint
+  var dateInput = document.getElementById('puja_date');
+  var monNote = document.getElementById('monNote');
+  if(dateInput && monNote){
+    dateInput.addEventListener('change', function(){
+      if(this.value){
+        var d = new Date(this.value);
+        if(d.getDay() === 1){
+          monNote.style.display = 'block';
+        } else {
+          monNote.style.display = 'none';
+        }
+      } else {
+        monNote.style.display = 'none';
+      }
+    });
+  }
+})();
+
+document.getElementById('bookingForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var form = this;
+  var btn = document.getElementById('bookSlotBtn');
+  var errDiv = document.getElementById('bookingError');
+  errDiv.style.display = 'none';
+
+  var pkgEl = form.querySelector('input[name="package"]:checked');
+  if(!pkgEl){ errDiv.textContent = 'कृपया एक पैकेज चुनें'; errDiv.style.display = 'block'; return; }
+
+  var pujaDate = form.querySelector('[name="puja_date"]').value;
+  if(!pujaDate){ errDiv.textContent = 'कृपया रुद्राभिषेक की तिथि चुनें'; errDiv.style.display = 'block'; return; }
+
+  var name = form.querySelector('[name="name"]').value.trim();
+  if(!name){ errDiv.textContent = 'कृपया अपना नाम दर्ज करें'; errDiv.style.display = 'block'; return; }
+
+  var email = form.querySelector('[name="email"]').value.trim();
+  if(!email){ errDiv.textContent = 'कृपया अपना ईमेल दर्ज करें'; errDiv.style.display = 'block'; return; }
+
+  var mobile = form.querySelector('[name="mobile"]').value.trim();
+  if(!mobile){ errDiv.textContent = 'कृपया अपना मोबाइल नंबर दर्ज करें'; errDiv.style.display = 'block'; return; }
+
+  var dobDay = form.querySelector('[name="dob_day"]').value;
+  var dobMonth = form.querySelector('[name="dob_month"]').value;
+  var dobYear = form.querySelector('[name="dob_year"]').value;
+  var dob = '';
+  if(dobDay && dobMonth && dobYear){
+    dob = dobYear + '-' + String(dobMonth).padStart(2,'0') + '-' + String(dobDay).padStart(2,'0');
+  }
+
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> कृपया प्रतीक्षा करें...';
+
+  var formData = {
+    package_name: pkgEl.value,
+    puja_date: pujaDate,
+    name: name,
+    dob: dob,
+    gotra: form.querySelector('[name="gotra"]').value.trim(),
+    email: email,
+    mobile: mobile,
+    state: form.querySelector('[name="state"]').value.trim(),
+    city: form.querySelector('[name="city"]').value.trim(),
+    pincode: form.querySelector('[name="pincode"]').value.trim(),
+    address: form.querySelector('[name="address"]').value.trim()
+  };
+
+  fetch('../api/create_order.php', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify(formData)
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(orderData){
+    if(orderData.status !== 'success'){
+      throw new Error(orderData.message || 'Order creation failed');
+    }
+
+    var options = {
+      key: orderData.key_id,
+      amount: orderData.amount,
+      currency: orderData.currency,
+      order_id: orderData.order_id,
+      name: 'Vastu Mitra Abhishek',
+      description: 'रुद्राभिषेक — ' + orderData.package_name,
+      image: '../assets/logo/logo.png',
+      prefill: {
+        name: formData.name,
+        email: formData.email,
+        contact: formData.mobile
+      },
+      theme: { color: '#d4af37' },
+      handler: function(response){
+        fetch('../api/verify_payment.php', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({
+            razorpay_order_id: response.razorpay_order_id,
+            razorpay_payment_id: response.razorpay_payment_id,
+            razorpay_signature: response.razorpay_signature
+          })
+        })
+        .then(function(r){ return r.json(); })
+        .then(function(vData){
+          if(vData.status === 'success'){
+            document.getElementById('confirmRefId').textContent = 'बुकिंग ID: RA-' + orderData.booking_id;
+            document.getElementById('thankyouModal').classList.add('show');
+            form.reset();
+            if(monNote) monNote.style.display = 'none';
+          } else {
+            errDiv.textContent = vData.message || 'Payment verification failed. Contact support.';
+            errDiv.style.display = 'block';
+          }
+        })
+        .catch(function(){
+          errDiv.textContent = 'Verification error. Please contact support with payment ID: ' + response.razorpay_payment_id;
+          errDiv.style.display = 'block';
+        })
+        .finally(function(){
+          btn.disabled = false;
+          btn.innerHTML = '🙏 Book My Slot';
+        });
+      },
+      modal: {
+        ondismiss: function(){
+          btn.disabled = false;
+          btn.innerHTML = '🙏 Book My Slot';
+        }
+      }
+    };
+
+    var rzp = new Razorpay(options);
+    rzp.open();
+  })
+  .catch(function(err){
+    errDiv.textContent = err.message || 'Something went wrong. Please try again.';
+    errDiv.style.display = 'block';
+    btn.disabled = false;
+    btn.innerHTML = '🙏 Book My Slot';
+  });
+});
+
+function closeThankyou(){
+  document.getElementById('thankyouModal').classList.remove('show');
+}
+
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var item = this.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(el){ el.classList.remove('open'); });
+    if(!isOpen) item.classList.add('open');
+  });
+});
+
+// Sticky bar
+(function(){
+  var bar = document.getElementById('stickyBar');
+  if(!bar) return;
+  var pricing = document.getElementById('pricing');
+  if(!pricing) return;
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        bar.classList.remove('show');
+      } else {
+        bar.classList.add('show');
+      }
+    });
+  }, {threshold:0});
+  observer.observe(pricing);
+})();
+</script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
 </body>
 </html>
@@ -972,6 +1317,181 @@
     filter:brightness(1.05);
   }
   .plan-btn:active{transform:translateY(-1px) scale(0.99);}
+
+  /* ================ BOOKING FORM ================ */
+  .booking-section{background:var(--bg-1);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .booking-form{
+    max-width:720px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+  .booking-form .form-row{
+    display:flex;
+    gap:16px;
+  }
+  .booking-form .form-row.split .form-group{flex:1;}
+  .booking-form .form-group{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+  }
+  .booking-form .form-group.full{width:100%;}
+  .booking-form label{
+    font-size:14px;
+    font-weight:600;
+    color:var(--gold-light);
+    margin-bottom:6px;
+  }
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea{
+    background:var(--bg-2);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:12px 16px;
+    font-size:15px;
+    color:var(--text-hi);
+    font-family:inherit;
+    outline:none;
+    transition:border-color .2s ease;
+  }
+  .booking-form input:focus,
+  .booking-form select:focus,
+  .booking-form textarea:focus{
+    border-color:var(--gold);
+  }
+  .booking-form input::placeholder,
+  .booking-form textarea::placeholder{color:var(--text-dim);opacity:0.6;}
+  .booking-form textarea{resize:vertical;min-height:80px;}
+  .booking-form .dob-selectors{
+    display:flex;
+    gap:10px;
+  }
+  .booking-form .dob-selectors select{flex:1;}
+  .package-selector{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+  }
+  .pkg-radio{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:4px;
+    padding:18px 12px 14px;
+    border:2px solid var(--line);
+    border-radius:var(--radius);
+    background:var(--bg-2);
+    cursor:pointer;
+    transition:border-color .2s ease, background .2s ease;
+  }
+  .pkg-radio input{position:absolute;opacity:0;pointer-events:none;}
+  .pkg-radio .pkg-badge{
+    position:absolute;
+    top:-10px;
+    left:50%;
+    transform:translateX(-50%);
+    background:linear-gradient(135deg,var(--gold),#a9832b);
+    color:#241205;
+    font-size:10px;
+    font-weight:800;
+    padding:4px 10px;
+    border-radius:999px;
+    white-space:nowrap;
+  }
+  .pkg-radio .pkg-label{
+    font-size:17px;
+    font-weight:800;
+    color:var(--text-hi);
+    font-family:'Noto Serif Devanagari',serif;
+  }
+  .pkg-radio .pkg-price{
+    font-size:22px;
+    font-weight:800;
+    color:var(--gold-light);
+  }
+  .pkg-radio .pkg-mon{
+    font-size:11.5px;
+    color:var(--text-dim);
+  }
+  .pkg-radio:hover{border-color:var(--gold-dim);}
+  .pkg-radio:has(input:checked){
+    border-color:var(--gold);
+    background:rgba(212,175,55,0.10);
+    box-shadow:0 0 20px rgba(212,175,55,0.2);
+  }
+  .pkg-radio:has(input:checked) .pkg-label{color:var(--gold-light);}
+
+  @media(max-width:700px){
+    .package-selector{grid-template-columns:1fr;}
+    .booking-form .form-row{flex-direction:column;}
+  }
+
+  /* ================ THANKYOU MODAL ================ */
+  .spinner{
+    display:inline-block;
+    width:20px;height:20px;
+    border:3px solid rgba(255,255,255,0.3);
+    border-top-color:#fff;
+    border-radius:50%;
+    animation:spin .6s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .modal-overlay{
+    position:fixed;
+    inset:0;
+    z-index:999;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(6px);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .modal-overlay.show{display:flex;}
+  .modal-box{
+    background:var(--bg-2);
+    border:1px solid var(--gold);
+    border-radius:20px;
+    padding:40px 32px 32px;
+    max-width:480px;
+    width:100%;
+    text-align:center;
+    animation:modalIn .35s ease;
+  }
+  @keyframes modalIn{
+    from{opacity:0;transform:scale(0.9) translateY(20px);}
+    to{opacity:1;transform:scale(1) translateY(0);}
+  }
+  .modal-box .icon{font-size:56px;margin-bottom:8px;}
+  .modal-box h2{
+    font-size:24px;
+    color:var(--gold-light);
+    margin-bottom:8px;
+  }
+  .modal-box p{
+    color:var(--text-mid);
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:6px;
+  }
+  .modal-box .ref-id{
+    background:rgba(212,175,55,0.10);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:10px 14px;
+    display:inline-block;
+    margin:12px 0 18px;
+    font-size:13px;
+    color:var(--gold);
+  }
+  .modal-box .btn{
+    display:inline-flex;
+    margin-top:6px;
+  }
 
   /* ================ SOMWAR SPECIAL + CALENDAR ================ */
   .somwar-section{background:var(--bg-1); border-top:1px solid var(--line); border-bottom:1px solid var(--line); overflow:hidden;}

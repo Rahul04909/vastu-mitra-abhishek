@@ -202,7 +202,7 @@
         <div class="plan-name">बेसिक</div>
         <div class="plan-for">11 लोगों के लिए (सामूहिक)</div>
         <div class="plan-price"><span class="now">₹1,100</span></div>
-        <div class="plan-mon">सोमवार को: <b>₹2,100</b></div>
+        <!-- <div class="plan-mon">सोमवार को: <b>₹2,100</b></div> -->
         <ul class="plan-list">
           <li>11 लोगों का सामूहिक रुद्राभिषेक</li>
           <li>पूरी HD वीडियो रिकॉर्डिंग</li>
@@ -217,7 +217,7 @@
         <div class="plan-name">प्रीमियम</div>
         <div class="plan-for">5 लोगों के लिए (सामूहिक)</div>
         <div class="plan-price"><span class="now">₹2,100</span></div>
-        <div class="plan-mon">सोमवार को: <b>₹3,100</b></div>
+        <!-- <div class="plan-mon">सोमवार को: <b>₹3,100</b></div> -->
         <ul class="plan-list">
           <li>5 लोगों का सामूहिक रुद्राभिषेक</li>
           <li>पूरी HD वीडियो रिकॉर्डिंग</li>
@@ -232,7 +232,7 @@
         <div class="plan-name">VIP</div>
         <div class="plan-for">1 व्यक्ति के लिए (सिर्फ आपके लिए)</div>
         <div class="plan-price"><span class="now">₹5,100</span></div>
-        <div class="plan-mon">सोमवार को: <b>₹7,100</b></div>
+        <!-- <div class="plan-mon">सोमवार को: <b>₹7,100</b></div> -->
         <ul class="plan-list">
           <li>आपका अकेला व्यक्तिगत रुद्राभिषेक</li>
           <li>पूरी HD वीडियो रिकॉर्डिंग</li>
@@ -261,20 +261,20 @@
             <input type="radio" name="package" value="basic" required>
             <span class="pkg-label">बेसिक</span>
             <span class="pkg-price">₹1,100</span>
-            <span class="pkg-mon">सोमवार: ₹2,100</span>
+            <!-- <span class="pkg-mon">सोमवार: ₹2,100</span> -->
           </label>
           <label class="pkg-radio" data-pkg="premium">
             <input type="radio" name="package" value="premium">
             <span class="pkg-badge">✦ सबसे लोकप्रिय</span>
             <span class="pkg-label">प्रीमियम</span>
             <span class="pkg-price">₹2,100</span>
-            <span class="pkg-mon">सोमवार: ₹3,100</span>
+            <!-- <span class="pkg-mon">सोमवार: ₹3,100</span> -->
           </label>
           <label class="pkg-radio" data-pkg="vip">
             <input type="radio" name="package" value="vip">
             <span class="pkg-label">VIP</span>
             <span class="pkg-price">₹5,100</span>
-            <span class="pkg-mon">सोमवार: ₹7,100</span>
+            <!-- <span class="pkg-mon">सोमवार: ₹7,100</span> -->
           </label>
         </div>
       </div>

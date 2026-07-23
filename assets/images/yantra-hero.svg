@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1a40"/>
+      <stop offset="100%" stop-color="#0a0a2e"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d4a017" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#d4a017" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="190" fill="none" stroke="rgba(212,160,23,0.15)" stroke-width="1"/>
+  <circle cx="200" cy="200" r="170" fill="none" stroke="rgba(212,160,23,0.1)" stroke-width="1"/>
+  <circle cx="200" cy="200" r="150" fill="url(#glow)"/>
+  <circle cx="200" cy="200" r="130" fill="none" stroke="#d4a017" stroke-width="2" opacity="0.4"/>
+  <circle cx="200" cy="200" r="100" fill="none" stroke="#d4a017" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="200" cy="200" r="70" fill="none" stroke="#d4a017" stroke-width="2" opacity="0.5"/>
+  <circle cx="200" cy="200" r="40" fill="none" stroke="#f0d080" stroke-width="1.5"/>
+  <polygon points="200,60 300,300 100,300" fill="none" stroke="#d4a017" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="200,340 300,100 100,100" fill="none" stroke="#f0d080" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="120,120 280,280 120,280" fill="none" stroke="#d4a017" stroke-width="1" opacity="0.3"/>
+  <polygon points="280,120 120,280 280,280" fill="none" stroke="#d4a017" stroke-width="1" opacity="0.3"/>
+  <circle cx="200" cy="200" r="8" fill="#d4a017" opacity="0.8"/>
+  <circle cx="200" cy="200" r="3" fill="#f0d080"/>
+  <ellipse cx="200" cy="100" rx="20" ry="35" fill="none" stroke="rgba(212,160,23,0.3)" stroke-width="1" transform="rotate(0,200,200)"/>
+  <ellipse cx="200" cy="100" rx="20" ry="35" fill="none" stroke="rgba(212,160,23,0.3)" stroke-width="1" transform="rotate(45,200,200)"/>
+  <ellipse cx="200" cy="100" rx="20" ry="35" fill="none" stroke="rgba(212,160,23,0.3)" stroke-width="1" transform="rotate(90,200,200)"/>
+  <ellipse cx="200" cy="100" rx="20" ry="35" fill="none" stroke="rgba(212,160,23,0.3)" stroke-width="1" transform="rotate(135,200,200)"/>
+  <ellipse cx="200" cy="100" rx="20" ry="35" fill="none" stroke="rgba(212,160,23,0.3)" stroke-width="1" transform="rotate(180,200,200)"/>
+  <ellipse cx="200" cy="100" rx="20" ry="35" fill="none" stroke="rgba(212,160,23,0.3)" stroke-width="1" transform="rotate(225,200,200)"/>
+  <ellipse cx="200" cy="100" rx="20" ry="35" fill="none" stroke="rgba(212,160,23,0.3)" stroke-width="1" transform="rotate(270,200,200)"/>
+  <ellipse cx="200" cy="100" rx="20" ry="35" fill="none" stroke="rgba(212,160,23,0.3)" stroke-width="1" transform="rotate(315,200,200)"/>
+  <text x="200" y="385" text-anchor="middle" fill="#d4a017" font-size="14" font-family="serif" opacity="0.4">ॐ Maha Mrityunjaya Yantra ॐ</text>
+</svg>

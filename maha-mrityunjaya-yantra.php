@@ -1,420 +1,2334 @@
-<?php require_once __DIR__ . '/database/db_config.php'; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maha Mrityunjaya Yantra | Sacred Protection Yantra - Vastu Mitra Abhishek</title>
-    <meta name="description" content="Authentic Maha Mrityunjaya Yantra for health, protection and longevity. Handcrafted in sacred metals as per Vedic traditions. Order now for divine blessings.">
-    <meta name="keywords" content="Maha Mrityunjaya Yantra, Mrityunjaya Yantra, protection yantra, health yantra, vedic yantra, copper yantra">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/yantra-landing.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>वास्तु मित्र अभिषेक | प्रीमियम व्यक्तिगत अभिमंत्रित यंत्र</title>
+<meta name="description" content="महामृत्युंजय यंत्र एवं काल भैरव यंत्र — शुद्ध तांबे में आपके नाम, गोत्र एवं व्यक्तिगत संकल्प के साथ विधिवत वैदिक अभिमंत्रित। हर यंत्र व्यक्तिगत रूप से तैयार किया जाता है, बड़ी संख्या में नहीं।">
+<meta name="keywords" content="महामृत्युंजय यंत्र, काल भैरव यंत्र, व्यक्तिगत यंत्र, अभिमंत्रित यंत्र, तांबे का यंत्र, वास्तु मित्र अभिषेक">
+<meta name="author" content="Vastu Mitra Abhishek">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vastumitraabhishek.in/">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="वास्तु मित्र अभिषेक">
+<meta property="og:title" content="वास्तु मित्र अभिषेक | प्रीमियम व्यक्तिगत अभिमंत्रित यंत्र">
+<meta property="og:description" content="महामृत्युंजय यंत्र एवं काल भैरव यंत्र — आपके नाम, गोत्र एवं संकल्प के साथ व्यक्तिगत रूप से तैयार, विधिवत वैदिक अभिमंत्रित तांबे के यंत्र।">
+<meta property="og:image" content="assets/images/og-share-image.webp">
+<meta property="og:locale" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+<!-- Fonts: Tiro Devanagari Hindi (display serif) + Hind (body sans) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Structured Data: Local Business + Products (SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Vastu Mitra Abhishek",
+  "description": "व्यक्तिगत रूप से तैयार, विधिवत वैदिक अभिमंत्रित तांबे के यंत्र — महामृत्युंजय यंत्र एवं काल भैरव यंत्र।",
+  "image": "assets/images/hero-mahamrityunjay.webp",
+  "priceRange": "₹1100 - ₹2100",
+  "areaServed": "IN",
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Product", "name": "महामृत्युंजय यंत्र" },
+      "priceCurrency": "INR",
+      "price": "1100"
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Product", "name": "काल भैरव यंत्र" },
+      "priceCurrency": "INR",
+      "price": "1100"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
-    <!-- NAV -->
-    <nav class="floating-nav">
-        <div class="container">
-            <div class="nav-logo">Maha <span>Mrityunjaya</span></div>
-            <a href="#order" class="nav-cta"><i class="fas fa-om"></i> Order Now</a>
-        </div>
+<a href="#main-content" class="skip-link">मुख्य सामग्री पर जाएं</a>
+
+<!-- =====================================================================
+     HEADER / NAVIGATION
+     ===================================================================== -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="#top" class="brand" aria-label="वास्तु मित्र अभिषेक — होम">
+      <span class="brand__mark" aria-hidden="true">वा</span>
+      <span class="brand__text">
+        <span class="brand__name">वास्तु मित्र अभिषेक</span>
+        <span class="brand__tagline">व्यक्तिगत अभिमंत्रित यंत्र</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="मुख्य नेविगेशन">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="#about">हमारे बारे में</a></li>
+        <li><a class="main-nav__link" href="#mahamrityunjay">महामृत्युंजय यंत्र</a></li>
+        <li><a class="main-nav__link" href="#kaalbhairav">काल भैरव यंत्र</a></li>
+        <li><a class="main-nav__link" href="#process">प्रक्रिया</a></li>
+        <li><a class="main-nav__link" href="#pricing">मूल्य</a></li>
+        <li><a class="main-nav__link" href="#faq">प्रश्न</a></li>
+      </ul>
     </nav>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="hero">
-        <div class="hero-grid-bg"></div>
-        <div class="container">
-            <div class="fade-up">
-                <div class="hero-tag"><i class="fas fa-om"></i> As per Ancient Vedic Scriptures</div>
-                <h1>Maha Mrityunjaya <span class="highlight">Yantra</span></h1>
-                <p class="sub">The Ultimate Divine Shield for Protection &amp; Longevity</p>
-                <p>An ancient sacred geometric instrument blessed by Lord Shiva. Handcrafted in pure copper with precision as per Vedic traditions to bring divine protection, healing, and fearlessness into your life.</p>
-                <div class="hero-strip">
-                    <div class="hero-strip-item"><span class="num">1000+</span><span class="lbl">Blessed Families</span></div>
-                    <div class="hero-strip-item"><span class="num">100%</span><span class="lbl">Vedic Certified</span></div>
-                    <div class="hero-strip-item"><span class="num">4.9★</span><span class="lbl">Customer Rating</span></div>
-                </div>
-                <div class="hero-btns">
-                    <a href="#order" class="btn-gold"><i class="fas fa-om"></i> Book Your Yantra Now</a>
-                    <a href="#about" class="btn-outline"><i class="fas fa-info-circle"></i> Learn More</a>
-                </div>
-            </div>
-            <div class="hero-visual-wrap fade-up">
-                <div class="hero-frame">
-                    <div class="glow"></div>
-                    <div class="ring"></div>
-                    <div class="ring"></div>
-                    <div class="ring"></div>
-                    <div class="ring"></div>
-                    <img class="yantra-img" src="assets/images/yantra-hero.svg" alt="Maha Mrityunjaya Yantra">
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="header-actions">
+      <button type="button" class="btn btn--primary btn--sm" data-open-order>अभी ऑर्डर करें</button>
+      <button type="button" class="nav-toggle" aria-label="मेनू खोलें" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
 
-    <!-- ===== ABOUT ===== -->
-    <section class="section about" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-img-wrap fade-up">
-                    <img src="https://shaligram.com/product-img/YTSMMMY014-1.jpg" alt="Maha Mrityunjaya Yantra - Sacred Vedic Yantra"
-                         onerror="this.src='assets/images/yantra-about.svg'">
-                    <div class="about-badge"><i class="fas fa-om"></i> Vedic Authenticity Certified</div>
-                </div>
-                <div class="about-text fade-up">
-                    <div class="section-header" style="text-align:left; margin-bottom:20px;">
-                        <div class="label">About The Yantra</div>
-                        <h2>Sacred Geometry of <span>Divine Protection</span></h2>
-                    </div>
-                    <p>The Maha Mrityunjaya Yantra is a profound sacred geometric diagram derived from the Maha Mrityunjaya Mantra, one of the most powerful mantras in Vedic tradition dedicated to Lord Shiva. This Yantra serves as a visual representation of the mantra's energy, creating a protective shield that neutralizes negative energies and promotes healing.</p>
-                    <p>Rooted in the ancient <strong>Rigveda</strong>, this Yantra is traditionally used to overcome fear of death, diseases, and obstacles. When properly energized and worshipped, it becomes a powerful tool for spiritual transformation and physical well-being.</p>
-                    <div class="about-grid-sm">
-                        <div class="item"><i class="fas fa-om"></i> Rigvedic Origin</div>
-                        <div class="item"><i class="fas fa-hand-sparkles"></i> Handcrafted by Artisans</div>
-                        <div class="item"><i class="fas fa-shield-halved"></i> Protective Shield</div>
-                        <div class="item"><i class="fas fa-sun"></i> Energized with Mantras</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<main id="main-content">
 
-    <!-- ===== BENEFITS ===== -->
-    <section class="section benefits" id="benefits">
-        <div class="container">
-            <div class="section-header light fade-up">
-                <div class="label">Divine Benefits</div>
-                <h2>Why You Need This Yantra</h2>
-                <p>Experience the transformative power of the Maha Mrityunjaya Yantra in every aspect of your life</p>
-            </div>
-            <div class="benefits-grid">
-                <div class="benefit-card fade-up">
-                    <div class="benefit-icon"><i class="fas fa-heart-pulse"></i></div>
-                    <h3>Health &amp; Healing</h3>
-                    <p>Promotes physical well-being and accelerates recovery from illnesses by channeling positive cosmic energy.</p>
-                </div>
-                <div class="benefit-card fade-up">
-                    <div class="benefit-icon"><i class="fas fa-shield-halved"></i></div>
-                    <h3>Divine Protection</h3>
-                    <p>Creates an impenetrable shield against negative energies, evil eye, and harmful external influences.</p>
-                </div>
-                <div class="benefit-card fade-up">
-                    <div class="benefit-icon"><i class="fas fa-seedling"></i></div>
-                    <h3>Longevity &amp; Vitality</h3>
-                    <p>Blessed to overcome fear of death and promote a long, healthy, and fulfilling life journey.</p>
-                </div>
-                <div class="benefit-card fade-up">
-                    <div class="benefit-icon"><i class="fas fa-brain"></i></div>
-                    <h3>Mental Peace</h3>
-                    <p>Calms the mind, reduces anxiety and stress, bringing clarity and emotional stability.</p>
-                </div>
-                <div class="benefit-card fade-up">
-                    <div class="benefit-icon"><i class="fas fa-spa"></i></div>
-                    <h3>Spiritual Growth</h3>
-                    <p>Deepens meditation practice and accelerates spiritual evolution through divine vibrations.</p>
-                </div>
-                <div class="benefit-card fade-up">
-                    <div class="benefit-icon"><i class="fas fa-road"></i></div>
-                    <h3>Remove Obstacles</h3>
-                    <p>Clears blockages in life path, helping overcome challenges in career, relationships, and finances.</p>
-                </div>
-            </div>
+  <!-- ===================================================================
+       1. HERO
+       =================================================================== -->
+  <section class="hero" id="top">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <div class="hero__eyebrow-row">
+          <span class="badge badge--on-dark">शुद्ध तांबा</span>
+          <span class="badge badge--on-dark">व्यक्तिगत निर्माण</span>
+          <span class="badge badge--on-dark">विधिवत अभिमंत्रण</span>
         </div>
-    </section>
+        <h1 class="heading-display hero__title">
+          हर यंत्र, आपके <em>नाम और गोत्र</em> के साथ<br>विशेष रूप से तैयार
+        </h1>
+        <p class="hero__desc">
+          वास्तु मित्र अभिषेक पर हम बड़ी संख्या में यंत्र नहीं बनाते। प्रत्येक महामृत्युंजय अथवा काल भैरव यंत्र आपके नाम, गोत्र और व्यक्तिगत संकल्प के साथ अलग से तैयार किया जाता है, और शुद्ध तांबे में विधिवत वैदिक विधि से अभिमंत्रित किया जाता है।
+        </p>
+        <div class="hero__ctas">
+          <div class="btn-group">
+            <button type="button" class="btn btn--primary" data-open-order>अपना यंत्र चुनें</button>
+            <a href="#process" class="btn btn--outline-on-dark">निर्माण प्रक्रिया जानें</a>
+          </div>
+        </div>
+        <div class="hero__trust-row">
+          <span class="hero__trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            व्यक्तिगत नाम एवं गोत्र अंकन
+          </span>
+          <span class="hero__trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            प्रीमियम शुद्ध तांबा यंत्र
+          </span>
+          <span class="hero__trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            सुरक्षित पैकेजिंग में प्रेषण
+          </span>
+        </div>
+      </div>
 
-    <!-- ===== GALLERY ===== -->
-    <section class="section gallery" id="gallery">
-        <div class="container">
-            <div class="section-header fade-up">
-                <div class="label">Product Showcase</div>
-                <h2>Crafted to Perfection</h2>
-                <p>Each Yantra is meticulously handcrafted following ancient Vedic specifications</p>
+      <div class="hero__visual">
+        <div class="hero__visual-frame reveal">
+          <img src="assets/images/hero-mahamrityunjay.webp" alt="व्यक्तिगत रूप से तैयार शुद्ध तांबे का महामृत्युंजय यंत्र, दीपक की रोशनी में" width="1100" height="1300" loading="eager">
+          <div class="hero__visual-caption">
+            <div>
+              <strong>व्यक्तिगत रूप से तैयार</strong>
+              <span>आपके नाम, गोत्र व संकल्प सहित</span>
             </div>
-            <div class="gallery-grid fade-up">
-                <div class="gallery-item">
-                    <img src="https://shaligram.com/product-img/YTSMMMY014-1.jpg" alt="Maha Mrityunjaya Yantra Front View"
-                         onerror="this.src='assets/images/yantra-1.svg'">
-                    <div class="overlay"><h4>Front View</h4><p>Intricate sacred geometry patterns</p></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://shaligram.com/product-img/YTSMMMY014-4.jpg" alt="Maha Mrityunjaya Yantra Closeup"
-                         onerror="this.src='assets/images/yantra-2.svg'">
-                    <div class="overlay"><h4>Sacred Engravings</h4><p>Precision-etched Vedic symbols</p></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://shaligram.com/product-img/YTSMMMY014-2.jpg" alt="Yantra Side View"
-                         onerror="this.src='assets/images/yantra-3.svg'">
-                    <div class="overlay"><h4>Side View</h4><p>Premium metal finish</p></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1605636214989-5b0d998a6b4c?w=400&h=400&fit=crop" alt="Vedic Puja Setup"
-                         onerror="this.src='assets/images/yantra-4.svg'">
-                    <div class="overlay"><h4>Blessed Setup</h4><p>Comes with worship guide</p></div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- ===== SPECS ===== -->
-    <section class="section specs" id="specs">
-        <div class="container">
-            <div class="section-header fade-up">
-                <div class="label">Specifications</div>
-                <h2>Product Details</h2>
-                <p>Every detail crafted with precision and spiritual intention</p>
-            </div>
-            <div class="specs-grid">
-                <div class="specs-table fade-up">
-                    <div class="row"><span class="label"><i class="fas fa-om"></i> Yantra Type</span><span class="value">Maha Mrityunjaya Yantra</span></div>
-                    <div class="row"><span class="label"><i class="fas fa-weight-scale"></i> Metal Options</span><span class="value">Copper / Silver / Gold Plated</span></div>
-                    <div class="row"><span class="label"><i class="fas fa-expand"></i> Dimensions</span><span class="value">3 x 3 inches (Standard)</span></div>
-                    <div class="row"><span class="label"><i class="fas fa-weight-hanging"></i> Weight</span><span class="value">~150-200 grams (Copper)</span></div>
-                    <div class="row"><span class="label"><i class="fas fa-hand-sparkles"></i> Craftsmanship</span><span class="value">Hand-engraved by Vedic Artisans</span></div>
-                    <div class="row"><span class="label"><i class="fas fa-certificate"></i> Certification</span><span class="value">Vedic Authenticity Certified</span></div>
-                    <div class="row"><span class="label"><i class="fas fa-gift"></i> Includes</span><span class="value">Yantra + Silk Pouch + Worship Guide</span></div>
-                    <div class="row"><span class="label"><i class="fas fa-truck"></i> Shipping</span><span class="value">Free Shipping Worldwide</span></div>
-                </div>
-                <div class="specs-visual fade-up">
-                    <img src="https://shaligram.com/product-img/YTSMMMY014-3.jpg" alt="Yantra Dimensions"
-                         onerror="this.src='assets/images/yantra-specs.svg'">
-                    <a href="#order" class="btn-gold" style="margin-top:24px;justify-content:center;"><i class="fas fa-om"></i> Order Yours Now</a>
-                </div>
-            </div>
+  <!-- ===================================================================
+       2. ABOUT
+       =================================================================== -->
+  <section class="section" id="about">
+    <div class="geo-pattern" aria-hidden="true"></div>
+    <div class="container about__grid">
+      <div class="about__media reveal">
+        <img src="assets/images/about-personalized-yantra.webp" alt="व्यक्तिगत नाम अंकन के साथ तैयार किया जा रहा तांबे का यंत्र" width="1000" height="1000" loading="lazy">
+        <div class="about__media-badge">
+          <strong>100%</strong>
+          <span>व्यक्तिगत रूप से तैयार — कोई सामूहिक निर्माण नहीं</span>
         </div>
-    </section>
+      </div>
 
-    <!-- ===== HOW TO USE ===== -->
-    <section class="section steps" id="howto">
-        <div class="container">
-            <div class="section-header fade-up">
-                <div class="label">How to Use</div>
-                <h2>Installation &amp; Worship Guide</h2>
-                <p>Follow these simple steps to activate and receive the blessings of your Yantra</p>
-            </div>
-            <div class="steps-grid fade-up">
-                <div class="step-card">
-                    <div class="step-num">01</div>
-                    <h3>Purification</h3>
-                    <p>Cleanse the Yantra with Gangajal or raw milk and wipe with a clean cloth.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-num">02</div>
-                    <h3>Installation</h3>
-                    <p>Place in your prayer room or home temple facing East or North direction.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-num">03</div>
-                    <h3>Energization</h3>
-                    <p>Light a diya and incense. Chant the Maha Mrityunjaya Mantra 108 times.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-num">04</div>
-                    <h3>Daily Worship</h3>
-                    <p>Offer flowers and meditate facing the Yantra for 10-15 minutes daily.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="about__content reveal">
+        <span class="eyebrow">हमारे बारे में</span>
+        <h2 class="heading-display section-heading">वास्तु मित्र अभिषेक — एक व्यक्तिगत आध्यात्मिक सेवा</h2>
+        <p class="section-subtext">
+          वास्तु मित्र अभिषेक की स्थापना इस विश्वास के साथ हुई कि यंत्र केवल एक धातु की आकृति नहीं, बल्कि श्रद्धा और संकल्प का माध्यम है। इसीलिए हम प्रत्येक यंत्र को अलग से, आपके नाम, गोत्र और व्यक्तिगत प्रार्थना को ध्यान में रखते हुए तैयार करते हैं — न कि एक जैसी वस्तुओं की भाँति बड़ी संख्या में।
+        </p>
 
-    <!-- ===== TESTIMONIALS ===== -->
-    <section class="section testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-header light fade-up">
-                <div class="label">Testimonials</div>
-                <h2>What Our Devotees Say</h2>
-                <p>Real experiences from people who transformed their lives with this sacred Yantra</p>
+        <div class="about__points">
+          <div class="about__point">
+            <span class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <div>
+              <p class="about__point-title">व्यक्तिगत नाम एवं गोत्र</p>
+              <p class="about__point-desc">प्रत्येक यंत्र पर आपका नाम व गोत्र सम्मिलित किया जाता है, ताकि संकल्प पूर्णतः आपके लिए हो।</p>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card fade-up">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <blockquote>"My health has improved dramatically since I installed this Yantra in my home. I feel a positive energy and protection that I never felt before. Truly blessed."</blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">RK</div>
-                        <div class="testimonial-info"><h4>Rajesh Kumar</h4><span>Mumbai, Maharashtra</span></div>
-                    </div>
-                </div>
-                <div class="testimonial-card fade-up">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <blockquote>"The Maha Mrityunjaya Yantra has brought immense peace to our family. My husband's health issues have reduced significantly. Grateful to Vastu Mitra Abhishek."</blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">SP</div>
-                        <div class="testimonial-info"><h4>Sunita Patel</h4><span>Surat, Gujarat</span></div>
-                    </div>
-                </div>
-                <div class="testimonial-card fade-up">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <blockquote>"I was going through a difficult phase in my career. After installing this Yantra, I noticed a positive shift. My business is flourishing. Highly recommended!"</blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">AM</div>
-                        <div class="testimonial-info"><h4>Amit Mehta</h4><span>Delhi, NCR</span></div>
-                    </div>
-                </div>
+          </div>
+          <div class="about__point">
+            <span class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
+            </span>
+            <div>
+              <p class="about__point-title">व्यक्तिगत संकल्प</p>
+              <p class="about__point-desc">आपकी जानकारी के अनुसार विधिवत संकल्प लेकर ही यंत्र की तैयारी प्रारंभ की जाती है।</p>
             </div>
+          </div>
+          <div class="about__point">
+            <span class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </span>
+            <div>
+              <p class="about__point-title">विधिवत वैदिक अभिमंत्रण</p>
+              <p class="about__point-desc">यंत्र को उचित मंत्रोच्चारण एवं पारंपरिक विधि के अनुसार अभिमंत्रित किया जाता है।</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- ===== FAQ ===== -->
-    <section class="section faqs" id="faqs">
-        <div class="container">
-            <div class="section-header fade-up">
-                <div class="label">FAQs</div>
-                <h2>Frequently Asked Questions</h2>
-                <p>Everything you need to know about the Maha Mrityunjaya Yantra</p>
-            </div>
-            <div class="faq-list fade-up">
-                <div class="faq-item">
-                    <button class="faq-q"><span>What is the Maha Mrityunjaya Yantra?</span><i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-a"><p>The Maha Mrityunjaya Yantra is a sacred geometric diagram representing the energy of the Maha Mrityunjaya Mantra. It is used for protection, healing, and overcoming the fear of death.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-q"><span>Which metal should I choose?</span><i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-a"><p>Copper is the traditional and most effective metal for Yantras as it conducts spiritual energy well. Silver offers enhanced purity, while Gold-plated provides premium quality. All are equally effective when worshipped with devotion.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-q"><span>How is the Yantra energized?</span><i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-a"><p>Each Yantra is consecrated with Vedic mantras and rituals before dispatch. However, we recommend daily chanting of the Maha Mrityunjaya Mantra in front of the Yantra for best results.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-q"><span>Where should I place the Yantra?</span><i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-a"><p>The Yantra should be placed in a clean, sacred space such as your prayer room or home temple. Face it towards East or North while worshipping. You can also place it in your living room for overall protection.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-q"><span>How long does shipping take?</span><i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-a"><p>We offer free shipping across India (3-7 business days) and worldwide (7-14 business days). Each Yantra is carefully packed in a sacred silk pouch with complete worship instructions.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-q"><span>Can I return the Yantra?</span><i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-a"><p>Yes, we offer a 7-day satisfaction guarantee. If you are not completely satisfied, we will provide a full refund or replacement. Your spiritual satisfaction is our priority.</p></div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- ===================================================================
+       3. WHY PERSONALIZED YANTRA — respectful comparison
+       =================================================================== -->
+  <section class="section section--ivory-soft" id="why-personalized">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">क्यों चुनें व्यक्तिगत यंत्र</span>
+        <h2 class="heading-display section-heading">सामान्य यंत्र और व्यक्तिगत अभिमंत्रित यंत्र में अंतर</h2>
+        <p class="section-subtext">
+          पारंपरिक मान्यता के अनुसार, यंत्रों की स्थापना से पूर्व सामान्यतः उचित विधि, संकल्प एवं मंत्रोच्चारण के साथ पूजन किया जाता है। हमारी सेवा इसी परंपरा का पालन करते हुए, आपके नाम, गोत्र और संकल्प के अनुसार यह पूरी प्रक्रिया व्यक्तिगत रूप से सम्पन्न करती है।
+        </p>
+      </div>
 
-    <!-- ===== URGENCY ===== -->
-    <div class="urgency-bar">
-        <div class="container">
-            <span class="text"><i class="fas fa-bolt"></i> Limited Time Offer - Free Shipping + Sacred Silk Pouch</span>
-            <div class="urgency-timer">
-                <div class="unit"><span class="n" id="th">02</span><span class="l">Hours</span></div>
-                <div class="unit"><span class="n" id="tm">00</span><span class="l">Mins</span></div>
-                <div class="unit"><span class="n" id="ts">00</span><span class="l">Secs</span></div>
-            </div>
+      <div class="compare">
+        <div class="compare__col compare__col--standard reveal">
+          <h3 class="compare__title">सामान्य बाज़ार यंत्र</h3>
+          <ul class="compare__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg> सामान्यतः एक जैसे यंत्र बड़ी संख्या में तैयार किए जाते हैं</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg> व्यक्तिगत नाम या गोत्र सम्मिलित नहीं होता</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg> सामान्य रूप से एक ही विधि सभी के लिए अपनाई जाती है</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg> उपयोग की गई धातु की गुणवत्ता भिन्न हो सकती है</li>
+          </ul>
         </div>
+
+        <div class="compare__col compare__col--personal reveal">
+          <h3 class="compare__title">वास्तु मित्र अभिषेक — व्यक्तिगत सेवा</h3>
+          <ul class="compare__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> आपके नाम व गोत्र सहित व्यक्तिगत संकल्प के साथ निर्माण</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> प्रत्येक यंत्र अलग से विधिवत अभिमंत्रित किया जाता है</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> शुद्ध, प्रीमियम गुणवत्ता के तांबे में निर्माण</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> आपकी जानकारी के अनुसार तैयार, सुरक्षित पैकेजिंग में प्रेषित</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="why-note">
+        कृपया ध्यान दें — यह तुलना किसी अन्य विक्रेता की आलोचना हेतु नहीं है। हमारा उद्देश्य केवल यह स्पष्ट करना है कि हमारी सेवा में प्रत्येक यंत्र आपके व्यक्तिगत विवरण के अनुसार अलग से तैयार किया जाता है।
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       4 & 5. MAHAMRITYUNJAY YANTRA + BENEFITS
+       =================================================================== -->
+  <section class="section product-section" id="mahamrityunjay">
+    <div class="geo-pattern" aria-hidden="true"></div>
+    <div class="container grid-2">
+      <div class="product-media reveal">
+        <div class="product-media__frame">
+          <img src="assets/images/mahamrityunjay-yantra.webp" alt="महामृत्युंजय यंत्र — शुद्ध तांबे में व्यक्तिगत रूप से तैयार, नीली आभा के साथ" width="1000" height="1100" loading="lazy">
+        </div>
+      </div>
+
+      <div class="product-content reveal">
+        <span class="eyebrow">प्रथम यंत्र</span>
+        <h2 class="heading-display product-content__title deity-accent--healing">महामृत्युंजय यंत्र</h2>
+        <p class="product-content__desc">
+          महामृत्युंजय यंत्र का संबंध भगवान त्र्यंबकेश्वर से माना जाता है। पारंपरिक मान्यता के अनुसार, इस यंत्र की स्थापना स्वास्थ्य, दीर्घायु एवं आंतरिक शक्ति की प्रार्थना के भाव से जुड़ी है। हम प्रत्येक महामृत्युंजय यंत्र को आपके नाम, गोत्र और संकल्प के साथ अलग से तैयार करते हैं।
+        </p>
+
+        <ul class="attribute-list">
+          <li class="attribute-list__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg>
+            <div><p class="attribute-list__item-title">भगवान त्र्यंबकेश्वर से जुड़ाव</p><p class="attribute-list__item-desc">यंत्र की परंपरा भगवान शिव के त्र्यंबकेश्वर स्वरूप से संबद्ध मानी जाती है।</p></div>
+          </li>
+          <li class="attribute-list__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+            <div><p class="attribute-list__item-title">स्वास्थ्य हेतु प्रार्थना</p><p class="attribute-list__item-desc">मान्यता है कि इस यंत्र की उपासना अच्छे स्वास्थ्य की कामना में सहायक भाव रखती है।</p></div>
+          </li>
+          <li class="attribute-list__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            <div><p class="attribute-list__item-title">दीर्घायु की कामना</p><p class="attribute-list__item-desc">पारंपरिक रूप से यह यंत्र दीर्घ एवं स्वस्थ जीवन की प्रार्थना से जोड़ा जाता है।</p></div>
+          </li>
+          <li class="attribute-list__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5-4 8-8 11Z"/></svg>
+            <div><p class="attribute-list__item-title">आंतरिक शक्ति व पारिवारिक सुख</p><p class="attribute-list__item-desc">परिवार की सुख-समृद्धि एवं मानसिक बल हेतु श्रद्धापूर्वक उपासना की जाती है।</p></div>
+          </li>
+        </ul>
+
+        <button type="button" class="btn btn--primary" data-open-order data-yantra="mahamrityunjay">महामृत्युंजय यंत्र ऑर्डर करें</button>
+      </div>
     </div>
 
-    <!-- ===== ORDER ===== -->
-    <section class="section order" id="order">
-        <div class="container">
-            <div class="section-header light fade-up">
-                <div class="label">Place Your Order</div>
-                <h2>Book Your Sacred Yantra</h2>
-                <p>Fill in your details and we will deliver the blessed Yantra to your doorstep</p>
-            </div>
-            <div class="order-wrap fade-up">
-                <div class="order-form">
-                    <h3><i class="fas fa-om"></i> Your Details</h3>
-                    <form id="yantraOrderForm" method="POST">
-                        <input type="hidden" name="product_name" value="Maha Mrityunjaya Yantra">
-                        <div class="form-2col">
-                            <div class="form-group">
-                                <label>Full Name <span class="req">*</span></label>
-                                <input type="text" name="name" placeholder="Enter your full name" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Email <span class="req">*</span></label>
-                                <input type="email" name="email" placeholder="Enter your email" required>
-                            </div>
-                        </div>
-                        <div class="form-2col">
-                            <div class="form-group">
-                                <label>Phone <span class="req">*</span></label>
-                                <input type="tel" name="phone" placeholder="Enter your phone number" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Pincode</label>
-                                <input type="text" name="pincode" placeholder="Enter pincode">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Delivery Address <span class="req">*</span></label>
-                            <textarea name="address" placeholder="Enter your full address" required></textarea>
-                        </div>
-                        <div class="form-2col">
-                            <div class="form-group">
-                                <label>City</label>
-                                <input type="text" name="city" placeholder="Enter your city">
-                            </div>
-                            <div class="form-group">
-                                <label>State</label>
-                                <input type="text" name="state" placeholder="Enter your state">
-                            </div>
-                        </div>
-                        <div class="form-2col">
-                            <div class="form-group">
-                                <label>Yantra Type</label>
-                                <select name="yantra_type" id="yantra_type">
-                                    <option value="Copper">Copper Yantra - &#8377;999</option>
-                                    <option value="Silver">Silver Yantra - &#8377;2,499</option>
-                                    <option value="Gold">Gold Plated Yantra - &#8377;5,999</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Quantity</label>
-                                <input type="number" name="quantity" id="quantity" value="1" min="1" max="10">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Additional Notes</label>
-                            <textarea name="message" placeholder="Any special instructions or requirements..."></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="order-sidebar">
-                    <h3><i class="fas fa-receipt"></i> Order Summary</h3>
-                    <div class="order-summary-row"><span class="l">Yantra Type</span><span class="r" id="s-type">Copper</span></div>
-                    <div class="order-summary-row"><span class="l">Quantity</span><span class="r" id="s-qty">x1</span></div>
-                    <div class="order-summary-row"><span class="l">Unit Price</span><span class="r" id="s-price">&#8377;999</span></div>
-                    <div class="order-total"><span class="l">Total Amount</span><span class="r" id="s-total">&#8377;999</span></div>
-                    <button type="submit" class="btn-order" id="orderSubmitBtn" form="yantraOrderForm"><i class="fas fa-lock"></i> Place Order Now</button>
-                    <div style="text-align:center;margin-top:14px;font-size:0.8rem;color:#6b7280;"><i class="fas fa-shield-alt" style="color:#d4a017;"></i> Secure checkout &bull; Free shipping</div>
-                </div>
-            </div>
-            <div class="order-trust fade-up">
-                <span><i class="fas fa-shield-halved"></i> 7-Day Satisfaction Guarantee</span>
-                <span><i class="fas fa-truck"></i> Free Shipping Worldwide</span>
-                <span><i class="fas fa-lock"></i> 100% Secure Checkout</span>
-                <span><i class="fas fa-certificate"></i> Vedic Certified</span>
-            </div>
+    <div class="container">
+      <div class="divider-motif" aria-hidden="true"><span class="divider-motif__line"></span>ॐ<span class="divider-motif__line divider-motif__line--right"></span></div>
+      <div class="section-head section-head--benefits">
+        <span class="eyebrow">महामृत्युंजय यंत्र के भाव</span>
+        <h3 class="heading-display" style="font-size:var(--fs-xl)">श्रद्धापूर्वक उपासना से जुड़े मुख्य भाव</h3>
+      </div>
+      <div class="benefits-grid benefits--light">
+        <div class="card reveal benefit-card">
+          <p class="benefit-card__title">स्वास्थ्य हेतु प्रार्थना</p>
+          <p class="benefit-card__desc">मान्यता है कि नियमित श्रद्धापूर्वक पूजन अच्छे स्वास्थ्य की कामना में सहायक भाव देता है।</p>
         </div>
-    </section>
+        <div class="card reveal benefit-card">
+          <p class="benefit-card__title">दीर्घायु की कामना</p>
+          <p class="benefit-card__desc">दीर्घ एवं स्वस्थ जीवन हेतु पारंपरिक प्रार्थना का भाव इस यंत्र से जुड़ा है।</p>
+        </div>
+        <div class="card reveal benefit-card">
+          <p class="benefit-card__title">मानसिक शांति</p>
+          <p class="benefit-card__desc">श्रद्धापूर्ण उपासना मन को शांत व स्थिर रखने में सहायक मानी जाती है।</p>
+        </div>
+        <div class="card reveal benefit-card">
+          <p class="benefit-card__title">पारिवारिक सुख-समृद्धि</p>
+          <p class="benefit-card__desc">परिवार के कल्याण एवं सामंजस्य की प्रार्थना हेतु यह यंत्र पूजनीय माना जाता है।</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- ===== MODAL ===== -->
-    <div class="modal-overlay" id="orderConfirmation">
-        <div class="modal-box">
-            <div class="modal-icon"><i class="fas fa-check"></i></div>
-            <h3>Order Placed Successfully!</h3>
-            <p>Thank you for your order. Your sacred Yantra will be blessed and dispatched soon.</p>
-            <p class="order-id" id="confirmOrderId">#YANTRA-0000</p>
-            <p style="font-size:0.9rem;color:#6b7280;">We will contact you within 24 hours to confirm your order.</p>
-            <p style="font-size:0.85rem;color:#b8860b;margin-top:8px;"><i class="fas fa-om"></i> May the divine blessings be with you</p>
-            <button class="btn-gold" id="confirmClose" style="margin-top:20px;"><i class="fas fa-check-circle"></i> Continue</button>
+  <!-- ===================================================================
+       6 & 7. KAAL BHAIRAV YANTRA + BENEFITS
+       =================================================================== -->
+  <section class="section section--dark product-section product-section--reverse" id="kaalbhairav">
+    <div class="geo-pattern geo-pattern--dark" aria-hidden="true"></div>
+    <div class="container grid-2">
+      <div class="product-content reveal">
+        <span class="eyebrow eyebrow--on-dark">द्वितीय यंत्र</span>
+        <h2 class="heading-display product-content__title deity-accent--protect" style="color:var(--color-ivory)">काल भैरव यंत्र</h2>
+        <p class="product-content__desc">
+          काल भैरव यंत्र भगवान काल भैरव की उपासना से संबद्ध माना जाता है। पारंपरिक मान्यता के अनुसार यह यंत्र निर्भयता, आध्यात्मिक सुरक्षा के भाव, अनुशासन एवं जीवन की बाधाओं का सामना करने के साहस की प्रार्थना से जुड़ा है। हम इसे भी आपके नाम, गोत्र और संकल्प सहित व्यक्तिगत रूप से तैयार करते हैं।
+        </p>
+
+        <ul class="attribute-list">
+          <li class="attribute-list__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg>
+            <div><p class="attribute-list__item-title">भगवान काल भैरव की कृपा</p><p class="attribute-list__item-desc">यह यंत्र भगवान शिव के काल भैरव स्वरूप की उपासना परंपरा से जुड़ा है।</p></div>
+          </li>
+          <li class="attribute-list__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5.5 3.4 9.7 8 10 4.6-.3 8-4.5 8-10V6l-8-4Z"/></svg>
+            <div><p class="attribute-list__item-title">निर्भयता की भावना</p><p class="attribute-list__item-desc">श्रद्धापूर्वक उपासना निर्भय व स्थिर मनोभाव रखने में सहायक मानी जाती है।</p></div>
+          </li>
+          <li class="attribute-list__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
+            <div><p class="attribute-list__item-title">आध्यात्मिक सुरक्षा का भाव</p><p class="attribute-list__item-desc">पारंपरिक रूप से यह यंत्र सुरक्षा व संरक्षण की श्रद्धा से जोड़ा जाता है।</p></div>
+          </li>
+          <li class="attribute-list__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            <div><p class="attribute-list__item-title">अनुशासन व साहस</p><p class="attribute-list__item-desc">जीवन की बाधाओं का सामना करने हेतु आंतरिक अनुशासन व साहस की प्रार्थना।</p></div>
+          </li>
+        </ul>
+
+        <button type="button" class="btn btn--gold" data-open-order data-yantra="kaalbhairav">काल भैरव यंत्र ऑर्डर करें</button>
+      </div>
+
+      <div class="product-media reveal">
+        <div class="product-media__frame">
+          <img src="assets/images/kaal-bhairav-yantra.webp" alt="काल भैरव यंत्र — शुद्ध तांबे में व्यक्तिगत रूप से तैयार, गहरी लाल आभा के साथ" width="1000" height="1100" loading="lazy">
         </div>
+      </div>
     </div>
 
-    <!-- ===== FOOTER (minimal) ===== -->
-    <footer style="background:#0a0a1a;padding:40px 0;text-align:center;border-top:1px solid rgba(255,255,255,0.05);">
-        <div class="container">
-            <p style="color:rgba(255,255,255,0.4);font-size:0.85rem;margin-bottom:8px;">
-                <i class="fas fa-om" style="color:#d4a017;"></i> Vastu Mitra Abhishek &bull; B-119, First Floor, Main, Mall Rd, Greenfield Colony, Sector 41, Faridabad, Haryana 121010
-            </p>
-            <p style="color:rgba(255,255,255,0.3);font-size:0.75rem;">
-                &copy; <?= date('Y') ?> Vastu Mitra Abhishek. All Rights Reserved.
-            </p>
+    <div class="container">
+      <div class="divider-motif" aria-hidden="true"><span class="divider-motif__line"></span>ॐ<span class="divider-motif__line divider-motif__line--right"></span></div>
+      <div class="section-head">
+        <span class="eyebrow eyebrow--on-dark">काल भैरव यंत्र के भाव</span>
+        <h3 class="heading-display text-on-dark" style="font-size:var(--fs-xl)">श्रद्धापूर्वक उपासना से जुड़े मुख्य भाव</h3>
+      </div>
+      <div class="benefits-grid">
+        <div class="card card--dark reveal benefit-card">
+          <p class="benefit-card__title">निर्भयता की भावना</p>
+          <p class="benefit-card__desc">श्रद्धापूर्ण उपासना मन में निर्भय व स्थिर भाव उत्पन्न करने में सहायक मानी जाती है।</p>
         </div>
-    </footer>
+        <div class="card card--dark reveal benefit-card">
+          <p class="benefit-card__title">आध्यात्मिक सुरक्षा</p>
+          <p class="benefit-card__desc">परंपरागत रूप से यह यंत्र सुरक्षा व संरक्षण के भाव से जोड़ा जाता है।</p>
+        </div>
+        <div class="card card--dark reveal benefit-card">
+          <p class="benefit-card__title">साहस व अनुशासन</p>
+          <p class="benefit-card__desc">जीवन की चुनौतियों का सामना करने हेतु आंतरिक साहस व अनुशासन की प्रार्थना।</p>
+        </div>
+        <div class="card card--dark reveal benefit-card">
+          <p class="benefit-card__title">मानसिक दृढ़ता</p>
+          <p class="benefit-card__desc">श्रद्धापूर्वक उपासना मानसिक दृढ़ता एवं आत्मबल हेतु सहायक भाव मानी जाती है।</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="assets/js/yantra-landing.js"></script>
+  <!-- ===================================================================
+       8. HOW YOUR YANTRA IS PREPARED (PROCESS)
+       =================================================================== -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head section-head--center" style="text-align:center;margin-inline:auto">
+        <span class="eyebrow" style="justify-content:center">निर्माण प्रक्रिया</span>
+        <h2 class="heading-display section-heading section-heading--center">आपका यंत्र किस प्रकार तैयार किया जाता है</h2>
+        <p class="section-subtext section-subtext--center">हर चरण में पारदर्शिता — जानिए आपका व्यक्तिगत यंत्र किस विधि से आप तक पहुँचता है।</p>
+      </div>
+
+      <div class="process-flow">
+        <div class="process-step reveal">
+          <div class="process-step__num">1</div>
+          <p class="process-step__title">विवरण प्राप्ति</p>
+          <p class="process-step__desc">आपका नाम, गोत्र, संकल्प एवं यंत्र का चयन ऑर्डर फ़ॉर्म द्वारा प्राप्त किया जाता है।</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step__num">2</div>
+          <p class="process-step__title">शुद्ध तांबे का चयन</p>
+          <p class="process-step__desc">प्रीमियम गुणवत्ता का तांबा चुनकर आपके यंत्र पर नाम व गोत्र अंकित किया जाता है।</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step__num">3</div>
+          <p class="process-step__title">विधिवत पूजन एवं अभिमंत्रण</p>
+          <p class="process-step__desc">आपके संकल्प के अनुसार पारंपरिक विधि से मंत्रोच्चारण सहित अभिमंत्रण किया जाता है।</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step__num">4</div>
+          <p class="process-step__title">सुरक्षित पैकेजिंग एवं प्रेषण</p>
+          <p class="process-step__desc">यंत्र को सम्मानपूर्वक सुरक्षित पैकेजिंग में आपके पते पर भेजा जाता है।</p>
+        </div>
+      </div>
+
+      <div class="process-media reveal">
+        <img src="assets/images/process-preparation.webp" alt="यंत्र निर्माण की व्यक्तिगत प्रक्रिया — शुद्ध तांबे पर अंकन एवं पूजन" width="1000" height="750" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       9. PRICING
+       =================================================================== -->
+  <section class="section section--ivory-soft" id="pricing">
+    <div class="container">
+      <div class="section-head section-head--center" style="text-align:center;margin-inline:auto">
+        <span class="eyebrow" style="justify-content:center">मूल्य</span>
+        <h2 class="heading-display section-heading section-heading--center">अपने यंत्र का आकार चुनें</h2>
+        <p class="section-subtext section-subtext--center">दोनों आकार महामृत्युंजय यंत्र एवं काल भैरव यंत्र — दोनों के लिए समान मूल्य पर उपलब्ध हैं। ऑर्डर करते समय अपना यंत्र चुनें।</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-card__media">
+            <img src="assets/images/pricing-3x3.webp" alt="3 गुणा 3 इंच आकार का व्यक्तिगत तांबे का यंत्र" width="800" height="800" loading="lazy">
+          </div>
+          <div class="pricing-card__body">
+            <p class="pricing-card__size">3 × 3 इंच</p>
+            <div class="pricing-card__price-row">
+              <span class="pricing-card__price">₹1,100</span>
+              <span class="pricing-card__unit">/ यंत्र</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>शुद्ध तांबा यंत्र</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>नाम एवं गोत्र अंकन</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>व्यक्तिगत संकल्प एवं अभिमंत्रण</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>सुरक्षित पैकेजिंग</li>
+            </ul>
+            <button type="button" class="btn btn--outline btn--block pricing-card__cta" data-open-order data-size="3x3">यह आकार चुनें</button>
+          </div>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal">
+          <div class="pricing-card__media">
+            <img src="assets/images/pricing-5x5.webp" alt="5 गुणा 5 इंच आकार का व्यक्तिगत तांबे का यंत्र" width="800" height="800" loading="lazy">
+          </div>
+          <div class="pricing-card__body">
+            <p class="pricing-card__size">5 × 5 इंच</p>
+            <div class="pricing-card__price-row">
+              <span class="pricing-card__price">₹2,100</span>
+              <span class="pricing-card__unit">/ यंत्र</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>शुद्ध तांबा यंत्र — बड़ा आकार</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>नाम एवं गोत्र अंकन</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>व्यक्तिगत संकल्प एवं अभिमंत्रण</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>प्राथमिकता पैकेजिंग</li>
+            </ul>
+            <button type="button" class="btn btn--primary btn--block pricing-card__cta" data-open-order data-size="5x5">यह आकार चुनें</button>
+          </div>
+        </div>
+      </div>
+      <p class="pricing-note">शिपिंग संपूर्ण भारत में उपलब्ध। ऑर्डर फ़ॉर्म में अपना यंत्र, आकार व पता भरें — शेष जानकारी हमारी टीम आपसे साझा करेगी।</p>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       10. WHY CHOOSE US
+       =================================================================== -->
+  <section class="section section--dark" id="why-choose-us">
+    <div class="geo-pattern geo-pattern--dark" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-head section-head--center" style="text-align:center;margin-inline:auto">
+        <span class="eyebrow eyebrow--on-dark" style="justify-content:center">हम पर भरोसा क्यों करें</span>
+        <h2 class="heading-display section-heading section-heading--center text-on-dark">वास्तु मित्र अभिषेक को क्यों चुनें</h2>
+      </div>
+
+      <div class="trust-grid">
+        <div class="card card--dark reveal trust-card">
+          <span class="icon-tile icon-tile--outline" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg>
+          </span>
+          <p class="benefit-card__title">पूर्णतः व्यक्तिगत निर्माण</p>
+          <p class="benefit-card__desc">हर यंत्र आपके नाम, गोत्र और संकल्प के अनुसार अलग से तैयार होता है।</p>
+        </div>
+        <div class="card card--dark reveal trust-card">
+          <span class="icon-tile icon-tile--outline" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 12a8 8 0 0 1 16 0M4 12a8 8 0 0 0 16 0"/></svg>
+          </span>
+          <p class="benefit-card__title">प्रीमियम शुद्ध तांबा</p>
+          <p class="benefit-card__desc">केवल उच्च गुणवत्ता के तांबे का उपयोग, ताकि यंत्र दीर्घकाल तक टिकाऊ रहे।</p>
+        </div>
+        <div class="card card--dark reveal trust-card">
+          <span class="icon-tile icon-tile--outline" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </span>
+          <p class="benefit-card__title">विधिवत वैदिक प्रक्रिया</p>
+          <p class="benefit-card__desc">पारंपरिक मंत्रोच्चारण एवं संकल्प विधि का सम्मानपूर्वक पालन किया जाता है।</p>
+        </div>
+        <div class="card card--dark reveal trust-card">
+          <span class="icon-tile icon-tile--outline" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          </span>
+          <p class="benefit-card__title">पारदर्शी सेवा</p>
+          <p class="benefit-card__desc">पूरी प्रक्रिया स्पष्ट रूप से साझा — बिना किसी अतिरंजित दावे के।</p>
+        </div>
+        <div class="card card--dark reveal trust-card">
+          <span class="icon-tile icon-tile--outline" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+          </span>
+          <p class="benefit-card__title">सुरक्षित एवं सम्मानजनक पैकेजिंग</p>
+          <p class="benefit-card__desc">यंत्र को श्रद्धापूर्वक पैक कर सुरक्षित रूप से आपके पते पर भेजा जाता है।</p>
+        </div>
+        <div class="card card--dark reveal trust-card">
+          <span class="icon-tile icon-tile--outline" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </span>
+          <p class="benefit-card__title">समर्पित ग्राहक सहयोग</p>
+          <p class="benefit-card__desc">आपके प्रश्नों एवं जानकारी हेतु हमारी टीम सदैव उपलब्ध है।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       11. FAQ
+       =================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head section-head--center" style="text-align:center;margin-inline:auto">
+        <span class="eyebrow" style="justify-content:center">अक्सर पूछे जाने वाले प्रश्न</span>
+        <h2 class="heading-display section-heading section-heading--center">आपके प्रश्नों के उत्तर</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button type="button" class="faq-item__question" aria-expanded="false">
+            <span>मैं यंत्र कैसे ऑर्डर करूं?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>"अभी ऑर्डर करें" बटन पर क्लिक करें, अपना यंत्र व आकार चुनें, तथा अपना नाम, गोत्र, संकल्प एवं पता भरें। हमारी टीम शेष प्रक्रिया में आपसे संपर्क करेगी।</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-item__question" aria-expanded="false">
+            <span>यदि मुझे अपना गोत्र नहीं पता है तो क्या करूं?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>कोई बात नहीं। ऑर्डर फ़ॉर्म में "गोत्र ज्ञात नहीं" लिखें — हमारी टीम आगे की प्रक्रिया के लिए आपसे संपर्क कर सहायता करेगी।</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-item__question" aria-expanded="false">
+            <span>यंत्र वास्तव में व्यक्तिगत रूप से कैसे तैयार होता है?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>ऑर्डर प्राप्त होने के बाद ही आपके यंत्र पर नाम व गोत्र अंकित किया जाता है और आपके संकल्प के अनुसार विधिवत अभिमंत्रण किया जाता है — यह प्रक्रिया पहले से तैयार स्टॉक पर लागू नहीं होती।</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-item__question" aria-expanded="false">
+            <span>डिलीवरी में कितना समय लगता है?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>चूंकि प्रत्येक यंत्र व्यक्तिगत रूप से तैयार किया जाता है, तैयारी में कुछ दिन लगते हैं। सटीक समय-सीमा ऑर्डर की पुष्टि के समय हमारी टीम द्वारा साझा की जाती है।</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-item__question" aria-expanded="false">
+            <span>यंत्र की स्थापना कैसे करें?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>यंत्र के साथ स्थापना संबंधी सामान्य मार्गदर्शन भेजा जाता है। विशेष विधि हेतु आप अपने पारिवारिक पुरोहित या ज्योतिषाचार्य से भी परामर्श कर सकते हैं।</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-item__question" aria-expanded="false">
+            <span>भुगतान के कौन-कौन से माध्यम उपलब्ध हैं?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>हम UPI, डेबिट/क्रेडिट कार्ड एवं नेट बैंकिंग सहित सुरक्षित ऑनलाइन भुगतान माध्यम स्वीकार करते हैं।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       12. FINAL CTA
+       =================================================================== -->
+  <section class="section" id="final-cta-section">
+    <div class="container">
+      <div class="final-cta reveal">
+        <div class="final-cta__media" aria-hidden="true">
+          <img src="assets/images/final-cta-yantra.webp" alt="" loading="lazy">
+        </div>
+        <div class="final-cta__content">
+          <h2 class="heading-display final-cta__title">अपना व्यक्तिगत अभिमंत्रित यंत्र आज ही आरंभ करें</h2>
+          <p class="final-cta__desc">अपना नाम, गोत्र एवं संकल्प साझा करें — शेष प्रक्रिया श्रद्धापूर्वक हमारी टीम पर छोड़ दें।</p>
+          <button type="button" class="btn btn--gold" data-open-order>अभी ऑर्डर करें</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =====================================================================
+     FOOTER
+     ===================================================================== -->
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand" aria-label="वास्तु मित्र अभिषेक — होम">
+          <span class="brand__mark" aria-hidden="true">वा</span>
+          <span class="brand__text">
+            <span class="brand__name">वास्तु मित्र अभिषेक</span>
+            <span class="brand__tagline">व्यक्तिगत अभिमंत्रित यंत्र</span>
+          </span>
+        </a>
+        <p class="footer-brand__desc">प्रत्येक यंत्र आपके नाम, गोत्र एवं संकल्प के साथ व्यक्तिगत रूप से तैयार किया जाता है — शुद्ध तांबे में, विधिवत वैदिक विधि से अभिमंत्रित।</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram पर देखें"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="WhatsApp पर संपर्क करें"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg></a>
+          <a href="#" aria-label="Facebook पर देखें"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-col__title">शीघ्र लिंक</p>
+        <ul class="footer-col__list">
+          <li><a href="#about">हमारे बारे में</a></li>
+          <li><a href="#process">प्रक्रिया</a></li>
+          <li><a href="#pricing">मूल्य</a></li>
+          <li><a href="#faq">प्रश्न</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-col__title">हमारे यंत्र</p>
+        <ul class="footer-col__list">
+          <li><a href="#mahamrityunjay">महामृत्युंजय यंत्र</a></li>
+          <li><a href="#kaalbhairav">काल भैरव यंत्र</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-col__title">संपर्क करें</p>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>
+          <span>+91 98XXXXXX10 (कॉल / WhatsApp)</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
+          <span>connect@vastumitraabhishek.in</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>भारत — संपूर्ण देश में शिपिंग उपलब्ध</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="currentYear">2026</span> वास्तु मित्र अभिषेक। सर्वाधिकार सुरक्षित।</span>
+      <div class="footer-bottom__links">
+        <a href="#">गोपनीयता नीति</a>
+        <a href="#">नियम व शर्तें</a>
+        <a href="#">रिफंड नीति</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- =====================================================================
+     ORDER FORM MODAL
+     ===================================================================== -->
+<div class="modal-overlay" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderModalTitle">
+  <div class="order-modal">
+    <div class="order-modal__header">
+      <div>
+        <h2 class="order-modal__title" id="orderModalTitle">अपना यंत्र ऑर्डर करें</h2>
+        <p class="order-modal__subtitle">कृपया सही जानकारी भरें — यह विवरण आपके यंत्र पर अंकन एवं संकल्प हेतु उपयोग किया जाएगा।</p>
+      </div>
+      <button type="button" class="order-modal__close" data-close-order aria-label="फ़ॉर्म बंद करें">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <form class="order-form" id="orderForm" novalidate>
+      <div class="form-grid">
+
+        <div class="form-field form-field--full">
+          <label for="yantraSelect">यंत्र चुनें <span class="required">*</span></label>
+          <select id="yantraSelect" name="yantra" required>
+            <option value="mahamrityunjay">महामृत्युंजय यंत्र</option>
+            <option value="kaalbhairav">काल भैरव यंत्र</option>
+          </select>
+        </div>
+
+        <div class="form-field form-field--full">
+          <label for="sizeSelect">आकार चुनें <span class="required">*</span></label>
+          <select id="sizeSelect" name="size" required>
+            <option value="3x3">3 × 3 इंच — ₹1,100</option>
+            <option value="5x5">5 × 5 इंच — ₹2,100</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="customerName">पूरा नाम <span class="required">*</span></label>
+          <input type="text" id="customerName" name="customerName" placeholder="आपका पूरा नाम" required>
+        </div>
+
+        <div class="form-field">
+          <label for="mobile">मोबाइल नंबर <span class="required">*</span></label>
+          <input type="tel" id="mobile" name="mobile" placeholder="10 अंकों का मोबाइल नंबर" required>
+        </div>
+
+        <div class="form-field">
+          <label for="email">ईमेल</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+        </div>
+
+        <div class="form-field">
+          <label for="gotra">गोत्र <span class="required">*</span></label>
+          <input type="text" id="gotra" name="gotra" placeholder="आपका गोत्र" required>
+        </div>
+
+        <div class="form-field form-field--full">
+          <label for="sankalp">संकल्प / विशेष प्रार्थना <span class="required">*</span></label>
+          <textarea id="sankalp" name="sankalp" placeholder="अपनी प्रार्थना या संकल्प का संक्षिप्त विवरण लिखें" required></textarea>
+        </div>
+
+        <div class="form-field form-field--full">
+          <label for="address">शिपिंग पता <span class="required">*</span></label>
+          <textarea id="address" name="address" placeholder="मकान नंबर, गली, क्षेत्र" required></textarea>
+        </div>
+
+        <div class="form-field">
+          <label for="city">शहर <span class="required">*</span></label>
+          <input type="text" id="city" name="city" placeholder="शहर" required>
+        </div>
+
+        <div class="form-field">
+          <label for="state">राज्य <span class="required">*</span></label>
+          <input type="text" id="state" name="state" placeholder="राज्य" required>
+        </div>
+
+        <div class="form-field">
+          <label for="pincode">पिनकोड <span class="required">*</span></label>
+          <input type="text" id="pincode" name="pincode" placeholder="6 अंकों का पिनकोड" inputmode="numeric" maxlength="6" required>
+        </div>
+      </div>
+
+      <div class="order-summary">
+        <span class="order-summary__label" id="orderSummaryLabel">कृपया यंत्र और साइज़ चुनें</span>
+        <span class="order-summary__value" id="orderSummaryValue">—</span>
+      </div>
+
+      <div class="order-form__footer">
+        <button type="submit" class="btn btn--primary btn--block">ऑर्डर सुरक्षित करें</button>
+        <p class="order-form__note">भुगतान अगला सुरक्षित चरण होगा। बटन दबाकर आगे बढ़ने पर आप हमारी नियम व शर्तों से सहमत होते हैं।</p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- =====================================================================
+     SCRIPTS
+     ===================================================================== -->
+<!-- Razorpay Checkout — uncomment once your Razorpay account is ready
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+-->
+<script src="assets/js/main.js"></script>
 </body>
 </html>
+
+<style>
+/* =========================================================================
+   VASTU MITRA ABHISHEK — MAIN STYLESHEET
+   Premium Vedic / Devotional landing page
+   Structure:
+     1. Design Tokens (CSS Variables)
+     2. Reset & Base
+     3. Typography Utilities
+     4. Layout Utilities
+     5. Reusable Components (Buttons, Cards, Badges, Tags)
+     6. Header / Navigation
+     7. Hero
+     8. About
+     9. Why Personalized
+    10. Product Sections (Mahamrityunjay / Kaal Bhairav)
+    11. Benefits
+    12. Process
+    13. Pricing
+    14. Why Choose Us
+    15. FAQ
+    16. Final CTA
+    17. Footer
+    18. Order Form Modal
+    19. Toast / Misc
+    20. Responsive
+   ========================================================================= */
+
+/* -------------------------------------------------------------------------
+   1. DESIGN TOKENS
+   Edit these variables to re-theme the entire site from one place.
+   ------------------------------------------------------------------------- */
+:root {
+  /* --- Color Palette ------------------------------------------------- */
+  --color-ivory: #F6EFE2;          /* primary light background */
+  --color-ivory-soft: #FBF7EE;     /* card background on ivory */
+  --color-brown-950: #1A100C;      /* darkest text / dark section bg */
+  --color-brown-900: #241611;      /* dark section background */
+  --color-brown-800: #2E1B14;      /* dark section background alt */
+  --color-brown-700: #4A2A1B;      /* secondary text on dark */
+  --color-text: #2A1B12;           /* primary body text on light */
+  --color-text-muted: #6B5847;     /* secondary body text on light */
+  --color-text-on-dark: #EFE3D2;   /* body text on dark backgrounds */
+  --color-text-on-dark-muted: #C7B39C;
+
+  --color-copper: #B5652D;         /* primary brand copper */
+  --color-copper-light: #D4924F;
+  --color-copper-dark: #8A4A1F;
+  --color-saffron: #D2601A;        /* CTA / accent */
+  --color-saffron-dark: #A8480F;
+  --color-gold: #C9A34E;           /* premium accent / borders */
+  --color-gold-light: #E4C784;
+  --color-maroon: #4A1010;         /* deep devotional accent */
+
+  --color-healing: #6FA9BE;        /* Mahamrityunjay accent (cooling) */
+  --color-protect: #B03C30;        /* Kaal Bhairav accent (protective) */
+
+  --color-border: rgba(181, 101, 45, 0.22);
+  --color-border-dark: rgba(201, 163, 78, 0.22);
+  --color-success: #4C7A4C;
+
+  /* --- Typography ------------------------------------------------------ */
+  --font-display: 'Tiro Devanagari Hindi', 'Noto Serif Devanagari', serif;
+  --font-body: 'Hind', 'Noto Sans Devanagari', sans-serif;
+
+  --fs-xs: 0.8rem;
+  --fs-sm: 0.9rem;
+  --fs-base: 1rem;
+  --fs-md: 1.15rem;
+  --fs-lg: 1.4rem;
+  --fs-xl: 1.9rem;
+  --fs-2xl: 2.6rem;
+  --fs-3xl: 3.4rem;
+  --fs-hero: 4.2rem;
+
+  --lh-tight: 1.15;
+  --lh-snug: 1.35;
+  --lh-normal: 1.65;
+  --lh-relaxed: 1.85;
+
+  /* --- Spacing Scale ----------------------------------------------------- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.25rem;
+  --space-xl: 3.5rem;
+  --space-2xl: 5.5rem;
+  --space-3xl: 8rem;
+
+  --section-padding-y: clamp(4rem, 8vw, 7.5rem);
+  --container-width: 1240px;
+  --container-padding: clamp(1.25rem, 5vw, 3rem);
+
+  /* --- Radii & Shadows -------------------------------------------------- */
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 8px 30px rgba(26, 16, 12, 0.08);
+  --shadow-card: 0 14px 40px rgba(26, 16, 12, 0.12);
+  --shadow-lifted: 0 24px 60px rgba(26, 16, 12, 0.22);
+  --shadow-gold-glow: 0 0 0 1px rgba(201, 163, 78, 0.35), 0 20px 45px rgba(74, 16, 16, 0.35);
+
+  /* --- Motion ------------------------------------------------------------ */
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.2s var(--ease-premium);
+  --transition-base: 0.4s var(--ease-premium);
+  --transition-slow: 0.8s var(--ease-premium);
+
+  /* --- Z-Index Scale ------------------------------------------------------ */
+  --z-header: 100;
+  --z-modal: 500;
+  --z-toast: 600;
+}
+
+/* -------------------------------------------------------------------------
+   2. RESET & BASE
+   ------------------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  color: var(--color-text);
+  background: var(--color-ivory);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, h4, p { margin: 0; }
+input, select, textarea { font-family: inherit; font-size: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--color-saffron);
+  outline-offset: 3px;
+}
+
+/* -------------------------------------------------------------------------
+   3. TYPOGRAPHY UTILITIES
+   ------------------------------------------------------------------------- */
+.heading-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  letter-spacing: 0.005em;
+  color: var(--color-text);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--color-copper-dark);
+  text-transform: uppercase;
+  margin-bottom: var(--space-sm);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 22px;
+  height: 1px;
+  background: var(--color-gold);
+  display: inline-block;
+}
+
+.eyebrow--on-dark { color: var(--color-gold-light); }
+
+.section-heading {
+  font-size: var(--fs-2xl);
+  max-width: 760px;
+}
+
+.section-heading--center { margin-inline: auto; text-align: center; }
+
+.section-subtext {
+  font-size: var(--fs-md);
+  color: var(--color-text-muted);
+  line-height: var(--lh-relaxed);
+  max-width: 620px;
+  margin-top: var(--space-sm);
+}
+
+.section-subtext--center { margin-inline: auto; text-align: center; }
+
+.text-on-dark { color: var(--color-text-on-dark); }
+.text-on-dark-muted { color: var(--color-text-on-dark-muted); }
+
+/* -------------------------------------------------------------------------
+   4. LAYOUT UTILITIES
+   ------------------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.section { padding-block: var(--section-padding-y); position: relative; }
+.section--dark {
+  background: linear-gradient(180deg, var(--color-brown-900), var(--color-brown-950));
+  color: var(--color-text-on-dark);
+}
+.section--ivory-soft { background: var(--color-ivory-soft); }
+
+.section-head { margin-bottom: var(--space-2xl); }
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.divider-motif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  margin-block: var(--space-2xl);
+  opacity: 0.75;
+}
+.divider-motif__line { width: 60px; height: 1px; background: linear-gradient(90deg, transparent, var(--color-gold)); }
+.divider-motif__line--right { background: linear-gradient(90deg, var(--color-gold), transparent); }
+
+/* Sacred geometry backdrop pattern, used subtly across sections */
+.geo-pattern {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image:
+    radial-gradient(circle at 15% 20%, var(--color-border) 0, transparent 45%),
+    radial-gradient(circle at 85% 75%, var(--color-border) 0, transparent 45%);
+  z-index: 0;
+}
+.geo-pattern--dark {
+  background-image:
+    radial-gradient(circle at 12% 15%, var(--color-border-dark) 0, transparent 40%),
+    radial-gradient(circle at 88% 80%, var(--color-border-dark) 0, transparent 40%);
+}
+
+.container, .section > * { position: relative; z-index: 1; }
+
+/* -------------------------------------------------------------------------
+   5. REUSABLE COMPONENTS
+   ------------------------------------------------------------------------- */
+
+/* --- Buttons ------------------------------------------------------------ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2xs);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--fs-base);
+  padding: 0.95rem 2.1rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast);
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+
+.btn--primary {
+  background: linear-gradient(135deg, var(--color-saffron), var(--color-saffron-dark));
+  color: #FFF8EE;
+  box-shadow: 0 12px 30px rgba(210, 96, 26, 0.35);
+}
+.btn--primary:hover { box-shadow: 0 16px 36px rgba(210, 96, 26, 0.45); }
+
+.btn--gold {
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
+  color: var(--color-brown-950);
+  box-shadow: 0 12px 30px rgba(201, 163, 78, 0.3);
+}
+
+.btn--outline {
+  background: transparent;
+  border-color: var(--color-gold);
+  color: var(--color-text);
+}
+.btn--outline:hover { background: rgba(201, 163, 78, 0.1); }
+
+.btn--outline-on-dark {
+  background: transparent;
+  border-color: rgba(239, 227, 210, 0.4);
+  color: var(--color-text-on-dark);
+}
+.btn--outline-on-dark:hover { background: rgba(239, 227, 210, 0.08); border-color: var(--color-gold); }
+
+.btn--block { width: 100%; }
+.btn--sm { padding: 0.7rem 1.4rem; font-size: var(--fs-sm); }
+
+.btn-group { display: flex; gap: var(--space-sm); flex-wrap: wrap; }
+
+/* --- Badges / Tags -------------------------------------------------------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  color: var(--color-copper-dark);
+  background: rgba(181, 101, 45, 0.06);
+}
+.badge--on-dark {
+  border-color: var(--color-border-dark);
+  color: var(--color-gold-light);
+  background: rgba(201, 163, 78, 0.08);
+}
+
+/* --- Cards ------------------------------------------------------------- */
+.card {
+  background: var(--color-ivory-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+.card:hover { transform: translateY(-6px); box-shadow: var(--shadow-card); }
+
+.card--dark {
+  background: linear-gradient(180deg, rgba(201,163,78,0.06), transparent);
+  border: 1px solid var(--color-border-dark);
+  color: var(--color-text-on-dark);
+}
+
+.icon-tile {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-copper));
+  color: #2A1408;
+  margin-bottom: var(--space-md);
+  flex-shrink: 0;
+}
+.icon-tile svg { width: 26px; height: 26px; }
+
+.icon-tile--outline {
+  background: transparent;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+}
+
+/* -------------------------------------------------------------------------
+   6. HEADER / NAVIGATION
+   ------------------------------------------------------------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  background: rgba(26, 16, 12, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border-dark);
+  transition: box-shadow var(--transition-base);
+}
+.site-header.is-scrolled { box-shadow: var(--shadow-lifted); }
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-sm);
+  gap: var(--space-md);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+.brand__mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: conic-gradient(from 90deg, var(--color-gold), var(--color-copper), var(--color-gold));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  color: var(--color-brown-950);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.brand__text { display: flex; flex-direction: column; line-height: 1.2; }
+.brand__name { font-family: var(--font-display); font-size: 1.05rem; color: var(--color-gold-light); }
+.brand__tagline { font-size: 0.68rem; color: var(--color-text-on-dark-muted); letter-spacing: 0.08em; }
+
+.main-nav__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+.main-nav__link {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--color-text-on-dark-muted);
+  transition: color var(--transition-fast);
+  position: relative;
+}
+.main-nav__link:hover { color: var(--color-gold-light); }
+
+.header-actions { display: flex; align-items: center; gap: var(--space-sm); }
+
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-sm);
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold-light);
+}
+
+/* -------------------------------------------------------------------------
+   7. HERO
+   ------------------------------------------------------------------------- */
+.hero {
+  background: radial-gradient(120% 100% at 80% 0%, #33201740, transparent 60%), linear-gradient(180deg, var(--color-brown-950), #150C08);
+  color: var(--color-text-on-dark);
+  padding-top: clamp(3rem, 8vw, 6rem);
+  padding-bottom: clamp(3rem, 8vw, 6rem);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.hero__eyebrow-row { display: flex; gap: var(--space-xs); flex-wrap: wrap; margin-bottom: var(--space-md); }
+
+.hero__title {
+  font-size: var(--fs-hero);
+  color: var(--color-ivory);
+  margin-bottom: var(--space-md);
+}
+.hero__title em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-copper-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero__desc {
+  font-size: var(--fs-md);
+  color: var(--color-text-on-dark-muted);
+  max-width: 540px;
+  line-height: var(--lh-relaxed);
+  margin-bottom: var(--space-lg);
+}
+
+.hero__ctas { margin-bottom: var(--space-xl); }
+
+.hero__trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+}
+.hero__trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fs-sm);
+  color: var(--color-text-on-dark-muted);
+}
+.hero__trust-item svg { width: 18px; height: 18px; color: var(--color-gold); flex-shrink: 0; }
+
+.hero__visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__visual-frame {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 5 / 6;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-gold-glow);
+  border: 1px solid var(--color-border-dark);
+}
+.hero__visual-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__visual-caption {
+  position: absolute;
+  left: var(--space-md);
+  right: var(--space-md);
+  bottom: var(--space-md);
+  background: rgba(26, 16, 12, 0.72);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+.hero__visual-caption strong { display: block; font-size: var(--fs-sm); color: var(--color-gold-light); }
+.hero__visual-caption span { font-size: var(--fs-xs); color: var(--color-text-on-dark-muted); }
+
+.hero__ring-decor {
+  position: absolute;
+  border: 1px solid var(--color-border-dark);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* -------------------------------------------------------------------------
+   8. ABOUT
+   ------------------------------------------------------------------------- */
+.about__grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: var(--space-2xl); align-items: center; }
+.about__media { position: relative; }
+.about__media img {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+}
+.about__media-badge {
+  position: absolute;
+  bottom: -1.25rem;
+  right: -1.25rem;
+  background: var(--color-ivory-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  box-shadow: var(--shadow-lifted);
+  max-width: 220px;
+}
+.about__media-badge strong { display: block; font-family: var(--font-display); font-size: var(--fs-lg); color: var(--color-copper-dark); }
+.about__media-badge span { font-size: var(--fs-xs); color: var(--color-text-muted); }
+
+.about__points { margin-top: var(--space-lg); display: grid; gap: var(--space-md); }
+.about__point { display: flex; gap: var(--space-sm); align-items: flex-start; }
+.about__point .icon-tile { width: 40px; height: 40px; margin-bottom: 0; }
+.about__point-title { font-weight: 600; margin-bottom: 0.2rem; }
+.about__point-desc { font-size: var(--fs-sm); color: var(--color-text-muted); }
+
+/* -------------------------------------------------------------------------
+   9. WHY PERSONALIZED — comparison table
+   ------------------------------------------------------------------------- */
+.compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+.compare__col {
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+}
+.compare__col--standard { background: var(--color-ivory-soft); }
+.compare__col--personal {
+  background: linear-gradient(165deg, var(--color-brown-900), var(--color-brown-950));
+  color: var(--color-text-on-dark);
+  border-color: var(--color-gold);
+  box-shadow: var(--shadow-lifted);
+  position: relative;
+}
+.compare__col--personal::before {
+  content: "हमारी सेवा";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
+  color: var(--color-brown-950);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  padding: 0.3rem 1rem;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+.compare__title { font-family: var(--font-display); font-size: var(--fs-lg); margin-bottom: var(--space-md); }
+.compare__list { display: grid; gap: var(--space-sm); }
+.compare__list li { display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--fs-sm); }
+.compare__list svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: 2px; }
+.compare__col--standard svg { color: var(--color-text-muted); }
+.compare__col--personal svg { color: var(--color-gold); }
+
+.why-note {
+  margin-top: var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
+  border-left: 3px solid var(--color-gold);
+  background: rgba(201, 163, 78, 0.06);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  line-height: var(--lh-relaxed);
+}
+
+/* -------------------------------------------------------------------------
+   10. PRODUCT SECTIONS
+   ------------------------------------------------------------------------- */
+.product-section .grid-2 { gap: var(--space-2xl); }
+.product-section--reverse .grid-2 { direction: rtl; }
+.product-section--reverse .grid-2 > * { direction: ltr; }
+
+.product-media { position: relative; }
+.product-media__frame {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border-dark);
+  aspect-ratio: 4 / 4.4;
+}
+.product-media__frame img { width: 100%; height: 100%; object-fit: cover; }
+
+.product-content__title { margin-bottom: var(--space-sm); }
+.product-content__desc { color: var(--color-text-on-dark-muted); line-height: var(--lh-relaxed); margin-bottom: var(--space-md); }
+.section--dark .product-content__desc { color: var(--color-text-on-dark-muted); }
+
+.attribute-list { display: grid; gap: var(--space-sm); margin-block: var(--space-lg); }
+.attribute-list__item { display: flex; align-items: flex-start; gap: var(--space-sm); }
+.attribute-list__item svg { width: 20px; height: 20px; flex-shrink: 0; color: var(--color-gold); margin-top: 3px; }
+.attribute-list__item-title { font-weight: 600; margin-bottom: 0.15rem; }
+.attribute-list__item-desc { font-size: var(--fs-sm); color: var(--color-text-on-dark-muted); }
+
+.deity-accent--healing { color: var(--color-healing); }
+.deity-accent--protect { color: var(--color-protect); }
+
+/* -------------------------------------------------------------------------
+   11. BENEFITS
+   ------------------------------------------------------------------------- */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+.benefit-card { text-align: left; }
+.benefit-card__title { font-weight: 600; font-size: var(--fs-md); margin-bottom: 0.35rem; }
+.benefit-card__desc { font-size: var(--fs-sm); color: var(--color-text-on-dark-muted); line-height: var(--lh-relaxed); }
+.section--ivory-soft .benefit-card__desc,
+.benefits--light .benefit-card__desc { color: var(--color-text-muted); }
+
+/* -------------------------------------------------------------------------
+   12. PROCESS
+   ------------------------------------------------------------------------- */
+.process-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+  position: relative;
+}
+.process-flow::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold) 15%, var(--color-gold) 85%, transparent);
+  z-index: 0;
+}
+.process-step { position: relative; z-index: 1; text-align: center; }
+.process-step__num {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-copper));
+  color: var(--color-brown-950);
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-sm);
+  box-shadow: 0 10px 24px rgba(201, 163, 78, 0.25);
+}
+.process-step__title { font-weight: 600; margin-bottom: 0.35rem; }
+.process-step__desc { font-size: var(--fs-sm); color: var(--color-text-muted); }
+
+.process-media {
+  margin-top: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+.process-media img { width: 100%; max-height: 420px; object-fit: cover; }
+
+/* -------------------------------------------------------------------------
+   13. PRICING
+   ------------------------------------------------------------------------- */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+  max-width: 920px;
+  margin-inline: auto;
+}
+.pricing-card {
+  background: var(--color-ivory-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  display: flex;
+  flex-direction: column;
+}
+.pricing-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lifted); }
+.pricing-card--featured { border-color: var(--color-gold); box-shadow: var(--shadow-gold-glow); position: relative; }
+.pricing-card--featured::before {
+  content: "सर्वाधिक पसंदीदा";
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
+  color: var(--color-brown-950);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  padding: 0.3rem 0.85rem;
+  border-radius: var(--radius-pill);
+  z-index: 2;
+}
+
+.pricing-card__media { aspect-ratio: 1 / 0.85; overflow: hidden; }
+.pricing-card__media img { width: 100%; height: 100%; object-fit: cover; }
+.pricing-card__body { padding: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-sm); flex: 1; }
+.pricing-card__size { font-family: var(--font-display); font-size: var(--fs-lg); }
+.pricing-card__price-row { display: flex; align-items: baseline; gap: 0.5rem; }
+.pricing-card__price { font-family: var(--font-display); font-size: var(--fs-2xl); color: var(--color-copper-dark); }
+.pricing-card__unit { font-size: var(--fs-sm); color: var(--color-text-muted); }
+.pricing-card__features { display: grid; gap: 0.5rem; margin-block: var(--space-xs); }
+.pricing-card__features li { display: flex; gap: 0.5rem; align-items: flex-start; font-size: var(--fs-sm); color: var(--color-text-muted); }
+.pricing-card__features svg { width: 17px; height: 17px; color: var(--color-success); flex-shrink: 0; margin-top: 2px; }
+.pricing-card__cta { margin-top: auto; }
+
+.pricing-note {
+  text-align: center;
+  margin-top: var(--space-lg);
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+}
+
+/* -------------------------------------------------------------------------
+   14. WHY CHOOSE US
+   ------------------------------------------------------------------------- */
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+.trust-card { text-align: left; }
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-border-dark);
+}
+.stat { text-align: center; }
+.stat__num { font-family: var(--font-display); font-size: var(--fs-2xl); color: var(--color-gold-light); display: block; }
+.stat__label { font-size: var(--fs-sm); color: var(--color-text-on-dark-muted); }
+
+/* -------------------------------------------------------------------------
+   15. FAQ
+   ------------------------------------------------------------------------- */
+.faq-list { max-width: 780px; margin: var(--space-2xl) auto 0; display: grid; gap: var(--space-sm); }
+.faq-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-ivory-soft);
+  overflow: hidden;
+}
+.faq-item__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-weight: 600;
+  font-size: var(--fs-md);
+  color: var(--color-text);
+}
+.faq-item__icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--transition-base);
+  color: var(--color-copper-dark);
+}
+.faq-item.is-open .faq-item__icon { transform: rotate(45deg); }
+
+.faq-item__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-base), padding var(--transition-base);
+  padding-inline: var(--space-lg);
+}
+.faq-item.is-open .faq-item__answer { padding-bottom: var(--space-md); }
+.faq-item__answer p { font-size: var(--fs-sm); color: var(--color-text-muted); line-height: var(--lh-relaxed); }
+
+/* -------------------------------------------------------------------------
+   16. FINAL CTA
+   ------------------------------------------------------------------------- */
+.final-cta {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: linear-gradient(120deg, var(--color-maroon), var(--color-brown-950));
+  padding: var(--space-2xl) var(--space-2xl);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: var(--space-xl);
+  box-shadow: var(--shadow-lifted);
+}
+.final-cta__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.9;
+}
+.final-cta__media img { width: 100%; height: 100%; object-fit: cover; }
+.final-cta__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--color-brown-950) 15%, rgba(26,16,12,0.55) 55%, transparent 100%);
+}
+.final-cta__content { position: relative; z-index: 1; }
+.final-cta__title { color: var(--color-ivory); font-size: var(--fs-2xl); margin-bottom: var(--space-sm); }
+.final-cta__desc { color: var(--color-text-on-dark-muted); margin-bottom: var(--space-lg); max-width: 480px; }
+
+/* -------------------------------------------------------------------------
+   17. FOOTER
+   ------------------------------------------------------------------------- */
+.site-footer {
+  background: var(--color-brown-950);
+  color: var(--color-text-on-dark-muted);
+  padding-top: var(--space-2xl);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
+  gap: var(--space-xl);
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--color-border-dark);
+}
+.footer-brand__desc { font-size: var(--fs-sm); line-height: var(--lh-relaxed); margin-top: var(--space-sm); max-width: 320px; }
+.footer-col__title { font-family: var(--font-display); color: var(--color-gold-light); font-size: var(--fs-md); margin-bottom: var(--space-sm); }
+.footer-col__list { display: grid; gap: 0.6rem; }
+.footer-col__list a { font-size: var(--fs-sm); transition: color var(--transition-fast); }
+.footer-col__list a:hover { color: var(--color-gold-light); }
+.footer-contact-item { display: flex; gap: 0.5rem; align-items: flex-start; font-size: var(--fs-sm); margin-bottom: 0.6rem; }
+.footer-contact-item svg { width: 18px; height: 18px; color: var(--color-gold); flex-shrink: 0; margin-top: 2px; }
+
+.footer-social { display: flex; gap: var(--space-sm); margin-top: var(--space-md); }
+.footer-social a {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-dark);
+  display: flex; align-items: center; justify-content: center;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+.footer-social a:hover { background: rgba(201,163,78,0.1); border-color: var(--color-gold); }
+.footer-social svg { width: 17px; height: 17px; }
+
+.footer-bottom {
+  padding-block: var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  font-size: var(--fs-xs);
+  flex-wrap: wrap;
+}
+.footer-bottom__links { display: flex; gap: var(--space-md); }
+
+/* -------------------------------------------------------------------------
+   18. ORDER FORM MODAL
+   ------------------------------------------------------------------------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 12, 8, 0.72);
+  backdrop-filter: blur(4px);
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(1rem, 4vw, 4rem) 1rem;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-base), visibility var(--transition-base);
+}
+.modal-overlay.is-open { opacity: 1; visibility: visible; }
+
+.order-modal {
+  background: var(--color-ivory);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 720px;
+  box-shadow: var(--shadow-lifted);
+  transform: translateY(24px) scale(0.98);
+  transition: transform var(--transition-base);
+  border: 1px solid var(--color-border);
+}
+.modal-overlay.is-open .order-modal { transform: translateY(0) scale(1); }
+
+.order-modal__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-lg) var(--space-xl) var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+.order-modal__title { font-family: var(--font-display); font-size: var(--fs-xl); }
+.order-modal__subtitle { font-size: var(--fs-sm); color: var(--color-text-muted); margin-top: 0.3rem; }
+.order-modal__close {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background var(--transition-fast);
+}
+.order-modal__close:hover { background: rgba(181, 101, 45, 0.1); }
+
+.order-form { padding: var(--space-lg) var(--space-xl) var(--space-xl); }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); }
+.form-field { display: flex; flex-direction: column; gap: 0.4rem; }
+.form-field--full { grid-column: 1 / -1; }
+.form-field label { font-size: var(--fs-sm); font-weight: 600; color: var(--color-text); }
+.form-field label .required { color: var(--color-saffron); margin-left: 2px; }
+.form-field input,
+.form-field select,
+.form-field textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-ivory-soft);
+  color: var(--color-text);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--color-copper);
+  box-shadow: 0 0 0 3px rgba(181, 101, 45, 0.14);
+  outline: none;
+}
+.form-field textarea { resize: vertical; min-height: 80px; }
+
+.order-summary {
+  margin-top: var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  background: rgba(201, 163, 78, 0.08);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+.order-summary__label { font-size: var(--fs-sm); color: var(--color-text-muted); }
+.order-summary__value { font-family: var(--font-display); font-size: var(--fs-lg); color: var(--color-copper-dark); }
+
+.order-form__footer { margin-top: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-sm); }
+.order-form__note { font-size: var(--fs-xs); color: var(--color-text-muted); text-align: center; }
+
+/* -------------------------------------------------------------------------
+   19. TOAST / MISC
+   ------------------------------------------------------------------------- */
+.toast {
+  position: fixed;
+  bottom: var(--space-lg);
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--color-brown-950);
+  color: var(--color-ivory);
+  border: 1px solid var(--color-gold);
+  padding: 0.9rem 1.6rem;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-sm);
+  box-shadow: var(--shadow-lifted);
+  z-index: var(--z-toast);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-base), transform var(--transition-base), visibility var(--transition-base);
+}
+.toast.is-visible { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  background: var(--color-gold);
+  color: var(--color-brown-950);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-sm);
+  z-index: 999;
+  font-weight: 600;
+}
+.skip-link:focus { left: var(--space-sm); top: var(--space-sm); }
+
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.9s var(--ease-premium), transform 0.9s var(--ease-premium); }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+/* -------------------------------------------------------------------------
+   20. RESPONSIVE
+   ------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  :root { --fs-hero: 3.1rem; --fs-3xl: 2.6rem; --fs-2xl: 2.1rem; }
+
+  .main-nav { display: none; }
+  .nav-toggle { display: flex; }
+
+  .hero__grid { grid-template-columns: 1fr; }
+  .hero__visual { order: -1; }
+  .hero__visual-frame { max-width: 340px; margin-inline: auto; }
+
+  .about__grid,
+  .product-section .grid-2 { grid-template-columns: 1fr; }
+  .product-section--reverse .grid-2 { direction: ltr; }
+  .product-media { order: -1; }
+
+  .compare { grid-template-columns: 1fr; }
+  .process-flow { grid-template-columns: repeat(2, 1fr); }
+  .process-flow::before { display: none; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+
+  .final-cta { grid-template-columns: 1fr; text-align: left; }
+}
+
+@media (max-width: 720px) {
+  :root { --fs-hero: 2.4rem; --fs-2xl: 1.8rem; --fs-xl: 1.6rem; --fs-lg: 1.25rem; }
+
+  .hero__trust-row { gap: var(--space-md); }
+  .pricing-grid { grid-template-columns: 1fr; max-width: 380px; }
+  .process-flow { grid-template-columns: 1fr; }
+  .trust-grid { grid-template-columns: 1fr; }
+  .stats-row { grid-template-columns: repeat(2, 1fr); gap: var(--space-md); }
+  .footer-grid { grid-template-columns: 1fr; gap: var(--space-lg); }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+
+  .form-grid { grid-template-columns: 1fr; }
+  .order-modal__header { padding: var(--space-md); }
+  .order-form { padding: var(--space-md); }
+
+  .final-cta { padding: var(--space-xl) var(--space-md); }
+
+  .btn { width: 100%; }
+  .hero__ctas .btn-group { flex-direction: column; }
+  .hero__ctas .btn-group .btn { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .container { padding-inline: 1.1rem; }
+  .hero__title { font-size: var(--fs-3xl); }
+}
+
+
+</style>
+
+<script>
+    /**
+ * VASTU MITRA ABHISHEK — MAIN JAVASCRIPT
+ * ---------------------------------------------------------------------------
+ * Table of contents:
+ *   1. Config (prices, product names — edit here to change site-wide)
+ *   2. Header scroll state + mobile navigation
+ *   3. Scroll-reveal animations
+ *   4. FAQ accordion
+ *   5. Order modal (open / close / pre-fill from CTA data-attributes)
+ *   6. Order form validation + submit handler (Razorpay / webhook hook)
+ *   7. Toast notifications
+ *   8. Footer year
+ * ---------------------------------------------------------------------------
+ * INTEGRATION NOTES:
+ *   - Razorpay: see the clearly marked block inside handleOrderFormSubmit().
+ *   - Google Sheets / CRM / WhatsApp webhook: see submitOrderToBackend().
+ * ---------------------------------------------------------------------------
+ */
+
+(function () {
+  "use strict";
+
+  /* -----------------------------------------------------------------------
+   * 1. CONFIG — single source of truth for product + pricing data.
+   *    Update this object if prices/products ever change; the modal and
+   *    order summary read from here automatically.
+   * ---------------------------------------------------------------------- */
+  const PRODUCT_CONFIG = {
+    mahamrityunjay: {
+      label: "महामृत्युंजय यंत्र",
+    },
+    kaalbhairav: {
+      label: "काल भैरव यंत्र",
+    },
+  };
+
+  const SIZE_CONFIG = {
+    "3x3": { label: "3 × 3 इंच", price: 1100 },
+    "5x5": { label: "5 × 5 इंच", price: 2100 },
+  };
+
+  /* -----------------------------------------------------------------------
+   * 2. HEADER SCROLL STATE + MOBILE NAVIGATION
+   * ---------------------------------------------------------------------- */
+  const header = document.querySelector(".site-header");
+  const navToggle = document.querySelector(".nav-toggle");
+  const mainNav = document.querySelector(".main-nav");
+
+  function onScrollHeader() {
+    if (!header) return;
+    header.classList.toggle("is-scrolled", window.scrollY > 12);
+  }
+  window.addEventListener("scroll", onScrollHeader, { passive: true });
+  onScrollHeader();
+
+  if (navToggle && mainNav) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = mainNav.style.display === "block";
+      mainNav.style.display = isOpen ? "none" : "block";
+      navToggle.setAttribute("aria-expanded", String(!isOpen));
+    });
+
+    // Close mobile nav after a link is tapped
+    mainNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (window.matchMedia("(max-width: 1024px)").matches) {
+          mainNav.style.display = "none";
+          navToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+  }
+
+  /* -----------------------------------------------------------------------
+   * 3. SCROLL-REVEAL ANIMATIONS
+   * ---------------------------------------------------------------------- */
+  const revealEls = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window && revealEls.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -60px 0px" }
+    );
+    revealEls.forEach((el) => observer.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add("is-visible"));
+  }
+
+  /* -----------------------------------------------------------------------
+   * 4. FAQ ACCORDION
+   * ---------------------------------------------------------------------- */
+  document.querySelectorAll(".faq-item__question").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const item = btn.closest(".faq-item");
+      const answer = item.querySelector(".faq-item__answer");
+      const isOpen = item.classList.contains("is-open");
+
+      // Close any other open item for a cleaner single-open accordion
+      document.querySelectorAll(".faq-item.is-open").forEach((openItem) => {
+        if (openItem !== item) {
+          openItem.classList.remove("is-open");
+          openItem.querySelector(".faq-item__answer").style.maxHeight = null;
+        }
+      });
+
+      item.classList.toggle("is-open", !isOpen);
+      answer.style.maxHeight = !isOpen ? answer.scrollHeight + "px" : null;
+      btn.setAttribute("aria-expanded", String(!isOpen));
+    });
+  });
+
+  /* -----------------------------------------------------------------------
+   * 5. ORDER MODAL
+   * ---------------------------------------------------------------------- */
+  const modalOverlay = document.getElementById("orderModal");
+  const orderForm = document.getElementById("orderForm");
+  const productSelect = document.getElementById("yantraSelect");
+  const sizeSelect = document.getElementById("sizeSelect");
+  const summaryValue = document.getElementById("orderSummaryValue");
+  const summaryLabel = document.getElementById("orderSummaryLabel");
+
+  function updateOrderSummary() {
+    if (!summaryValue) return;
+    const productKey = productSelect.value;
+    const sizeKey = sizeSelect.value;
+    const product = PRODUCT_CONFIG[productKey];
+    const size = SIZE_CONFIG[sizeKey];
+
+    if (product && size) {
+      summaryLabel.textContent = `${product.label} · ${size.label}`;
+      summaryValue.textContent = `₹${size.price.toLocaleString("en-IN")}`;
+    } else {
+      summaryLabel.textContent = "कृपया यंत्र और साइज़ चुनें";
+      summaryValue.textContent = "—";
+    }
+  }
+
+  function openOrderModal(productKey, sizeKey) {
+    if (!modalOverlay) return;
+    if (productKey && PRODUCT_CONFIG[productKey]) productSelect.value = productKey;
+    if (sizeKey && SIZE_CONFIG[sizeKey]) sizeSelect.value = sizeKey;
+    updateOrderSummary();
+    modalOverlay.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+    const firstField = orderForm.querySelector("input, select");
+    if (firstField) setTimeout(() => firstField.focus(), 250);
+  }
+
+  function closeOrderModal() {
+    if (!modalOverlay) return;
+    modalOverlay.classList.remove("is-open");
+    document.body.style.overflow = "";
+  }
+
+  // Any element with [data-open-order] triggers the modal.
+  // Optional data-yantra="mahamrityunjay|kaalbhairav" and data-size="3x3|5x5"
+  // pre-select the relevant product/size (used by pricing + product CTAs).
+  document.querySelectorAll("[data-open-order]").forEach((trigger) => {
+    trigger.addEventListener("click", (e) => {
+      e.preventDefault();
+      openOrderModal(trigger.dataset.yantra, trigger.dataset.size);
+    });
+  });
+
+  document.querySelectorAll("[data-close-order]").forEach((btn) => {
+    btn.addEventListener("click", closeOrderModal);
+  });
+
+  if (modalOverlay) {
+    modalOverlay.addEventListener("click", (e) => {
+      if (e.target === modalOverlay) closeOrderModal();
+    });
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modalOverlay && modalOverlay.classList.contains("is-open")) {
+      closeOrderModal();
+    }
+  });
+
+  if (productSelect) productSelect.addEventListener("change", updateOrderSummary);
+  if (sizeSelect) sizeSelect.addEventListener("change", updateOrderSummary);
+
+  /* -----------------------------------------------------------------------
+   * 6. ORDER FORM VALIDATION + SUBMIT
+   * ---------------------------------------------------------------------- */
+  function showFieldError(field, message) {
+    field.setAttribute("aria-invalid", "true");
+    field.style.borderColor = "#B03C30";
+    let hint = field.parentElement.querySelector(".field-error");
+    if (!hint) {
+      hint = document.createElement("span");
+      hint.className = "field-error";
+      hint.style.color = "#B03C30";
+      hint.style.fontSize = "0.78rem";
+      field.parentElement.appendChild(hint);
+    }
+    hint.textContent = message;
+  }
+
+  function clearFieldError(field) {
+    field.removeAttribute("aria-invalid");
+    field.style.borderColor = "";
+    const hint = field.parentElement.querySelector(".field-error");
+    if (hint) hint.remove();
+  }
+
+  function validateOrderForm(form) {
+    let isValid = true;
+    const requiredFields = form.querySelectorAll("[required]");
+
+    requiredFields.forEach((field) => {
+      clearFieldError(field);
+      if (!field.value || !field.value.trim()) {
+        showFieldError(field, "यह फ़ील्ड आवश्यक है");
+        isValid = false;
+        return;
+      }
+      if (field.type === "tel") {
+        const digits = field.value.replace(/\D/g, "");
+        if (digits.length < 10) {
+          showFieldError(field, "मान्य मोबाइल नंबर दर्ज करें");
+          isValid = false;
+        }
+      }
+      if (field.type === "email" && field.value) {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(field.value)) {
+          showFieldError(field, "मान्य ईमेल दर्ज करें");
+          isValid = false;
+        }
+      }
+      if (field.id === "pincode" && field.value) {
+        if (!/^\d{6}$/.test(field.value.trim())) {
+          showFieldError(field, "6 अंकों का पिनकोड दर्ज करें");
+          isValid = false;
+        }
+      }
+    });
+
+    return isValid;
+  }
+
+  /**
+   * submitOrderToBackend
+   * ---------------------------------------------------------------------
+   * Central place to wire this form up to your real backend:
+   *   - Google Sheets  (Apps Script Web App URL)
+   *   - Generic Webhook (Zapier / Make / n8n)
+   *   - CRM API
+   *   - WhatsApp Business API (order confirmation message)
+   *
+   * Replace the body of this function with a real fetch() call, e.g.:
+   *
+   *   return fetch("https://your-endpoint.example.com/orders", {
+   *     method: "POST",
+   *     headers: { "Content-Type": "application/json" },
+   *     body: JSON.stringify(orderData),
+   *   });
+   *
+   * It currently resolves immediately so the front-end flow can be
+   * demoed/tested before the backend is connected.
+   * ---------------------------------------------------------------------- */
+  function submitOrderToBackend(orderData) {
+    console.log("Order payload ready for backend integration:", orderData);
+    return Promise.resolve({ ok: true });
+  }
+
+  /**
+   * RAZORPAY INTEGRATION POINT
+   * ---------------------------------------------------------------------
+   * 1. Include Razorpay checkout.js in index.html (see commented tag
+   *    near the closing </body> tag).
+   * 2. Create an order on your server for orderData.amount (in paise)
+   *    and pass the returned order_id below.
+   * 3. Replace "key: 'RAZORPAY_KEY_ID'" with your live/test key.
+   * ---------------------------------------------------------------------- */
+  function launchRazorpayCheckout(orderData) {
+    if (typeof Razorpay === "undefined") {
+      console.warn("Razorpay checkout.js is not loaded. Add the script tag to enable payments.");
+      return;
+    }
+    const options = {
+      key: "RAZORPAY_KEY_ID", // TODO: replace with your Razorpay Key ID
+      amount: orderData.amount * 100, // Razorpay expects amount in paise
+      currency: "INR",
+      name: "Vastu Mitra Abhishek",
+      description: `${orderData.yantraLabel} — ${orderData.sizeLabel}`,
+      // order_id: "order_xxxxxxxx", // TODO: pass server-generated order id
+      prefill: {
+        name: orderData.name,
+        email: orderData.email,
+        contact: orderData.mobile,
+      },
+      theme: { color: "#B5652D" },
+      handler: function (response) {
+        showToast("भुगतान सफल! आपका ऑर्डर प्राप्त हो गया है। 🙏");
+        console.log("Razorpay payment success:", response);
+      },
+    };
+    const rzp = new Razorpay(options);
+    rzp.open();
+  }
+
+  function handleOrderFormSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    if (!validateOrderForm(form)) {
+      showToast("कृपया सभी आवश्यक जानकारी सही से भरें");
+      return;
+    }
+
+    const formData = new FormData(form);
+    const productKey = formData.get("yantra");
+    const sizeKey = formData.get("size");
+    const size = SIZE_CONFIG[sizeKey];
+    const product = PRODUCT_CONFIG[productKey];
+
+    const orderData = {
+      name: formData.get("customerName"),
+      mobile: formData.get("mobile"),
+      email: formData.get("email"),
+      gotra: formData.get("gotra"),
+      sankalp: formData.get("sankalp"),
+      yantra: productKey,
+      yantraLabel: product ? product.label : "",
+      size: sizeKey,
+      sizeLabel: size ? size.label : "",
+      amount: size ? size.price : 0,
+      address: formData.get("address"),
+      city: formData.get("city"),
+      state: formData.get("state"),
+      pincode: formData.get("pincode"),
+      submittedAt: new Date().toISOString(),
+    };
+
+    const submitBtn = form.querySelector('[type="submit"]');
+    const originalLabel = submitBtn ? submitBtn.textContent : "";
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "कृपया प्रतीक्षा करें...";
+    }
+
+    submitOrderToBackend(orderData)
+      .then(() => {
+        // Swap this call for launchRazorpayCheckout(orderData) once your
+        // Razorpay key + order-creation endpoint are wired up.
+        showToast("ऑर्डर विवरण प्राप्त हुआ। भुगतान चरण से जुड़ने के लिए तैयार। 🙏");
+        // launchRazorpayCheckout(orderData);
+        closeOrderModal();
+        form.reset();
+      })
+      .catch(() => {
+        showToast("कुछ त्रुटि हुई, कृपया पुनः प्रयास करें");
+      })
+      .finally(() => {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalLabel;
+        }
+      });
+  }
+
+  if (orderForm) {
+    orderForm.addEventListener("submit", handleOrderFormSubmit);
+    orderForm.querySelectorAll("[required]").forEach((field) => {
+      field.addEventListener("input", () => clearFieldError(field));
+      field.addEventListener("blur", () => {
+        if (field.value.trim()) clearFieldError(field);
+      });
+    });
+  }
+
+  /* -----------------------------------------------------------------------
+   * 7. TOAST NOTIFICATIONS
+   * ---------------------------------------------------------------------- */
+  let toastTimer = null;
+  function showToast(message) {
+    let toast = document.querySelector(".toast");
+    if (!toast) {
+      toast = document.createElement("div");
+      toast.className = "toast";
+      toast.setAttribute("role", "status");
+      toast.setAttribute("aria-live", "polite");
+      document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.classList.add("is-visible");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 3200);
+  }
+
+  /* -----------------------------------------------------------------------
+   * 8. FOOTER YEAR
+   * ---------------------------------------------------------------------- */
+  const yearEl = document.getElementById("currentYear");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+})();
+
+</script>

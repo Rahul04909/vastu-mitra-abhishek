@@ -1,202 +1,111 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ===== SCROLL ANIMATIONS (Intersection Observer) =====
-  const animateElements = document.querySelectorAll('.fade-in-up');
+  // ── Scroll Animations ──
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.15 });
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  animateElements.forEach(el => observer.observe(el));
+  // ── Floating Nav ──
+  const nav = document.querySelector('.floating-nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
 
-  // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
-      const targetId = anchor.getAttribute('href');
-      if (targetId === '#') return;
-      const target = document.querySelector(targetId);
-      if (target) {
+  // ── Smooth Scroll ──
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      if (id === '#') return;
+      const t = document.querySelector(id);
+      if (t) {
         e.preventDefault();
-        const headerOffset = 100;
-        const elementPosition = target.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        const top = t.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top, behavior: 'smooth' });
       }
     });
   });
 
-  // ===== FAQ ACCORDION =====
-  document.querySelectorAll('.faq-question').forEach(btn => {
+  // ── FAQ Accordion ──
+  document.querySelectorAll('.faq-q').forEach(btn => {
     btn.addEventListener('click', () => {
       const item = btn.closest('.faq-item');
-      const isActive = item.classList.contains('active');
-
-      document.querySelectorAll('.faq-item').forEach(faq => faq.classList.remove('active'));
-
-      if (!isActive) {
-        item.classList.add('active');
-      }
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
     });
   });
 
-  // ===== NAVIGATION DOTS (Scroll Spy) =====
-  const sections = document.querySelectorAll('.yantra-nav-section');
-  const navDots = document.querySelectorAll('.yantra-nav-dot');
+  // ── Order Summary ──
+  const typeEl = document.getElementById('yantra_type');
+  const qtyEl = document.getElementById('quantity');
+  const prices = { Copper: 999, Silver: 2499, Gold: 5999 };
 
-  if (navDots.length > 0) {
-    const updateActiveDot = () => {
-      let current = 0;
-      sections.forEach((section, index) => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= 200) {
-          current = index;
-        }
-      });
-      navDots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === current);
-      });
-    };
+  function updateSummary() {
+    const type = typeEl ? typeEl.value : 'Copper';
+    const qty = Math.max(1, parseInt(qtyEl?.value) || 1);
+    const total = (prices[type] || 999) * qty;
 
-    window.addEventListener('scroll', updateActiveDot);
-
-    navDots.forEach(dot => {
-      dot.addEventListener('click', () => {
-        const targetId = dot.getAttribute('data-target');
-        const target = document.querySelector(targetId);
-        if (target) {
-          const headerOffset = 100;
-          const elementPosition = target.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-        }
-      });
-    });
+    const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+    set('s-type', type);
+    set('s-qty', 'x' + qty);
+    set('s-price', '\u20B9' + (prices[type] || 999).toLocaleString());
+    set('s-total', '\u20B9' + total.toLocaleString());
   }
 
-  // ===== ORDER FORM HANDLING =====
-  const orderForm = document.getElementById('yantraOrderForm');
-  const orderSubmitBtn = document.getElementById('orderSubmitBtn');
-  const confirmationOverlay = document.getElementById('orderConfirmation');
-  const confirmOrderId = document.getElementById('confirmOrderId');
-  const confirmClose = document.getElementById('confirmClose');
+  if (typeEl) typeEl.addEventListener('change', updateSummary);
+  if (qtyEl) qtyEl.addEventListener('input', updateSummary);
+  updateSummary();
 
-  if (orderForm) {
-    // Update summary on type/quantity change
-    const typeSelect = document.getElementById('yantra_type');
-    const qtyInput = document.getElementById('quantity');
+  // ── Order Submit ──
+  const form = document.getElementById('yantraOrderForm');
+  const submitBtn = document.getElementById('orderSubmitBtn');
+  const modal = document.getElementById('orderConfirmation');
+  const orderIdEl = document.getElementById('confirmOrderId');
+  const closeModal = document.getElementById('confirmClose');
 
-    const prices = { Copper: 999, Silver: 2499, Gold: 5999 };
-
-    function updateSummary() {
-      const type = typeSelect ? typeSelect.value : 'Copper';
-      const qty = qtyInput ? parseInt(qtyInput.value) || 1 : 1;
-      const price = prices[type] || 999;
-      const total = price * qty;
-
-      const typeDisplay = document.getElementById('summary-type');
-      const qtyDisplay = document.getElementById('summary-qty');
-      const priceDisplay = document.getElementById('summary-price');
-      const totalDisplay = document.getElementById('summary-total');
-
-      if (typeDisplay) typeDisplay.textContent = type;
-      if (qtyDisplay) qtyDisplay.textContent = 'x' + qty;
-      if (priceDisplay) priceDisplay.textContent = '\u20B9' + price.toLocaleString();
-      if (totalDisplay) totalDisplay.textContent = '\u20B9' + total.toLocaleString();
-    }
-
-    if (typeSelect) typeSelect.addEventListener('change', updateSummary);
-    if (qtyInput) qtyInput.addEventListener('input', updateSummary);
-    updateSummary();
-
-    // Form submission
-    orderForm.addEventListener('submit', (e) => {
+  if (form) {
+    form.addEventListener('submit', e => {
       e.preventDefault();
 
-      const formData = new FormData(orderForm);
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="spinner"></span> Processing...';
 
-      orderSubmitBtn.disabled = true;
-      orderSubmitBtn.innerHTML = '<span class="spinner"></span> Processing...';
-
-      fetch('order_handler.php', {
-        method: 'POST',
-        body: formData
-      })
-        .then(res => res.json())
-        .then(data => {
-          if (data.status === 'success') {
-            if (confirmOrderId) confirmOrderId.textContent = '#YANTRA-' + data.order_id;
-            if (confirmationOverlay) confirmationOverlay.classList.add('active');
-            orderForm.reset();
+      fetch('order_handler.php', { method: 'POST', body: new FormData(form) })
+        .then(r => r.json())
+        .then(d => {
+          if (d.status === 'success') {
+            if (orderIdEl) orderIdEl.textContent = '#YANTRA-' + d.order_id;
+            if (modal) modal.classList.add('active');
+            form.reset();
             updateSummary();
           } else {
-            Swal.fire({
-              icon: 'error',
-              title: 'Order Failed',
-              text: data.message || 'Something went wrong. Please try again.',
-              confirmButtonColor: '#d33'
-            });
+            Swal.fire({ icon: 'error', title: 'Order Failed', text: d.message, confirmButtonColor: '#d33' });
           }
         })
-        .catch(err => {
-          console.error('Error:', err);
-          Swal.fire({
-            icon: 'error',
-            title: 'Connection Error',
-            text: 'Unable to reach the server. Please check your internet and try again.',
-            confirmButtonColor: '#d33'
-          });
+        .catch(() => {
+          Swal.fire({ icon: 'error', title: 'Connection Error', text: 'Please check your internet and try again.', confirmButtonColor: '#d33' });
         })
         .finally(() => {
-          orderSubmitBtn.disabled = false;
-          orderSubmitBtn.innerHTML = '<i class="fas fa-lock"></i> Place Order Now';
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<i class="fas fa-lock"></i> Place Order Now';
         });
     });
   }
 
-  // ===== CONFIRMATION MODAL CLOSE =====
-  if (confirmClose) {
-    confirmClose.addEventListener('click', () => {
-      if (confirmationOverlay) confirmationOverlay.classList.remove('active');
-    });
-  }
+  if (closeModal) closeModal.addEventListener('click', () => { if (modal) modal.classList.remove('active'); });
+  if (modal) modal.addEventListener('click', e => { if (e.target === modal) modal.classList.remove('active'); });
 
-  if (confirmationOverlay) {
-    confirmationOverlay.addEventListener('click', (e) => {
-      if (e.target === confirmationOverlay) {
-        confirmationOverlay.classList.remove('active');
-      }
-    });
-  }
-
-  // ===== COUNTER TIMER (Urgency Bar) =====
-  function startTimer(duration, display) {
-    let timer = duration;
-    const interval = setInterval(() => {
-      const hours = Math.floor(timer / 3600);
-      const minutes = Math.floor((timer % 3600) / 60);
-      const seconds = timer % 60;
-
-      const hrEl = document.getElementById('timer-hours');
-      const minEl = document.getElementById('timer-minutes');
-      const secEl = document.getElementById('timer-seconds');
-
-      if (hrEl) hrEl.textContent = String(hours).padStart(2, '0');
-      if (minEl) minEl.textContent = String(minutes).padStart(2, '0');
-      if (secEl) secEl.textContent = String(seconds).padStart(2, '0');
-
-      if (--timer < 0) {
-        clearInterval(interval);
-        // Reset timer
-        startTimer(duration, display);
-      }
+  // ── Urgency Timer ──
+  (function startTimer(duration) {
+    let t = duration;
+    setInterval(() => {
+      const h = Math.floor(t / 3600);
+      const m = Math.floor((t % 3600) / 60);
+      const s = t % 60;
+      const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = String(v).padStart(2, '0'); };
+      set('th', h); set('tm', m); set('ts', s);
+      if (--t < 0) t = duration;
     }, 1000);
-  }
-
-  const timerDisplay = document.getElementById('urgency-timer');
-  if (timerDisplay) {
-    startTimer(7200, timerDisplay); // 2 hours
-  }
+  })(7200);
 });

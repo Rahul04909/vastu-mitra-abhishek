@@ -133,7 +133,7 @@
 
       <div class="hero__visual">
         <div class="hero__visual-frame reveal">
-          <img src="assets/images/hero-mahamrityunjay.webp" alt="व्यक्तिगत रूप से तैयार शुद्ध तांबे का महामृत्युंजय यंत्र, दीपक की रोशनी में" width="1100" height="1300" loading="eager">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5R0iepRNVzmpY-_OAcPSVR5ejCWaGkxBSl32msR_Zzg&s=10" alt="व्यक्तिगत रूप से तैयार शुद्ध तांबे का महामृत्युंजय यंत्र, दीपक की रोशनी में" width="1100" height="1300" loading="eager">
           <div class="hero__visual-caption">
             <div>
               <strong>व्यक्तिगत रूप से तैयार</strong>

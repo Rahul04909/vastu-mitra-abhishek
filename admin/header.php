@@ -51,6 +51,13 @@ $menuItems = [
         ],
     ],
     [
+        "menuTitle" => "Yantra Products",
+        "icon" => "fas fa-gem",
+        "pages" => [
+            ["title" => "Orders", "url" => "yantra-products/index.php"]
+        ],
+    ],
+    [
         "menuTitle" => "Settings",
         "icon" => "fas fa-cog",
         "pages" => [

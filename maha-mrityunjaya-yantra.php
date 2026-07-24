@@ -773,11 +773,24 @@
 </div>
 
 <!-- =====================================================================
+     THANK YOU MODAL
+     ===================================================================== -->
+<div class="modal-overlay" id="thankyouModal">
+  <div class="modal-box" style="background:var(--color-ivory);border-radius:var(--radius-lg);max-width:440px;width:100%;padding:48px 40px;text-align:center;box-shadow:var(--shadow-lifted);animation:modalIn 0.5s cubic-bezier(0.16,1,0.3,1)">
+    <div style="font-size:56px;margin-bottom:8px;line-height:1">🙏</div>
+    <h2 style="font-family:var(--font-display);font-size:var(--fs-xl);color:var(--color-text);margin-bottom:8px">ऑर्डर कन्फर्म!</h2>
+    <p style="color:var(--color-text-muted);line-height:var(--lh-relaxed);font-size:var(--fs-sm);margin-bottom:4px">आपका भुगतान सफलतापूर्वक प्राप्त हो गया है।</p>
+    <p style="color:var(--color-text-muted);line-height:var(--lh-relaxed);font-size:var(--fs-sm);margin-bottom:16px">आपका व्यक्तिगत यंत्र शीघ्र तैयार कर आपको भेज दिया जाएगा।</p>
+    <div id="confirmRefId" style="font-family:var(--font-display);font-size:var(--fs-md);color:var(--color-copper-dark);margin:12px 0;font-weight:700"></div>
+    <p style="font-size:13px;color:var(--color-text-muted);margin-bottom:20px">🔱 ॐ त्र्यंबकं यजामहे</p>
+    <button class="btn btn--primary" onclick="document.getElementById('thankyouModal').classList.remove('is-open');document.body.style.overflow=''" style="margin-top:4px">ठीक है</button>
+  </div>
+</div>
+
+<!-- =====================================================================
      SCRIPTS
      ===================================================================== -->
-<!-- Razorpay Checkout — uncomment once your Razorpay account is ready
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
--->
 <script src="assets/js/main.js"></script>
 </body>
 </html>
@@ -2164,51 +2177,44 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   }
 
   /**
-   * submitOrderToBackend
-   * ---------------------------------------------------------------------
-   * Central place to wire this form up to your real backend:
-   *   - Google Sheets  (Apps Script Web App URL)
-   *   - Generic Webhook (Zapier / Make / n8n)
-   *   - CRM API
-   *   - WhatsApp Business API (order confirmation message)
-   *
-   * Replace the body of this function with a real fetch() call, e.g.:
-   *
-   *   return fetch("https://your-endpoint.example.com/orders", {
-   *     method: "POST",
-   *     headers: { "Content-Type": "application/json" },
-   *     body: JSON.stringify(orderData),
-   *   });
-   *
-   * It currently resolves immediately so the front-end flow can be
-   * demoed/tested before the backend is connected.
+   * submitOrderToBackend — creates Razorpay order via backend API
    * ---------------------------------------------------------------------- */
   function submitOrderToBackend(orderData) {
-    console.log("Order payload ready for backend integration:", orderData);
-    return Promise.resolve({ ok: true });
+    return fetch('api/create_yantra_order.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        yantra: orderData.yantra,
+        size: orderData.size,
+        customer_name: orderData.name,
+        mobile: orderData.mobile,
+        email: orderData.email,
+        gotra: orderData.gotra,
+        sankalp: orderData.sankalp,
+        address: orderData.address,
+        city: orderData.city,
+        state: orderData.state,
+        pincode: orderData.pincode,
+      }),
+    }).then(function (r) { return r.json(); });
   }
 
   /**
-   * RAZORPAY INTEGRATION POINT
-   * ---------------------------------------------------------------------
-   * 1. Include Razorpay checkout.js in index.html (see commented tag
-   *    near the closing </body> tag).
-   * 2. Create an order on your server for orderData.amount (in paise)
-   *    and pass the returned order_id below.
-   * 3. Replace "key: 'RAZORPAY_KEY_ID'" with your live/test key.
+   * launchRazorpayCheckout — opens Razorpay payment popup
    * ---------------------------------------------------------------------- */
-  function launchRazorpayCheckout(orderData) {
+  function launchRazorpayCheckout(orderData, serverOrder, orderFormEl) {
     if (typeof Razorpay === "undefined") {
-      console.warn("Razorpay checkout.js is not loaded. Add the script tag to enable payments.");
+      showToast("Razorpay लोड नहीं हुआ। कृपया पृष्ठ रिफ्रेश करें।");
       return;
     }
-    const options = {
-      key: "RAZORPAY_KEY_ID", // TODO: replace with your Razorpay Key ID
-      amount: orderData.amount * 100, // Razorpay expects amount in paise
-      currency: "INR",
+    var options = {
+      key: serverOrder.key_id,
+      amount: serverOrder.amount,
+      currency: serverOrder.currency,
+      order_id: serverOrder.order_id,
       name: "Vastu Mitra Abhishek",
-      description: `${orderData.yantraLabel} — ${orderData.sizeLabel}`,
-      // order_id: "order_xxxxxxxx", // TODO: pass server-generated order id
+      description: serverOrder.yantra_label + " — " + serverOrder.size_label,
+      image: "assets/logo/logo.png",
       prefill: {
         name: orderData.name,
         email: orderData.email,
@@ -2216,29 +2222,61 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
       },
       theme: { color: "#B5652D" },
       handler: function (response) {
-        showToast("भुगतान सफल! आपका ऑर्डर प्राप्त हो गया है। 🙏");
-        console.log("Razorpay payment success:", response);
+        fetch('api/verify_yantra_payment.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            razorpay_order_id: response.razorpay_order_id,
+            razorpay_payment_id: response.razorpay_payment_id,
+            razorpay_signature: response.razorpay_signature,
+          }),
+        })
+        .then(function (r) { return r.json(); })
+        .then(function (vData) {
+          if (vData.status === 'success') {
+            document.getElementById('confirmRefId').textContent = 'ऑर्डर ID: YT-' + serverOrder.order_db_id;
+            document.getElementById('thankyouModal').classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+            orderFormEl.reset();
+          } else {
+            showToast(vData.message || 'भुगतान सत्यापन विफल। कृपया सपोर्ट से संपर्क करें।');
+          }
+        })
+        .catch(function () {
+          showToast('सत्यापन में त्रुटि। कृपया सपोर्ट से संपर्क करें। भुगतान ID: ' + response.razorpay_payment_id);
+        })
+        .finally(function () {
+          var btn = orderFormEl.querySelector('[type="submit"]');
+          if (btn) { btn.disabled = false; btn.textContent = originalLabel; }
+        });
+      },
+      modal: {
+        ondismiss: function () {
+          var btn = orderFormEl.querySelector('[type="submit"]');
+          if (btn) { btn.disabled = false; btn.textContent = originalLabel; }
+        },
       },
     };
-    const rzp = new Razorpay(options);
+    var rzp = new Razorpay(options);
     rzp.open();
   }
 
+  var originalLabel = "";
   function handleOrderFormSubmit(e) {
     e.preventDefault();
-    const form = e.target;
+    var form = e.target;
     if (!validateOrderForm(form)) {
       showToast("कृपया सभी आवश्यक जानकारी सही से भरें");
       return;
     }
 
-    const formData = new FormData(form);
-    const productKey = formData.get("yantra");
-    const sizeKey = formData.get("size");
-    const size = SIZE_CONFIG[sizeKey];
-    const product = PRODUCT_CONFIG[productKey];
+    var formData = new FormData(form);
+    var productKey = formData.get("yantra");
+    var sizeKey = formData.get("size");
+    var size = SIZE_CONFIG[sizeKey];
+    var product = PRODUCT_CONFIG[productKey];
 
-    const orderData = {
+    var orderData = {
       name: formData.get("customerName"),
       mobile: formData.get("mobile"),
       email: formData.get("email"),
@@ -2253,29 +2291,24 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
       city: formData.get("city"),
       state: formData.get("state"),
       pincode: formData.get("pincode"),
-      submittedAt: new Date().toISOString(),
     };
 
-    const submitBtn = form.querySelector('[type="submit"]');
-    const originalLabel = submitBtn ? submitBtn.textContent : "";
+    var submitBtn = form.querySelector('[type="submit"]');
+    originalLabel = submitBtn ? submitBtn.textContent : "";
     if (submitBtn) {
       submitBtn.disabled = true;
       submitBtn.textContent = "कृपया प्रतीक्षा करें...";
     }
 
     submitOrderToBackend(orderData)
-      .then(() => {
-        // Swap this call for launchRazorpayCheckout(orderData) once your
-        // Razorpay key + order-creation endpoint are wired up.
-        showToast("ऑर्डर विवरण प्राप्त हुआ। भुगतान चरण से जुड़ने के लिए तैयार। 🙏");
-        // launchRazorpayCheckout(orderData);
-        closeOrderModal();
-        form.reset();
+      .then(function (serverOrder) {
+        if (serverOrder.status !== 'success') {
+          throw new Error(serverOrder.message || 'Order creation failed');
+        }
+        launchRazorpayCheckout(orderData, serverOrder, form);
       })
-      .catch(() => {
-        showToast("कुछ त्रुटि हुई, कृपया पुनः प्रयास करें");
-      })
-      .finally(() => {
+      .catch(function (err) {
+        showToast(err.message || "कुछ त्रुटि हुई, कृपया पुनः प्रयास करें");
         if (submitBtn) {
           submitBtn.disabled = false;
           submitBtn.textContent = originalLabel;

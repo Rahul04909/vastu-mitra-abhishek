@@ -67,11 +67,7 @@
 <header class="site-header">
   <div class="container site-header__inner">
     <a href="#top" class="brand" aria-label="वास्तु मित्र अभिषेक — होम">
-      <span class="brand__mark" aria-hidden="true">वा</span>
-      <span class="brand__text">
-        <span class="brand__name">वास्तु मित्र अभिषेक</span>
-        <span class="brand__tagline">व्यक्तिगत अभिमंत्रित यंत्र</span>
-      </span>
+      <img src="assets/logo/logo.png" alt="वास्तु मित्र अभिषेक" class="brand__logo">
     </a>
 
     <nav class="main-nav" aria-label="मुख्य नेविगेशन">
@@ -627,11 +623,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#top" class="brand" aria-label="वास्तु मित्र अभिषेक — होम">
-          <span class="brand__mark" aria-hidden="true">वा</span>
-          <span class="brand__text">
-            <span class="brand__name">वास्तु मित्र अभिषेक</span>
-            <span class="brand__tagline">व्यक्तिगत अभिमंत्रित यंत्र</span>
-          </span>
+          <img src="assets/logo/logo.png" alt="वास्तु मित्र अभिषेक" class="brand__logo">
         </a>
         <p class="footer-brand__desc">प्रत्येक यंत्र आपके नाम, गोत्र एवं संकल्प के साथ व्यक्तिगत रूप से तैयार किया जाता है — शुद्ध तांबे में, विधिवत वैदिक विधि से अभिमंत्रित।</p>
         <div class="footer-social">
@@ -1197,22 +1189,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   align-items: center;
   gap: var(--space-xs);
 }
-.brand__mark {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: conic-gradient(from 90deg, var(--color-gold), var(--color-copper), var(--color-gold));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  color: var(--color-brown-950);
-  font-weight: 700;
-  flex-shrink: 0;
-}
-.brand__text { display: flex; flex-direction: column; line-height: 1.2; }
-.brand__name { font-family: var(--font-display); font-size: 1.05rem; color: var(--color-gold-light); }
-.brand__tagline { font-size: 0.68rem; color: var(--color-text-on-dark-muted); letter-spacing: 0.08em; }
+.brand__logo { height: 42px; width: auto; display: block; }
 
 .main-nav__list {
   display: flex;

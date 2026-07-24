@@ -1363,8 +1363,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .about__media-badge {
   position: absolute;
-  bottom: -1.25rem;
-  right: -1.25rem;
+  bottom: var(--space-md);
+  right: var(--space-md);
   background: var(--color-ivory-soft);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);

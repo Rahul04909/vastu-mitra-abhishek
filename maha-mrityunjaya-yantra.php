@@ -1189,7 +1189,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   align-items: center;
   gap: var(--space-xs);
 }
-.brand__logo { height: 42px; width: auto; display: block; }
+.brand__logo { height: 42px; width: auto; display: block; background: #fff; padding: 6px 12px; border-radius: var(--radius-md); }
 
 .main-nav__list {
   display: flex;

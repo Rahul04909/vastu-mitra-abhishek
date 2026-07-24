@@ -150,54 +150,48 @@
   </section>
 
   <!-- ===================================================================
-       2. ABOUT
+       2. ABOUT (redesigned — centered layout matching process section)
        =================================================================== -->
   <section class="section" id="about">
     <div class="geo-pattern" aria-hidden="true"></div>
-    <div class="container about__grid">
+    <div class="container">
+      <div class="section-head section-head--center" style="text-align:center;margin-inline:auto">
+        <span class="eyebrow" style="justify-content:center">हमारे बारे में</span>
+        <h2 class="heading-display section-heading section-heading--center">वास्तु मित्र अभिषेक — एक व्यक्तिगत आध्यात्मिक सेवा</h2>
+        <p class="section-subtext section-subtext--center">
+          वास्तु मित्र अभिषेक की स्थापना इस विश्वास के साथ हुई कि यंत्र केवल एक धातु की आकृति नहीं, बल्कि श्रद्धा और संकल्प का माध्यम है। इसीलिए हम प्रत्येक यंत्र को अलग से, आपके नाम, गोत्र और व्यक्तिगत प्रार्थना को ध्यान में रखते हुए तैयार करते हैं — न कि एक जैसी वस्तुओं की भाँति बड़ी संख्या में।
+        </p>
+      </div>
+
+      <div class="about__cards">
+        <div class="about__card reveal">
+          <span class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <p class="about__card-title">व्यक्तिगत नाम एवं गोत्र</p>
+          <p class="about__card-desc">प्रत्येक यंत्र पर आपका नाम व गोत्र सम्मिलित किया जाता है, ताकि संकल्प पूर्णतः आपके लिए हो।</p>
+        </div>
+        <div class="about__card reveal">
+          <span class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
+          </span>
+          <p class="about__card-title">व्यक्तिगत संकल्प</p>
+          <p class="about__card-desc">आपकी जानकारी के अनुसार विधिवत संकल्प लेकर ही यंत्र की तैयारी प्रारंभ की जाती है।</p>
+        </div>
+        <div class="about__card reveal">
+          <span class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </span>
+          <p class="about__card-title">विधिवत वैदिक अभिमंत्रण</p>
+          <p class="about__card-desc">यंत्र को उचित मंत्रोच्चारण एवं पारंपरिक विधि के अनुसार अभिमंत्रित किया जाता है।</p>
+        </div>
+      </div>
+
       <div class="about__media reveal">
         <img src="assets/images/about-personalized-yantra.webp" alt="व्यक्तिगत नाम अंकन के साथ तैयार किया जा रहा तांबे का यंत्र" width="1000" height="1000" loading="lazy">
         <div class="about__media-badge">
           <strong>100%</strong>
           <span>व्यक्तिगत रूप से तैयार — कोई सामूहिक निर्माण नहीं</span>
-        </div>
-      </div>
-
-      <div class="about__content reveal">
-        <span class="eyebrow">हमारे बारे में</span>
-        <h2 class="heading-display section-heading">वास्तु मित्र अभिषेक — एक व्यक्तिगत आध्यात्मिक सेवा</h2>
-        <p class="section-subtext">
-          वास्तु मित्र अभिषेक की स्थापना इस विश्वास के साथ हुई कि यंत्र केवल एक धातु की आकृति नहीं, बल्कि श्रद्धा और संकल्प का माध्यम है। इसीलिए हम प्रत्येक यंत्र को अलग से, आपके नाम, गोत्र और व्यक्तिगत प्रार्थना को ध्यान में रखते हुए तैयार करते हैं — न कि एक जैसी वस्तुओं की भाँति बड़ी संख्या में।
-        </p>
-
-        <div class="about__points">
-          <div class="about__point">
-            <span class="icon-tile" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4"/></svg>
-            </span>
-            <div>
-              <p class="about__point-title">व्यक्तिगत नाम एवं गोत्र</p>
-              <p class="about__point-desc">प्रत्येक यंत्र पर आपका नाम व गोत्र सम्मिलित किया जाता है, ताकि संकल्प पूर्णतः आपके लिए हो।</p>
-            </div>
-          </div>
-          <div class="about__point">
-            <span class="icon-tile" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
-            </span>
-            <div>
-              <p class="about__point-title">व्यक्तिगत संकल्प</p>
-              <p class="about__point-desc">आपकी जानकारी के अनुसार विधिवत संकल्प लेकर ही यंत्र की तैयारी प्रारंभ की जाती है।</p>
-            </div>
-          </div>
-          <div class="about__point">
-            <span class="icon-tile" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-            </span>
-            <div>
-              <p class="about__point-title">विधिवत वैदिक अभिमंत्रण</p>
-              <p class="about__point-desc">यंत्र को उचित मंत्रोच्चारण एवं पारंपरिक विधि के अनुसार अभिमंत्रित किया जाता है।</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -1352,15 +1346,37 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 
 /* -------------------------------------------------------------------------
-   8. ABOUT
+   8. ABOUT — redesigned matching process section layout
    ------------------------------------------------------------------------- */
-.about__grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: var(--space-2xl); align-items: center; }
-.about__media { position: relative; }
-.about__media img {
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card);
-  border: 1px solid var(--color-border);
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
 }
+.about__card {
+  text-align: center;
+  padding: var(--space-lg);
+  background: var(--color-ivory-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+.about__card:hover { transform: translateY(-6px); box-shadow: var(--shadow-card); }
+.about__card .icon-tile { margin: 0 auto var(--space-md); }
+.about__card-title { font-weight: 600; font-size: var(--fs-md); margin-bottom: 0.35rem; }
+.about__card-desc { font-size: var(--fs-sm); color: var(--color-text-muted); line-height: var(--lh-relaxed); }
+
+.about__media {
+  margin-top: var(--space-2xl);
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+.about__media img { width: 100%; max-height: 420px; object-fit: cover; }
 .about__media-badge {
   position: absolute;
   bottom: var(--space-md);
@@ -1374,12 +1390,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .about__media-badge strong { display: block; font-family: var(--font-display); font-size: var(--fs-lg); color: var(--color-copper-dark); }
 .about__media-badge span { font-size: var(--fs-xs); color: var(--color-text-muted); }
-
-.about__points { margin-top: var(--space-lg); display: grid; gap: var(--space-md); }
-.about__point { display: flex; gap: var(--space-sm); align-items: flex-start; }
-.about__point .icon-tile { width: 40px; height: 40px; margin-bottom: 0; }
-.about__point-title { font-weight: 600; margin-bottom: 0.2rem; }
-.about__point-desc { font-size: var(--fs-sm); color: var(--color-text-muted); }
 
 /* -------------------------------------------------------------------------
    9. WHY PERSONALIZED — comparison table
@@ -1880,7 +1890,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   .hero__visual { order: -1; }
   .hero__visual-frame { max-width: 340px; margin-inline: auto; }
 
-  .about__grid,
+  .about__cards { grid-template-columns: repeat(2, 1fr); }
   .product-section .grid-2 { grid-template-columns: 1fr; }
   .product-section--reverse .grid-2 { direction: ltr; }
   .product-media { order: -1; }
@@ -1901,6 +1911,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   .hero__trust-row { gap: var(--space-md); }
   .pricing-grid { grid-template-columns: 1fr; max-width: 380px; }
   .process-flow { grid-template-columns: 1fr; }
+  .about__cards { grid-template-columns: 1fr; }
   .trust-grid { grid-template-columns: 1fr; }
   .stats-row { grid-template-columns: repeat(2, 1fr); gap: var(--space-md); }
   .footer-grid { grid-template-columns: 1fr; gap: var(--space-lg); }

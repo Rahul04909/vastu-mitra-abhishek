@@ -133,7 +133,7 @@
 
       <div class="hero__visual">
         <div class="hero__visual-frame reveal">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5R0iepRNVzmpY-_OAcPSVR5ejCWaGkxBSl32msR_Zzg&s=10" alt="व्यक्तिगत रूप से तैयार शुद्ध तांबे का महामृत्युंजय यंत्र, दीपक की रोशनी में" width="1100" height="1300" loading="eager">
+          <img src="assets\images\IMG-20260725-WA0007.jpg" alt="व्यक्तिगत रूप से तैयार शुद्ध तांबे का महामृत्युंजय यंत्र, दीपक की रोशनी में" width="1100" height="1300" loading="eager">
           <div class="hero__visual-caption">
             <div>
               <strong>व्यक्तिगत रूप से तैयार</strong>
@@ -184,7 +184,7 @@
       </div>
 
       <div class="about__media reveal">
-        <img src="assets/images/about-personalized-yantra.webp" alt="व्यक्तिगत नाम अंकन के साथ तैयार किया जा रहा तांबे का यंत्र" width="1000" height="1000" loading="lazy">
+        <img src="assets\images\IMG-20260714-WA0003.jpg" alt="व्यक्तिगत नाम अंकन के साथ तैयार किया जा रहा तांबे का यंत्र" width="1000" height="1000" loading="lazy">
         <div class="about__media-badge">
           <strong>100%</strong>
           <span>व्यक्तिगत रूप से तैयार — कोई सामूहिक निर्माण नहीं</span>
@@ -242,7 +242,7 @@
     <div class="container grid-2">
       <div class="product-media reveal">
         <div class="product-media__frame">
-          <img src="assets/images/mahamrityunjay-yantra.webp" alt="महामृत्युंजय यंत्र — शुद्ध तांबे में व्यक्तिगत रूप से तैयार, नीली आभा के साथ" width="1000" height="1100" loading="lazy">
+          <img src="assets\images\IMG-20260725-WA0007.jpg" alt="महामृत्युंजय यंत्र — शुद्ध तांबे में व्यक्तिगत रूप से तैयार, नीली आभा के साथ" width="1000" height="1100" loading="lazy">
         </div>
       </div>
 
@@ -426,7 +426,7 @@
       <div class="pricing-grid">
         <div class="pricing-card reveal">
           <div class="pricing-card__media">
-            <img src="assets/images/pricing-3x3.webp" alt="3 गुणा 3 इंच आकार का व्यक्तिगत तांबे का यंत्र" width="800" height="800" loading="lazy">
+            <img src="assets/images/kal-bhairav-yantra-image.png" alt="3 गुणा 3 इंच आकार का व्यक्तिगत तांबे का यंत्र" width="800" height="800" loading="lazy">
           </div>
           <div class="pricing-card__body">
             <p class="pricing-card__size">3 × 3 इंच</p>

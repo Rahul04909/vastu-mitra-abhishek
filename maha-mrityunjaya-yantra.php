@@ -446,7 +446,7 @@
 
         <div class="pricing-card pricing-card--featured reveal">
           <div class="pricing-card__media">
-            <img src="assets/images/pricing-5x5.webp" alt="5 गुणा 5 इंच आकार का व्यक्तिगत तांबे का यंत्र" width="800" height="800" loading="lazy">
+            <img src="assets\images\Maha Mritunjay Ynatra 1.png" alt="5 गुणा 5 इंच आकार का व्यक्तिगत तांबे का यंत्र" width="800" height="800" loading="lazy">
           </div>
           <div class="pricing-card__body">
             <p class="pricing-card__size">5 × 5 इंच</p>

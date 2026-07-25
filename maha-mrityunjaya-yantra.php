@@ -184,7 +184,7 @@
       </div>
 
       <div class="about__media reveal">
-        <img src="assets\images\IMG-20260714-WA0003.jpg" alt="व्यक्तिगत नाम अंकन के साथ तैयार किया जा रहा तांबे का यंत्र" width="1000" height="1000" loading="lazy">
+        <img src="assets\images\IMG-20260725-WA0001.jpg" alt="व्यक्तिगत नाम अंकन के साथ तैयार किया जा रहा तांबे का यंत्र" width="1000" height="1000" loading="lazy">
         <div class="about__media-badge">
           <strong>100%</strong>
           <span>व्यक्तिगत रूप से तैयार — कोई सामूहिक निर्माण नहीं</span>

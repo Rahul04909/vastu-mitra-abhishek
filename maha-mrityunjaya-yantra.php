@@ -340,7 +340,7 @@
 
       <div class="product-media reveal">
         <div class="product-media__frame">
-          <img src="assets/images/kaal-bhairav-yantra.webp" alt="काल भैरव यंत्र — शुद्ध तांबे में व्यक्तिगत रूप से तैयार, गहरी लाल आभा के साथ" width="1000" height="1100" loading="lazy">
+          <img src="assets\images\IMG-20260725-WA0004.jpg" alt="काल भैरव यंत्र — शुद्ध तांबे में व्यक्तिगत रूप से तैयार, गहरी लाल आभा के साथ" width="1000" height="1100" loading="lazy">
         </div>
       </div>
     </div>
@@ -407,7 +407,7 @@
       </div>
 
       <div class="process-media reveal">
-        <img src="assets/images/process-preparation.webp" alt="यंत्र निर्माण की व्यक्तिगत प्रक्रिया — शुद्ध तांबे पर अंकन एवं पूजन" width="1000" height="750" loading="lazy">
+        <img src="assets\images\IMG-20260725-WA0006.jpg" alt="यंत्र निर्माण की व्यक्तिगत प्रक्रिया — शुद्ध तांबे पर अंकन एवं पूजन" width="1000" height="750" loading="lazy">
       </div>
     </div>
   </section>

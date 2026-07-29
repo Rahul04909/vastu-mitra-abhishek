@@ -255,24 +255,58 @@ a{color:inherit;text-decoration:none;}
 @media(max-width:900px){.trust-grid{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:500px){.trust-grid{grid-template-columns:1fr;}}
 
-/* ===== S8: BEHIND THE RITUAL (GALLERY) ===== */
+/* ===== S8: BEHIND THE RITUAL (REEL VIDEOS) ===== */
 .gallery-section{background:var(--bg-1);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
-.gallery-item{
-  border-radius:var(--radius-sm);overflow:hidden;border:1px solid var(--line);
-  aspect-ratio:4/3;position:relative;
+.reel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.reel-card{
+  border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
+  position:relative;background:var(--bg-2);cursor:pointer;
+  aspect-ratio:9/16;max-height:480px;
 }
-.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease;}
-.gallery-item:hover img{transform:scale(1.08);}
-.gallery-item .gl-label{
-  position:absolute;bottom:0;left:0;right:0;
-  background:linear-gradient(transparent,rgba(0,0,0,0.8));
-  padding:30px 10px 8px;font-size:11px;text-align:center;color:var(--gold-light);font-weight:600;
+.reel-card video{
+  width:100%;height:100%;object-fit:cover;display:block;
 }
-.gallery-item-wide{grid-column:span 2;grid-row:span 2;aspect-ratio:auto;}
-@media(max-width:900px){.gallery-grid{grid-template-columns:repeat(2,1fr);}
-  .gallery-item-wide{grid-column:span 2;grid-row:span 1;aspect-ratio:4/3;}}
-@media(max-width:500px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:8px;}}
+.reel-card .reel-poster{
+  position:absolute;inset:0;z-index:1;
+  background:var(--bg-2);transition:opacity .4s ease;
+}
+.reel-card .reel-poster img{width:100%;height:100%;object-fit:cover;display:block;}
+.reel-card .reel-poster.playing{opacity:0;pointer-events:none;}
+.reel-card .reel-play-btn{
+  position:absolute;inset:0;z-index:2;
+  display:flex;align-items:center;justify-content:center;
+  transition:opacity .3s ease;
+}
+.reel-card .reel-play-btn .play-icon{
+  width:56px;height:56px;border-radius:50%;
+  background:rgba(255,255,255,0.2);backdrop-filter:blur(4px);
+  display:flex;align-items:center;justify-content:center;
+  border:2px solid rgba(255,255,255,0.5);
+  font-size:22px;color:#fff;transition:all .25s ease;
+}
+.reel-card:hover .reel-play-btn .play-icon{
+  background:rgba(255,255,255,0.35);transform:scale(1.1);
+}
+.reel-card .reel-play-btn.hidden{opacity:0;pointer-events:none;}
+.reel-card .reel-label{
+  position:absolute;bottom:0;left:0;right:0;z-index:3;
+  background:linear-gradient(transparent,rgba(0,0,0,0.85));
+  padding:40px 14px 12px;text-align:center;
+}
+.reel-card .reel-label span{font-size:13px;color:var(--gold-light);font-weight:700;display:block;}
+.reel-card .reel-label small{font-size:10.5px;color:var(--text-dim);display:block;margin-top:2px;}
+.reel-card .reel-mute-btn{
+  position:absolute;top:10px;right:10px;z-index:3;
+  width:32px;height:32px;border-radius:50%;
+  background:rgba(0,0,0,0.5);border:none;
+  display:none;align-items:center;justify-content:center;
+  cursor:pointer;color:#fff;font-size:14px;
+}
+.reel-card .reel-mute-btn.show{display:flex;}
+@media(max-width:900px){.reel-grid{grid-template-columns:repeat(2,1fr);gap:12px;}}
+@media(max-width:500px){.reel-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+  .reel-card{aspect-ratio:9/16;max-height:400px;}
+}
 
 /* ===== S9: WHAT YOU RECEIVE ===== */
 .what-receive{background:var(--bg-0);border-bottom:1px solid var(--line);}
@@ -770,23 +804,51 @@ a{color:inherit;text-decoration:none;}
   </div>
 </section>
 
-<!-- ===== S8: BEHIND THE RITUAL ===== -->
+<!-- ===== S8: BEHIND THE RITUAL (REEL VIDEOS) ===== -->
 <section class="section gallery-section" id="gallery">
   <div class="wrap">
     <div class="section-head">
       <span class="tag">मूल झलकियाँ</span>
-      <h2>🏔️ रुद्राभिषेक के वास्तविक दृश्य</h2>
-      <p>ये तस्वीरें हमारी वास्तविक प्रक्रिया की हैं — पूजा स्थल, सामग्री, संकल्प, अभिषेक, और प्रसाद तक।</p>
+      <h2>🎬 रुद्राभिषेक के वास्तविक दृश्य</h2>
+      <p>हमारी वास्तविक प्रक्रिया की ये वीडियो झलकियाँ — संकल्प, अभिषेक, आरती और प्रसाद — आपको पूरा अनुभव देंगी।</p>
     </div>
-    <div class="gallery-grid">
-      <div class="gallery-item"><img src="../assets/images/IMG-20260725-WA0001.jpg" alt="पूजा स्थल"><span class="gl-label">पूजा स्थल</span></div>
-      <div class="gallery-item"><img src="../assets/images/samagri.jpg" alt="सामग्री"><span class="gl-label">पूजा सामग्री</span></div>
-      <div class="gallery-item"><img src="../assets/images/IMG-20260725-WA0003.jpg" alt="संकल्प"><span class="gl-label">संकल्प</span></div>
-      <div class="gallery-item gallery-item-wide"><img src="../assets/images/IMG-20260714-WA0003.jpg" alt="अभिषेक"><span class="gl-label">रुद्राभिषेक</span></div>
-      <div class="gallery-item"><img src="../assets/images/mansarovar.jpg" alt="आरती"><span class="gl-label">आरती</span></div>
-      <div class="gallery-item"><img src="../assets/images/IMG-20260725-WA0005.jpg" alt="प्रसाद"><span class="gl-label">प्रसाद</span></div>
-      <div class="gallery-item"><img src="../assets/images/IMG-20260725-WA0004.jpg" alt="पैकिंग"><span class="gl-label">पैकिंग</span></div>
-      <div class="gallery-item"><img src="../assets/images/IMG-20260725-WA0006.jpg" alt="डिस्पैच"><span class="gl-label">डिस्पैच</span></div>
+    <div class="reel-grid">
+      <div class="reel-card" data-video="0">
+        <div class="reel-poster"><img src="../assets/images/IMG-20260725-WA0003.jpg" alt="संकल्प"></div>
+        <video loop playsinline preload="none" poster="../assets/images/IMG-20260725-WA0003.jpg">
+          <source src="../assets/images/pandit_video.gif.mp4" type="video/mp4">
+        </video>
+        <div class="reel-play-btn"><div class="play-icon">▶</div></div>
+        <div class="reel-label"><span>🙏 संकल्प</span><small>आपका नाम, गोत्र और उद्देश्य</small></div>
+        <button class="reel-mute-btn">🔇</button>
+      </div>
+      <div class="reel-card" data-video="0">
+        <div class="reel-poster"><img src="../assets/images/IMG-20260714-WA0003.jpg" alt="रुद्राभिषेक"></div>
+        <video loop playsinline preload="none" poster="../assets/images/IMG-20260714-WA0003.jpg">
+          <source src="../assets/images/pandit_video.gif.mp4" type="video/mp4">
+        </video>
+        <div class="reel-play-btn"><div class="play-icon">▶</div></div>
+        <div class="reel-label"><span>🔱 रुद्राभिषेक</span><small>वैदिक मंत्रों से पूर्ण अभिषेक</small></div>
+        <button class="reel-mute-btn">🔇</button>
+      </div>
+      <div class="reel-card" data-video="0">
+        <div class="reel-poster"><img src="../assets/images/mansarovar.jpg" alt="आरती"></div>
+        <video loop playsinline preload="none" poster="../assets/images/mansarovar.jpg">
+          <source src="../assets/images/pandit_video.gif.mp4" type="video/mp4">
+        </video>
+        <div class="reel-play-btn"><div class="play-icon">▶</div></div>
+        <div class="reel-label"><span>🪔 आरती</span><small>महादेव की महाआरती</small></div>
+        <button class="reel-mute-btn">🔇</button>
+      </div>
+      <div class="reel-card" data-video="0">
+        <div class="reel-poster"><img src="../assets/images/IMG-20260725-WA0005.jpg" alt="प्रसाद"></div>
+        <video loop playsinline preload="none" poster="../assets/images/IMG-20260725-WA0005.jpg">
+          <source src="../assets/images/pandit_video.gif.mp4" type="video/mp4">
+        </video>
+        <div class="reel-play-btn"><div class="play-icon">▶</div></div>
+        <div class="reel-label"><span>🎁 प्रसाद</span><small>रुद्राक्ष, भस्म, गंगाजल सहित किट</small></div>
+        <button class="reel-mute-btn">🔇</button>
+      </div>
     </div>
     <div class="section-cta">
       <button class="btn btn-primary" onclick="scrollToBooking()">🙏 मैं भी इसका हिस्सा बनना चाहता हूँ</button>
@@ -1395,6 +1457,45 @@ document.getElementById('bookingForm').addEventListener('submit', function(e){
 function closeThankyou(){
   document.getElementById('thankyouModal').classList.remove('show');
 }
+
+// Reel video cards — Instagram-style play/pause
+(function(){
+  var cards = document.querySelectorAll('.reel-card');
+  cards.forEach(function(card){
+    var video = card.querySelector('video');
+    var poster = card.querySelector('.reel-poster');
+    var playBtn = card.querySelector('.reel-play-btn');
+    var muteBtn = card.querySelector('.reel-mute-btn');
+
+    card.addEventListener('click', function(e){
+      if(e.target.closest('.reel-mute-btn')) return;
+      if(video.paused){
+        video.play().then(function(){
+          poster.classList.add('playing');
+          playBtn.classList.add('hidden');
+          muteBtn.classList.add('show');
+        }).catch(function(){});
+      } else {
+        video.pause();
+        poster.classList.remove('playing');
+        playBtn.classList.remove('hidden');
+        muteBtn.classList.remove('show');
+      }
+    });
+
+    muteBtn.addEventListener('click', function(e){
+      e.stopPropagation();
+      video.muted = !video.muted;
+      muteBtn.textContent = video.muted ? '🔇' : '🔊';
+    });
+
+    video.addEventListener('ended', function(){
+      poster.classList.remove('playing');
+      playBtn.classList.remove('hidden');
+      muteBtn.classList.remove('show');
+    });
+  });
+})();
 </script>
 </body>
 </html>

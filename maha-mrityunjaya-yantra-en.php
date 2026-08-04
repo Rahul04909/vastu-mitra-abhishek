@@ -161,7 +161,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
 
       <div class="hero__visual">
         <div class="hero__visual-frame reveal">
-          <img src="assets/images/IMG-20260725-WA0007.jpg" alt="Individually prepared pure copper Maha Mrityunjaya Yantra" width="1100" height="1300" loading="eager">
+          <img src="assets/images/en/english (4).png" alt="Individually prepared pure copper Maha Mrityunjaya Yantra" width="1100" height="1300" loading="eager">
           <div class="hero__visual-caption">
             <div>
               <strong>Personalized Consecration</strong>
@@ -270,7 +270,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
     <div class="container grid-2">
       <div class="product-media reveal">
         <div class="product-media__frame">
-          <img src="assets/images/IMG-20260725-WA0007.jpg" alt="Maha Mrityunjaya Yantra pure copper engraved" width="1000" height="1100" loading="lazy">
+          <img src="assets/images/en/english (1).png" alt="Maha Mrityunjaya Yantra pure copper engraved" width="1000" height="1100" loading="lazy">
         </div>
       </div>
 
@@ -385,7 +385,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       <div class="pricing-grid">
         <div class="pricing-card reveal">
           <div class="pricing-card__media">
-            <img src="assets/images/kal-bhairav-yantra-image.png" alt="3x3 inch pure copper Maha Mrityunjaya Yantra" width="800" height="800" loading="lazy">
+            <img src="assets/images/Maha Mritunjay Ynatra 1.png" alt="3x3 inch pure copper Maha Mrityunjaya Yantra" width="800" height="800" loading="lazy">
           </div>
           <div class="pricing-card__body">
             <p class="pricing-card__size">3 × 3 Inch</p>
@@ -1712,10 +1712,10 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-lg);
   margin-top: var(--space-2xl);
-  max-width: 540px;
+  max-width: 900px;
   margin-inline: auto;
 }
 .pricing-card {
@@ -2029,13 +2029,54 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.9s var(--ease-premium), transform 0.9s var(--ease-premium); }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
+@media (min-width: 1025px) {
+  .main-nav { display: block !important; }
+}
+
 @media (max-width: 1024px) {
   :root { --fs-hero: 3.1rem; --fs-3xl: 2.6rem; --fs-2xl: 2.1rem; }
 
-  .main-nav { display: none; }
-  .nav-toggle { display: flex; }
+  .main-nav {
+    display: none; /* JS toggles to block */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(26, 16, 12, 0.98);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--color-border-dark);
+    padding: var(--space-md) var(--space-lg);
+    box-shadow: var(--shadow-lifted);
+  }
+  .main-nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .main-nav__link {
+    display: block;
+    font-size: var(--fs-md);
+    padding-block: var(--space-sm);
+    text-align: center;
+    border-bottom: 1px solid rgba(201, 163, 78, 0.08);
+  }
+  .main-nav__link:last-child {
+    border-bottom: none;
+  }
 
-  .hero__grid { grid-template-columns: 1fr; }
+  .nav-toggle {
+    display: flex;
+    transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  }
+  .nav-toggle:hover {
+    background: rgba(201, 163, 78, 0.1);
+    border-color: var(--color-gold);
+  }
+  .nav-toggle:active {
+    transform: scale(0.95);
+  }
+
+  .hero__grid { grid-template-columns: 1fr; gap: var(--space-lg); }
   .hero__visual { order: -1; }
   .hero__visual-frame { max-width: 340px; margin-inline: auto; }
 
@@ -2052,6 +2093,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 
   .final-cta { grid-template-columns: 1fr; text-align: left; }
+  .pricing-grid { grid-template-columns: 1fr; max-width: 540px; }
 }
 
 @media (max-width: 720px) {
@@ -2079,7 +2121,9 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 
 @media (max-width: 480px) {
   .container { padding-inline: 1.1rem; }
-  .hero__title { font-size: var(--fs-3xl); }
+  .hero__title { font-size: 2rem; }
+  .btn { padding: 0.85rem 1.5rem; font-size: var(--fs-sm); white-space: normal; text-align: center; }
+  .hero__ctas .btn-group { gap: var(--space-xs); }
 }
 </style>
 

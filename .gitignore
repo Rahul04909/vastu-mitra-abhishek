@@ -1,0 +1,26 @@
+# Video & Audio Files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wmv
+*.flv
+*.webm
+*.mp3
+*.wav
+*.aac
+assets/videos/
+
+# Archives & Large Files
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Logs & Temp Files
+error_log
+*.log
+error_log.txt
+.DS_Store
+Thumbs.db

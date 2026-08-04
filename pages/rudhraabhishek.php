@@ -12,6 +12,33 @@ require_once __DIR__ . '/../database/db_config.php';
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@500;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1750915242127392');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EV57NSQEF3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EV57NSQEF3');
+</script>
 <style>
 :root{
   --bg-0:#150a05;
@@ -256,54 +283,25 @@ a{color:inherit;text-decoration:none;}
 @media(max-width:900px){.trust-grid{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:500px){.trust-grid{grid-template-columns:1fr;}}
 
-/* ===== S8: BEHIND THE RITUAL (REEL VIDEOS) ===== */
+/* ===== S8: BEHIND THE RITUAL (AUTOPLAY VIDEOS) ===== */
 .gallery-section{background:var(--bg-1);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
 .reel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
 .reel-card{
   border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
-  position:relative;background:var(--bg-2);cursor:pointer;
+  position:relative;background:var(--bg-2);
   aspect-ratio:9/16;max-height:480px;
 }
 .reel-card video{
   width:100%;height:100%;object-fit:cover;display:block;
 }
-.reel-card .reel-poster{
-  position:absolute;inset:0;z-index:1;
-  background:var(--bg-2);transition:opacity .4s ease;
-}
-.reel-card .reel-poster img{width:100%;height:100%;object-fit:cover;display:block;}
-.reel-card .reel-poster.playing{opacity:0;pointer-events:none;}
-.reel-card .reel-play-btn{
-  position:absolute;inset:0;z-index:2;
-  display:flex;align-items:center;justify-content:center;
-  transition:opacity .3s ease;
-}
-.reel-card .reel-play-btn .play-icon{
-  width:56px;height:56px;border-radius:50%;
-  background:rgba(255,255,255,0.2);backdrop-filter:blur(4px);
-  display:flex;align-items:center;justify-content:center;
-  border:2px solid rgba(255,255,255,0.5);
-  font-size:22px;color:#fff;transition:all .25s ease;
-}
-.reel-card:hover .reel-play-btn .play-icon{
-  background:rgba(255,255,255,0.35);transform:scale(1.1);
-}
-.reel-card .reel-play-btn.hidden{opacity:0;pointer-events:none;}
 .reel-card .reel-label{
-  position:absolute;bottom:0;left:0;right:0;z-index:3;
+  position:absolute;bottom:0;left:0;right:0;z-index:2;
   background:linear-gradient(transparent,rgba(0,0,0,0.85));
   padding:40px 14px 12px;text-align:center;
+  pointer-events:none;
 }
 .reel-card .reel-label span{font-size:13px;color:var(--gold-light);font-weight:700;display:block;}
 .reel-card .reel-label small{font-size:10.5px;color:var(--text-dim);display:block;margin-top:2px;}
-.reel-card .reel-mute-btn{
-  position:absolute;top:10px;right:10px;z-index:3;
-  width:32px;height:32px;border-radius:50%;
-  background:rgba(0,0,0,0.5);border:none;
-  display:none;align-items:center;justify-content:center;
-  cursor:pointer;color:#fff;font-size:14px;
-}
-.reel-card .reel-mute-btn.show{display:flex;}
 @media(max-width:900px){.reel-grid{grid-template-columns:repeat(2,1fr);gap:12px;}}
 @media(max-width:500px){.reel-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
   .reel-card{aspect-ratio:9/16;max-height:400px;}
@@ -661,11 +659,6 @@ a{color:inherit;text-decoration:none;}
           </video>
         </div>
         <p class="sankalp-video-caption">🎥 देखें कैसे होता है आपका व्यक्तिगत रुद्राभिषेक — लाइव संकल्प से प्रसाद तक</p>
-        <div class="sankalp-thumbs">
-          <div class="sankalp-thumb"><img src="../assets/images/samagri.jpg" alt="पूजा सामग्री"></div>
-          <div class="sankalp-thumb"><img src="../assets/images/IMG-20260725-WA0003.jpg" alt="रुद्राभिषेक"></div>
-          <div class="sankalp-thumb"><img src="../assets/images/IMG-20260725-WA0005.jpg" alt="प्रसाद पैकिंग"></div>
-        </div>
       </div>
       <div class="sankalp-content">
         <span class="tag">🔱 आपकी भागीदारी</span>
@@ -737,7 +730,7 @@ a{color:inherit;text-decoration:none;}
         <div class="step-count">चरण 7</div>
         <div class="step-icon">📹</div>
         <h4>Video Recording</h4>
-        <p>24 घंटे में HD वीडियो WhatsApp और Email पर।</p>
+        <p>5 से 7 दिन में में HD वीडियो WhatsApp और Email पर।</p>
       </div>
       <div class="timeline-step">
         <div class="step-count">चरण 8</div>
@@ -814,41 +807,30 @@ a{color:inherit;text-decoration:none;}
       <p>हमारी वास्तविक प्रक्रिया की ये वीडियो झलकियाँ — संकल्प, अभिषेक, आरती और प्रसाद — आपको पूरा अनुभव देंगी।</p>
     </div>
     <div class="reel-grid">
-      <div class="reel-card" data-video="0">
-        <div class="reel-poster"><img src="../assets/images/IMG-20260725-WA0003.jpg" alt="संकल्प"></div>
-        <video loop playsinline preload="none" poster="../assets/images/IMG-20260725-WA0003.jpg">
-          <source src="../assets/images/pandit_video.gif.mp4" type="video/mp4">
+      <div class="reel-card">
+        <video muted loop playsinline data-src="../assets/videos/IMG_7712_3.mp4">
+          <source src="../assets/videos/IMG_7712_3.mp4" type="video/mp4">
         </video>
-        <div class="reel-play-btn"><div class="play-icon">▶</div></div>
+        <div class="reel-label"><span>🪔 तैयारी </span><small>पूजा सामग्री, पंचामृत,</small></div>
+      </div>
+      <div class="reel-card">
+        <video muted loop playsinline data-src="../assets/videos/IMG_7712_1.mp4">
+          <source src="../assets/videos/IMG_7712_1.mp4" type="video/mp4">
+        </video>
         <div class="reel-label"><span>🙏 संकल्प</span><small>आपका नाम, गोत्र और उद्देश्य</small></div>
-        <button class="reel-mute-btn">🔇</button>
       </div>
-      <div class="reel-card" data-video="0">
-        <div class="reel-poster"><img src="../assets/images/IMG-20260714-WA0003.jpg" alt="रुद्राभिषेक"></div>
-        <video loop playsinline preload="none" poster="../assets/images/IMG-20260714-WA0003.jpg">
-          <source src="../assets/images/pandit_video.gif.mp4" type="video/mp4">
+      
+      <div class="reel-card">
+        <video muted loop playsinline data-src="../assets/videos/IMG_7712_2.mp4">
+          <source src="../assets/videos/IMG_7712_2.mp4" type="video/mp4">
         </video>
-        <div class="reel-play-btn"><div class="play-icon">▶</div></div>
         <div class="reel-label"><span>🔱 रुद्राभिषेक</span><small>वैदिक मंत्रों से पूर्ण अभिषेक</small></div>
-        <button class="reel-mute-btn">🔇</button>
       </div>
-      <div class="reel-card" data-video="0">
-        <div class="reel-poster"><img src="../assets/images/mansarovar.jpg" alt="आरती"></div>
-        <video loop playsinline preload="none" poster="../assets/images/mansarovar.jpg">
-          <source src="../assets/images/pandit_video.gif.mp4" type="video/mp4">
+      <div class="reel-card">
+        <video muted loop playsinline data-src="../assets/videos/IMG_7712_6.mp4">
+          <source src="../assets/videos/IMG_7712_6.mp4" type="video/mp4">
         </video>
-        <div class="reel-play-btn"><div class="play-icon">▶</div></div>
-        <div class="reel-label"><span>🪔 आरती</span><small>महादेव की महाआरती</small></div>
-        <button class="reel-mute-btn">🔇</button>
-      </div>
-      <div class="reel-card" data-video="0">
-        <div class="reel-poster"><img src="../assets/images/IMG-20260725-WA0005.jpg" alt="प्रसाद"></div>
-        <video loop playsinline preload="none" poster="../assets/images/IMG-20260725-WA0005.jpg">
-          <source src="../assets/images/pandit_video.gif.mp4" type="video/mp4">
-        </video>
-        <div class="reel-play-btn"><div class="play-icon">▶</div></div>
         <div class="reel-label"><span>🎁 प्रसाद</span><small>रुद्राक्ष, भस्म, गंगाजल सहित किट</small></div>
-        <button class="reel-mute-btn">🔇</button>
       </div>
     </div>
     <div class="section-cta">
@@ -878,7 +860,7 @@ a{color:inherit;text-decoration:none;}
       <div class="receive-item">
         <div class="receive-icon">🎥</div>
         <h4>Video Recording</h4>
-        <p>HD वीडियो 24 घंटे में</p>
+        <p>HD वीडियो 5 से 7 दिन में</p>
       </div>
       <div class="receive-item">
         <div class="receive-icon">📿</div>
@@ -1265,6 +1247,23 @@ document.querySelectorAll('.faq-q').forEach(function(btn){
   });
 });
 
+// Reel videos — autoplay on scroll into view
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  var videos = document.querySelectorAll('.reel-card video');
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      var video = entry.target;
+      if(entry.isIntersecting){
+        video.play().catch(function(){});
+      } else {
+        video.pause();
+      }
+    });
+  }, {threshold:0.4});
+  videos.forEach(function(v){ observer.observe(v); });
+})();
+
 // Sticky bar visibility
 (function(){
   var bar = document.getElementById('stickyBar');
@@ -1459,44 +1458,7 @@ function closeThankyou(){
   document.getElementById('thankyouModal').classList.remove('show');
 }
 
-// Reel video cards — Instagram-style play/pause
-(function(){
-  var cards = document.querySelectorAll('.reel-card');
-  cards.forEach(function(card){
-    var video = card.querySelector('video');
-    var poster = card.querySelector('.reel-poster');
-    var playBtn = card.querySelector('.reel-play-btn');
-    var muteBtn = card.querySelector('.reel-mute-btn');
 
-    card.addEventListener('click', function(e){
-      if(e.target.closest('.reel-mute-btn')) return;
-      if(video.paused){
-        video.play().then(function(){
-          poster.classList.add('playing');
-          playBtn.classList.add('hidden');
-          muteBtn.classList.add('show');
-        }).catch(function(){});
-      } else {
-        video.pause();
-        poster.classList.remove('playing');
-        playBtn.classList.remove('hidden');
-        muteBtn.classList.remove('show');
-      }
-    });
-
-    muteBtn.addEventListener('click', function(e){
-      e.stopPropagation();
-      video.muted = !video.muted;
-      muteBtn.textContent = video.muted ? '🔇' : '🔊';
-    });
-
-    video.addEventListener('ended', function(){
-      poster.classList.remove('playing');
-      playBtn.classList.remove('hidden');
-      muteBtn.classList.remove('show');
-    });
-  });
-})();
 </script>
 </body>
 </html>

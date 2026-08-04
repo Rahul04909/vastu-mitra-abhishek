@@ -58,6 +58,13 @@ $menuItems = [
         ],
     ],
     [
+        "menuTitle" => "US Products",
+        "icon" => "fas fa-shopping-bag",
+        "pages" => [
+            ["title" => "Orders", "url" => "us-products/index.php"]
+        ],
+    ],
+    [
         "menuTitle" => "Settings",
         "icon" => "fas fa-cog",
         "pages" => [

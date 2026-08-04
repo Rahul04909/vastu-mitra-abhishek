@@ -4,11 +4,12 @@ require_once __DIR__ . '/../auth_init.php';
 $successMsg = '';
 $errorMsg = '';
 
-// Ensure table exists
+// Ensure table & size column exist
 try {
     $dbh->exec("CREATE TABLE IF NOT EXISTS `us_product` (
         `id` int(11) NOT NULL AUTO_INCREMENT,
         `product_name` varchar(255) NOT NULL DEFAULT 'Maha Mrityunjaya Yantra',
+        `size` varchar(50) NOT NULL DEFAULT '3x3',
         `amount` decimal(10,2) NOT NULL DEFAULT 5100.00,
         `customer_name` varchar(255) NOT NULL,
         `mobile` varchar(20) NOT NULL,
@@ -29,8 +30,14 @@ try {
         KEY `razorpay_order_id` (`razorpay_order_id`),
         KEY `payment_status` (`payment_status`)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;");
+
+    try {
+        $dbh->exec("ALTER TABLE `us_product` ADD COLUMN `size` varchar(50) NOT NULL DEFAULT '3x3' AFTER `product_name`;");
+    } catch (Exception $ex) {
+        // column already exists
+    }
 } catch (PDOException $e) {
-    // Table creation error handled gracefully if exists
+    // Table creation error handled gracefully
 }
 
 if (isset($_GET['delete'])) {
@@ -194,6 +201,7 @@ include __DIR__ . '/../header.php';
                             <th style="width: 40px" class="text-center">ID</th>
                             <th>Client Details</th>
                             <th>Product Name</th>
+                            <th>Size</th>
                             <th class="text-right">Amount</th>
                             <th class="text-center">Payment</th>
                             <th class="text-center">Status</th>
@@ -204,7 +212,7 @@ include __DIR__ . '/../header.php';
                     <tbody>
                         <?php if (empty($orders)): ?>
                             <tr>
-                                <td colspan="8" class="text-center py-4 text-muted">No orders found.</td>
+                                <td colspan="9" class="text-center py-4 text-muted">No orders found.</td>
                             </tr>
                         <?php else: ?>
                             <?php foreach ($orders as $o): ?>
@@ -237,6 +245,9 @@ include __DIR__ . '/../header.php';
                                     </td>
                                     <td>
                                         <span class="font-weight-bold"><?= htmlspecialchars($o['product_name']) ?></span>
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-info"><?= htmlspecialchars($o['size'] ?? '3x3') ?></span>
                                     </td>
                                     <td class="text-right">
                                         <span class="font-weight-bold">₹<?= number_format($o['amount']) ?></span>
@@ -290,6 +301,7 @@ include __DIR__ . '/../header.php';
                                                         <div class="bg-light p-3 rounded h-100">
                                                             <label class="text-muted text-uppercase small font-weight-bold mb-2 d-block">Order Details</label>
                                                             <p class="mb-1"><strong><i class="fas fa-cube mr-1"></i> Product:</strong> <?= htmlspecialchars($o['product_name']) ?></p>
+                                                            <p class="mb-1"><strong><i class="fas fa-expand mr-1"></i> Size:</strong> <?= htmlspecialchars($o['size'] ?? '3x3') ?></p>
                                                             <p class="mb-1"><strong><i class="fas fa-rupee-sign mr-1"></i> Amount:</strong> ₹<?= number_format($o['amount']) ?></p>
                                                             <?php if ($o['sankalp']): ?>
                                                                 <p class="mb-1"><strong><i class="fas fa-hand-paper mr-1"></i> Sankalp:</strong> <?= htmlspecialchars($o['sankalp']) ?></p>

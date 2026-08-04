@@ -20,6 +20,13 @@
                 
                     </ul>
                 </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Yantra <i class="fas fa-chevron-down small"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?= BASE_URL ?>/maha-mrityunjaya-yantra.php">Yantra (Hindi)</a></li>
+                        <li><a href="<?= BASE_URL ?>/maha-mrityunjaya-yantra-en.php">Yantra (English)</a></li>
+                    </ul>
+                </li>
                 <li><a href="<?= BASE_URL ?>/shop.php" class="nav-link">Shop</a></li>
                 <li><a href="<?= BASE_URL ?>/blog.php" class="nav-link">Blog</a></li>
                 <li><a href="<?= BASE_URL ?>/about.php" class="nav-link">About</a></li>
@@ -53,6 +60,13 @@
                 <li><a href="<?= BASE_URL ?>/pages/industrial-vastu.php" class="sidebar-link border-0">Industrial Vastu</a></li>
                 <li><a href="<?= BASE_URL ?>/pages/personal-vastu.php" class="sidebar-link border-0">Personal Vastu</a></li>
                 <li><a href="<?= BASE_URL ?>/pages/vastu-logo-design.php" class="sidebar-link border-0">Vastu Logo Design</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link" onclick="toggleSubmenu(event, 'submenu-yantras')">Yantras <i class="fas fa-chevron-down float-right mt-1"></i></a>
+            <ul id="submenu-yantras" class="list-unstyled pl-3" style="display: none;">
+                <li><a href="<?= BASE_URL ?>/maha-mrityunjaya-yantra.php" class="sidebar-link border-0">Yantra (Hindi)</a></li>
+                <li><a href="<?= BASE_URL ?>/maha-mrityunjaya-yantra-en.php" class="sidebar-link border-0">Yantra (English)</a></li>
             </ul>
         </li>
         <li><a href="<?= BASE_URL ?>/shop.php" class="sidebar-link">Shop</a></li>

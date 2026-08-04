@@ -104,6 +104,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         <li><a class="main-nav__link" href="#process">प्रक्रिया</a></li>
         <li><a class="main-nav__link" href="#pricing">मूल्य</a></li>
         <li><a class="main-nav__link" href="#faq">प्रश्न</a></li>
+        <li><a class="main-nav__link" href="maha-mrityunjaya-yantra-en.php" style="color:var(--color-gold-light);font-weight:600;">🌐 English Page</a></li>
       </ul>
     </nav>
 

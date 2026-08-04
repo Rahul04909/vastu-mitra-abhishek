@@ -105,6 +105,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         <li><a class="main-nav__link" href="#process">Process</a></li>
         <li><a class="main-nav__link" href="#pricing">Price</a></li>
         <li><a class="main-nav__link" href="#faq">FAQ</a></li>
+        <li><a class="main-nav__link" href="maha-mrityunjaya-yantra.php" style="color:var(--color-gold-light);font-weight:600;">🚩 Hindi Page</a></li>
       </ul>
     </nav>
 
@@ -381,29 +382,48 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         <p class="section-subtext section-subtext--center">Fully customized and consecrated pure copper Maha Mrityunjaya Yantra, delivered directly to your doorstep anywhere in India.</p>
       </div>
 
-      <div class="pricing-grid" style="max-width: 540px; margin-inline: auto;">
-        <div class="pricing-card pricing-card--featured reveal">
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
           <div class="pricing-card__media">
-            <img src="assets/images/Maha Mritunjay Ynatra 1.png" alt="Personalized pure copper Maha Mrityunjaya Yantra" width="800" height="800" loading="lazy">
+            <img src="assets/images/kal-bhairav-yantra-image.png" alt="3x3 inch pure copper Maha Mrityunjaya Yantra" width="800" height="800" loading="lazy">
           </div>
           <div class="pricing-card__body">
-            <p class="pricing-card__size">Maha Mrityunjaya Yantra</p>
+            <p class="pricing-card__size">3 × 3 Inch</p>
             <div class="pricing-card__price-row">
               <span class="pricing-card__price">₹5,100</span>
-              <span class="pricing-card__unit">/ complete ritual package</span>
+              <span class="pricing-card__unit">/ complete package</span>
             </div>
             <ul class="pricing-card__features">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>100% Pure Premium Copper Yantra Plate</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Custom Name & Gotra Inscription</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Individual Vedic Sankalp & Consecration Rites</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Consecration Certificate & Installation Guide</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Free Insured Express Shipping Across India</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Pure Copper Yantra (3 × 3 Inch)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Name & Gotra Inscription</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Personal Sankalp & Consecration Rites</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Free Insured Express Shipping</li>
             </ul>
-            <button type="button" class="btn btn--primary btn--block pricing-card__cta" data-open-order>Order Now — ₹5,100</button>
+            <button type="button" class="btn btn--outline btn--block pricing-card__cta" data-open-order data-size="3x3">Select 3 × 3 Inch — ₹5,100</button>
+          </div>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal">
+          <div class="pricing-card__media">
+            <img src="assets/images/Maha Mritunjay Ynatra 1.png" alt="5x5 inch pure copper Maha Mrityunjaya Yantra" width="800" height="800" loading="lazy">
+          </div>
+          <div class="pricing-card__body">
+            <p class="pricing-card__size">5 × 5 Inch</p>
+            <div class="pricing-card__price-row">
+              <span class="pricing-card__price">₹5,100</span>
+              <span class="pricing-card__unit">/ complete package</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Pure Copper Yantra — Larger (5 × 5 Inch)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Name & Gotra Inscription</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Personal Sankalp & Consecration Rites</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Priority Insured Shipping Across India</li>
+            </ul>
+            <button type="button" class="btn btn--primary btn--block pricing-card__cta" data-open-order data-size="5x5">Select 5 × 5 Inch — ₹5,100</button>
           </div>
         </div>
       </div>
-      <p class="pricing-note">All orders include secure online payment via Razorpay. Fast delivery across India.</p>
+      <p class="pricing-note">Both sizes are available at ₹5,100 all-inclusive with free delivery across India.</p>
     </div>
   </section>
 
@@ -619,6 +639,14 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
     <form class="order-form" id="orderForm" novalidate>
       <div class="form-grid">
         <div class="form-field form-field--full">
+          <label for="sizeSelect">Select Yantra Size <span class="required">*</span></label>
+          <select id="sizeSelect" name="size" required>
+            <option value="3x3">3 × 3 Inch — ₹5,100</option>
+            <option value="5x5">5 × 5 Inch — ₹5,100</option>
+          </select>
+        </div>
+
+        <div class="form-field form-field--full">
           <label for="customerName">Full Name <span class="required">*</span></label>
           <input type="text" id="customerName" name="customer_name" placeholder="Enter your full name" required>
         </div>
@@ -785,14 +813,27 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
   // Modal Controls
   const modalOverlay = document.getElementById("orderModal");
   const orderForm = document.getElementById("orderForm");
+  const sizeSelect = document.getElementById("sizeSelect");
+  const summaryLabel = document.querySelector(".order-summary div strong");
 
-  function openOrderModal() {
+  function updateOrderSummary() {
+    if (!sizeSelect || !summaryLabel) return;
+    const sizeVal = sizeSelect.value;
+    const sizeText = sizeVal === '5x5' ? '5 × 5 Inch' : '3 × 3 Inch';
+    summaryLabel.textContent = `Maha Mrityunjaya Yantra (${sizeText})`;
+  }
+
+  function openOrderModal(sizeKey) {
     if (!modalOverlay) return;
+    if (sizeKey && sizeSelect) sizeSelect.value = sizeKey;
+    updateOrderSummary();
     modalOverlay.classList.add("is-open");
     document.body.style.overflow = "hidden";
     const firstField = orderForm.querySelector("input, select");
     if (firstField) setTimeout(() => firstField.focus(), 250);
   }
+
+  if (sizeSelect) sizeSelect.addEventListener("change", updateOrderSummary);
 
   function closeOrderModal() {
     if (!modalOverlay) return;
@@ -803,7 +844,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
   document.querySelectorAll("[data-open-order]").forEach((trigger) => {
     trigger.addEventListener("click", (e) => {
       e.preventDefault();
-      openOrderModal();
+      openOrderModal(trigger.dataset.size);
     });
   });
 
@@ -912,6 +953,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       const formData = new FormData(orderForm);
       const payload = {
         product_name: "Maha Mrityunjaya Yantra",
+        size: formData.get("size") || "3x3",
         customer_name: formData.get("customer_name"),
         mobile: formData.get("mobile"),
         email: formData.get("email"),

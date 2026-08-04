@@ -21,6 +21,7 @@ require_once __DIR__ . '/../database/db_config.php';
 $input = json_decode(file_get_contents('php://input'), true);
 
 $product_name = $input['product_name'] ?? 'Maha Mrityunjaya Yantra';
+$size = $input['size'] ?? '3x3';
 $customer_name = $input['customer_name'] ?? '';
 $mobile = $input['mobile'] ?? '';
 $email = $input['email'] ?? '';
@@ -35,6 +36,13 @@ if (empty($customer_name) || empty($mobile) || empty($email)) {
     echo json_encode(['status' => 'error', 'message' => 'Required fields missing']);
     exit;
 }
+
+$size_labels = [
+    '3x3' => '3 × 3 Inch',
+    '5x5' => '5 × 5 Inch',
+];
+
+$size_display = $size_labels[$size] ?? '3 × 3 Inch';
 
 $amount = 5100.00;
 $amount_paisa = 5100 * 100;
@@ -51,6 +59,7 @@ try {
         'currency' => 'INR',
         'notes' => [
             'product' => $product_name,
+            'size' => $size_display,
             'customer' => $customer_name,
         ],
     ];
@@ -60,6 +69,7 @@ try {
     $table_sql = "CREATE TABLE IF NOT EXISTS `us_product` (
         `id` int(11) NOT NULL AUTO_INCREMENT,
         `product_name` varchar(255) NOT NULL DEFAULT 'Maha Mrityunjaya Yantra',
+        `size` varchar(50) NOT NULL DEFAULT '3x3',
         `amount` decimal(10,2) NOT NULL DEFAULT 5100.00,
         `customer_name` varchar(255) NOT NULL,
         `mobile` varchar(20) NOT NULL,
@@ -82,12 +92,20 @@ try {
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;";
     $dbh->exec($table_sql);
 
+    // Ensure size column exists if table was created previously without size
+    try {
+        $dbh->exec("ALTER TABLE `us_product` ADD COLUMN `size` varchar(50) NOT NULL DEFAULT '3x3' AFTER `product_name`;");
+    } catch (Exception $ex) {
+        // column already exists
+    }
+
     $sql = "INSERT INTO us_product 
-            (product_name, amount, customer_name, mobile, email, gotra, sankalp, address, city, state, pincode, razorpay_order_id, amount_paid, payment_status)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending')";
+            (product_name, size, amount, customer_name, mobile, email, gotra, sankalp, address, city, state, pincode, razorpay_order_id, amount_paid, payment_status)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending')";
     $stmt = $dbh->prepare($sql);
     $stmt->execute([
         $product_name,
+        $size_display,
         $amount,
         $customer_name,
         $mobile,
@@ -109,6 +127,7 @@ try {
         'currency' => 'INR',
         'key_id' => $razorpay_key_id,
         'product_name' => $product_name,
+        'size_label' => $size_display,
         'order_db_id' => $dbh->lastInsertId(),
     ]);
 } catch (Exception $e) {

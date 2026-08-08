@@ -385,7 +385,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       <div class="pricing-grid">
         <div class="pricing-card pricing-card--featured reveal">
           <div class="pricing-card__media">
-            <img src="assets/images/Maha Mritunjay Ynatra 5x5.png" alt="5x5 inch pure copper Maha Mrityunjaya Yantra" width="800" height="800" loading="lazy">
+            <img src="assets/images/5-inch-yantra.png" alt="5x5 inch pure copper Maha Mrityunjaya Yantra" width="800" height="800" loading="lazy">
           </div>
           <div class="pricing-card__body">
             <p class="pricing-card__size">5 × 5 Inch</p>
@@ -1724,7 +1724,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   z-index: 2;
 }
 
-.pricing-card__media { aspect-ratio: 1 / 0.85; overflow: hidden; }
+.pricing-card__media { aspect-ratio: 3 / 2; overflow: hidden; }
 .pricing-card__media img { width: 100%; height: 100%; object-fit: cover; }
 .pricing-card__body { padding: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-sm); flex: 1; }
 .pricing-card__size { font-family: var(--font-display); font-size: var(--fs-lg); }

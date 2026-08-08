@@ -383,29 +383,9 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       </div>
 
       <div class="pricing-grid">
-        <div class="pricing-card reveal">
-          <div class="pricing-card__media">
-            <img src="assets/images/Maha Mritunjay Ynatra 1.png" alt="3x3 inch pure copper Maha Mrityunjaya Yantra" width="800" height="800" loading="lazy">
-          </div>
-          <div class="pricing-card__body">
-            <p class="pricing-card__size">3 × 3 Inch</p>
-            <div class="pricing-card__price-row">
-              <span class="pricing-card__price">₹5,100</span>
-              <span class="pricing-card__unit">/ complete package</span>
-            </div>
-            <ul class="pricing-card__features">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Pure Copper Yantra (3 × 3 Inch)</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Name & Gotra Inscription</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Personal Sankalp & Consecration Rites</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Free Insured Express Shipping</li>
-            </ul>
-            <button type="button" class="btn btn--outline btn--block pricing-card__cta" data-open-order data-size="3x3">Select 3 × 3 Inch — ₹5,100</button>
-          </div>
-        </div>
-
         <div class="pricing-card pricing-card--featured reveal">
           <div class="pricing-card__media">
-            <img src="assets/images/Maha Mritunjay Ynatra 1.png" alt="5x5 inch pure copper Maha Mrityunjaya Yantra" width="800" height="800" loading="lazy">
+            <img src="assets/images/Maha Mritunjay Ynatra 5x5.png" alt="5x5 inch pure copper Maha Mrityunjaya Yantra" width="800" height="800" loading="lazy">
           </div>
           <div class="pricing-card__body">
             <p class="pricing-card__size">5 × 5 Inch</p>
@@ -423,7 +403,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
           </div>
         </div>
       </div>
-      <p class="pricing-note">Both sizes are available at ₹5,100 all-inclusive with free delivery across India.</p>
+      <p class="pricing-note">₹5,100 all-inclusive with free delivery across India. (3 × 3 Inch size also available in the order form)</p>
     </div>
   </section>
 
@@ -1712,10 +1692,10 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: var(--space-lg);
   margin-top: var(--space-2xl);
-  max-width: 900px;
+  max-width: 450px;
   margin-inline: auto;
 }
 .pricing-card {

@@ -120,14 +120,54 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
 <main id="main-content">
 
   <!-- ===================================================================
-       1. HERO BANNERS
+       1. HERO
        =================================================================== -->
-  <section class="hero-banner-section" id="top">
-    <div class="container">
-      <div class="hero-banner-wrapper reveal">
-        <a href="#" data-open-order data-yantra="mahamrityunjay">
-          <img src="assets/images/hindi-1.jpg" alt="सिद्ध और शक्तिशाली श्री महामृत्युंजय यंत्र" class="hero-banner-img" loading="eager">
-        </a>
+  <section class="hero" id="top">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <div class="hero__eyebrow-row">
+          <span class="badge badge--on-dark">शुद्ध तांबा</span>
+          <span class="badge badge--on-dark">व्यक्तिगत निर्माण</span>
+          <span class="badge badge--on-dark">विधिवत अभिमंत्रण</span>
+        </div>
+        <h1 class="heading-display hero__title">
+          हर यंत्र, आपके <em>नाम और गोत्र</em> के साथ<br>विशेष रूप से तैयार
+        </h1>
+        <p class="hero__desc">
+          वास्तु मित्र अभिषेक पर हम बड़ी संख्या में यंत्र नहीं बनाते। प्रत्येक महामृत्युंजय अथवा काल भैरव यंत्र आपके नाम, गोत्र और व्यक्तिगत संकल्प के साथ अलग से तैयार किया जाता है, और शुद्ध तांबे में विधिवत वैदिक विधि से अभिमंत्रित किया जाता है।
+        </p>
+        <div class="hero__ctas">
+          <div class="btn-group">
+            <button type="button" class="btn btn--primary" data-open-order>अपना यंत्र चुनें</button>
+            <a href="#process" class="btn btn--outline-on-dark">निर्माण प्रक्रिया जानें</a>
+          </div>
+        </div>
+        <div class="hero__trust-row">
+          <span class="hero__trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            व्यक्तिगत नाम एवं गोत्र अंकन
+          </span>
+          <span class="hero__trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            प्रीमियम शुद्ध तांबा यंत्र
+          </span>
+          <span class="hero__trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            सुरक्षित पैकेजिंग में प्रेषण
+          </span>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__visual-frame reveal">
+          <img src="assets\images\IMG-20260725-WA0007.jpg" alt="व्यक्तिगत रूप से तैयार शुद्ध तांबे का महामृत्युंजय यंत्र, दीपक की रोशनी में" width="1100" height="1300" loading="eager">
+          <div class="hero__visual-caption">
+            <div>
+              <strong>व्यक्तिगत रूप से तैयार</strong>
+              <span>आपके नाम, गोत्र व संकल्प सहित</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -293,16 +333,68 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
   <!-- ===================================================================
        6 & 7. KAAL BHAIRAV YANTRA + BENEFITS
        =================================================================== -->
-  <!-- ===================================================================
-       6 & 7. KAAL BHAIRAV YANTRA BANNER
-       =================================================================== -->
-  <section class="section section--dark product-section" id="kaalbhairav">
+  <section class="section section--dark product-section product-section--reverse" id="kaalbhairav">
     <div class="geo-pattern geo-pattern--dark" aria-hidden="true"></div>
+    <div class="container grid-2">
+      <div class="product-content reveal">
+        <span class="eyebrow eyebrow--on-dark">द्वितीय यंत्र</span>
+        <h2 class="heading-display product-content__title deity-accent--protect" style="color:var(--color-ivory)">काल भैरव यंत्र</h2>
+        <p class="product-content__desc">
+          काल भैरव यंत्र भगवान काल भैरव की उपासना से संबद्ध माना जाता है। पारंपरिक मान्यता के अनुसार यह यंत्र निर्भयता, आध्यात्मिक सुरक्षा के भाव, अनुशासन एवं जीवन की बाधाओं का सामना करने के साहस की प्रार्थना से जुड़ा है। हम इसे भी आपके नाम, गोत्र और संकल्प सहित व्यक्तिगत रूप से तैयार करते हैं।
+        </p>
+
+        <ul class="attribute-list">
+          <li class="attribute-list__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg>
+            <div><p class="attribute-list__item-title">भगवान काल भैरव की कृपा</p><p class="attribute-list__item-desc">यह यंत्र भगवान शिव के काल भैरव स्वरूप की उपासना परंपरा से जुड़ा है।</p></div>
+          </li>
+          <li class="attribute-list__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5.5 3.4 9.7 8 10 4.6-.3 8-4.5 8-10V6l-8-4Z"/></svg>
+            <div><p class="attribute-list__item-title">निर्भयता की भावना</p><p class="attribute-list__item-desc">श्रद्धापूर्वक उपासना निर्भय व स्थिर मनोभाव रखने में सहायक मानी जाती है।</p></div>
+          </li>
+          <li class="attribute-list__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
+            <div><p class="attribute-list__item-title">आध्यात्मिक सुरक्षा का भाव</p><p class="attribute-list__item-desc">पारंपरिक रूप से यह यंत्र सुरक्षा व संरक्षण की श्रद्धा से जोड़ा जाता है।</p></div>
+          </li>
+          <li class="attribute-list__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            <div><p class="attribute-list__item-title">अनुशासन व साहस</p><p class="attribute-list__item-desc">जीवन की बाधाओं का सामना करने हेतु आंतरिक अनुशासन व साहस की प्रार्थना।</p></div>
+          </li>
+        </ul>
+
+        <button type="button" class="btn btn--gold" data-open-order data-yantra="kaalbhairav">काल भैरव यंत्र ऑर्डर करें</button>
+      </div>
+
+      <div class="product-media reveal">
+        <div class="product-media__frame">
+          <img src="assets\images\IMG-20260725-WA0004.jpg" alt="काल भैरव यंत्र — शुद्ध तांबे में व्यक्तिगत रूप से तैयार, गहरी लाल आभा के साथ" width="1000" height="1100" loading="lazy">
+        </div>
+      </div>
+    </div>
+
     <div class="container">
-      <div class="hero-banner-wrapper reveal">
-        <a href="#" data-open-order data-yantra="kaalbhairav">
-          <img src="assets/images/hindi-2.jpg" alt="सिद्ध और शक्तिशाली श्री कालभैरव यंत्र" class="hero-banner-img" loading="lazy">
-        </a>
+      <div class="divider-motif" aria-hidden="true"><span class="divider-motif__line"></span>ॐ<span class="divider-motif__line divider-motif__line--right"></span></div>
+      <div class="section-head">
+        <span class="eyebrow eyebrow--on-dark">काल भैरव यंत्र के भाव</span>
+        <h3 class="heading-display text-on-dark" style="font-size:var(--fs-xl)">श्रद्धापूर्वक उपासना से जुड़े मुख्य भाव</h3>
+      </div>
+      <div class="benefits-grid">
+        <div class="card card--dark reveal benefit-card">
+          <p class="benefit-card__title">निर्भयता की भावना</p>
+          <p class="benefit-card__desc">श्रद्धापूर्ण उपासना मन में निर्भय व स्थिर भाव उत्पन्न करने में सहायक मानी जाती है।</p>
+        </div>
+        <div class="card card--dark reveal benefit-card">
+          <p class="benefit-card__title">आध्यात्मिक सुरक्षा</p>
+          <p class="benefit-card__desc">परंपरागत रूप से यह यंत्र सुरक्षा व संरक्षण के भाव से जोड़ा जाता है।</p>
+        </div>
+        <div class="card card--dark reveal benefit-card">
+          <p class="benefit-card__title">साहस व अनुशासन</p>
+          <p class="benefit-card__desc">जीवन की चुनौतियों का सामना करने हेतु आंतरिक साहस व अनुशासन की प्रार्थना।</p>
+        </div>
+        <div class="card card--dark reveal benefit-card">
+          <p class="benefit-card__title">मानसिक दृढ़ता</p>
+          <p class="benefit-card__desc">श्रद्धापूर्वक उपासना मानसिक दृढ़ता एवं आत्मबल हेतु सहायक भाव मानी जाती है।</p>
+        </div>
       </div>
     </div>
   </section>
@@ -1168,34 +1260,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 
 /* -------------------------------------------------------------------------
-   7. HERO BANNERS
-   ------------------------------------------------------------------------- */
-.hero-banner-section {
-  padding-top: clamp(2rem, 5vw, 4rem);
-  padding-bottom: clamp(2rem, 5vw, 4rem);
-  position: relative;
-  background: radial-gradient(120% 100% at 80% 0%, #33201740, transparent 60%), linear-gradient(180deg, var(--color-brown-950), #150C08);
-}
-.hero-banner-wrapper {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-gold-glow);
-  border: 1px solid var(--color-border-dark);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-}
-.hero-banner-wrapper:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 0 2px var(--color-gold), 0 25px 50px rgba(74, 16, 16, 0.45);
-}
-.hero-banner-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* -------------------------------------------------------------------------
-   7. HERO (DEPRECATED - RETAINED FOR COMPATIBILITY)
+   7. HERO
    ------------------------------------------------------------------------- */
 .hero {
   background: radial-gradient(120% 100% at 80% 0%, #33201740, transparent 60%), linear-gradient(180deg, var(--color-brown-950), #150C08);

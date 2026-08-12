@@ -594,14 +594,6 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
     <form class="order-form" id="orderForm" novalidate>
       <div class="form-grid">
         <div class="form-field form-field--full">
-          <label for="yantraSelect">Select Yantra <span class="required">*</span></label>
-          <select id="yantraSelect" name="yantra" required>
-            <option value="mahamrityunjay">Maha Mrityunjaya Yantra</option>
-            <option value="kaalbhairav">Shree Kalbhairav Yantra</option>
-          </select>
-        </div>
-
-        <div class="form-field form-field--full">
           <label for="sizeSelect">Select Yantra Size <span class="required">*</span></label>
           <select id="sizeSelect" name="size" required>
             <option value="3x3">3 × 3 Inch — ₹5,100</option>
@@ -658,7 +650,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       <div class="order-summary">
         <div>
           <span class="order-summary__label" style="display:block;">Selected Yantra</span>
-          <strong style="color:var(--color-brown-950);" id="orderSummaryLabel">Maha Mrityunjaya Yantra (Pure Copper)</strong>
+          <strong style="color:var(--color-brown-950);">Maha Mrityunjaya Yantra (Pure Copper)</strong>
         </div>
         <div style="text-align:right;">
           <span class="order-summary__label" style="display:block;">Total Payable Amount</span>
@@ -776,32 +768,19 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
   // Modal Controls
   const modalOverlay = document.getElementById("orderModal");
   const orderForm = document.getElementById("orderForm");
-  const productSelect = document.getElementById("yantraSelect");
   const sizeSelect = document.getElementById("sizeSelect");
-  const summaryLabel = document.getElementById("orderSummaryLabel");
-  const modalTitle = document.getElementById("modalTitle");
-
-  const PRODUCT_LABELS = {
-    mahamrityunjay: "Maha Mrityunjaya Yantra",
-    kaalbhairav: "Shree Kalbhairav Yantra"
-  };
+  const summaryLabel = document.querySelector(".order-summary div strong");
 
   function updateOrderSummary() {
     if (!sizeSelect || !summaryLabel) return;
-    const productKey = productSelect ? productSelect.value : 'mahamrityunjay';
     const sizeVal = sizeSelect.value;
     const sizeText = sizeVal === '5x5' ? '5 × 5 Inch' : '3 × 3 Inch';
-    const productLabel = PRODUCT_LABELS[productKey] || "Maha Mrityunjaya Yantra";
-    summaryLabel.textContent = `${productLabel} (${sizeText})`;
-    if (modalTitle) {
-      modalTitle.textContent = `Order ${productLabel}`;
-    }
+    summaryLabel.textContent = `Maha Mrityunjaya Yantra (${sizeText})`;
   }
 
-  function openOrderModal(productKey, sizeKey) {
+  function openOrderModal(sizeKey) {
     if (!modalOverlay) return;
-    if (productSelect && productKey) productSelect.value = productKey;
-    if (sizeSelect && sizeKey) sizeSelect.value = sizeKey;
+    if (sizeKey && sizeSelect) sizeSelect.value = sizeKey;
     updateOrderSummary();
     modalOverlay.classList.add("is-open");
     document.body.style.overflow = "hidden";
@@ -809,7 +788,6 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
     if (firstField) setTimeout(() => firstField.focus(), 250);
   }
 
-  if (productSelect) productSelect.addEventListener("change", updateOrderSummary);
   if (sizeSelect) sizeSelect.addEventListener("change", updateOrderSummary);
 
   function closeOrderModal() {
@@ -821,7 +799,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
   document.querySelectorAll("[data-open-order]").forEach((trigger) => {
     trigger.addEventListener("click", (e) => {
       e.preventDefault();
-      openOrderModal(trigger.dataset.yantra, trigger.dataset.size);
+      openOrderModal(trigger.dataset.size);
     });
   });
 
@@ -928,10 +906,8 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       }
 
       const formData = new FormData(orderForm);
-      const productKey = formData.get("yantra") || "mahamrityunjay";
-      const productName = PRODUCT_LABELS[productKey] || "Maha Mrityunjaya Yantra";
       const payload = {
-        product_name: productName,
+        product_name: "Maha Mrityunjaya Yantra",
         size: formData.get("size") || "3x3",
         customer_name: formData.get("customer_name"),
         mobile: formData.get("mobile"),
@@ -979,7 +955,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       currency: serverOrder.currency,
       order_id: serverOrder.order_id,
       name: "Vastu Mitra Abhishek",
-      description: payload.product_name + " (Pure Copper)",
+      description: "Maha Mrityunjaya Yantra (Pure Copper)",
       image: "assets/logo/logo.png",
       prefill: {
         name: payload.customer_name,
@@ -1419,36 +1395,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   color: var(--color-gold-light);
 }
 
-/* -------------------------------------------------------------------------
-   7. HERO BANNERS
-   ------------------------------------------------------------------------- */
-.hero-banner-section {
-  padding-top: clamp(2rem, 5vw, 4rem);
-  padding-bottom: clamp(2rem, 5vw, 4rem);
-  position: relative;
-  background: radial-gradient(120% 100% at 80% 0%, #33201740, transparent 60%), linear-gradient(180deg, var(--color-brown-950), #150C08);
-}
-.hero-banner-wrapper {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-gold-glow);
-  border: 1px solid var(--color-border-dark);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-}
-.hero-banner-wrapper:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 0 2px var(--color-gold), 0 25px 50px rgba(74, 16, 16, 0.45);
-}
-.hero-banner-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* -------------------------------------------------------------------------
-   7. HERO (DEPRECATED - RETAINED FOR COMPATIBILITY)
-   ------------------------------------------------------------------------- */
 .hero {
   background: radial-gradient(120% 100% at 80% 0%, #33201740, transparent 60%), linear-gradient(180deg, var(--color-brown-950), #150C08);
   color: var(--color-text-on-dark);

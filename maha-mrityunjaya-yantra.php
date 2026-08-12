@@ -164,7 +164,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
 
         <div class="col-lg-6 hero__visual d-flex justify-content-center justify-content-lg-end">
           <div class="hero__visual-frame reveal">
-            <img src="assets\images\IMG-20260725-WA0007.jpg" alt="व्यक्तिगत रूप से तैयार शुद्ध तांबे का महामृत्युंजय यंत्र, दीपक की रोशनी में" width="1100" height="1300" loading="eager">
+            <img src="assets/images/IMG-20260725-WA0001.jpg" alt="व्यक्तिगत रूप से तैयार शुद्ध तांबे का महामृत्युंजय यंत्र, दीपक की रोशनी में" width="1100" height="1300" loading="eager">
             <div class="hero__visual-caption">
               <div>
                 <strong>व्यक्तिगत रूप से तैयार</strong>
@@ -231,7 +231,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         <!-- Right Column: Banner Media -->
         <div class="col-lg-5">
           <div class="about__media reveal" style="margin-top: 0; max-width: 100%;">
-            <img src="assets/images/hindi-1.jpg" alt="श्री महामृत्युंजय यंत्र" width="1600" height="900" loading="lazy">
+            <img src="assets/images/IMG-20260725-WA0006.jpg" alt="श्री महामृत्युंजय यंत्र" width="1600" height="900" loading="lazy">
           </div>
         </div>
       </div>

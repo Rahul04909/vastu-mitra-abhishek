@@ -165,7 +165,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
 
         <div class="col-lg-6 hero__visual d-flex justify-content-center justify-content-lg-end">
           <div class="hero__visual-frame reveal">
-            <img src="assets/images/en/english (4).png" alt="Individually prepared pure copper Maha Mrityunjaya Yantra" width="1100" height="1300" loading="eager">
+            <img src="assets/images/IMG-20260725-WA0001.jpg" alt="Individually prepared pure copper Maha Mrityunjaya Yantra" width="1100" height="1300" loading="eager">
             <div class="hero__visual-caption">
               <div>
                 <strong>Personalized Consecration</strong>
@@ -232,7 +232,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         <!-- Right Column: Banner Media -->
         <div class="col-lg-5">
           <div class="about__media reveal" style="margin-top: 0; max-width: 100%;">
-            <img src="assets/images/english-2.jpg" alt="Shree Mahamrityunjaya Yantra" width="1600" height="900" loading="lazy">
+            <img src="assets/images/en/english (1).png" alt="Shree Mahamrityunjaya Yantra" width="1600" height="900" loading="lazy">
           </div>
         </div>
       </div>
@@ -289,7 +289,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       <div class="row align-items-center">
         <div class="col-lg-6 mb-5 mb-lg-0 product-media reveal">
           <div class="product-media__frame">
-            <img src="assets/images/english-1.jpg" alt="Shree Kalbhairav Yantra" width="1600" height="900" loading="lazy">
+            <img src="assets/images/en/english (1).png" alt="Shree Kalbhairav Yantra" width="1600" height="900" loading="lazy">
           </div>
         </div>
 

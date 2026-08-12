@@ -3,60 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vastu Mitra Abhishek | Premium Consecrated Maha Mrityunjaya Yantra</title>
-<meta name="description" content="Maha Mrityunjaya Yantra — Individually hand-crafted in pure copper with your Name, Gotra and personal Sankalp, authentic Vedic consecration. Price ₹5,100.">
-<meta name="keywords" content="Maha Mrityunjaya Yantra, Consecrated Yantra, Copper Yantra, Personalized Yantra, Vastu Mitra Abhishek">
+<title>Vastu Mitra Abhishek | Personalized Maha Mrityunjaya Yantra — Pure Copper</title>
+<meta name="description" content="Maha Mrityunjaya Yantra — handcrafted in pure copper with your personal Name, Gotra & Sankalp. Individually consecrated through authentic Vedic rituals. Order now.">
+<meta name="keywords" content="Maha Mrityunjaya Yantra, Personalized Yantra, Pure Copper Yantra, Vedic Consecrated Yantra, Vastu Mitra Abhishek">
 <meta name="author" content="Vastu Mitra Abhishek">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.vastumitraabhishek.in/maha-mrityunjaya-yantra-en.php">
-
-<!-- Open Graph / Social Sharing -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Vastu Mitra Abhishek">
-<meta property="og:title" content="Vastu Mitra Abhishek | Premium Consecrated Maha Mrityunjaya Yantra">
-<meta property="og:description" content="Maha Mrityunjaya Yantra — Prepared individually with your Name, Gotra and personal Sankalp, duly consecrated in pure copper using authentic Vedic rituals.">
+<meta property="og:title" content="Personalized Maha Mrityunjaya Yantra — Vastu Mitra Abhishek">
+<meta property="og:description" content="Pure copper Maha Mrityunjaya Yantra individually consecrated with your Name, Gotra & Sankalp through authentic Vedic rituals.">
 <meta property="og:image" content="assets/images/og-share-image.webp">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image">
-
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- Bootstrap 5 CSS -->
+<!-- Bootstrap 5 -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-<!-- Stylesheet -->
-<link rel="stylesheet" href="assets/css/style.css">
-
-<!-- Structured Data: Local Business + Product (SEO) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Store",
-  "name": "Vastu Mitra Abhishek",
-  "description": "Individually prepared, duly consecrated pure copper Maha Mrityunjaya Yantra.",
-  "image": "assets/images/hero-mahamrityunjay.webp",
-  "priceRange": "₹5100",
-  "areaServed": "IN",
-  "makesOffer": [
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Product",
-        "name": "Maha Mrityunjaya Yantra",
-        "description": "Pure copper personalized & consecrated Maha Mrityunjaya Yantra"
-      },
-      "priceCurrency": "INR",
-      "price": "5100"
-    }
-  ]
-}
-</script>
 
 <!-- Meta Pixel Code -->
 <script>
@@ -74,585 +41,663 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
-
-<!-- Google tag (gtag.js) -->
+<!-- Google tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EV57NSQEF3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-EV57NSQEF3');
 </script>
-<!-- Razorpay SDK -->
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<style>
+/* ============================================================
+   VASTU MITRA ABHISHEK — ENGLISH PAGE DESIGN SYSTEM
+   Dribbble-Inspired Premium Dark Spiritual — English
+   ============================================================ */
+
+:root {
+  --dark:       #0D0B14;
+  --dark-2:     #13101E;
+  --dark-card:  #1A1628;
+  --dark-card2: #211D30;
+  --light-bg:   #FAF6EE;
+  --light-card: #FFFFFF;
+  --gold:       #D4A843;
+  --gold-l:     #E8C86A;
+  --gold-d:     #A8822F;
+  --copper:     #C1743C;
+  --copper-l:   #D48F56;
+  --ivory:      #EDE8DF;
+  --ivory-m:    #B8AD9E;
+  --text:       #1A1420;
+  --text-m:     #6B5F50;
+  --border-d:   rgba(212,168,67,0.18);
+  --border-l:   rgba(193,116,60,0.22);
+  --glow:       0 0 60px rgba(212,168,67,0.22);
+  --glow-sm:    0 0 30px rgba(212,168,67,0.18);
+  --shadow:     0 24px 64px rgba(0,0,0,0.45);
+  --shadow-sm:  0 8px 32px rgba(0,0,0,0.25);
+  --ease:       cubic-bezier(0.16,1,0.3,1);
+  --t:          0.4s var(--ease);
+  --r-sm:       8px;
+  --r-md:       16px;
+  --r-lg:       24px;
+  --r-xl:       40px;
+  --font-d:     'Playfair Display', serif;
+  --font-b:     'Nunito', sans-serif;
+  --section-py: clamp(4.5rem, 9vw, 8rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+body{margin:0;font-family:var(--font-b);font-size:1rem;line-height:1.7;color:var(--text);background:var(--light-bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul,ol{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4,p{margin:0}
+input,select,textarea{font-family:inherit;font-size:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+.skip-link{position:absolute;left:-999px;top:4px;background:var(--gold);color:var(--dark);padding:.7rem 1.4rem;border-radius:var(--r-sm);z-index:999;font-weight:600}
+.skip-link:focus{left:1rem}
+
+/* Buttons */
+.btn-primary-vma{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;font-size:.95rem;font-weight:700;background:linear-gradient(135deg,var(--gold) 0%,var(--copper) 100%);color:#fff;border-radius:var(--r-sm);box-shadow:0 4px 20px rgba(212,168,67,0.35);transition:var(--t);letter-spacing:.02em;white-space:nowrap}
+.btn-primary-vma:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(212,168,67,0.5);color:#fff}
+.btn-outline-vma{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;font-size:.95rem;font-weight:700;background:transparent;color:var(--ivory);border:1.5px solid rgba(212,168,67,0.5);border-radius:var(--r-sm);transition:var(--t);letter-spacing:.02em;white-space:nowrap}
+.btn-outline-vma:hover{background:rgba(212,168,67,0.1);border-color:var(--gold);color:var(--gold)}
+.btn-light-vma{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;font-size:.95rem;font-weight:700;background:transparent;color:var(--copper);border:1.5px solid var(--border-l);border-radius:var(--r-sm);transition:var(--t);white-space:nowrap}
+.btn-light-vma:hover{background:rgba(193,116,60,.08);border-color:var(--copper);color:var(--copper)}
+
+/* Eyebrow */
+.eyebrow-vma{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-b);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.75rem}
+.eyebrow-vma::before{content:'';width:20px;height:1.5px;background:currentColor;flex-shrink:0}
+.eyebrow-dark{color:var(--gold-l)}
+.eyebrow-light{color:var(--copper)}
+
+/* Sections */
+.sec-dark{background:var(--dark);color:var(--ivory)}
+.sec-dark2{background:var(--dark-2);color:var(--ivory)}
+.sec-light{background:var(--light-bg)}
+.sec-cream{background:#F3EDE0}
+.section-py{padding-top:var(--section-py);padding-bottom:var(--section-py)}
+
+.heading-xl{font-family:var(--font-d);font-weight:700;font-size:clamp(2rem,4.5vw,3.4rem);line-height:1.15}
+.heading-lg{font-family:var(--font-d);font-weight:700;font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:1.2}
+.heading-md{font-family:var(--font-d);font-weight:700;font-size:clamp(1.4rem,2.5vw,2rem);line-height:1.25}
+.text-ivory{color:var(--ivory)}
+.text-gold{color:var(--gold)}
+.text-muted-vma{color:var(--text-m)}
+.text-muted-dark{color:var(--ivory-m)}
+em.accent{font-style:italic;background:linear-gradient(135deg,var(--gold-l) 20%,var(--copper-l) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal-left.is-visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(32px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal-right.is-visible{opacity:1;transform:translateX(0)}
+
+/* Om Divider */
+.om-divider{display:flex;align-items:center;gap:1.25rem;margin:2.5rem 0;opacity:.3}
+.om-divider::before,.om-divider::after{content:'';flex:1;height:1px;background:currentColor}
+.om-divider span{font-size:1.3rem}
+
+/* Pill Badge */
+.pill-badge{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem 1rem;font-size:.78rem;font-weight:700;border-radius:999px;letter-spacing:.06em}
+.pill-dark{background:rgba(212,168,67,.12);color:var(--gold-l);border:1px solid rgba(212,168,67,.25)}
+.pill-light{background:rgba(193,116,60,.09);color:var(--copper);border:1px solid rgba(193,116,60,.22)}
+
+/* ── NAVBAR ─────────────────────────────────────── */
+.site-header{position:sticky;top:0;z-index:1000;background:rgba(13,11,20,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border-d);transition:box-shadow var(--t)}
+.site-header.is-scrolled{box-shadow:0 4px 40px rgba(0,0,0,.5)}
+.navbar-inner{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0;gap:1rem}
+.brand-logo{height:40px;width:auto;background:#fff;padding:5px 10px;border-radius:var(--r-sm)}
+.main-nav{display:none}
+.main-nav.is-open{display:block}
+.main-nav__list{display:flex;flex-direction:column;gap:0;padding:.5rem 0}
+.main-nav__link{display:block;padding:.6rem 1rem;font-size:.92rem;font-weight:600;color:var(--ivory-m);transition:color var(--t)}
+.main-nav__link:hover{color:var(--gold)}
+.nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:var(--r-sm);color:var(--ivory);background:rgba(255,255,255,.06);border:1px solid var(--border-d);transition:var(--t)}
+.nav-toggle:hover{background:rgba(212,168,67,.12);border-color:var(--gold)}
+@media(min-width:992px){.main-nav{display:flex!important;align-items:center}.main-nav__list{flex-direction:row;gap:.25rem;padding:0}.main-nav__link{padding:.5rem .9rem;border-radius:var(--r-sm)}.nav-toggle{display:none}}
+
+/* ── HERO ─────────────────────────────────────── */
+.hero-section{background:var(--dark);color:var(--ivory);padding-top:clamp(5rem,12vw,9rem);padding-bottom:clamp(4rem,10vw,8rem);position:relative;overflow:hidden}
+.hero-section::before{content:'';position:absolute;top:-20%;left:-10%;width:clamp(400px,55vw,900px);height:clamp(400px,55vw,900px);background:radial-gradient(circle,rgba(212,168,67,.12) 0%,transparent 68%);pointer-events:none}
+.hero-section::after{content:'';position:absolute;bottom:-15%;right:-5%;width:clamp(300px,40vw,700px);height:clamp(300px,40vw,700px);background:radial-gradient(circle,rgba(193,116,60,.1) 0%,transparent 65%);pointer-events:none}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(212,168,67,.06) 1px,transparent 1px);background-size:30px 30px;pointer-events:none}
+.hero-pill-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.25rem}
+.hero-title{font-family:var(--font-d);font-weight:700;font-size:clamp(2.4rem,5.5vw,4.2rem);line-height:1.08;margin-bottom:1.25rem;color:var(--ivory)}
+.hero-desc{font-size:clamp(.95rem,1.5vw,1.1rem);color:var(--ivory-m);line-height:1.85;max-width:520px;margin-bottom:2rem}
+.hero-cta-row{display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:2rem}
+.hero-trust{display:flex;flex-wrap:wrap;gap:1.25rem}
+.hero-trust-item{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--ivory-m)}
+.hero-trust-item svg{width:16px;height:16px;color:var(--gold);flex-shrink:0}
+
+/* Yantra Frame */
+.hero-img-wrap{position:relative;display:flex;justify-content:center;align-items:center}
+.hero-img-ring{position:relative;width:clamp(280px,38vw,480px);aspect-ratio:1;flex-shrink:0}
+.hero-img-ring::before{content:'';position:absolute;inset:-10px;border-radius:50%;border:1.5px solid rgba(212,168,67,.35);animation:spin 20s linear infinite}
+.hero-img-ring::after{content:'';position:absolute;inset:-22px;border-radius:50%;border:1px dashed rgba(212,168,67,.18);animation:spin 40s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-img-inner{width:100%;height:100%;border-radius:50%;overflow:hidden;border:2px solid rgba(212,168,67,.4);box-shadow:var(--glow),0 0 0 8px rgba(212,168,67,.06);position:relative}
+.hero-img-inner img{width:100%;height:100%;object-fit:cover}
+.hero-img-badge{position:absolute;bottom:-1.5rem;left:50%;transform:translateX(-50%);background:var(--dark-card2);border:1px solid var(--border-d);border-radius:var(--r-md);padding:.6rem 1.2rem;box-shadow:var(--shadow-sm);white-space:nowrap;min-width:220px;text-align:center}
+.hero-img-badge strong{display:block;font-family:var(--font-d);font-size:.95rem;color:var(--gold-l)}
+.hero-img-badge span{font-size:.78rem;color:var(--ivory-m)}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.hero-float{animation:floatY 5s ease-in-out infinite}
+
+/* ── ABOUT ─────────────────────────────────────── */
+.about-img-frame{position:relative;border-radius:var(--r-lg);overflow:hidden;box-shadow:0 24px 60px rgba(26,20,32,.15)}
+.about-img-frame::before{content:'';position:absolute;inset:0;border:2px solid transparent;border-radius:var(--r-lg);background:linear-gradient(135deg,rgba(212,168,67,.4),transparent 60%) border-box;-webkit-mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);-webkit-mask-composite:destination-out;mask-composite:exclude;pointer-events:none;z-index:1}
+.about-img-frame img{width:100%;height:auto;display:block}
+.benefit-row{display:flex;gap:1.1rem;align-items:flex-start;padding:1.1rem 1.25rem;border-radius:var(--r-md);background:rgba(193,116,60,.05);border:1px solid rgba(193,116,60,.12);margin-bottom:.75rem;transition:var(--t)}
+.benefit-row:hover{background:rgba(212,168,67,.06);border-color:rgba(212,168,67,.22)}
+.benefit-icon{width:44px;height:44px;flex-shrink:0;border-radius:var(--r-sm);background:linear-gradient(135deg,rgba(212,168,67,.15),rgba(193,116,60,.1));border:1px solid rgba(212,168,67,.2);display:flex;align-items:center;justify-content:center;color:var(--gold)}
+.benefit-icon svg{width:20px;height:20px}
+.benefit-title{font-weight:700;font-size:1rem;color:var(--text);margin-bottom:.2rem}
+.benefit-desc{font-size:.88rem;color:var(--text-m);line-height:1.65}
+
+/* ── COMPARISON ─────────────────────────────────────── */
+.compare-card{border-radius:var(--r-lg);padding:2rem;height:100%;transition:transform var(--t),box-shadow var(--t)}
+.compare-card:hover{transform:translateY(-4px)}
+.compare-standard{background:var(--dark-card);border:1px solid var(--border-d)}
+.compare-personal{background:linear-gradient(160deg,rgba(212,168,67,.12) 0%,rgba(193,116,60,.08) 100%);border:1px solid rgba(212,168,67,.4);box-shadow:var(--glow-sm);position:relative}
+.compare-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--gold),var(--copper));color:var(--dark);font-size:.72rem;font-weight:700;padding:.3rem 1.1rem;border-radius:999px;white-space:nowrap;letter-spacing:.07em}
+.compare-title{font-family:var(--font-d);font-size:1.15rem;font-weight:700;margin-bottom:1.25rem}
+.compare-list li{display:flex;align-items:flex-start;gap:.75rem;padding:.6rem 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:.92rem;color:var(--ivory-m)}
+.compare-list li:last-child{border-bottom:none}
+.compare-list .icon-x{color:#E57373;flex-shrink:0;margin-top:2px}
+.compare-list .icon-check{color:var(--gold);flex-shrink:0;margin-top:2px}
+.why-note-dark{margin-top:2rem;padding:1rem 1.5rem;background:rgba(212,168,67,.06);border:1px solid var(--border-d);border-radius:var(--r-md);font-size:.85rem;color:var(--ivory-m);text-align:center}
+
+/* ── PRODUCT ─────────────────────────────────────── */
+.product-img-frame{border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow),0 0 0 1px rgba(212,168,67,.2);border:1px solid rgba(212,168,67,.2);position:relative}
+.product-img-frame img{width:100%;height:auto;display:block;transition:transform .8s var(--ease)}
+.product-img-frame:hover img{transform:scale(1.03)}
+.product-img-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(212,168,67,.08),transparent 70%);pointer-events:none}
+
+.attr-list{margin-top:1.5rem}
+.attr-item{display:flex;align-items:flex-start;gap:1rem;padding:.9rem 0;border-bottom:1px solid var(--border-l)}
+.attr-item:last-child{border-bottom:none}
+.attr-icon{width:36px;height:36px;flex-shrink:0;border-radius:var(--r-sm);background:rgba(193,116,60,.1);border:1px solid rgba(193,116,60,.2);display:flex;align-items:center;justify-content:center;color:var(--copper);margin-top:2px}
+.attr-icon svg{width:17px;height:17px}
+.attr-title{font-weight:700;font-size:.95rem;color:var(--text);margin-bottom:.2rem}
+.attr-desc{font-size:.85rem;color:var(--text-m)}
+
+/* Benefits */
+.benefit-card-sm{background:var(--light-card);border:1px solid rgba(193,116,60,.15);border-radius:var(--r-md);padding:1.5rem;height:100%;transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.benefit-card-sm:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(193,116,60,.15);border-color:var(--copper)}
+.benefit-card-title{font-family:var(--font-d);font-weight:600;font-size:1rem;color:var(--text);margin-bottom:.4rem}
+.benefit-card-desc{font-size:.87rem;color:var(--text-m);line-height:1.7}
+
+/* ── PROCESS ─────────────────────────────────────── */
+.process-step-card{background:var(--light-card);border:1px solid rgba(193,116,60,.15);border-radius:var(--r-md);padding:2rem 1.5rem;text-align:center;height:100%;position:relative;transition:transform var(--t),box-shadow var(--t)}
+.process-step-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(193,116,60,.18)}
+.process-num{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--copper));color:#fff;font-family:var(--font-d);font-size:1.4rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;box-shadow:0 4px 20px rgba(212,168,67,.4)}
+.process-step-title{font-family:var(--font-d);font-weight:700;font-size:1rem;color:var(--text);margin-bottom:.5rem}
+.process-step-desc{font-size:.88rem;color:var(--text-m);line-height:1.7}
+.process-banner{margin-top:3rem;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid rgba(193,116,60,.2)}
+.process-banner img{width:100%;height:auto;display:block}
+
+/* ── PRICING ─────────────────────────────────────── */
+.pricing-card{background:var(--light-card);border:1px solid rgba(193,116,60,.2);border-radius:var(--r-xl);overflow:hidden;height:100%;transition:transform var(--t),box-shadow var(--t)}
+.pricing-card:hover{transform:translateY(-6px);box-shadow:0 24px 64px rgba(193,116,60,.2)}
+.pricing-card.featured{border:2px solid var(--gold);box-shadow:var(--glow-sm)}
+.pricing-tag{text-align:center;padding:.5rem;background:linear-gradient(135deg,var(--gold),var(--copper));font-size:.78rem;font-weight:700;color:#fff;letter-spacing:.08em}
+.pricing-media{background:#f9f5f0;padding:1.5rem;text-align:center}
+.pricing-media img{max-height:180px;width:auto;margin:0 auto;object-fit:contain}
+.pricing-body{padding:1.75rem}
+.pricing-size{font-size:.78rem;font-weight:700;color:var(--copper);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem}
+.pricing-price-row{display:flex;align-items:baseline;gap:.4rem;margin-bottom:1.25rem}
+.pricing-price{font-family:var(--font-d);font-size:2.2rem;font-weight:700;color:var(--text)}
+.pricing-unit{font-size:.88rem;color:var(--text-m)}
+.pricing-features{margin-bottom:1.5rem}
+.pricing-features li{display:flex;align-items:center;gap:.6rem;font-size:.9rem;color:var(--text-m);padding:.4rem 0;border-bottom:1px solid rgba(193,116,60,.08)}
+.pricing-features li:last-child{border-bottom:none}
+.pricing-features li svg{color:var(--gold);flex-shrink:0;width:16px;height:16px}
+.pricing-note{text-align:center;margin-top:1.5rem;font-size:.85rem;color:var(--text-m)}
+
+/* ── TRUST / WHY ─────────────────────────────────── */
+.trust-card{background:var(--dark-card2);border:1px solid var(--border-d);border-radius:var(--r-lg);padding:2rem;height:100%;transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.trust-card:hover{transform:translateY(-5px);border-color:rgba(212,168,67,.45);box-shadow:var(--glow-sm)}
+.trust-icon{width:52px;height:52px;border-radius:var(--r-md);background:linear-gradient(135deg,rgba(212,168,67,.15),rgba(193,116,60,.1));border:1px solid rgba(212,168,67,.22);display:flex;align-items:center;justify-content:center;color:var(--gold-l);margin-bottom:1.1rem}
+.trust-icon svg{width:24px;height:24px}
+.trust-title{font-family:var(--font-d);font-weight:700;font-size:1.05rem;color:var(--ivory);margin-bottom:.45rem}
+.trust-desc{font-size:.88rem;color:var(--ivory-m);line-height:1.7}
+
+/* ── FAQ ─────────────────────────────────────────── */
+.faq-list{max-width:780px;margin:0 auto}
+.faq-item{border:1px solid rgba(193,116,60,.18);border-radius:var(--r-md);margin-bottom:.75rem;overflow:hidden;transition:border-color var(--t)}
+.faq-item.is-open{border-color:var(--gold)}
+.faq-item__question{width:100%;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.2rem 1.5rem;font-size:.97rem;font-weight:600;color:var(--text);background:var(--light-card);text-align:left;cursor:pointer;transition:background var(--t)}
+.faq-item__question:hover{background:#f5f0e8}
+.faq-item.is-open .faq-item__question{background:#f5f0e8;color:var(--copper)}
+.faq-icon-wrap{width:28px;height:28px;border-radius:50%;flex-shrink:0;background:rgba(193,116,60,.1);border:1px solid rgba(193,116,60,.2);display:flex;align-items:center;justify-content:center;color:var(--copper);transition:transform var(--t),background var(--t)}
+.faq-item.is-open .faq-icon-wrap{transform:rotate(45deg);background:rgba(212,168,67,.15);border-color:var(--gold);color:var(--gold)}
+.faq-icon-wrap svg{width:14px;height:14px}
+.faq-item__answer{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
+.faq-item__answer p{padding:0 1.5rem 1.25rem;font-size:.92rem;color:var(--text-m);line-height:1.8}
+
+/* ── FINAL CTA ───────────────────────────────────── */
+.final-cta-section{background:var(--dark);padding:clamp(3rem,7vw,6rem) 0}
+.final-cta-box{background:linear-gradient(135deg,var(--dark-card) 0%,rgba(212,168,67,.07) 100%);border:1px solid rgba(212,168,67,.3);border-radius:var(--r-xl);padding:clamp(2.5rem,5vw,4rem);position:relative;overflow:hidden;box-shadow:var(--glow-sm)}
+.final-cta-box::before{content:'ॐ';position:absolute;right:-1rem;top:50%;transform:translateY(-50%);font-size:clamp(8rem,18vw,16rem);color:rgba(212,168,67,.04);line-height:1;pointer-events:none;user-select:none}
+.final-cta-title{font-family:var(--font-d);font-size:clamp(1.8rem,4vw,3rem);color:var(--ivory);font-weight:700;margin-bottom:.75rem;line-height:1.2}
+.final-cta-desc{font-size:1rem;color:var(--ivory-m);max-width:480px;line-height:1.8}
+
+/* ── FOOTER ──────────────────────────────────────── */
+.site-footer{background:var(--dark-2);color:var(--ivory);padding:clamp(3rem,7vw,6rem) 0 2rem}
+.footer-logo{height:42px;width:auto;background:#fff;padding:5px 10px;border-radius:var(--r-sm);margin-bottom:1rem}
+.footer-desc{font-size:.88rem;color:var(--ivory-m);line-height:1.8;max-width:320px;margin-bottom:1.25rem}
+.footer-social{display:flex;gap:.6rem}
+.footer-social a{width:36px;height:36px;border-radius:50%;border:1px solid var(--border-d);display:flex;align-items:center;justify-content:center;color:var(--ivory-m);transition:var(--t)}
+.footer-social a:hover{border-color:var(--gold);color:var(--gold)}
+.footer-social svg{width:16px;height:16px}
+.footer-col-title{font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-l);margin-bottom:1rem}
+.footer-col-list li{margin-bottom:.5rem}
+.footer-col-list a{font-size:.88rem;color:var(--ivory-m);transition:color var(--t)}
+.footer-col-list a:hover{color:var(--gold)}
+.footer-contact-row{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:.75rem;font-size:.88rem;color:var(--ivory-m)}
+.footer-contact-row svg{width:16px;height:16px;flex-shrink:0;color:var(--gold);margin-top:2px}
+.footer-bottom{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--border-d);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;font-size:.82rem;color:var(--ivory-m)}
+.footer-bottom-links{display:flex;gap:1.5rem;flex-wrap:wrap}
+.footer-bottom-links a{color:var(--ivory-m);transition:color var(--t)}
+.footer-bottom-links a:hover{color:var(--gold)}
+
+/* ── ORDER MODAL ─────────────────────────────────── */
+.modal-overlay{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.65);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility .4s var(--ease)}
+.modal-overlay.is-open{opacity:1;visibility:visible}
+.order-modal{background:var(--light-bg);border-radius:var(--r-xl);width:100%;max-width:660px;max-height:90vh;overflow-y:auto;box-shadow:0 32px 80px rgba(0,0,0,.5);animation:modalSlide .5s var(--ease)}
+@keyframes modalSlide{from{transform:translateY(32px);opacity:0}to{transform:translateY(0);opacity:1}}
+.order-modal__header{background:linear-gradient(135deg,var(--dark) 0%,var(--dark-card) 100%);padding:1.75rem 2rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;border-radius:var(--r-xl) var(--r-xl) 0 0;border-bottom:1px solid var(--border-d)}
+.order-modal__title{font-family:var(--font-d);font-size:1.3rem;font-weight:700;color:var(--ivory);margin-bottom:.25rem}
+.order-modal__subtitle{font-size:.85rem;color:var(--ivory-m)}
+.order-modal__close{width:36px;height:36px;border-radius:50%;flex-shrink:0;background:rgba(255,255,255,.07);border:1px solid var(--border-d);color:var(--ivory-m);display:flex;align-items:center;justify-content:center;transition:var(--t)}
+.order-modal__close:hover{background:rgba(212,168,67,.15);border-color:var(--gold);color:var(--gold)}
+.order-form{padding:1.75rem 2rem 2rem}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-field{display:flex;flex-direction:column;gap:.35rem}
+.form-field--full{grid-column:1/-1}
+.form-field label{font-size:.85rem;font-weight:600;color:var(--text)}
+.form-field label .required{color:#E57373;margin-left:2px}
+.form-field input,.form-field select,.form-field textarea{padding:.8rem 1rem;border:1px solid rgba(193,116,60,.25);border-radius:var(--r-sm);background:#fff;color:var(--text);transition:border-color .2s var(--ease),box-shadow .2s var(--ease)}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--copper);box-shadow:0 0 0 3px rgba(193,116,60,.12);outline:none}
+.form-field textarea{resize:vertical;min-height:80px}
+.order-summary{margin-top:1.25rem;padding:1rem 1.25rem;background:rgba(212,168,67,.07);border:1px solid rgba(212,168,67,.25);border-radius:var(--r-md);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem}
+.order-summary__label{font-size:.82rem;color:var(--text-m)}
+.order-summary__value{font-family:var(--font-d);font-size:1.35rem;color:var(--copper);font-weight:700}
+.order-form__footer{margin-top:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+.btn-submit-vma{width:100%;padding:1rem;font-size:1rem;font-weight:700;background:linear-gradient(135deg,var(--gold),var(--copper));color:#fff;border-radius:var(--r-sm);box-shadow:0 4px 20px rgba(212,168,67,.35);transition:var(--t)}
+.btn-submit-vma:hover{transform:translateY(-1px);box-shadow:0 8px 32px rgba(212,168,67,.5)}
+.order-form__note{font-size:.78rem;color:var(--text-m);text-align:center}
+@media(max-width:575px){.form-grid{grid-template-columns:1fr}.form-field--full{grid-column:1/-1}}
+
+/* Toast */
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(20px);background:var(--dark);color:var(--ivory);border:1px solid var(--gold);padding:.85rem 1.5rem;border-radius:999px;font-size:.88rem;box-shadow:var(--shadow-sm);z-index:3000;opacity:0;visibility:hidden;transition:opacity .4s var(--ease),transform .4s var(--ease),visibility .4s var(--ease)}
+.toast.is-visible{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+</style>
 </head>
 <body>
 
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<!-- =====================================================================
-     HEADER / NAVIGATION
-     ===================================================================== -->
-<header class="site-header">
-  <div class="container site-header__inner">
-    <a href="#top" class="brand" aria-label="Vastu Mitra Abhishek — Home">
-      <img src="assets/logo/logo.png" alt="Vastu Mitra Abhishek" class="brand__logo">
-    </a>
-
-    <nav class="main-nav" aria-label="Main Navigation">
-      <ul class="main-nav__list">
-        <li><a class="main-nav__link" href="#about">About Us</a></li>
-        <li><a class="main-nav__link" href="#mahamrityunjay">Maha Mrityunjaya Yantra</a></li>
-        <li><a class="main-nav__link" href="#process">Process</a></li>
-        <li><a class="main-nav__link" href="#pricing">Price</a></li>
-        <li><a class="main-nav__link" href="#faq">FAQ</a></li>
-        <li><a class="main-nav__link" href="maha-mrityunjaya-yantra.php" style="color:var(--color-gold-light);font-weight:600;">🚩 Hindi Page</a></li>
-      </ul>
-    </nav>
-
-    <div class="header-actions">
-      <button type="button" class="btn btn--primary btn--sm" data-open-order>Order Now</button>
-      <button type="button" class="nav-toggle" aria-label="Open Menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
+<!-- ═══════════════════════ HEADER ═══════════════════════ -->
+<header class="site-header" id="top">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="#top" aria-label="Vastu Mitra Abhishek">
+        <img src="assets/logo/logo.png" alt="Vastu Mitra Abhishek" class="brand-logo">
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul class="main-nav__list">
+          <li><a class="main-nav__link" href="#about">About Us</a></li>
+          <li><a class="main-nav__link" href="#mahamrityunjay">Maha Mrityunjaya Yantra</a></li>
+          <li><a class="main-nav__link" href="#process">Our Process</a></li>
+          <li><a class="main-nav__link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav__link" href="#faq">FAQ</a></li>
+          <li><a class="main-nav__link" href="maha-mrityunjaya-yantra.php" style="color:var(--gold-l);font-weight:700">🇮🇳 हिंदी</a></li>
+        </ul>
+      </nav>
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="btn-primary-vma d-none d-md-inline-flex" data-open-order style="padding:.6rem 1.25rem;font-size:.85rem">Order Now — ₹5,100</button>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
     </div>
   </div>
 </header>
 
 <main id="main-content">
 
-  <!-- ===================================================================
-       1. HERO
-       =================================================================== -->
-  <section class="hero" id="top">
-    <div class="container">
-      <div class="row align-items-center hero__grid">
-        <div class="col-lg-6 hero__text mb-5 mb-lg-0">
-          <div class="hero__eyebrow-row">
-            <span class="badge badge--on-dark">Pure Copper</span>
-            <span class="badge badge--on-dark">Personal Creation</span>
-            <span class="badge badge--on-dark">Vedic Consecration</span>
-          </div>
-          <h1 class="heading-display hero__title">
-            Every Yantra, Crafted with Your <em>Name & Gotra</em>
-          </h1>
-          <p class="hero__desc">
-            At Vastu Mitra Abhishek, we do not mass-produce Yantras. Every Maha Mrityunjaya Yantra is individually prepared with your Name, Gotra, and personal Sankalp, and duly consecrated in pure copper using sacred Vedic rituals.
-          </p>
-          <div class="hero__ctas">
-            <div class="btn-group">
-              <button type="button" class="btn btn--primary" data-open-order>Order Your Yantra — ₹5,100</button>
-              <a href="#process" class="btn btn--outline-on-dark">Learn Our Process</a>
-            </div>
-          </div>
-          <div class="hero__trust-row">
-            <span class="hero__trust-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-              Personal Name & Gotra Engraving
-            </span>
-            <span class="hero__trust-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-              Premium Pure Copper Yantra
-            </span>
-            <span class="hero__trust-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-              Secure All-India Express Delivery
-            </span>
-          </div>
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="hero-section" id="hero-top">
+  <div class="hero-dots" aria-hidden="true"></div>
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 order-2 order-lg-1 reveal-left">
+        <div class="hero-pill-row">
+          <span class="pill-badge pill-dark">Pure Copper</span>
+          <span class="pill-badge pill-dark">Personal Creation</span>
+          <span class="pill-badge pill-dark">Vedic Consecration</span>
         </div>
-
-        <div class="col-lg-6 hero__visual d-flex justify-content-center justify-content-lg-end">
-          <div class="hero__visual-frame reveal">
-            <img src="assets/images/IMG-20260725-WA0001.jpg" alt="Individually prepared pure copper Maha Mrityunjaya Yantra" width="1100" height="1300" loading="eager">
-            <div class="hero__visual-caption">
-              <div>
-                <strong>Personalized Consecration</strong>
-                <span>Engraved with Name, Gotra & Sankalp</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       2. ABOUT
-       =================================================================== -->
-  <section class="section" id="about">
-    <div class="geo-pattern" aria-hidden="true"></div>
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Left Column: Content & Benefits -->
-        <div class="col-lg-7 mb-5 mb-lg-0">
-          <div class="section-head mb-4">
-            <span class="eyebrow">About Us</span>
-            <h2 class="heading-display section-heading">Vastu Mitra Abhishek — A Personalized Spiritual Service</h2>
-            <p class="section-subtext">
-              Vastu Mitra Abhishek was founded on the belief that a Yantra is not merely a piece of metal, but a sacred medium of faith and intention. That is why we prepare each Yantra individually, keeping your specific Name, Gotra, and personal prayers in mind — rather than offering generic mass-produced items.
-            </p>
-          </div>
-
-          <div class="about__benefit-list mt-4">
-            <!-- Benefit 1 -->
-            <div class="about__benefit-item d-flex gap-3 mb-4 reveal">
-              <span class="icon-tile icon-tile--outline" aria-hidden="true" style="margin-bottom: 0; flex-shrink: 0;">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4"/></svg>
-              </span>
-              <div>
-                <h3 class="about__benefit-title font-weight-bold" style="font-size: 1.15rem; margin-bottom: 0.25rem;">Personal Name & Gotra</h3>
-                <p class="about__benefit-desc text-muted" style="font-size: 0.95rem;">Your name and gotra are engraved into the copper Yantra so the spiritual sankalp is performed specifically for you.</p>
-              </div>
-            </div>
-            <!-- Benefit 2 -->
-            <div class="about__benefit-item d-flex gap-3 mb-4 reveal">
-              <span class="icon-tile icon-tile--outline" aria-hidden="true" style="margin-bottom: 0; flex-shrink: 0;">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
-              </span>
-              <div>
-                <h3 class="about__benefit-title font-weight-bold" style="font-size: 1.15rem; margin-bottom: 0.25rem;">Individual Sankalp</h3>
-                <p class="about__benefit-desc text-muted" style="font-size: 0.95rem;">Preparation begins only after a formal ritual invocation with your specific family details and intention.</p>
-              </div>
-            </div>
-            <!-- Benefit 3 -->
-            <div class="about__benefit-item d-flex gap-3 reveal">
-              <span class="icon-tile icon-tile--outline" aria-hidden="true" style="margin-bottom: 0; flex-shrink: 0;">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-              </span>
-              <div>
-                <h3 class="about__benefit-title font-weight-bold" style="font-size: 1.15rem; margin-bottom: 0.25rem;">Authentic Vedic Consecration</h3>
-                <p class="about__benefit-desc text-muted" style="font-size: 0.95rem;">The Yantra is consecrated with proper Vedic mantras and traditional ceremonial pujas for supreme divine energy.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column: Banner Media -->
-        <div class="col-lg-5">
-          <div class="about__media reveal" style="margin-top: 0; max-width: 100%;">
-            <img src="assets/images/en/english (1).png" alt="Shree Mahamrityunjaya Yantra" width="1600" height="900" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       3. WHY PERSONALIZED YANTRA
-       =================================================================== -->
-  <section class="section section--ivory-soft" id="why-personalized">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Why Choose Personalized Yantra</span>
-        <h2 class="heading-display section-heading">Difference Between Standard Market Yantras & Personalized Consecrated Yantras</h2>
-        <p class="section-subtext">
-          According to traditional scriptures, Yantras require proper ritual procedures, sankalp, and Vedic chanting prior to installation. Our service upholds this sacred tradition by performing the entire process personally for your Name and Gotra.
+        <h1 class="hero-title">
+          Every Yantra, Crafted with Your<br><em class="accent">Name &amp; Gotra</em>
+        </h1>
+        <p class="hero-desc">
+          At Vastu Mitra Abhishek, we do not mass-produce Yantras. Every Maha Mrityunjaya Yantra is individually prepared with your Name, Gotra, and personal Sankalp — consecrated in pure copper through sacred Vedic rituals.
         </p>
-      </div>
-
-      <div class="row g-4 compare">
-        <div class="col-lg-6 compare__col compare__col--standard reveal">
-          <h3 class="compare__title">Standard Market Yantra</h3>
-          <ul class="compare__list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg> Mass produced in bulk with identical machine prints</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg> Does not feature personal Name or Gotra</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg> Generic blanket ritual performed for thousands at once</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg> Quality of copper metal may vary or be diluted</li>
-          </ul>
+        <div class="hero-cta-row">
+          <button type="button" class="btn-primary-vma" data-open-order>Order Your Yantra — ₹5,100</button>
+          <a href="#process" class="btn-outline-vma">Learn Our Process</a>
         </div>
-
-        <div class="col-lg-6 compare__col compare__col--personal reveal">
-          <h3 class="compare__title">Vastu Mitra Abhishek — Personalized Service</h3>
-          <ul class="compare__list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Handcrafted specifically with your Name, Gotra & Sankalp</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Consecrated individually through solemn Vedic rites</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> High-grade 100% pure copper metal for long durability</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Prepared to order and delivered in secure spiritual packaging</li>
-          </ul>
+        <div class="hero-trust">
+          <span class="hero-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Personal Name &amp; Gotra Engraving</span>
+          <span class="hero-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Premium Pure Copper Yantra</span>
+          <span class="hero-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Secure All-India Express Delivery</span>
         </div>
       </div>
+      <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center reveal-right">
+        <div class="hero-img-wrap">
+          <div class="hero-img-ring hero-float">
+            <div class="hero-img-inner">
+              <img src="assets/images/IMG-20260725-WA0001.jpg" alt="Individually prepared pure copper Maha Mrityunjaya Yantra" loading="eager">
+            </div>
+          </div>
+          <div class="hero-img-badge">
+            <strong>Personalized Consecration</strong>
+            <span>Engraved with Name, Gotra &amp; Sankalp</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <p class="why-note">
-        Note: This comparison is provided to explain our dedication to individual Vedic traditions. Our aim is to ensure total transparency regarding how your Yantra is prepared.
+<!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+<section class="sec-light section-py" id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal-left">
+        <div class="about-img-frame">
+          <img src="assets/images/en/english (1).png" alt="Shree Mahamrityunjaya Yantra" loading="lazy">
+        </div>
+      </div>
+      <div class="col-lg-7 reveal-right">
+        <span class="eyebrow-vma eyebrow-light">About Us</span>
+        <h2 class="heading-lg mb-3">Vastu Mitra Abhishek — A Personalized Spiritual Service</h2>
+        <p class="text-muted-vma mb-4" style="line-height:1.85;font-size:1.02rem">
+          Vastu Mitra Abhishek was founded on the belief that a Yantra is not merely a piece of metal, but a sacred medium of faith and intention. That is why we prepare each Yantra individually, keeping your specific Name, Gotra, and personal prayers in mind — rather than offering generic mass-produced items.
+        </p>
+        <div>
+          <div class="benefit-row reveal">
+            <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <div><div class="benefit-title">Personal Name &amp; Gotra</div><div class="benefit-desc">Your name and gotra are engraved into the copper Yantra so the spiritual sankalp is performed specifically for you.</div></div>
+          </div>
+          <div class="benefit-row reveal">
+            <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg></div>
+            <div><div class="benefit-title">Individual Sankalp</div><div class="benefit-desc">Preparation begins only after a formal ritual invocation with your specific family details and intention.</div></div>
+          </div>
+          <div class="benefit-row reveal">
+            <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+            <div><div class="benefit-title">Authentic Vedic Consecration</div><div class="benefit-desc">The Yantra is consecrated with proper Vedic mantras and traditional ceremonial pujas for supreme divine energy.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ WHY PERSONALIZED ═══════════════════════ -->
+<section class="sec-dark section-py" id="why-personalized">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow-vma eyebrow-dark d-inline-flex">Why Choose Personalized Yantra</span>
+      <h2 class="heading-lg text-ivory mt-2">Difference Between Standard Market Yantras<br>&amp; Personalized Consecrated Yantras</h2>
+      <p class="text-muted-dark mt-3 mx-auto" style="max-width:580px;font-size:.97rem;line-height:1.8">
+        According to traditional scriptures, Yantras require proper ritual procedures, sankalp, and Vedic chanting prior to installation. Our service upholds this sacred tradition.
       </p>
     </div>
-  </section>
-
-  <!-- ===================================================================
-       4. MAHAMRITYUNJAY YANTRA & BENEFITS
-       =================================================================== -->
-  <section class="section product-section" id="mahamrityunjay">
-    <div class="geo-pattern" aria-hidden="true"></div>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0 product-media reveal">
-          <div class="product-media__frame">
-            <img src="assets/images/en/english (1).png" alt="Shree Kalbhairav Yantra" width="1600" height="900" loading="lazy">
-          </div>
-        </div>
-
-        <div class="col-lg-6 product-content reveal">
-          <span class="eyebrow">Sacred Consecrated Yantra</span>
-          <h2 class="heading-display product-content__title deity-accent--healing">Maha Mrityunjaya Yantra</h2>
-          <p class="product-content__desc">
-            The Maha Mrityunjaya Yantra is deeply associated with Lord Trimbakeshwar (Lord Shiva). According to sacred Vedic tradition, establishing this Yantra invokes divine blessings for health, protection, longevity, and spiritual strength. We prepare each Maha Mrityunjaya Yantra individually with your personal Name, Gotra, and custom Sankalp.
-          </p>
-
-          <ul class="attribute-list">
-            <li class="attribute-list__item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg>
-              <div><p class="attribute-list__item-title">Divine Shiva Connection</p><p class="attribute-list__item-desc">Connected with the compassionate Trimbakeshwar form of Lord Shiva.</p></div>
-            </li>
-            <li class="attribute-list__item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
-              <div><p class="attribute-list__item-title">Health & Protection Prayers</p><p class="attribute-list__item-desc">Worshipped for physical well-being, recovery, and shielding from negativity.</p></div>
-            </li>
-            <li class="attribute-list__item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-              <div><p class="attribute-list__item-title">Longevity & Peace</p><p class="attribute-list__item-desc">Traditionally revered for long life, inner harmony, and peace of mind.</p></div>
-            </li>
-            <li class="attribute-list__item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5-4 8-8 11Z"/></svg>
-              <div><p class="attribute-list__item-title">Family Happiness & Resilience</p><p class="attribute-list__item-desc">Helps foster positive environment and resilience against life's obstacles.</p></div>
-            </li>
+    <div class="row g-4">
+      <div class="col-lg-6 reveal-left">
+        <div class="compare-card compare-standard h-100">
+          <div class="compare-title text-muted-dark">Standard Market Yantra</div>
+          <ul class="compare-list">
+            <li><svg class="icon-x" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/></svg>Mass produced in bulk with identical machine prints</li>
+            <li><svg class="icon-x" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/></svg>Does not feature personal Name or Gotra</li>
+            <li><svg class="icon-x" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/></svg>Generic blanket ritual performed for thousands at once</li>
+            <li><svg class="icon-x" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/></svg>Quality of copper metal may vary or be diluted</li>
           </ul>
-
-          <button type="button" class="btn btn--primary" data-open-order>Order Maha Mrityunjaya Yantra — ₹5,100</button>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal-right">
+        <div class="compare-card compare-personal h-100">
+          <div class="compare-badge">OUR SERVICE</div>
+          <div class="compare-title text-gold">Vastu Mitra Abhishek — Personalized Service</div>
+          <ul class="compare-list">
+            <li><svg class="icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Handcrafted specifically with your Name, Gotra &amp; Sankalp</li>
+            <li><svg class="icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Consecrated individually through solemn Vedic rites</li>
+            <li><svg class="icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>High-grade 100% pure copper metal for long durability</li>
+            <li><svg class="icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Prepared to order and delivered in secure spiritual packaging</li>
+          </ul>
         </div>
       </div>
     </div>
+    <p class="why-note-dark reveal">
+      Note: This comparison is provided to explain our dedication to individual Vedic traditions. Our aim is to ensure total transparency regarding how your Yantra is prepared.
+    </p>
+  </div>
+</section>
 
-    <div class="container mt-5">
-      <div class="divider-motif" aria-hidden="true"><span class="divider-motif__line"></span>ॐ<span class="divider-motif__line divider-motif__line--right"></span></div>
-      <div class="section-head section-head--benefits">
-        <span class="eyebrow">Spiritual Significance</span>
-        <h3 class="heading-display" style="font-size:var(--fs-xl)">Key Blessings Associated with Revered Worship</h3>
+<!-- ═══════════════════════ MAHAMRITYUNJAY YANTRA ═══════════════════════ -->
+<section class="sec-light section-py" id="mahamrityunjay">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 reveal-left">
+        <div class="product-img-frame">
+          <div class="product-img-glow" aria-hidden="true"></div>
+          <img src="assets/images/en/english (1).png" alt="Maha Mrityunjaya Yantra — Individually prepared in pure copper" loading="lazy">
+        </div>
       </div>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 benefits-grid benefits--light">
-        <div class="col">
-          <div class="card h-100 reveal benefit-card">
-            <p class="benefit-card__title">Health & Well-being</p>
-            <p class="benefit-card__desc">Devout worship is believed to foster physical vitality, healing vibes, and protection from illnesses.</p>
-          </div>
+      <div class="col-lg-6 reveal-right">
+        <span class="eyebrow-vma eyebrow-light">Sacred Consecrated Yantra</span>
+        <h2 class="heading-lg mb-3">Maha Mrityunjaya Yantra</h2>
+        <p class="text-muted-vma mb-3" style="line-height:1.85;font-size:1rem">
+          The Maha Mrityunjaya Yantra is deeply associated with Lord Trimbakeshwar (Lord Shiva). According to sacred Vedic tradition, establishing this Yantra invokes divine blessings for health, protection, longevity, and spiritual strength. We prepare each Maha Mrityunjaya Yantra individually with your personal Name, Gotra, and custom Sankalp.
+        </p>
+        <div class="attr-list">
+          <div class="attr-item"><div class="attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg></div><div><div class="attr-title">Divine Shiva Connection</div><div class="attr-desc">Connected with the compassionate Trimbakeshwar form of Lord Shiva.</div></div></div>
+          <div class="attr-item"><div class="attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg></div><div><div class="attr-title">Health &amp; Protection Prayers</div><div class="attr-desc">Worshipped for physical well-being, recovery, and shielding from negativity.</div></div></div>
+          <div class="attr-item"><div class="attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><div><div class="attr-title">Longevity &amp; Peace</div><div class="attr-desc">Traditionally revered for long life, inner harmony, and peace of mind.</div></div></div>
+          <div class="attr-item"><div class="attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5-4 8-8 11Z"/></svg></div><div><div class="attr-title">Family Happiness &amp; Resilience</div><div class="attr-desc">Helps foster positive environment and resilience against life's obstacles.</div></div></div>
         </div>
-        <div class="col">
-          <div class="card h-100 reveal benefit-card">
-            <p class="benefit-card__title">Longevity & Protection</p>
-            <p class="benefit-card__desc">Associated with traditional prayers seeking long life, protection from untimely dangers, and peace.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 reveal benefit-card">
-            <p class="benefit-card__title">Mental Peace & Clarity</p>
-            <p class="benefit-card__desc">Sincere reverence helps soothe anxiety, granting internal calmness and spiritual focus.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 reveal benefit-card">
-            <p class="benefit-card__title">Family Harmony</p>
-            <p class="benefit-card__desc">Fosters an atmosphere of unity, prosperity, and auspicious energy in your home or workplace.</p>
-          </div>
-        </div>
+        <button type="button" class="btn-primary-vma mt-4" data-open-order>Order Maha Mrityunjaya Yantra — ₹5,100</button>
       </div>
     </div>
-  </section>
 
-  <!-- ===================================================================
-       5. HOW YOUR YANTRA IS PREPARED (PROCESS)
-       =================================================================== -->
-  <section class="section" id="process">
-    <div class="container">
-      <div class="section-head section-head--center" style="text-align:center;margin-inline:auto">
-        <span class="eyebrow" style="justify-content:center">Preparation Process</span>
-        <h2 class="heading-display section-heading section-heading--center">How Your Personalized Yantra is Crafted</h2>
-        <p class="section-subtext section-subtext--center">Complete transparency at every step — understand how your sacred Yantra reaches your home.</p>
-      </div>
+    <div class="om-divider text-muted-vma mt-5 reveal"><span>ॐ</span></div>
 
-      <div class="row process-flow py-4 position-relative">
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-          <div class="process-step reveal">
-            <div class="process-step__num">1</div>
-            <p class="process-step__title">Detail Collection</p>
-            <p class="process-step__desc">Your Name, Gotra, personal Sankalp and address details are recorded upon receiving your order.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-          <div class="process-step reveal">
-            <div class="process-step__num">2</div>
-            <p class="process-step__title">Pure Copper Engraving</p>
-            <p class="process-step__desc">High-grade pure copper plate is selected and precisely engraved with sacred geometry and your Name & Gotra.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-          <div class="process-step reveal">
-            <div class="process-step__num">3</div>
-            <p class="process-step__title">Vedic Consecration</p>
-            <p class="process-step__desc">A solemn ritual is conducted with mantra chanting and offerings specifically dedicated to your Sankalp.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-          <div class="process-step reveal">
-            <div class="process-step__num">4</div>
-            <p class="process-step__title">Safe Dispatch</p>
-            <p class="process-step__desc">The Yantra is respectfully packed in protective spiritual packaging and shipped via express courier to your doorstep.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="process-media reveal">
-        <img src="assets/images/IMG-20260725-WA0006.jpg" alt="Vedic consecration ritual of copper yantra" width="1000" height="750" loading="lazy">
-      </div>
+    <div class="text-center mb-4 reveal">
+      <span class="eyebrow-vma eyebrow-light d-inline-flex">Spiritual Significance</span>
+      <h3 class="heading-md mt-2">Key Blessings Associated with Revered Worship</h3>
     </div>
-  </section>
-
-  <!-- ===================================================================
-       6. PRICING
-       =================================================================== -->
-  <section class="section section--ivory-soft" id="pricing">
-    <div class="container">
-      <div class="section-head section-head--center" style="text-align:center;margin-inline:auto">
-        <span class="eyebrow" style="justify-content:center">Pricing</span>
-        <h2 class="heading-display section-heading section-heading--center">Order Your Consecrated Yantra</h2>
-        <p class="section-subtext section-subtext--center">Fully customized and consecrated pure copper Maha Mrityunjaya Yantra, delivered directly to your doorstep anywhere in India.</p>
-      </div>
-
-      <div class="row justify-content-center pricing-grid">
-        <div class="col-md-6 col-lg-5">
-          <div class="pricing-card pricing-card--featured h-100 reveal">
-            <div class="pricing-card__media">
-              <img src="assets/images/5-inch-yantra.png" alt="5x5 inch pure copper Maha Mrityunjaya Yantra" width="800" height="800" loading="lazy">
-            </div>
-            <div class="pricing-card__body">
-              <p class="pricing-card__size">5 × 5 Inch</p>
-              <div class="pricing-card__price-row">
-                <span class="pricing-card__price">₹5,100</span>
-                <span class="pricing-card__unit">/ complete package</span>
-              </div>
-              <ul class="pricing-card__features">
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Pure Copper Yantra — Larger (5 × 5 Inch)</li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Name & Gotra Inscription</li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Personal Sankalp & Consecration Rites</li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Priority Insured Shipping Across India</li>
-              </ul>
-              <button type="button" class="btn btn--primary btn--block pricing-card__cta" data-open-order data-size="5x5">Select 5 × 5 Inch — ₹5,100</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="pricing-note">₹5,100 all-inclusive with free delivery across India. (3 × 3 Inch size also available in the order form)</p>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="col"><div class="benefit-card-sm reveal"><div class="benefit-card-title">Health &amp; Well-being</div><div class="benefit-card-desc">Devout worship is believed to foster physical vitality, healing vibes, and protection from illnesses.</div></div></div>
+      <div class="col"><div class="benefit-card-sm reveal"><div class="benefit-card-title">Longevity &amp; Protection</div><div class="benefit-card-desc">Associated with traditional prayers seeking long life, protection from untimely dangers, and peace.</div></div></div>
+      <div class="col"><div class="benefit-card-sm reveal"><div class="benefit-card-title">Mental Peace &amp; Clarity</div><div class="benefit-card-desc">Sincere reverence helps soothe anxiety, granting internal calmness and spiritual focus.</div></div></div>
+      <div class="col"><div class="benefit-card-sm reveal"><div class="benefit-card-title">Family Harmony</div><div class="benefit-card-desc">Fosters an atmosphere of unity, prosperity, and auspicious energy in your home or workplace.</div></div></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===================================================================
-       7. WHY CHOOSE US
-       =================================================================== -->
-  <section class="section section--dark" id="why-choose-us">
-    <div class="geo-pattern geo-pattern--dark" aria-hidden="true"></div>
-    <div class="container">
-      <div class="section-head section-head--center" style="text-align:center;margin-inline:auto">
-        <span class="eyebrow eyebrow--on-dark" style="justify-content:center">Why Trust Us</span>
-        <h2 class="heading-display section-heading section-heading--center text-on-dark">Why Choose Vastu Mitra Abhishek</h2>
-      </div>
+<!-- ═══════════════════════ PROCESS ═══════════════════════ -->
+<section class="sec-cream section-py" id="process">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow-vma eyebrow-light d-inline-flex">Preparation Process</span>
+      <h2 class="heading-lg mt-2">How Your Personalized Yantra is Crafted</h2>
+      <p class="text-muted-vma mt-3 mx-auto" style="max-width:560px;font-size:.97rem">Complete transparency at every step — understand how your sacred Yantra reaches your home.</p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5">
+      <div class="col"><div class="process-step-card reveal"><div class="process-num">1</div><div class="process-step-title">Detail Collection</div><div class="process-step-desc">Your Name, Gotra, personal Sankalp and address details are recorded upon receiving your order.</div></div></div>
+      <div class="col"><div class="process-step-card reveal"><div class="process-num">2</div><div class="process-step-title">Pure Copper Engraving</div><div class="process-step-desc">High-grade pure copper plate is selected and precisely engraved with sacred geometry and your Name &amp; Gotra.</div></div></div>
+      <div class="col"><div class="process-step-card reveal"><div class="process-num">3</div><div class="process-step-title">Vedic Consecration</div><div class="process-step-desc">A solemn ritual is conducted with mantra chanting and offerings specifically dedicated to your Sankalp.</div></div></div>
+      <div class="col"><div class="process-step-card reveal"><div class="process-num">4</div><div class="process-step-title">Safe Dispatch</div><div class="process-step-desc">The Yantra is respectfully packed in protective spiritual packaging and shipped via express courier to your doorstep.</div></div></div>
+    </div>
+    <div class="process-banner reveal">
+      <img src="assets/images/IMG-20260725-WA0006.jpg" alt="Vedic consecration ritual of copper yantra" loading="lazy">
+    </div>
+  </div>
+</section>
 
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 trust-grid">
-        <div class="col">
-          <div class="card card--dark h-100 reveal trust-card">
-            <span class="icon-tile icon-tile--outline" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4"/></svg>
-            </span>
-            <p class="benefit-card__title">100% Personalized Creation</p>
-            <p class="benefit-card__desc">Each Yantra is prepared individually with your Name, Gotra and custom prayer intention.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card card--dark h-100 reveal trust-card">
-            <span class="icon-tile icon-tile--outline" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 12a8 8 0 0 1 16 0M4 12a8 8 0 0 0 16 0"/></svg>
-            </span>
-            <p class="benefit-card__title">Premium Pure Copper</p>
-            <p class="benefit-card__desc">Crafted using high-purity copper metal ensuring maximum aesthetic beauty and durability.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card card--dark h-100 reveal trust-card">
-            <span class="icon-tile icon-tile--outline" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-            </span>
-            <p class="benefit-card__title">Authentic Vedic Procedures</p>
-            <p class="benefit-card__desc">Traditional mantra recitation and sankalp rituals are conducted with utmost respect.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card card--dark h-100 reveal trust-card">
-            <span class="icon-tile icon-tile--outline" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-            </span>
-            <p class="benefit-card__title">Transparent Service</p>
-            <p class="benefit-card__desc">Clear explanation of the preparation process without any false or exaggerated claims.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card card--dark h-100 reveal trust-card">
-            <span class="icon-tile icon-tile--outline" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
-            </span>
-            <p class="benefit-card__title">Sacred & Safe Packaging</p>
-            <p class="benefit-card__desc">Carefully packed in protective ceremonial packaging to maintain ritual purity during transit.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card card--dark h-100 reveal trust-card">
-            <span class="icon-tile icon-tile--outline" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </span>
-            <p class="benefit-card__title">Dedicated Customer Support</p>
-            <p class="benefit-card__desc">Our team is available to assist you with installation instructions or any questions.</p>
+<!-- ═══════════════════════ PRICING ═══════════════════════ -->
+<section class="sec-light section-py" id="pricing">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow-vma eyebrow-light d-inline-flex">Pricing</span>
+      <h2 class="heading-lg mt-2">Order Your Consecrated Yantra</h2>
+      <p class="text-muted-vma mt-3 mx-auto" style="max-width:540px">Fully customized and consecrated pure copper Maha Mrityunjaya Yantra, delivered directly to your doorstep anywhere in India.</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="pricing-card featured reveal h-100">
+          <div class="pricing-tag">Most Popular — All-Inclusive ✦</div>
+          <div class="pricing-media"><img src="assets/images/5-inch-yantra.png" alt="5×5 inch pure copper Maha Mrityunjaya Yantra" loading="lazy"></div>
+          <div class="pricing-body">
+            <div class="pricing-size">5 × 5 Inch</div>
+            <div class="pricing-price-row"><span class="pricing-price">₹5,100</span><span class="pricing-unit">/ complete package</span></div>
+            <ul class="pricing-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Pure Copper Yantra — Larger (5 × 5 Inch)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Name &amp; Gotra Inscription</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Personal Sankalp &amp; Consecration Rites</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Priority Insured Shipping Across India</li>
+            </ul>
+            <button type="button" class="btn-primary-vma w-100" data-open-order data-size="5x5">Select 5 × 5 Inch — ₹5,100</button>
           </div>
         </div>
       </div>
     </div>
-  </section>
+    <p class="pricing-note reveal">₹5,100 all-inclusive with free delivery across India. (3 × 3 Inch size also available in the order form)</p>
+  </div>
+</section>
 
-  <!-- ===================================================================
-       8. FAQ
-       =================================================================== -->
-  <section class="section" id="faq">
-    <div class="container">
-      <div class="section-head section-head--center" style="text-align:center;margin-inline:auto">
-        <span class="eyebrow" style="justify-content:center">Frequently Asked Questions</span>
-        <h2 class="heading-display section-heading section-heading--center">Answers to Common Questions</h2>
+<!-- ═══════════════════════ WHY CHOOSE US ═══════════════════════ -->
+<section class="sec-dark section-py" id="why-choose-us">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow-vma eyebrow-dark d-inline-flex">Why Trust Us</span>
+      <h2 class="heading-lg text-ivory mt-2">Why Choose Vastu Mitra Abhishek</h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col"><div class="trust-card reveal"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4"/></svg></div><div class="trust-title">100% Personalized Creation</div><div class="trust-desc">Each Yantra is prepared individually with your Name, Gotra and custom prayer intention.</div></div></div>
+      <div class="col"><div class="trust-card reveal"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 12a8 8 0 0 1 16 0M4 12a8 8 0 0 0 16 0"/></svg></div><div class="trust-title">Premium Pure Copper</div><div class="trust-desc">Crafted using high-purity copper metal ensuring maximum aesthetic beauty and durability.</div></div></div>
+      <div class="col"><div class="trust-card reveal"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><div class="trust-title">Authentic Vedic Procedures</div><div class="trust-desc">Traditional mantra recitation and sankalp rituals are conducted with utmost respect.</div></div></div>
+      <div class="col"><div class="trust-card reveal"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></div><div class="trust-title">Transparent Service</div><div class="trust-desc">Clear explanation of the preparation process without any false or exaggerated claims.</div></div></div>
+      <div class="col"><div class="trust-card reveal"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg></div><div class="trust-title">Sacred &amp; Safe Packaging</div><div class="trust-desc">Carefully packed in protective ceremonial packaging to maintain ritual purity during transit.</div></div></div>
+      <div class="col"><div class="trust-card reveal"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="trust-title">Dedicated Customer Support</div><div class="trust-desc">Our team is available to assist you with installation instructions or any questions.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FAQ ═══════════════════════ -->
+<section class="sec-light section-py" id="faq">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow-vma eyebrow-light d-inline-flex">Frequently Asked Questions</span>
+      <h2 class="heading-lg mt-2">Answers to Common Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button type="button" class="faq-item__question" aria-expanded="false"><span>What makes this Maha Mrityunjaya Yantra unique?</span><div class="faq-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-item__answer"><p>Unlike mass-produced Yantras found in markets, our Yantra is prepared individually after you order. Your Name, Gotra, and personal Sankalp are inscribed on pure copper plate and consecrated specifically for you through authentic Vedic rituals.</p></div>
       </div>
+      <div class="faq-item reveal">
+        <button type="button" class="faq-item__question" aria-expanded="false"><span>What details are required to order?</span><div class="faq-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-item__answer"><p>We require your Full Name, Gotra (if known), your specific prayer or Sankalp (e.g. good health, family protection, mental peace), along with your full delivery address and mobile number.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button type="button" class="faq-item__question" aria-expanded="false"><span>How long does the consecration &amp; delivery take?</span><div class="faq-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-item__answer"><p>Since each Yantra undergoes individual engraving and Vedic consecration, preparation typically takes 2-3 days. Once dispatched, courier delivery across India takes 3-6 business days.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button type="button" class="faq-item__question" aria-expanded="false"><span>How should I place and worship the Yantra at home?</span><div class="faq-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-item__answer"><p>We include a comprehensive installation and worship guide with your Yantra package. Ideally, place the Yantra in your home altar facing North or East, light an incense or diya, and offer prayers with clean devotion.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button type="button" class="faq-item__question" aria-expanded="false"><span>What is the price and payment method?</span><div class="faq-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-item__answer"><p>The total price for the personalized and consecrated pure copper Maha Mrityunjaya Yantra is ₹5,100 (all-inclusive). Payment can be made securely online via UPI, Credit/Debit Card, or Net Banking powered by Razorpay.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="faq-list">
-        <div class="faq-item">
-          <button type="button" class="faq-item__question" aria-expanded="false">
-            <span>What makes this Maha Mrityunjaya Yantra unique?</span>
-            <span class="faq-item__icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
-          <div class="faq-item__answer">
-            <p>Unlike mass-produced Yantras found in markets, our Yantra is prepared individually after you order. Your Name, Gotra, and personal Sankalp are inscribed on pure copper plate and consecrated specifically for you through authentic Vedic rituals.</p>
-          </div>
+<!-- ═══════════════════════ FINAL CTA ═══════════════════════ -->
+<section class="final-cta-section">
+  <div class="container">
+    <div class="final-cta-box reveal">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <div class="final-cta-title">Invoke Divine Protection &amp; Good Health</div>
+          <p class="final-cta-desc">Order your personalized, pure copper Maha Mrityunjaya Yantra today — handcrafted with your Name, Gotra and sacred Sankalp.</p>
         </div>
-
-        <div class="faq-item">
-          <button type="button" class="faq-item__question" aria-expanded="false">
-            <span>What details are required to order?</span>
-            <span class="faq-item__icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
-          <div class="faq-item__answer">
-            <p>We require your Full Name, Gotra (if known), your specific prayer or Sankalp (e.g. good health, family protection, mental peace), along with your full delivery address and mobile number.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button type="button" class="faq-item__question" aria-expanded="false">
-            <span>How long does the consecration & delivery take?</span>
-            <span class="faq-item__icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
-          <div class="faq-item__answer">
-            <p>Since each Yantra undergoes individual engraving and Vedic consecration, preparation typically takes 2-3 days. Once dispatched, courier delivery across India takes 3-6 business days.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button type="button" class="faq-item__question" aria-expanded="false">
-            <span>How should I place and worship the Yantra at home?</span>
-            <span class="faq-item__icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
-          <div class="faq-item__answer">
-            <p>We include a comprehensive installation and worship guide with your Yantra package. Ideally, place the Yantra in your home altar facing North or East, light an incense or diya, and offer prayers with clean devotion.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button type="button" class="faq-item__question" aria-expanded="false">
-            <span>What is the price and payment method?</span>
-            <span class="faq-item__icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
-          <div class="faq-item__answer">
-            <p>The total price for the personalized and consecrated pure copper Maha Mrityunjaya Yantra is ₹5,100 (all-inclusive). Payment can be made securely online via UPI, Credit/Debit Card, or Net Banking powered by Razorpay.</p>
-          </div>
+        <div class="col-lg-4 text-lg-end">
+          <button type="button" class="btn-primary-vma" data-open-order>Order Now — ₹5,100</button>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- ===================================================================
-       9. FINAL CTA
-       =================================================================== -->
-  <section class="section">
-    <div class="container">
-      <div class="final-cta reveal">
-        <div class="final-cta__media" aria-hidden="true">
-          <img src="assets/images/final-cta-yantra.webp" alt="" loading="lazy">
-        </div>
-        <div class="row align-items-center position-relative w-100 m-0" style="z-index: 1;">
-          <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0 p-0">
-            <h2 class="heading-display final-cta__title" style="margin-bottom: 0.5rem;">Invoke Divine Protection & Good Health</h2>
-            <p class="final-cta__desc" style="margin-bottom: 0; max-width: 100%;">Order your personalized, pure copper Maha Mrityunjaya Yantra today — handcrafted with your Name, Gotra and sacred Sankalp.</p>
-          </div>
-          <div class="col-lg-4 text-center text-lg-end p-0">
-            <button type="button" class="btn btn--primary" data-open-order>Order Now — ₹5,100</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
 </main>
 
-<!-- =====================================================================
-     FOOTER
-     ===================================================================== -->
-<footer class="site-footer">
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="site-footer" id="contact">
   <div class="container">
-    <div class="row g-4 footer-grid justify-content-between">
-      <div class="col-lg-4 footer-brand">
-        <img src="assets/logo/logo.png" alt="Vastu Mitra Abhishek" style="height: 48px; width: auto; margin-bottom: 0.8rem;">
-        <p class="footer-brand__desc">
-          Dedicated spiritual services offering personalized, authentic Vedic consecrated Yantras and Vastu consultation across India.
-        </p>
+    <div class="row g-4 justify-content-between">
+      <div class="col-lg-4 col-md-6">
+        <img src="assets/logo/logo.png" alt="Vastu Mitra Abhishek" class="footer-logo">
+        <p class="footer-desc">Dedicated spiritual services offering personalized, authentic Vedic consecrated Yantras and Vastu consultation across India.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        </div>
       </div>
-
-      <div class="col-6 col-md-3 col-lg-2 footer-col">
-        <p class="footer-col__title">Quick Links</p>
-        <ul class="footer-col__list">
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="footer-col-title">Quick Links</div>
+        <ul class="footer-col-list">
           <li><a href="#about">About Us</a></li>
           <li><a href="#mahamrityunjay">Maha Mrityunjaya Yantra</a></li>
           <li><a href="#process">Crafting Process</a></li>
-          <li><a href="#pricing">Price & Order</a></li>
+          <li><a href="#pricing">Price &amp; Order</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
-
-      <div class="col-6 col-md-3 col-lg-2 footer-col">
-        <p class="footer-col__title">Policies</p>
-        <ul class="footer-col__list">
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="footer-col-title">Policies</div>
+        <ul class="footer-col-list">
           <li><a href="privacy-policy.php">Privacy Policy</a></li>
-          <li><a href="terms-and-conditions.php">Terms & Conditions</a></li>
+          <li><a href="terms-and-conditions.php">Terms &amp; Conditions</a></li>
           <li><a href="refund-policy.php">Refund Policy</a></li>
           <li><a href="disclaimer.php">Disclaimer</a></li>
         </ul>
       </div>
-
-      <div class="col-12 col-md-6 col-lg-3 footer-col">
-        <p class="footer-col__title">Contact Us</p>
-        <div class="footer-contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span>Support: Contact Vastu Mitra Abhishek</span>
-        </div>
-        <div class="footer-contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>India</span>
-        </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-col-title">Contact Us</div>
+        <div class="footer-contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Support: Contact Vastu Mitra Abhishek</span></div>
+        <div class="footer-contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>India — Pan-India Shipping Available</span></div>
       </div>
     </div>
-
-    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 mt-5 border-top border-secondary border-opacity-25">
+    <div class="footer-bottom">
       <p class="m-0">&copy; <span id="currentYear"></span> Vastu Mitra Abhishek. All rights reserved.</p>
-      <div class="footer-bottom__links">
+      <div class="footer-bottom-links">
         <a href="privacy-policy.php">Privacy</a>
         <a href="terms-and-conditions.php">Terms</a>
       </div>
@@ -660,19 +705,18 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
   </div>
 </footer>
 
-<!-- =====================================================================
-     ORDER FORM MODAL
-     ===================================================================== -->
+<!-- ═══════════════════════ ORDER MODAL ═══════════════════════ -->
 <div class="modal-overlay" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
   <div class="order-modal">
     <div class="order-modal__header">
       <div>
         <h3 class="order-modal__title" id="modalTitle">Order Maha Mrityunjaya Yantra</h3>
-        <p class="order-modal__subtitle">Fill in your details for personalized Name, Gotra & Sankalp consecration.</p>
+        <p class="order-modal__subtitle">Fill in your details for personalized Name, Gotra &amp; Sankalp consecration.</p>
       </div>
-      <button type="button" class="order-modal__close" data-close-order aria-label="Close modal">&times;</button>
+      <button type="button" class="order-modal__close" data-close-order aria-label="Close modal">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
     </div>
-
     <form class="order-form" id="orderForm" novalidate>
       <div class="form-grid">
         <div class="form-field form-field--full">
@@ -682,95 +726,83 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
             <option value="5x5">5 × 5 Inch — ₹5,100</option>
           </select>
         </div>
-
         <div class="form-field form-field--full">
           <label for="customerName">Full Name <span class="required">*</span></label>
           <input type="text" id="customerName" name="customer_name" placeholder="Enter your full name" required>
         </div>
-
         <div class="form-field">
           <label for="mobile">Mobile Number (WhatsApp) <span class="required">*</span></label>
           <input type="tel" id="mobile" name="mobile" placeholder="10-digit mobile number" maxlength="10" required>
         </div>
-
         <div class="form-field">
           <label for="email">Email Address <span class="required">*</span></label>
           <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
         </div>
-
         <div class="form-field">
           <label for="gotra">Gotra (Self/Family)</label>
           <input type="text" id="gotra" name="gotra" placeholder="e.g. Kashyap / Bhardwaj (Optional)">
         </div>
-
         <div class="form-field">
           <label for="city">City <span class="required">*</span></label>
           <input type="text" id="city" name="city" placeholder="Your City" required>
         </div>
-
         <div class="form-field form-field--full">
           <label for="sankalp">Personal Prayer / Sankalp</label>
           <textarea id="sankalp" name="sankalp" placeholder="Mention any specific prayer or intentions (e.g. Health, Recovery, Family Peace)"></textarea>
         </div>
-
         <div class="form-field form-field--full">
           <label for="address">Complete Shipping Address <span class="required">*</span></label>
           <textarea id="address" name="address" placeholder="House/Flat No., Street, Landmark" required></textarea>
         </div>
-
         <div class="form-field">
           <label for="state">State <span class="required">*</span></label>
           <input type="text" id="state" name="state" placeholder="State" required>
         </div>
-
         <div class="form-field">
           <label for="pincode">Pincode <span class="required">*</span></label>
           <input type="text" id="pincode" name="pincode" placeholder="6-digit pincode" maxlength="6" required>
         </div>
       </div>
-
       <div class="order-summary">
         <div>
-          <span class="order-summary__label" style="display:block;">Selected Yantra</span>
-          <strong style="color:var(--color-brown-950);">Maha Mrityunjaya Yantra (Pure Copper)</strong>
+          <span class="order-summary__label" style="display:block">Selected Yantra</span>
+          <strong style="color:var(--text)">Maha Mrityunjaya Yantra (Pure Copper)</strong>
         </div>
-        <div style="text-align:right;">
-          <span class="order-summary__label" style="display:block;">Total Payable Amount</span>
+        <div style="text-align:right">
+          <span class="order-summary__label" style="display:block">Total Payable Amount</span>
           <span class="order-summary__value">₹5,100</span>
         </div>
       </div>
-
       <div class="order-form__footer">
-        <button type="submit" class="btn btn--primary btn--block">Proceed to Pay ₹5,100</button>
+        <button type="submit" class="btn-submit-vma">Proceed to Pay ₹5,100</button>
         <p class="order-form__note">🔒 100% Secure Payment powered by Razorpay. Includes free delivery across India.</p>
       </div>
     </form>
   </div>
 </div>
 
-<!-- =====================================================================
-     THANK YOU / CONFIRMATION MODAL
-     ===================================================================== -->
+<!-- ═══════════════════════ THANK YOU MODAL ═══════════════════════ -->
 <div class="modal-overlay" id="thankyouModal" role="dialog" aria-modal="true">
-  <div class="order-modal" style="max-width: 520px; text-align: center; padding: 2.5rem 2rem;">
-    <div style="width: 64px; height: 64px; background: rgba(40, 167, 69, 0.1); border-radius: 50%; color: #28a745; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem;">
-      <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+  <div class="order-modal" style="max-width:520px;text-align:center;padding:0">
+    <div style="padding:3rem 2.5rem">
+      <div style="width:64px;height:64px;background:rgba(40,167,69,.1);border-radius:50%;color:#28a745;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <h3 style="font-family:var(--font-d);font-size:1.8rem;margin-bottom:.5rem">Payment Successful!</h3>
+      <p style="color:var(--text-m);font-size:.95rem;margin-bottom:1.25rem;line-height:1.8">
+        Thank you for your order. Your Maha Mrityunjaya Yantra consecration process has been initiated with your provided Name &amp; Gotra.
+      </p>
+      <div id="confirmRefId" style="background:rgba(212,168,67,.1);border:1px solid rgba(212,168,67,.25);padding:.8rem 1rem;border-radius:8px;font-weight:600;font-size:.9rem;margin-bottom:1.5rem">Order DB ID: --</div>
+      <button type="button" class="btn-primary-vma" onclick="document.getElementById('thankyouModal').classList.remove('is-open');document.body.style.overflow='';" style="margin:0 auto;max-width:220px">Close</button>
     </div>
-    <h3 class="heading-display" style="font-size: 1.8rem; margin-bottom: 0.5rem;">Payment Successful!</h3>
-    <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.2rem;">
-      Thank you for your order. Your Maha Mrityunjaya Yantra consecration process has been initiated with your provided Name & Gotra.
-    </p>
-    <div style="background: rgba(201,163,78,0.1); border: 1px solid var(--color-border); padding: 0.8rem 1rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem; margin-bottom: 1.5rem;" id="confirmRefId">
-      Order DB ID: --
-    </div>
-    <button type="button" class="btn btn--primary btn--block" onclick="document.getElementById('thankyouModal').classList.remove('is-open'); document.body.style.overflow='';" style="max-width: 220px; margin: 0 auto;">Close</button>
   </div>
 </div>
 
-<!-- Toast notification -->
 <div class="toast" id="toast"></div>
 
-<!-- JavaScript Logic -->
+<!-- Scripts -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
 <script>
 (function () {
   "use strict";
@@ -779,11 +811,8 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
   const yearEl = document.getElementById("currentYear");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Header Scroll & Mobile Nav
+  // Header Scroll
   const header = document.querySelector(".site-header");
-  const navToggle = document.querySelector(".nav-toggle");
-  const mainNav = document.querySelector(".main-nav");
-
   function onScrollHeader() {
     if (!header) return;
     header.classList.toggle("is-scrolled", window.scrollY > 12);
@@ -791,17 +820,18 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
   window.addEventListener("scroll", onScrollHeader, { passive: true });
   onScrollHeader();
 
+  // Mobile Nav
+  const navToggle = document.getElementById("navToggle");
+  const mainNav = document.getElementById("mainNav");
   if (navToggle && mainNav) {
     navToggle.addEventListener("click", () => {
-      const isOpen = mainNav.style.display === "block";
-      mainNav.style.display = isOpen ? "none" : "block";
-      navToggle.setAttribute("aria-expanded", String(!isOpen));
+      const isOpen = mainNav.classList.toggle("is-open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
     });
-
     mainNav.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
-        if (window.matchMedia("(max-width: 1024px)").matches) {
-          mainNav.style.display = "none";
+        if (window.innerWidth < 992) {
+          mainNav.classList.remove("is-open");
           navToggle.setAttribute("aria-expanded", "false");
         }
       });
@@ -809,7 +839,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
   }
 
   // Scroll Reveal
-  const revealEls = document.querySelectorAll(".reveal");
+  const revealEls = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
   if ("IntersectionObserver" in window && revealEls.length) {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -820,7 +850,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -60px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
     );
     revealEls.forEach((el) => observer.observe(el));
   } else {
@@ -833,14 +863,12 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       const item = btn.closest(".faq-item");
       const answer = item.querySelector(".faq-item__answer");
       const isOpen = item.classList.contains("is-open");
-
       document.querySelectorAll(".faq-item.is-open").forEach((openItem) => {
         if (openItem !== item) {
           openItem.classList.remove("is-open");
           openItem.querySelector(".faq-item__answer").style.maxHeight = null;
         }
       });
-
       item.classList.toggle("is-open", !isOpen);
       answer.style.maxHeight = !isOpen ? answer.scrollHeight + "px" : null;
       btn.setAttribute("aria-expanded", String(!isOpen));
@@ -855,8 +883,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
 
   function updateOrderSummary() {
     if (!sizeSelect || !summaryLabel) return;
-    const sizeVal = sizeSelect.value;
-    const sizeText = sizeVal === '5x5' ? '5 × 5 Inch' : '3 × 3 Inch';
+    const sizeText = sizeSelect.value === '5x5' ? '5 × 5 Inch' : '3 × 3 Inch';
     summaryLabel.textContent = `Maha Mrityunjaya Yantra (${sizeText})`;
   }
 
@@ -901,28 +928,24 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
     }
   });
 
-  // Toast Function
+  // Toast
   function showToast(message) {
     const toast = document.getElementById("toast");
     if (!toast) return;
     toast.textContent = message;
     toast.classList.add("is-visible");
-    setTimeout(() => {
-      toast.classList.remove("is-visible");
-    }, 4000);
+    setTimeout(() => toast.classList.remove("is-visible"), 4000);
   }
 
   // Field Errors
   function showFieldError(field, message) {
     field.setAttribute("aria-invalid", "true");
-    field.style.borderColor = "#B03C30";
+    field.style.borderColor = "#E57373";
     let hint = field.parentElement.querySelector(".field-error");
     if (!hint) {
       hint = document.createElement("span");
       hint.className = "field-error";
-      hint.style.color = "#B03C30";
-      hint.style.fontSize = "0.78rem";
-      hint.style.marginTop = "0.2rem";
+      hint.style.cssText = "color:#E57373;font-size:.78rem;margin-top:.2rem";
       field.parentElement.appendChild(hint);
     }
     hint.textContent = message;
@@ -937,9 +960,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
 
   function validateOrderForm(form) {
     let isValid = true;
-    const requiredFields = form.querySelectorAll("[required]");
-
-    requiredFields.forEach((field) => {
+    form.querySelectorAll("[required]").forEach((field) => {
       clearFieldError(field);
       if (!field.value || !field.value.trim()) {
         showFieldError(field, "This field is required");
@@ -948,44 +969,27 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       }
       if (field.type === "tel") {
         const digits = field.value.replace(/\D/g, "");
-        if (digits.length < 10) {
-          showFieldError(field, "Please enter a valid 10-digit mobile number");
-          isValid = false;
-        }
+        if (digits.length < 10) { showFieldError(field, "Please enter a valid 10-digit mobile number"); isValid = false; }
       }
       if (field.type === "email" && field.value) {
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(field.value)) {
-          showFieldError(field, "Please enter a valid email address");
-          isValid = false;
-        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) { showFieldError(field, "Please enter a valid email address"); isValid = false; }
       }
       if (field.id === "pincode" && field.value) {
-        if (!/^\d{6}$/.test(field.value.trim())) {
-          showFieldError(field, "Please enter a valid 6-digit pincode");
-          isValid = false;
-        }
+        if (!/^\d{6}$/.test(field.value.trim())) { showFieldError(field, "Please enter a valid 6-digit pincode"); isValid = false; }
       }
     });
-
     return isValid;
   }
 
-  // Submit Order Form & Razorpay Integration
+  // Submit & Razorpay
   if (orderForm) {
     orderForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      if (!validateOrderForm(orderForm)) {
-        showToast("Please fill in all required fields accurately.");
-        return;
-      }
+      if (!validateOrderForm(orderForm)) { showToast("Please fill in all required fields accurately."); return; }
 
       const submitBtn = orderForm.querySelector('[type="submit"]');
       const originalText = submitBtn ? submitBtn.textContent : "";
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.textContent = "Processing Order...";
-      }
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = "Processing Order..."; }
 
       const formData = new FormData(orderForm);
       const payload = {
@@ -1030,7 +1034,6 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
       return;
     }
-
     var options = {
       key: serverOrder.key_id,
       amount: serverOrder.amount,
@@ -1039,12 +1042,8 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       name: "Vastu Mitra Abhishek",
       description: "Maha Mrityunjaya Yantra (Pure Copper)",
       image: "assets/logo/logo.png",
-      prefill: {
-        name: payload.customer_name,
-        email: payload.email,
-        contact: payload.mobile,
-      },
-      theme: { color: "#B5652D" },
+      prefill: { name: payload.customer_name, email: payload.email, contact: payload.mobile },
+      theme: { color: "#D4A843" },
       handler: function (response) {
         fetch('api/verify_us_payment.php', {
           method: 'POST',
@@ -1075,13 +1074,8 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
           if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
         });
       },
-      modal: {
-        ondismiss: function () {
-          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
-        },
-      },
+      modal: { ondismiss: function () { if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; } } },
     };
-
     var rzp = new Razorpay(options);
     rzp.open();
   }
@@ -1091,1127 +1085,3 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
-
-<style>
-/* =========================================================================
-   VASTU MITRA ABHISHEK — MAIN STYLESHEET
-   Premium Vedic / Devotional landing page
-   ========================================================================= */
-
-:root {
-  --color-ivory: #F6EFE2;
-  --color-ivory-soft: #FBF7EE;
-  --color-brown-950: #1A100C;
-  --color-brown-900: #241611;
-  --color-brown-800: #2E1B14;
-  --color-brown-700: #4A2A1B;
-  --color-text: #2A1B12;
-  --color-text-muted: #6B5847;
-  --color-text-on-dark: #EFE3D2;
-  --color-text-on-dark-muted: #C7B39C;
-
-  --color-copper: #B5652D;
-  --color-copper-light: #D4924F;
-  --color-copper-dark: #8A4A1F;
-  --color-saffron: #D2601A;
-  --color-saffron-dark: #A8480F;
-  --color-gold: #C9A34E;
-  --color-gold-light: #E4C784;
-  --color-maroon: #4A1010;
-
-  --color-healing: #6FA9BE;
-  --color-protect: #B03C30;
-
-  --color-border: rgba(181, 101, 45, 0.22);
-  --color-border-dark: rgba(201, 163, 78, 0.22);
-  --color-success: #4C7A4C;
-
-  --font-display: 'Cinzel', 'Tiro Devanagari Hindi', serif;
-  --font-body: 'Plus Jakarta Sans', 'Hind', sans-serif;
-
-  --fs-xs: 0.8rem;
-  --fs-sm: 0.9rem;
-  --fs-base: 1rem;
-  --fs-md: 1.15rem;
-  --fs-lg: 1.4rem;
-  --fs-xl: 1.9rem;
-  --fs-2xl: 2.6rem;
-  --fs-3xl: 3.4rem;
-  --fs-hero: 4.2rem;
-
-  --lh-tight: 1.15;
-  --lh-snug: 1.35;
-  --lh-normal: 1.65;
-  --lh-relaxed: 1.85;
-
-  --space-3xs: 0.25rem;
-  --space-2xs: 0.5rem;
-  --space-xs: 0.75rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2.25rem;
-  --space-xl: 3.5rem;
-  --space-2xl: 5.5rem;
-  --space-3xl: 8rem;
-
-  --section-padding-y: clamp(4rem, 8vw, 7.5rem);
-  --container-width: 1240px;
-  --container-padding: clamp(1.25rem, 5vw, 3rem);
-
-  --radius-sm: 6px;
-  --radius-md: 14px;
-  --radius-lg: 24px;
-  --radius-pill: 999px;
-
-  --shadow-soft: 0 8px 30px rgba(26, 16, 12, 0.08);
-  --shadow-card: 0 14px 40px rgba(26, 16, 12, 0.12);
-  --shadow-lifted: 0 24px 60px rgba(26, 16, 12, 0.22);
-  --shadow-gold-glow: 0 0 0 1px rgba(201, 163, 78, 0.35), 0 20px 45px rgba(74, 16, 16, 0.35);
-
-  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-fast: 0.2s var(--ease-premium);
-  --transition-base: 0.4s var(--ease-premium);
-  --transition-slow: 0.8s var(--ease-premium);
-
-  --z-header: 100;
-  --z-modal: 500;
-  --z-toast: 600;
-}
-
-*, *::before, *::after { box-sizing: border-box; }
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 90px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-body {
-  margin: 0;
-  font-family: var(--font-body);
-  font-size: var(--fs-base);
-  line-height: var(--lh-normal);
-  color: var(--color-text);
-  background: var(--color-ivory);
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
-
-img { max-width: 100%; display: block; }
-a { color: inherit; text-decoration: none; }
-button { font-family: inherit; cursor: pointer; }
-ul, ol { margin: 0; padding: 0; list-style: none; }
-h1, h2, h3, h4, p { margin: 0; }
-input, select, textarea { font-family: inherit; font-size: inherit; }
-
-:focus-visible {
-  outline: 2px solid var(--color-saffron);
-  outline-offset: 3px;
-}
-
-.heading-display {
-  font-family: var(--font-display);
-  font-weight: 700;
-  line-height: var(--lh-tight);
-  letter-spacing: 0.005em;
-  color: var(--color-text);
-}
-
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2xs);
-  font-family: var(--font-body);
-  font-size: var(--fs-xs);
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  color: var(--color-copper-dark);
-  text-transform: uppercase;
-  margin-bottom: var(--space-sm);
-}
-
-.eyebrow::before {
-  content: "";
-  width: 22px;
-  height: 1px;
-  background: var(--color-gold);
-  display: inline-block;
-}
-
-.eyebrow--on-dark { color: var(--color-gold-light); }
-
-.section-heading {
-  font-size: var(--fs-2xl);
-  max-width: 760px;
-}
-
-.section-heading--center { margin-inline: auto; text-align: center; }
-
-.section-subtext {
-  font-size: var(--fs-md);
-  color: var(--color-text-muted);
-  line-height: var(--lh-relaxed);
-  max-width: 620px;
-  margin-top: var(--space-sm);
-}
-
-.section-subtext--center { margin-inline: auto; text-align: center; }
-
-.text-on-dark { color: var(--color-text-on-dark); }
-.text-on-dark-muted { color: var(--color-text-on-dark-muted); }
-
-.container {
-  width: 100%;
-  max-width: var(--container-width);
-  margin-inline: auto;
-  padding-inline: var(--container-padding);
-}
-
-.section { padding-block: var(--section-padding-y); position: relative; }
-.section--dark {
-  background: linear-gradient(180deg, var(--color-brown-900), var(--color-brown-950));
-  color: var(--color-text-on-dark);
-}
-.section--ivory-soft { background: var(--color-ivory-soft); }
-
-.section-head { margin-bottom: var(--space-2xl); }
-
-.grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-2xl);
-  align-items: center;
-}
-
-.divider-motif {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-xs);
-  margin-block: var(--space-2xl);
-  opacity: 0.75;
-}
-.divider-motif__line { width: 60px; height: 1px; background: linear-gradient(90deg, transparent, var(--color-gold)); }
-.divider-motif__line--right { background: linear-gradient(90deg, var(--color-gold), transparent); }
-
-.geo-pattern {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.5;
-  background-image:
-    radial-gradient(circle at 15% 20%, var(--color-border) 0, transparent 45%),
-    radial-gradient(circle at 85% 75%, var(--color-border) 0, transparent 45%);
-  z-index: 0;
-}
-.geo-pattern--dark {
-  background-image:
-    radial-gradient(circle at 12% 15%, var(--color-border-dark) 0, transparent 40%),
-    radial-gradient(circle at 88% 80%, var(--color-border-dark) 0, transparent 40%);
-}
-
-.container, .section > * { position: relative; z-index: 1; }
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-2xs);
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: var(--fs-base);
-  padding: 1rem 2.25rem;
-  border-radius: var(--radius-pill);
-  border: 1px solid transparent;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-  white-space: nowrap;
-}
-.btn:hover {
-  transform: translateY(-3px);
-}
-.btn:active {
-  transform: translateY(0) scale(0.98);
-}
-
-.btn--primary {
-  background: linear-gradient(135deg, var(--color-saffron), var(--color-saffron-dark));
-  color: #FFF8EE;
-  box-shadow: 0 8px 24px rgba(210, 96, 26, 0.25);
-}
-.btn--primary:hover {
-  background: linear-gradient(135deg, var(--color-saffron-dark), #C04000);
-  box-shadow: 0 12px 30px rgba(210, 96, 26, 0.4);
-}
-
-.btn--gold {
-  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
-  color: var(--color-brown-950);
-  box-shadow: 0 8px 24px rgba(201, 163, 78, 0.25);
-}
-.btn--gold:hover {
-  background: linear-gradient(135deg, #fff, var(--color-gold-light));
-  box-shadow: 0 12px 30px rgba(201, 163, 78, 0.4);
-}
-
-.btn--outline {
-  background: transparent;
-  border-color: var(--color-gold);
-  color: var(--color-text);
-}
-.btn--outline:hover {
-  background: rgba(201, 163, 78, 0.08);
-  border-color: var(--color-gold-light);
-}
-
-.btn--outline-on-dark {
-  background: transparent;
-  border-color: rgba(239, 227, 210, 0.3);
-  color: var(--color-text-on-dark);
-}
-.btn--outline-on-dark:hover {
-  background: rgba(201, 163, 78, 0.08);
-  border-color: var(--color-gold);
-}
-
-.btn--block { width: 100%; }
-.btn--sm { padding: 0.75rem 1.6rem; font-size: var(--fs-sm); }
-
-.btn-group { display: flex; gap: var(--space-sm); flex-wrap: wrap; }
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: var(--fs-xs);
-  font-weight: 600;
-  padding: 0.45rem 1rem;
-  border-radius: var(--radius-pill);
-  border: 1px solid var(--color-border);
-  color: var(--color-copper-dark);
-  background: rgba(181, 101, 45, 0.06);
-}
-.badge--on-dark {
-  border-color: var(--color-border-dark);
-  color: var(--color-gold-light);
-  background: rgba(201, 163, 78, 0.08);
-}
-
-.card {
-  background: var(--color-ivory-soft);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-lg);
-  box-shadow: var(--shadow-soft);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
-}
-.card:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 15px 35px rgba(26, 16, 12, 0.15);
-  border-color: var(--color-gold);
-}
-
-.card--dark {
-  background: rgba(36, 22, 17, 0.6);
-  border: 1px solid rgba(201, 163, 78, 0.12);
-  color: var(--color-text-on-dark);
-  backdrop-filter: blur(8px);
-}
-.card--dark:hover {
-  background: rgba(36, 22, 17, 0.85);
-  border-color: rgba(201, 163, 78, 0.35);
-  box-shadow: var(--shadow-gold-glow);
-}
-
-.icon-tile {
-  width: 52px;
-  height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--radius-md);
-  background: linear-gradient(135deg, var(--color-gold-light), var(--color-copper));
-  color: #2A1408;
-  margin-bottom: var(--space-md);
-  flex-shrink: 0;
-}
-.icon-tile svg { width: 26px; height: 26px; }
-
-.icon-tile--outline {
-  background: transparent;
-  border: 1px solid var(--color-gold);
-  color: var(--color-gold);
-}
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: var(--z-header);
-  background: rgba(26, 16, 12, 0.92);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--color-border-dark);
-  transition: box-shadow var(--transition-base);
-}
-.site-header.is-scrolled { box-shadow: var(--shadow-lifted); }
-
-.site-header__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-block: var(--space-sm);
-  gap: var(--space-md);
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: var(--space-xs);
-}
-.brand__logo { height: 42px; width: auto; display: block; background: #fff; padding: 6px 12px; border-radius: var(--radius-md); }
-
-.main-nav__list {
-  display: flex;
-  align-items: center;
-  gap: var(--space-lg);
-}
-.main-nav__link {
-  font-size: var(--fs-sm);
-  font-weight: 500;
-  color: var(--color-text-on-dark-muted);
-  transition: color var(--transition-fast);
-  position: relative;
-}
-.main-nav__link:hover { color: var(--color-gold-light); }
-
-.header-actions { display: flex; align-items: center; gap: var(--space-sm); }
-
-.nav-toggle {
-  display: none;
-  background: transparent;
-  border: 1px solid var(--color-border-dark);
-  border-radius: var(--radius-sm);
-  width: 42px;
-  height: 42px;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-gold-light);
-}
-
-.hero {
-  background: radial-gradient(120% 100% at 80% 0%, #33201740, transparent 60%), linear-gradient(180deg, var(--color-brown-950), #150C08);
-  color: var(--color-text-on-dark);
-  padding-top: clamp(4rem, 10vw, 8rem);
-  padding-bottom: clamp(4rem, 10vw, 8rem);
-  overflow: hidden;
-  position: relative;
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 10%;
-  left: -10%;
-  width: clamp(300px, 40vw, 600px);
-  height: clamp(300px, 40vw, 600px);
-  background: radial-gradient(circle, rgba(201, 163, 78, 0.15) 0%, rgba(201, 163, 78, 0) 70%);
-  filter: blur(80px);
-  pointer-events: none;
-}
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: -10%;
-  right: -10%;
-  width: clamp(400px, 50vw, 800px);
-  height: clamp(400px, 50vw, 800px);
-  background: radial-gradient(circle, rgba(181, 101, 45, 0.12) 0%, rgba(181, 101, 45, 0) 70%);
-  filter: blur(100px);
-  pointer-events: none;
-}
-
-.hero__grid {
-  /* Layout handled by Bootstrap 5 row & cols */
-}
-
-.hero__eyebrow-row { display: flex; gap: var(--space-xs); flex-wrap: wrap; margin-bottom: var(--space-md); }
-
-.hero__title {
-  font-size: var(--fs-hero);
-  color: var(--color-ivory);
-  margin-bottom: var(--space-md);
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-}
-.hero__title em {
-  font-style: normal;
-  background: linear-gradient(135deg, var(--color-gold-light) 30%, var(--color-copper-light) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.hero__desc {
-  font-size: var(--fs-md);
-  color: var(--color-text-on-dark-muted);
-  max-width: 540px;
-  line-height: var(--lh-relaxed);
-  margin-bottom: var(--space-lg);
-}
-
-.hero__ctas { margin-bottom: var(--space-xl); }
-
-.hero__trust-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-lg);
-}
-.hero__trust-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: var(--fs-sm);
-  color: var(--color-text-on-dark-muted);
-}
-.hero__trust-item svg { width: 18px; height: 18px; color: var(--color-gold); flex-shrink: 0; }
-
-.hero__visual {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero__visual-frame {
-  position: relative;
-  width: 100%;
-  max-width: 460px;
-  aspect-ratio: 5 / 6;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-gold-glow);
-  border: 1px solid var(--color-border-dark);
-}
-.hero__visual-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.hero__visual-caption {
-  position: absolute;
-  left: var(--space-md);
-  right: var(--space-md);
-  bottom: var(--space-md);
-  background: rgba(26, 16, 12, 0.72);
-  backdrop-filter: blur(6px);
-  border: 1px solid var(--color-border-dark);
-  border-radius: var(--radius-md);
-  padding: var(--space-sm) var(--space-md);
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-}
-.hero__visual-caption strong { display: block; font-size: var(--fs-sm); color: var(--color-gold-light); }
-.hero__visual-caption span { font-size: var(--fs-xs); color: var(--color-text-on-dark-muted); }
-
-.about__cards {
-  margin-top: var(--space-2xl);
-}
-.about__card {
-  text-align: center;
-  padding: var(--space-lg);
-  background: var(--color-ivory-soft);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-soft);
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
-}
-.about__card:hover { transform: translateY(-6px); box-shadow: var(--shadow-card); }
-.about__card .icon-tile { margin: 0 auto var(--space-md); }
-.about__card-title { font-weight: 600; font-size: var(--fs-md); margin-bottom: 0.35rem; }
-.about__card-desc { font-size: var(--fs-sm); color: var(--color-text-muted); line-height: var(--lh-relaxed); }
-
-.about__media {
-  margin-top: var(--space-2xl);
-  position: relative;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-card);
-  max-width: 800px;
-  margin-inline: auto;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.about__media:hover {
-  transform: translateY(-4px) scale(1.01);
-  box-shadow: var(--shadow-gold-glow);
-  border-color: var(--color-gold);
-}
-.about__media img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
-.about__media-badge {
-  position: absolute;
-  bottom: var(--space-md);
-  right: var(--space-md);
-  background: var(--color-ivory-soft);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: var(--space-sm) var(--space-md);
-  box-shadow: var(--shadow-lifted);
-  max-width: 220px;
-}
-.about__media-badge strong { display: block; font-family: var(--font-display); font-size: var(--fs-lg); color: var(--color-copper-dark); }
-.about__media-badge span { font-size: var(--fs-xs); color: var(--color-text-muted); }
-
-.compare {
-  margin-top: var(--space-2xl);
-}
-.compare__col {
-  border-radius: var(--radius-lg);
-  padding: var(--space-lg);
-  border: 1px solid var(--color-border);
-}
-.compare__col--standard { background: var(--color-ivory-soft); }
-.compare__col--personal {
-  background: linear-gradient(165deg, var(--color-brown-900), var(--color-brown-950));
-  color: var(--color-text-on-dark);
-  border-color: var(--color-gold);
-  box-shadow: var(--shadow-lifted);
-  position: relative;
-}
-.compare__col--personal::before {
-  content: "OUR SERVICE";
-  position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
-  color: var(--color-brown-950);
-  font-size: var(--fs-xs);
-  font-weight: 700;
-  padding: 0.3rem 1rem;
-  border-radius: var(--radius-pill);
-  white-space: nowrap;
-}
-.compare__title { font-family: var(--font-display); font-size: var(--fs-lg); margin-bottom: var(--space-md); }
-.compare__list { display: grid; gap: var(--space-sm); }
-.compare__list li { display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--fs-sm); }
-.compare__list svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: 2px; }
-.compare__col--standard svg { color: var(--color-text-muted); }
-.compare__col--personal svg { color: var(--color-gold); }
-
-.why-note {
-  margin-top: var(--space-lg);
-  padding: var(--space-md) var(--space-lg);
-  border-left: 3px solid var(--color-gold);
-  background: rgba(201, 163, 78, 0.06);
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  font-size: var(--fs-sm);
-  color: var(--color-text-muted);
-  line-height: var(--lh-relaxed);
-}
-
-.product-section .grid-2 { gap: var(--space-2xl); }
-.product-section--reverse .grid-2 { direction: rtl; }
-.product-section--reverse .grid-2 > * { direction: ltr; }
-
-.product-media {
-  position: relative;
-  align-self: center;
-}
-.product-media__frame {
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
-  border: 1px solid var(--color-border-dark);
-  aspect-ratio: 16 / 9;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.product-media__frame:hover {
-  transform: translateY(-4px) scale(1.01);
-  box-shadow: var(--shadow-gold-glow);
-  border-color: var(--color-gold);
-}
-.product-media__frame img { width: 100%; height: 100%; object-fit: cover; }
-
-.product-content__title { margin-bottom: var(--space-sm); }
-.product-content__desc { color: var(--color-text-on-dark-muted); line-height: var(--lh-relaxed); margin-bottom: var(--space-md); }
-.section--dark .product-content__desc { color: var(--color-text-on-dark-muted); }
-
-.attribute-list { display: grid; gap: var(--space-sm); margin-block: var(--space-lg); }
-.attribute-list__item { display: flex; align-items: flex-start; gap: var(--space-sm); }
-.attribute-list__item svg { width: 20px; height: 20px; flex-shrink: 0; color: var(--color-gold); margin-top: 3px; }
-.attribute-list__item-title { font-weight: 600; margin-bottom: 0.15rem; }
-.attribute-list__item-desc { font-size: var(--fs-sm); color: var(--color-text-on-dark-muted); }
-
-.deity-accent--healing { color: var(--color-healing); }
-.deity-accent--protect { color: var(--color-protect); }
-
-.benefits-grid {
-  margin-top: var(--space-xl);
-}
-.benefit-card { text-align: left; }
-.benefit-card__title { font-weight: 600; font-size: var(--fs-md); margin-bottom: 0.35rem; }
-.benefit-card__desc { font-size: var(--fs-sm); color: var(--color-text-on-dark-muted); line-height: var(--lh-relaxed); }
-.section--ivory-soft .benefit-card__desc,
-.benefits--light .benefit-card__desc { color: var(--color-text-muted); }
-
-.process-flow {
-  margin-top: var(--space-2xl);
-  position: relative;
-}
-.process-flow::before {
-  content: "";
-  position: absolute;
-  top: 26px;
-  left: 8%;
-  right: 8%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-gold) 15%, var(--color-gold) 85%, transparent);
-  z-index: 0;
-}
-.process-step {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-}
-.process-step__num {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
-  color: var(--color-brown-950);
-  font-family: var(--font-display);
-  font-size: var(--fs-lg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto var(--space-sm);
-  box-shadow: 0 8px 20px rgba(201, 163, 78, 0.35);
-  border: 2px solid var(--color-brown-950);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
-}
-.process-step:hover .process-step__num {
-  transform: scale(1.12);
-  box-shadow: var(--shadow-gold-glow);
-  border-color: var(--color-gold-light);
-}
-.process-step__title { font-weight: 600; margin-bottom: 0.35rem; }
-.process-step__desc { font-size: var(--fs-sm); color: var(--color-text-muted); }
-
-.process-media {
-  margin-top: var(--space-2xl);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-card);
-}
-.process-media img { width: 100%; max-height: 420px; object-fit: cover; }
-
-.pricing-grid {
-  margin-top: var(--space-2xl);
-  max-width: 450px;
-  margin-inline: auto;
-}
-.pricing-card {
-  background: var(--color-ivory-soft);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-soft);
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
-  display: flex;
-  flex-direction: column;
-}
-.pricing-card:hover {
-  transform: translateY(-8px) scale(1.005);
-  box-shadow: 0 25px 55px rgba(26, 16, 12, 0.18);
-  border-color: var(--color-gold);
-}
-.pricing-card--featured {
-  border-color: var(--color-gold);
-  box-shadow: 0 0 0 1px var(--color-gold), 0 20px 45px rgba(74, 16, 16, 0.25);
-  position: relative;
-}
-.pricing-card--featured:hover {
-  border-color: var(--color-gold-light);
-  box-shadow: 0 0 0 2px var(--color-gold-light), 0 25px 55px rgba(74, 16, 16, 0.35);
-}
-.pricing-card--featured::before {
-  content: "MOST PREFERRED";
-  position: absolute;
-  top: var(--space-md);
-  right: var(--space-md);
-  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
-  color: var(--color-brown-950);
-  font-size: var(--fs-xs);
-  font-weight: 700;
-  padding: 0.3rem 0.85rem;
-  border-radius: var(--radius-pill);
-  z-index: 2;
-}
-
-.pricing-card__media { aspect-ratio: 3 / 2; overflow: hidden; }
-.pricing-card__media img { width: 100%; height: 100%; object-fit: cover; }
-.pricing-card__body { padding: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-sm); flex: 1; }
-.pricing-card__size { font-family: var(--font-display); font-size: var(--fs-lg); }
-.pricing-card__price-row { display: flex; align-items: baseline; gap: 0.5rem; }
-.pricing-card__price { font-family: var(--font-display); font-size: var(--fs-2xl); color: var(--color-copper-dark); }
-.pricing-card__unit { font-size: var(--fs-sm); color: var(--color-text-muted); }
-.pricing-card__features { display: grid; gap: 0.5rem; margin-block: var(--space-xs); }
-.pricing-card__features li { display: flex; gap: 0.5rem; align-items: flex-start; font-size: var(--fs-sm); color: var(--color-text-muted); }
-.pricing-card__features svg { width: 17px; height: 17px; color: var(--color-success); flex-shrink: 0; margin-top: 2px; }
-.pricing-card__cta { margin-top: auto; }
-
-.pricing-note {
-  text-align: center;
-  margin-top: var(--space-lg);
-  font-size: var(--fs-sm);
-  color: var(--color-text-muted);
-}
-
-.trust-grid {
-  margin-top: var(--space-2xl);
-}
-.trust-card { text-align: left; }
-
-.stats-row {
-  margin-top: var(--space-2xl);
-  padding-top: var(--space-2xl);
-  border-top: 1px solid var(--color-border-dark);
-}
-.stat { text-align: center; }
-.stat__num { font-family: var(--font-display); font-size: var(--fs-2xl); color: var(--color-gold-light); display: block; }
-.stat__label { font-size: var(--fs-sm); color: var(--color-text-on-dark-muted); }
-
-.faq-list { max-width: 780px; margin: var(--space-2xl) auto 0; display: grid; gap: var(--space-sm); }
-.faq-item {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background: var(--color-ivory-soft);
-  overflow: hidden;
-}
-.faq-item__question {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-sm);
-  padding: var(--space-md) var(--space-lg);
-  background: transparent;
-  border: none;
-  text-align: left;
-  font-weight: 600;
-  font-size: var(--fs-md);
-  color: var(--color-text);
-}
-.faq-item__icon {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  border: 1px solid var(--color-gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  transition: transform var(--transition-base);
-  color: var(--color-copper-dark);
-}
-.faq-item.is-open .faq-item__icon { transform: rotate(45deg); }
-
-.faq-item__answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height var(--transition-base), padding var(--transition-base);
-  padding-inline: var(--space-lg);
-}
-.faq-item.is-open .faq-item__answer { padding-bottom: var(--space-md); }
-.faq-item__answer p { font-size: var(--fs-sm); color: var(--color-text-muted); line-height: var(--lh-relaxed); }
-
-.final-cta {
-  position: relative;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  background: linear-gradient(120deg, var(--color-maroon), var(--color-brown-950));
-  padding: var(--space-2xl) var(--space-2xl);
-  box-shadow: var(--shadow-lifted);
-}
-.final-cta__media {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  opacity: 0.9;
-}
-.final-cta__media img { width: 100%; height: 100%; object-fit: cover; }
-.final-cta__media::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, var(--color-brown-950) 15%, rgba(26,16,12,0.55) 55%, transparent 100%);
-}
-.final-cta__content { position: relative; z-index: 1; }
-.final-cta__title { color: var(--color-ivory); font-size: var(--fs-2xl); margin-bottom: var(--space-sm); }
-.final-cta__desc { color: var(--color-text-on-dark-muted); margin-bottom: var(--space-lg); max-width: 480px; }
-
-.site-footer {
-  background: var(--color-brown-950);
-  color: var(--color-text-on-dark-muted);
-  padding-top: var(--space-2xl);
-}
-.footer-grid {
-  padding-bottom: var(--space-xl);
-  border-bottom: 1px solid var(--color-border-dark);
-}
-.footer-brand__desc { font-size: var(--fs-sm); line-height: var(--lh-relaxed); margin-top: var(--space-sm); max-width: 320px; }
-.footer-col__title { font-family: var(--font-display); color: var(--color-gold-light); font-size: var(--fs-md); margin-bottom: var(--space-sm); }
-.footer-col__list { display: grid; gap: 0.6rem; }
-.footer-col__list a { font-size: var(--fs-sm); transition: color var(--transition-fast); }
-.footer-col__list a:hover { color: var(--color-gold-light); }
-.footer-contact-item { display: flex; gap: 0.5rem; align-items: flex-start; font-size: var(--fs-sm); margin-bottom: 0.6rem; }
-.footer-contact-item svg { width: 18px; height: 18px; color: var(--color-gold); flex-shrink: 0; margin-top: 2px; }
-
-.footer-social { display: flex; gap: var(--space-sm); margin-top: var(--space-md); }
-.footer-social a {
-  width: 38px; height: 38px;
-  border-radius: 50%;
-  border: 1px solid var(--color-border-dark);
-  display: flex; align-items: center; justify-content: center;
-  transition: background var(--transition-fast), border-color var(--transition-fast);
-}
-.footer-social a:hover { background: rgba(201,163,78,0.1); border-color: var(--color-gold); }
-.footer-social svg { width: 17px; height: 17px; }
-
-.footer-bottom {
-  padding-block: var(--space-md);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-sm);
-  font-size: var(--fs-xs);
-  flex-wrap: wrap;
-}
-.footer-bottom__links { display: flex; gap: var(--space-md); }
-
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(20, 12, 8, 0.72);
-  backdrop-filter: blur(4px);
-  z-index: var(--z-modal);
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: clamp(1rem, 4vw, 4rem) 1rem;
-  overflow-y: auto;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity var(--transition-base), visibility var(--transition-base);
-}
-.modal-overlay.is-open { opacity: 1; visibility: visible; }
-
-.order-modal {
-  background: var(--color-ivory);
-  border-radius: var(--radius-lg);
-  width: 100%;
-  max-width: 720px;
-  box-shadow: var(--shadow-lifted);
-  transform: translateY(24px) scale(0.98);
-  transition: transform var(--transition-base);
-  border: 1px solid var(--color-border);
-}
-.modal-overlay.is-open .order-modal { transform: translateY(0) scale(1); }
-
-.order-modal__header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--space-md);
-  padding: var(--space-lg) var(--space-xl) var(--space-md);
-  border-bottom: 1px solid var(--color-border);
-}
-.order-modal__title { font-family: var(--font-display); font-size: var(--fs-xl); }
-.order-modal__subtitle { font-size: var(--fs-sm); color: var(--color-text-muted); margin-top: 0.3rem; }
-.order-modal__close {
-  background: transparent;
-  border: 1px solid var(--color-border);
-  border-radius: 50%;
-  width: 38px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  transition: background var(--transition-fast);
-}
-.order-modal__close:hover { background: rgba(181, 101, 45, 0.1); }
-
-.order-form { padding: var(--space-lg) var(--space-xl) var(--space-xl); }
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); }
-.form-field { display: flex; flex-direction: column; gap: 0.4rem; }
-.form-field--full { grid-column: 1 / -1; }
-.form-field label { font-size: var(--fs-sm); font-weight: 600; color: var(--color-text); }
-.form-field label .required { color: var(--color-saffron); margin-left: 2px; }
-.form-field input,
-.form-field select,
-.form-field textarea {
-  padding: 0.8rem 1rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-ivory-soft);
-  color: var(--color-text);
-  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
-}
-.form-field input:focus,
-.form-field select:focus,
-.form-field textarea:focus {
-  border-color: var(--color-copper);
-  box-shadow: 0 0 0 3px rgba(181, 101, 45, 0.14);
-  outline: none;
-}
-.form-field textarea { resize: vertical; min-height: 80px; }
-
-.order-summary {
-  margin-top: var(--space-lg);
-  padding: var(--space-md) var(--space-lg);
-  border-radius: var(--radius-md);
-  background: rgba(201, 163, 78, 0.08);
-  border: 1px solid var(--color-border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
-}
-.order-summary__label { font-size: var(--fs-sm); color: var(--color-text-muted); }
-.order-summary__value { font-family: var(--font-display); font-size: var(--fs-lg); color: var(--color-copper-dark); }
-
-.order-form__footer { margin-top: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-sm); }
-.order-form__note { font-size: var(--fs-xs); color: var(--color-text-muted); text-align: center; }
-
-.toast {
-  position: fixed;
-  bottom: var(--space-lg);
-  left: 50%;
-  transform: translateX(-50%) translateY(20px);
-  background: var(--color-brown-950);
-  color: var(--color-ivory);
-  border: 1px solid var(--color-gold);
-  padding: 0.9rem 1.6rem;
-  border-radius: var(--radius-pill);
-  font-size: var(--fs-sm);
-  box-shadow: var(--shadow-lifted);
-  z-index: var(--z-toast);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity var(--transition-base), transform var(--transition-base), visibility var(--transition-base);
-}
-.toast.is-visible { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
-
-.skip-link {
-  position: absolute;
-  left: -999px;
-  top: auto;
-  background: var(--color-gold);
-  color: var(--color-brown-950);
-  padding: 0.75rem 1.25rem;
-  border-radius: var(--radius-sm);
-  z-index: 999;
-  font-weight: 600;
-}
-.skip-link:focus { left: var(--space-sm); top: var(--space-sm); }
-
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.9s var(--ease-premium), transform 0.9s var(--ease-premium); }
-.reveal.is-visible { opacity: 1; transform: translateY(0); }
-
-@media (min-width: 1151px) {
-  .main-nav { display: block !important; }
-}
-
-@media (max-width: 1150px) {
-  :root { --fs-hero: 3.1rem; --fs-3xl: 2.6rem; --fs-2xl: 2.1rem; }
-
-  .main-nav {
-    display: none; /* JS toggles to block */
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: rgba(26, 16, 12, 0.98);
-    backdrop-filter: blur(15px);
-    border-bottom: 1px solid var(--color-border-dark);
-    padding: var(--space-md) var(--space-lg);
-    box-shadow: var(--shadow-lifted);
-  }
-  .main-nav__list {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-  }
-  .main-nav__link {
-    display: block;
-    font-size: var(--fs-md);
-    padding-block: var(--space-sm);
-    text-align: center;
-    border-bottom: 1px solid rgba(201, 163, 78, 0.08);
-  }
-  .main-nav__link:last-child {
-    border-bottom: none;
-  }
-
-  .nav-toggle {
-    display: flex;
-    transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
-  }
-  .nav-toggle:hover {
-    background: rgba(201, 163, 78, 0.1);
-    border-color: var(--color-gold);
-  }
-  .nav-toggle:active {
-    transform: scale(0.95);
-  }
-
-  .hero__visual-frame { max-width: 340px; margin-inline: auto; }
-  .process-flow::before { display: none; }
-
-  .process-step {
-    background: rgba(36, 22, 17, 0.45);
-    border: 1px solid rgba(201, 163, 78, 0.08);
-    border-radius: var(--radius-md);
-    padding: var(--space-md);
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
-  }
-  .process-step:hover {
-    transform: translateY(-4px);
-    border-color: rgba(201, 163, 78, 0.3);
-    box-shadow: var(--shadow-gold-glow);
-    background: rgba(36, 22, 17, 0.75);
-  }
-}
-
-@media (max-width: 720px) {
-  :root { --fs-hero: 2.4rem; --fs-2xl: 1.8rem; --fs-xl: 1.6rem; --fs-lg: 1.25rem; }
-
-  .hero__trust-row { gap: var(--space-md); }
-  .form-grid { grid-template-columns: 1fr; }
-  .order-modal__header { padding: var(--space-md); }
-  .order-form { padding: var(--space-md); }
-
-  .final-cta { padding: var(--space-xl) var(--space-md); }
-
-  .btn { width: 100%; }
-  .hero__ctas .btn-group { flex-direction: column; }
-  .hero__ctas .btn-group .btn { width: 100%; }
-}
-
-@media (max-width: 480px) {
-  .container { padding-inline: 1.1rem; }
-  .hero__title { font-size: 2rem; }
-  .btn { padding: 0.85rem 1.5rem; font-size: var(--fs-sm); white-space: normal; text-align: center; }
-  .hero__ctas .btn-group { gap: var(--space-xs); }
-}
-</style>
-

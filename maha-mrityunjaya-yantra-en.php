@@ -482,7 +482,7 @@ MOBILE RESPONSIVENESS
         <div class="hero-img-wrap">
           <div class="hero-img-frame-outer hero-float">
             <div class="hero-img-card">
-              <img src="assets/images/IMG-20260725-WA0001.jpg" alt="Individually prepared pure copper Maha Mrityunjaya Yantra" loading="eager">
+              <img src="assets/images/5-inch-yantra.png" alt="Individually prepared pure copper Maha Mrityunjaya Yantra" loading="eager">
               <div class="hero-img-om" aria-hidden="true">ॐ</div>
               <div class="hero-corner tl" aria-hidden="true"></div>
               <div class="hero-corner tr" aria-hidden="true"></div>

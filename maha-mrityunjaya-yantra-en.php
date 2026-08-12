@@ -101,7 +101,8 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
     <nav class="main-nav" aria-label="Main Navigation">
       <ul class="main-nav__list">
         <li><a class="main-nav__link" href="#about">About Us</a></li>
-        <li><a class="main-nav__link" href="#mahamrityunjay">Maha Mrityunjaya Yantra</a></li>
+        <li><a class="main-nav__link" href="#mahamrityunjay">Maha Mrityunjaya</a></li>
+        <li><a class="main-nav__link" href="#kaalbhairav">Kal Bhairav</a></li>
         <li><a class="main-nav__link" href="#process">Process</a></li>
         <li><a class="main-nav__link" href="#pricing">Price</a></li>
         <li><a class="main-nav__link" href="#faq">FAQ</a></li>
@@ -121,54 +122,14 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
 <main id="main-content">
 
   <!-- ===================================================================
-       1. HERO
+       1. HERO BANNERS
        =================================================================== -->
-  <section class="hero" id="top">
-    <div class="container hero__grid">
-      <div class="hero__text">
-        <div class="hero__eyebrow-row">
-          <span class="badge badge--on-dark">Pure Copper</span>
-          <span class="badge badge--on-dark">Personal Creation</span>
-          <span class="badge badge--on-dark">Vedic Consecration</span>
-        </div>
-        <h1 class="heading-display hero__title">
-          Every Yantra, Crafted with Your <em>Name & Gotra</em>
-        </h1>
-        <p class="hero__desc">
-          At Vastu Mitra Abhishek, we do not mass-produce Yantras. Every Maha Mrityunjaya Yantra is individually prepared with your Name, Gotra, and personal Sankalp, and duly consecrated in pure copper using sacred Vedic rituals.
-        </p>
-        <div class="hero__ctas">
-          <div class="btn-group">
-            <button type="button" class="btn btn--primary" data-open-order>Order Your Yantra — ₹5,100</button>
-            <a href="#process" class="btn btn--outline-on-dark">Learn Our Process</a>
-          </div>
-        </div>
-        <div class="hero__trust-row">
-          <span class="hero__trust-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-            Personal Name & Gotra Engraving
-          </span>
-          <span class="hero__trust-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-            Premium Pure Copper Yantra
-          </span>
-          <span class="hero__trust-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-            Secure All-India Express Delivery
-          </span>
-        </div>
-      </div>
-
-      <div class="hero__visual">
-        <div class="hero__visual-frame reveal">
-          <img src="assets/images/en/english (4).png" alt="Individually prepared pure copper Maha Mrityunjaya Yantra" width="1100" height="1300" loading="eager">
-          <div class="hero__visual-caption">
-            <div>
-              <strong>Personalized Consecration</strong>
-              <span>Engraved with Name, Gotra & Sankalp</span>
-            </div>
-          </div>
-        </div>
+  <section class="hero-banner-section" id="top">
+    <div class="container">
+      <div class="hero-banner-wrapper reveal">
+        <a href="#" data-open-order data-yantra="mahamrityunjay">
+          <img src="assets/images/english-2.jpg" alt="Shree Mahamrityunjaya Yantra Banner" class="hero-banner-img" loading="eager">
+        </a>
       </div>
     </div>
   </section>
@@ -327,6 +288,20 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
           <p class="benefit-card__title">Family Harmony</p>
           <p class="benefit-card__desc">Fosters an atmosphere of unity, prosperity, and auspicious energy in your home or workplace.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       4b. KAL BHAIRAV YANTRA BANNER
+       =================================================================== -->
+  <section class="section section--dark product-section" id="kaalbhairav">
+    <div class="geo-pattern geo-pattern--dark" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-banner-wrapper reveal">
+        <a href="#" data-open-order data-yantra="kaalbhairav">
+          <img src="assets/images/english-1.jpg" alt="Shree Kalbhairav Yantra Banner" class="hero-banner-img" loading="lazy">
+        </a>
       </div>
     </div>
   </section>
@@ -619,6 +594,14 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
     <form class="order-form" id="orderForm" novalidate>
       <div class="form-grid">
         <div class="form-field form-field--full">
+          <label for="yantraSelect">Select Yantra <span class="required">*</span></label>
+          <select id="yantraSelect" name="yantra" required>
+            <option value="mahamrityunjay">Maha Mrityunjaya Yantra</option>
+            <option value="kaalbhairav">Shree Kalbhairav Yantra</option>
+          </select>
+        </div>
+
+        <div class="form-field form-field--full">
           <label for="sizeSelect">Select Yantra Size <span class="required">*</span></label>
           <select id="sizeSelect" name="size" required>
             <option value="3x3">3 × 3 Inch — ₹5,100</option>
@@ -675,7 +658,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       <div class="order-summary">
         <div>
           <span class="order-summary__label" style="display:block;">Selected Yantra</span>
-          <strong style="color:var(--color-brown-950);">Maha Mrityunjaya Yantra (Pure Copper)</strong>
+          <strong style="color:var(--color-brown-950);" id="orderSummaryLabel">Maha Mrityunjaya Yantra (Pure Copper)</strong>
         </div>
         <div style="text-align:right;">
           <span class="order-summary__label" style="display:block;">Total Payable Amount</span>
@@ -793,19 +776,32 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
   // Modal Controls
   const modalOverlay = document.getElementById("orderModal");
   const orderForm = document.getElementById("orderForm");
+  const productSelect = document.getElementById("yantraSelect");
   const sizeSelect = document.getElementById("sizeSelect");
-  const summaryLabel = document.querySelector(".order-summary div strong");
+  const summaryLabel = document.getElementById("orderSummaryLabel");
+  const modalTitle = document.getElementById("modalTitle");
+
+  const PRODUCT_LABELS = {
+    mahamrityunjay: "Maha Mrityunjaya Yantra",
+    kaalbhairav: "Shree Kalbhairav Yantra"
+  };
 
   function updateOrderSummary() {
     if (!sizeSelect || !summaryLabel) return;
+    const productKey = productSelect ? productSelect.value : 'mahamrityunjay';
     const sizeVal = sizeSelect.value;
     const sizeText = sizeVal === '5x5' ? '5 × 5 Inch' : '3 × 3 Inch';
-    summaryLabel.textContent = `Maha Mrityunjaya Yantra (${sizeText})`;
+    const productLabel = PRODUCT_LABELS[productKey] || "Maha Mrityunjaya Yantra";
+    summaryLabel.textContent = `${productLabel} (${sizeText})`;
+    if (modalTitle) {
+      modalTitle.textContent = `Order ${productLabel}`;
+    }
   }
 
-  function openOrderModal(sizeKey) {
+  function openOrderModal(productKey, sizeKey) {
     if (!modalOverlay) return;
-    if (sizeKey && sizeSelect) sizeSelect.value = sizeKey;
+    if (productSelect && productKey) productSelect.value = productKey;
+    if (sizeSelect && sizeKey) sizeSelect.value = sizeKey;
     updateOrderSummary();
     modalOverlay.classList.add("is-open");
     document.body.style.overflow = "hidden";
@@ -813,6 +809,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
     if (firstField) setTimeout(() => firstField.focus(), 250);
   }
 
+  if (productSelect) productSelect.addEventListener("change", updateOrderSummary);
   if (sizeSelect) sizeSelect.addEventListener("change", updateOrderSummary);
 
   function closeOrderModal() {
@@ -824,7 +821,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
   document.querySelectorAll("[data-open-order]").forEach((trigger) => {
     trigger.addEventListener("click", (e) => {
       e.preventDefault();
-      openOrderModal(trigger.dataset.size);
+      openOrderModal(trigger.dataset.yantra, trigger.dataset.size);
     });
   });
 
@@ -931,8 +928,10 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       }
 
       const formData = new FormData(orderForm);
+      const productKey = formData.get("yantra") || "mahamrityunjay";
+      const productName = PRODUCT_LABELS[productKey] || "Maha Mrityunjaya Yantra";
       const payload = {
-        product_name: "Maha Mrityunjaya Yantra",
+        product_name: productName,
         size: formData.get("size") || "3x3",
         customer_name: formData.get("customer_name"),
         mobile: formData.get("mobile"),
@@ -980,7 +979,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       currency: serverOrder.currency,
       order_id: serverOrder.order_id,
       name: "Vastu Mitra Abhishek",
-      description: "Maha Mrityunjaya Yantra (Pure Copper)",
+      description: payload.product_name + " (Pure Copper)",
       image: "assets/logo/logo.png",
       prefill: {
         name: payload.customer_name,
@@ -1420,6 +1419,36 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   color: var(--color-gold-light);
 }
 
+/* -------------------------------------------------------------------------
+   7. HERO BANNERS
+   ------------------------------------------------------------------------- */
+.hero-banner-section {
+  padding-top: clamp(2rem, 5vw, 4rem);
+  padding-bottom: clamp(2rem, 5vw, 4rem);
+  position: relative;
+  background: radial-gradient(120% 100% at 80% 0%, #33201740, transparent 60%), linear-gradient(180deg, var(--color-brown-950), #150C08);
+}
+.hero-banner-wrapper {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-gold-glow);
+  border: 1px solid var(--color-border-dark);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.hero-banner-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 2px var(--color-gold), 0 25px 50px rgba(74, 16, 16, 0.45);
+}
+.hero-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* -------------------------------------------------------------------------
+   7. HERO (DEPRECATED - RETAINED FOR COMPATIBILITY)
+   ------------------------------------------------------------------------- */
 .hero {
   background: radial-gradient(120% 100% at 80% 0%, #33201740, transparent 60%), linear-gradient(180deg, var(--color-brown-950), #150C08);
   color: var(--color-text-on-dark);

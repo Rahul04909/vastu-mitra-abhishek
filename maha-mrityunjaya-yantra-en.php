@@ -101,8 +101,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
     <nav class="main-nav" aria-label="Main Navigation">
       <ul class="main-nav__list">
         <li><a class="main-nav__link" href="#about">About Us</a></li>
-        <li><a class="main-nav__link" href="#mahamrityunjay">Maha Mrityunjaya</a></li>
-        <li><a class="main-nav__link" href="#kaalbhairav">Kal Bhairav</a></li>
+        <li><a class="main-nav__link" href="#mahamrityunjay">Maha Mrityunjaya Yantra</a></li>
         <li><a class="main-nav__link" href="#process">Process</a></li>
         <li><a class="main-nav__link" href="#pricing">Price</a></li>
         <li><a class="main-nav__link" href="#faq">FAQ</a></li>
@@ -122,14 +121,54 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
 <main id="main-content">
 
   <!-- ===================================================================
-       1. HERO BANNERS
+       1. HERO
        =================================================================== -->
-  <section class="hero-banner-section" id="top">
-    <div class="container">
-      <div class="hero-banner-wrapper reveal">
-        <a href="#" data-open-order data-yantra="mahamrityunjay">
-          <img src="assets/images/english-2.jpg" alt="Shree Mahamrityunjaya Yantra Banner" class="hero-banner-img" loading="eager">
-        </a>
+  <section class="hero" id="top">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <div class="hero__eyebrow-row">
+          <span class="badge badge--on-dark">Pure Copper</span>
+          <span class="badge badge--on-dark">Personal Creation</span>
+          <span class="badge badge--on-dark">Vedic Consecration</span>
+        </div>
+        <h1 class="heading-display hero__title">
+          Every Yantra, Crafted with Your <em>Name & Gotra</em>
+        </h1>
+        <p class="hero__desc">
+          At Vastu Mitra Abhishek, we do not mass-produce Yantras. Every Maha Mrityunjaya Yantra is individually prepared with your Name, Gotra, and personal Sankalp, and duly consecrated in pure copper using sacred Vedic rituals.
+        </p>
+        <div class="hero__ctas">
+          <div class="btn-group">
+            <button type="button" class="btn btn--primary" data-open-order>Order Your Yantra — ₹5,100</button>
+            <a href="#process" class="btn btn--outline-on-dark">Learn Our Process</a>
+          </div>
+        </div>
+        <div class="hero__trust-row">
+          <span class="hero__trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            Personal Name & Gotra Engraving
+          </span>
+          <span class="hero__trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            Premium Pure Copper Yantra
+          </span>
+          <span class="hero__trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            Secure All-India Express Delivery
+          </span>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__visual-frame reveal">
+          <img src="assets/images/en/english (4).png" alt="Individually prepared pure copper Maha Mrityunjaya Yantra" width="1100" height="1300" loading="eager">
+          <div class="hero__visual-caption">
+            <div>
+              <strong>Personalized Consecration</strong>
+              <span>Engraved with Name, Gotra & Sankalp</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -288,20 +327,6 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
           <p class="benefit-card__title">Family Harmony</p>
           <p class="benefit-card__desc">Fosters an atmosphere of unity, prosperity, and auspicious energy in your home or workplace.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       4b. KAL BHAIRAV YANTRA BANNER
-       =================================================================== -->
-  <section class="section section--dark product-section" id="kaalbhairav">
-    <div class="geo-pattern geo-pattern--dark" aria-hidden="true"></div>
-    <div class="container">
-      <div class="hero-banner-wrapper reveal">
-        <a href="#" data-open-order data-yantra="kaalbhairav">
-          <img src="assets/images/english-1.jpg" alt="Shree Kalbhairav Yantra Banner" class="hero-banner-img" loading="lazy">
-        </a>
       </div>
     </div>
   </section>

@@ -211,11 +211,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       </div>
 
       <div class="about__media reveal">
-        <img src="assets\images\IMG-20260725-WA0001.jpg" alt="व्यक्तिगत नाम अंकन के साथ तैयार किया जा रहा तांबे का यंत्र" width="1000" height="1000" loading="lazy">
-        <div class="about__media-badge">
-          <strong>100%</strong>
-          <span>व्यक्तिगत रूप से तैयार — कोई सामूहिक निर्माण नहीं</span>
-        </div>
+        <img src="assets/images/hindi-1.jpg" alt="श्री महामृत्युंजय यंत्र" width="1600" height="900" loading="lazy">
       </div>
     </div>
   </section>
@@ -434,7 +430,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       </div>
 
       <div class="process-media reveal">
-        <img src="assets\images\IMG-20260725-WA0006.jpg" alt="यंत्र निर्माण की व्यक्तिगत प्रक्रिया — शुद्ध तांबे पर अंकन एवं पूजन" width="1000" height="750" loading="lazy">
+        <img src="assets/images/hindi-2.jpg" alt="यंत्र निर्माण की व्यक्तिगत प्रक्रिया" width="1600" height="900" loading="lazy">
       </div>
     </div>
   </section>
@@ -1393,7 +1389,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-card);
 }
-.about__media img { width: 100%; max-height: 420px; object-fit: cover; }
+.about__media img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 .about__media-badge {
   position: absolute;
   bottom: var(--space-md);
@@ -1552,7 +1548,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-card);
 }
-.process-media img { width: 100%; max-height: 420px; object-fit: cover; }
+.process-media img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 
 /* -------------------------------------------------------------------------
    13. PRICING

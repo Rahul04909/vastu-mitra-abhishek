@@ -212,11 +212,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       </div>
 
       <div class="about__media reveal">
-        <img src="assets/images/IMG-20260725-WA0001.jpg" alt="Pure copper yantra being hand prepared with personalized details" width="1000" height="1000" loading="lazy">
-        <div class="about__media-badge">
-          <strong>100%</strong>
-          <span>Individually Hand-crafted — No Mass Production</span>
-        </div>
+        <img src="assets/images/english-2.jpg" alt="Shree Mahamrityunjaya Yantra" width="1600" height="900" loading="lazy">
       </div>
     </div>
   </section>
@@ -270,7 +266,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
     <div class="container grid-2">
       <div class="product-media reveal">
         <div class="product-media__frame">
-          <img src="assets/images/en/english (1).png" alt="Maha Mrityunjaya Yantra pure copper engraved" width="1000" height="1100" loading="lazy">
+          <img src="assets/images/english-1.jpg" alt="Shree Kalbhairav Yantra" width="1600" height="900" loading="lazy">
         </div>
       </div>
 
@@ -1541,7 +1537,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-card);
 }
-.about__media img { width: 100%; max-height: 420px; object-fit: cover; }
+.about__media img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 .about__media-badge {
   position: absolute;
   bottom: var(--space-md);
@@ -1617,7 +1613,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   overflow: hidden;
   box-shadow: var(--shadow-card);
   border: 1px solid var(--color-border-dark);
-  aspect-ratio: 4 / 4.4;
+  aspect-ratio: 16 / 9;
 }
 .product-media__frame img { width: 100%; height: 100%; object-fit: cover; }
 

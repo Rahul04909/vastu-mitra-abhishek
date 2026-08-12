@@ -705,8 +705,6 @@ em.accent{font-style:normal;background:linear-gradient(135deg,var(--gold-l) 20%,
 }
 .btn-submit-vma:hover{transform:translateY(-1px);box-shadow:0 8px 32px rgba(212,168,67,.5)}
 .order-form__note{font-size:.78rem;color:var(--text-m);text-align:center}
-@media(max-width:575px){.form-grid{grid-template-columns:1fr}.form-field--full{grid-column:1/-1}}
-
 /* Toast */
 .toast{
   position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(20px);
@@ -716,6 +714,88 @@ em.accent{font-style:normal;background:linear-gradient(135deg,var(--gold-l) 20%,
   transition:opacity .4s var(--ease),transform .4s var(--ease),visibility .4s var(--ease)
 }
 .toast.is-visible{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+
+/* ──────────────────────────────────────────────────────
+   MOBILE RESPONSIVENESS
+   ────────────────────────────────────────────────────── */
+@media(max-width:991px){
+  .hero-section{padding-top:3.5rem;padding-bottom:3rem}
+  .hero-img-wrap{padding:1rem 1rem 2.5rem}
+  .hero-img-frame-outer{width:min(320px,80vw)}
+  .hero-title{font-size:clamp(1.9rem,6vw,2.6rem)}
+  .hero-desc{font-size:.95rem;max-width:100%}
+  .hero-cta-row{flex-direction:column;align-items:stretch}
+  .hero-cta-row .btn-primary-vma,.hero-cta-row .btn-outline-vma{justify-content:center;text-align:center}
+  .hero-trust{gap:.75rem}
+  .hero-trust-item{font-size:.82rem}
+  .heading-lg{font-size:clamp(1.6rem,5vw,2.2rem)}
+  .heading-md{font-size:clamp(1.25rem,4vw,1.6rem)}
+  .section-py{padding-top:clamp(3rem,7vw,5rem);padding-bottom:clamp(3rem,7vw,5rem)}
+  .compare-card{padding:1.5rem}
+  .process-step-card{padding:1.5rem 1.25rem}
+  .pricing-card{border-radius:var(--r-lg)}
+  .final-cta-box{padding:2rem 1.5rem;border-radius:var(--r-lg)}
+  .final-cta-box::before{display:none}
+}
+@media(max-width:767px){
+  .modal-overlay{padding:0.5rem}
+  .order-modal{max-height:95vh;border-radius:var(--r-lg)}
+  .order-modal__header{padding:1.25rem 1.5rem;border-radius:var(--r-lg) var(--r-lg) 0 0}
+  .order-form{padding:1.25rem 1.5rem 1.5rem}
+  .form-grid{grid-template-columns:1fr}
+  .form-field--full{grid-column:1}
+
+  .hero-img-frame-outer{width:min(280px,85vw)}
+  .hero-pill-row{gap:.4rem}
+  .hero-title{font-size:clamp(1.75rem,7vw,2.2rem)}
+  .product-img-frame{margin-bottom:.5rem}
+  .about-img-frame{margin-bottom:1rem}
+  .attr-list{margin-top:1rem}
+  .attr-item{padding:.7rem 0;gap:.75rem}
+  .attr-icon{width:32px;height:32px}
+  .attr-icon svg{width:15px;height:15px}
+  .compare-card{padding:1.25rem}
+  .compare-list li{font-size:.88rem}
+  .trust-card{padding:1.5rem}
+  .faq-item__question{padding:1rem 1.25rem;font-size:.92rem}
+  .faq-item__answer p{padding:0 1.25rem 1rem}
+  .pricing-card.featured{border-radius:var(--r-lg)}
+  .pricing-body{padding:1.25rem}
+  .pricing-price{font-size:1.8rem}
+  .final-cta-title{font-size:1.6rem}
+  .section-py{padding-top:2.5rem;padding-bottom:2.5rem}
+  .btn-primary-vma,.btn-outline-vma,.btn-gold-vma,.btn-light-vma{padding:.8rem 1.5rem;font-size:.9rem}
+  .om-divider{margin:1.75rem 0}
+  .process-num{width:48px;height:48px;font-size:1.2rem}
+}
+@media(max-width:480px){
+  .order-modal__header{padding:1rem 1.25rem}
+  .order-form{padding:1rem 1.25rem 1.25rem}
+  .form-grid{gap:0.75rem}
+  .form-field input, .form-field select, .form-field textarea{padding:0.7rem 0.85rem}
+  .order-summary{padding:0.85rem 1rem;gap:0.5rem}
+
+  .hero-section{padding-top:2.5rem;padding-bottom:2rem}
+  .hero-img-frame-outer{width:min(260px,88vw)}
+  .hero-title{font-size:clamp(1.6rem,8vw,2rem)}
+  .hero-cta-row{gap:.75rem}
+  .pill-badge{font-size:.72rem;padding:.28rem .8rem}
+  .hero-trust{flex-direction:column;gap:.5rem}
+  .hero-trust-item{font-size:.8rem}
+  .heading-lg{font-size:clamp(1.45rem,6vw,1.85rem)}
+  .eyebrow-vma{font-size:.72rem}
+  .compare-card{padding:1rem}
+  .trust-card{padding:1.25rem}
+  .trust-icon{width:44px;height:44px}
+  .trust-icon svg{width:20px;height:20px}
+  .process-step-card{padding:1.25rem 1rem}
+  .pricing-media img{max-height:140px}
+  .hero-img-badge{min-width:180px;padding:.5rem 1rem}
+  .hero-img-badge strong{font-size:.82rem}
+  .hero-img-badge span{font-size:.72rem}
+  .footer-bottom{flex-direction:column;text-align:center;gap:.75rem}
+  .footer-bottom-links{justify-content:center}
+}
 </style>
 </head>
 <body>
@@ -1251,9 +1331,19 @@ em.accent{font-style:normal;background:linear-gradient(135deg,var(--gold-l) 20%,
 <script src="assets/js/main.js"></script>
 
 <script>
-/* Page-specific JS — Nav + Reveal + FAQ */
+/* Page-specific JS — Nav + Reveal + FAQ + Order Form & Razorpay */
 (function(){
   'use strict';
+
+  // Config
+  var SIZE_CONFIG = {
+    '3x3': { label: '3 × 3 इंच', price: 1100, priceText: '₹1,100' },
+    '5x5': { label: '5 × 5 इंच', price: 2100, priceText: '₹2,100' }
+  };
+  var PRODUCT_CONFIG = {
+    'mahamrityunjay': { label: 'महामृत्युंजय यंत्र' },
+    'kaalbhairav': { label: 'काल भैरव यंत्र' }
+  };
 
   // Year
   var yr = document.getElementById('currentYear');
@@ -1310,6 +1400,250 @@ em.accent{font-style:normal;background:linear-gradient(135deg,var(--gold-l) 20%,
       btn.setAttribute('aria-expanded', String(!open));
     });
   });
+
+  // Modal Controls
+  var modalOverlay = document.getElementById("orderModal");
+  var orderForm = document.getElementById("orderForm");
+  var yantraSelect = document.getElementById("yantraSelect");
+  var sizeSelect = document.getElementById("sizeSelect");
+  var summaryLabel = document.getElementById("orderSummaryLabel");
+  var summaryValue = document.getElementById("orderSummaryValue");
+
+  function updateOrderSummary() {
+    if (!yantraSelect || !sizeSelect || !summaryLabel || !summaryValue) return;
+    var product = PRODUCT_CONFIG[yantraSelect.value];
+    var size = SIZE_CONFIG[sizeSelect.value];
+    if (product && size) {
+      summaryLabel.textContent = product.label + ' (' + size.label + ')';
+      summaryValue.textContent = size.priceText;
+    } else {
+      summaryLabel.textContent = 'कृपया यंत्र और साइज़ चुनें';
+      summaryValue.textContent = '—';
+    }
+  }
+
+  function openOrderModal(sizeKey, yantraKey) {
+    if (!modalOverlay) return;
+    if (yantraKey && yantraSelect) yantraSelect.value = yantraKey;
+    if (sizeKey && sizeSelect) sizeSelect.value = sizeKey;
+    updateOrderSummary();
+    modalOverlay.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+    var firstField = orderForm.querySelector("input, select");
+    if (firstField) setTimeout(function() { firstField.focus(); }, 250);
+  }
+
+  function closeOrderModal() {
+    if (!modalOverlay) return;
+    modalOverlay.classList.remove("is-open");
+    document.body.style.overflow = "";
+  }
+
+  if (yantraSelect) yantraSelect.addEventListener("change", updateOrderSummary);
+  if (sizeSelect) sizeSelect.addEventListener("change", updateOrderSummary);
+
+  document.querySelectorAll("[data-open-order]").forEach(function(trigger) {
+    trigger.addEventListener("click", function(e) {
+      e.preventDefault();
+      openOrderModal(trigger.dataset.size, trigger.dataset.yantra);
+    });
+  });
+
+  document.querySelectorAll("[data-close-order]").forEach(function(btn) {
+    btn.addEventListener("click", closeOrderModal);
+  });
+
+  if (modalOverlay) {
+    modalOverlay.addEventListener("click", function(e) {
+      if (e.target === modalOverlay) closeOrderModal();
+    });
+  }
+
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape" && modalOverlay && modalOverlay.classList.contains("is-open")) {
+      closeOrderModal();
+    }
+  });
+
+  // Toast Function
+  function showToast(message) {
+    var toast = document.getElementById("toast");
+    if (!toast) return;
+    toast.textContent = message;
+    toast.classList.add("is-visible");
+    setTimeout(function() {
+      toast.classList.remove("is-visible");
+    }, 4000);
+  }
+
+  // Field Errors
+  function showFieldError(field, message) {
+    field.setAttribute("aria-invalid", "true");
+    field.style.borderColor = "#E57373";
+    var hint = field.parentElement.querySelector(".field-error");
+    if (!hint) {
+      hint = document.createElement("span");
+      hint.className = "field-error";
+      hint.style.cssText = "color:#E57373;font-size:.78rem;margin-top:.2rem";
+      field.parentElement.appendChild(hint);
+    }
+    hint.textContent = message;
+  }
+
+  function clearFieldError(field) {
+    field.removeAttribute("aria-invalid");
+    field.style.borderColor = "";
+    var hint = field.parentElement.querySelector(".field-error");
+    if (hint) hint.remove();
+  }
+
+  function validateOrderForm(form) {
+    var isValid = true;
+    form.querySelectorAll("[required]").forEach(function(field) {
+      clearFieldError(field);
+      if (!field.value || !field.value.trim()) {
+        showFieldError(field, "यह फ़ील्ड आवश्यक है");
+        isValid = false;
+        return;
+      }
+      if (field.type === "tel") {
+        var digits = field.value.replace(/\D/g, "");
+        if (digits.length < 10) {
+          showFieldError(field, "कृपया 10 अंकों का मान्य मोबाइल नंबर दर्ज करें");
+          isValid = false;
+        }
+      }
+      if (field.type === "email" && field.value) {
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) {
+          showFieldError(field, "कृपया मान्य ईमेल पता दर्ज करें");
+          isValid = false;
+        }
+      }
+      if (field.id === "pincode" && field.value) {
+        if (!/^\d{6}$/.test(field.value.trim())) {
+          showFieldError(field, "कृपया 6 अंकों का मान्य पिनकोड दर्ज करें");
+          isValid = false;
+        }
+      }
+    });
+    return isValid;
+  }
+
+  // Submit Order Form & Razorpay Integration
+  if (orderForm) {
+    orderForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!validateOrderForm(orderForm)) {
+        showToast("कृपया सभी आवश्यक फ़ील्ड सही-सही भरें।");
+        return;
+      }
+
+      var submitBtn = orderForm.querySelector('[type="submit"]');
+      var originalText = submitBtn ? submitBtn.textContent : "";
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "ऑर्डर संसाधित किया जा रहा है...";
+      }
+
+      var formData = new FormData(orderForm);
+      var payload = {
+        yantra: formData.get("yantra"),
+        size: formData.get("size") || "3x3",
+        customer_name: formData.get("customerName"),
+        mobile: formData.get("mobile"),
+        email: formData.get("email"),
+        gotra: formData.get("gotra"),
+        sankalp: formData.get("sankalp"),
+        address: formData.get("address"),
+        city: formData.get("city"),
+        state: formData.get("state"),
+        pincode: formData.get("pincode"),
+      };
+
+      fetch('api/create_yantra_order.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(function(r) { return r.json(); })
+      .then(function(res) {
+        if (res.status === 'success') {
+          launchRazorpay(payload, res, submitBtn, originalText);
+        } else {
+          showToast(res.message || "ऑर्डर बनाने में असमर्थ। कृपया पुनः प्रयास करें।");
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+        }
+      })
+      .catch(function(err) {
+        console.error(err);
+        showToast("नेटवर्क त्रुटि। कृपया पुनः प्रयास करें।");
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+      });
+    });
+  }
+
+  function launchRazorpay(payload, serverOrder, submitBtn, originalText) {
+    if (typeof Razorpay === "undefined") {
+      showToast("Razorpay SDK लोड नहीं हो सका। कृपया पृष्ठ रिफ्रेश करें।");
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+      return;
+    }
+
+    var options = {
+      key: serverOrder.key_id,
+      amount: serverOrder.amount,
+      currency: serverOrder.currency,
+      order_id: serverOrder.order_id,
+      name: "Vastu Mitra Abhishek",
+      description: serverOrder.yantra_label + " (" + serverOrder.size_label + ")",
+      image: "assets/logo/logo.png",
+      prefill: {
+        name: payload.customer_name,
+        email: payload.email,
+        contact: payload.mobile,
+      },
+      theme: { color: "#D4A843" },
+      handler: function (response) {
+        fetch('api/verify_yantra_payment.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            razorpay_order_id: response.razorpay_order_id,
+            razorpay_payment_id: response.razorpay_payment_id,
+            razorpay_signature: response.razorpay_signature,
+          }),
+        })
+        .then(function(r) { return r.json(); })
+        .then(function(vData) {
+          if (vData.status === 'success' || vData.status === 'info') {
+            closeOrderModal();
+            document.getElementById('confirmRefId').textContent = 'ऑर्डर ID: YT-' + serverOrder.order_db_id;
+            document.getElementById('thankyouModal').classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+            orderForm.reset();
+          } else {
+            showToast(vData.message || 'भुगतान सत्यापन विफल रहा। कृपया सपोर्ट से संपर्क करें।');
+          }
+        })
+        .catch(function(err) {
+          console.error(err);
+          showToast('भुगतान सत्यापन त्रुटि। भुगतान ID: ' + response.razorpay_payment_id);
+        })
+        .finally(function() {
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+        });
+      },
+      modal: {
+        ondismiss: function () {
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+        },
+      },
+    };
+
+    var rzp = new Razorpay(options);
+    rzp.open();
+  }
+
 })();
 </script>
 

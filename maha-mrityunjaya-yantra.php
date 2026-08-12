@@ -1439,7 +1439,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   overflow: hidden;
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-card);
-  align-self: center;
+  max-width: 800px;
+  margin-inline: auto;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .about__media:hover {
@@ -1585,17 +1586,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   position: relative;
   z-index: 1;
   text-align: center;
-  background: rgba(36, 22, 17, 0.45);
-  border: 1px solid rgba(201, 163, 78, 0.08);
-  border-radius: var(--radius-md);
-  padding: var(--space-md);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
-}
-.process-step:hover {
-  transform: translateY(-4px);
-  border-color: rgba(201, 163, 78, 0.3);
-  box-shadow: var(--shadow-gold-glow);
-  background: rgba(36, 22, 17, 0.75);
 }
 .process-step__num {
   width: 54px;
@@ -1611,6 +1601,12 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   margin: 0 auto var(--space-sm);
   box-shadow: 0 8px 20px rgba(201, 163, 78, 0.35);
   border: 2px solid var(--color-brown-950);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+}
+.process-step:hover .process-step__num {
+  transform: scale(1.12);
+  box-shadow: var(--shadow-gold-glow);
+  border-color: var(--color-gold-light);
 }
 .process-step__title { font-weight: 600; margin-bottom: 0.35rem; }
 .process-step__desc { font-size: var(--fs-sm); color: var(--color-text-muted); }
@@ -2010,6 +2006,19 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 
   .final-cta { grid-template-columns: 1fr; text-align: left; }
+  .process-step {
+    background: rgba(36, 22, 17, 0.45);
+    border: 1px solid rgba(201, 163, 78, 0.08);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+  }
+  .process-step:hover {
+    transform: translateY(-4px);
+    border-color: rgba(201, 163, 78, 0.3);
+    box-shadow: var(--shadow-gold-glow);
+    background: rgba(36, 22, 17, 0.75);
+  }
 }
 
 @media (max-width: 720px) {

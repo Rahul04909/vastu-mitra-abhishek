@@ -27,6 +27,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 <!-- Stylesheet -->
 <link rel="stylesheet" href="assets/css/style.css">
 
@@ -123,48 +126,50 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
        1. HERO
        =================================================================== -->
   <section class="hero" id="top">
-    <div class="container hero__grid">
-      <div class="hero__text">
-        <div class="hero__eyebrow-row">
-          <span class="badge badge--on-dark">शुद्ध तांबा</span>
-          <span class="badge badge--on-dark">व्यक्तिगत निर्माण</span>
-          <span class="badge badge--on-dark">विधिवत अभिमंत्रण</span>
-        </div>
-        <h1 class="heading-display hero__title">
-          हर यंत्र, आपके <em>नाम और गोत्र</em> के साथ<br>विशेष रूप से तैयार
-        </h1>
-        <p class="hero__desc">
-          वास्तु मित्र अभिषेक पर हम बड़ी संख्या में यंत्र नहीं बनाते। प्रत्येक महामृत्युंजय अथवा काल भैरव यंत्र आपके नाम, गोत्र और व्यक्तिगत संकल्प के साथ अलग से तैयार किया जाता है, और शुद्ध तांबे में विधिवत वैदिक विधि से अभिमंत्रित किया जाता है।
-        </p>
-        <div class="hero__ctas">
-          <div class="btn-group">
-            <button type="button" class="btn btn--primary" data-open-order>अपना यंत्र चुनें</button>
-            <a href="#process" class="btn btn--outline-on-dark">निर्माण प्रक्रिया जानें</a>
+    <div class="container">
+      <div class="row align-items-center hero__grid">
+        <div class="col-lg-6 hero__text mb-5 mb-lg-0">
+          <div class="hero__eyebrow-row">
+            <span class="badge badge--on-dark">शुद्ध तांबा</span>
+            <span class="badge badge--on-dark">व्यक्तिगत निर्माण</span>
+            <span class="badge badge--on-dark">विधिवत अभिमंत्रण</span>
+          </div>
+          <h1 class="heading-display hero__title">
+            हर यंत्र, आपके <em>नाम और गोत्र</em> के साथ<br>विशेष रूप से तैयार
+          </h1>
+          <p class="hero__desc">
+            वास्तु मित्र अभिषेक पर हम बड़ी संख्या में यंत्र नहीं बनाते। प्रत्येक महामृत्युंजय अथवा काल भैरव यंत्र आपके नाम, गोत्र और व्यक्तिगत संकल्प के साथ अलग से तैयार किया जाता है, और शुद्ध तांबे में विधिवत वैदिक विधि से अभिमंत्रित किया जाता है।
+          </p>
+          <div class="hero__ctas">
+            <div class="btn-group">
+              <button type="button" class="btn btn--primary" data-open-order>अपना यंत्र चुनें</button>
+              <a href="#process" class="btn btn--outline-on-dark">निर्माण प्रक्रिया जानें</a>
+            </div>
+          </div>
+          <div class="hero__trust-row">
+            <span class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              व्यक्तिगत नाम एवं गोत्र अंकन
+            </span>
+            <span class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              प्रीमियम शुद्ध तांबा यंत्र
+            </span>
+            <span class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              सुरक्षित पैकेजिंग में प्रेषण
+            </span>
           </div>
         </div>
-        <div class="hero__trust-row">
-          <span class="hero__trust-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-            व्यक्तिगत नाम एवं गोत्र अंकन
-          </span>
-          <span class="hero__trust-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-            प्रीमियम शुद्ध तांबा यंत्र
-          </span>
-          <span class="hero__trust-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-            सुरक्षित पैकेजिंग में प्रेषण
-          </span>
-        </div>
-      </div>
 
-      <div class="hero__visual">
-        <div class="hero__visual-frame reveal">
-          <img src="assets\images\IMG-20260725-WA0007.jpg" alt="व्यक्तिगत रूप से तैयार शुद्ध तांबे का महामृत्युंजय यंत्र, दीपक की रोशनी में" width="1100" height="1300" loading="eager">
-          <div class="hero__visual-caption">
-            <div>
-              <strong>व्यक्तिगत रूप से तैयार</strong>
-              <span>आपके नाम, गोत्र व संकल्प सहित</span>
+        <div class="col-lg-6 hero__visual d-flex justify-content-center justify-content-lg-end">
+          <div class="hero__visual-frame reveal">
+            <img src="assets\images\IMG-20260725-WA0007.jpg" alt="व्यक्तिगत रूप से तैयार शुद्ध तांबे का महामृत्युंजय यंत्र, दीपक की रोशनी में" width="1100" height="1300" loading="eager">
+            <div class="hero__visual-caption">
+              <div>
+                <strong>व्यक्तिगत रूप से तैयार</strong>
+                <span>आपके नाम, गोत्र व संकल्प सहित</span>
+              </div>
             </div>
           </div>
         </div>
@@ -178,40 +183,57 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
   <section class="section" id="about">
     <div class="geo-pattern" aria-hidden="true"></div>
     <div class="container">
-      <div class="section-head section-head--center" style="text-align:center;margin-inline:auto">
-        <span class="eyebrow" style="justify-content:center">हमारे बारे में</span>
-        <h2 class="heading-display section-heading section-heading--center">वास्तु मित्र अभिषेक — एक व्यक्तिगत आध्यात्मिक सेवा</h2>
-        <p class="section-subtext section-subtext--center">
-          वास्तु मित्र अभिषेक की स्थापना इस विश्वास के साथ हुई कि यंत्र केवल एक धातु की आकृति नहीं, बल्कि श्रद्धा और संकल्प का माध्यम है। इसीलिए हम प्रत्येक यंत्र को अलग से, आपके नाम, गोत्र और व्यक्तिगत प्रार्थना को ध्यान में रखते हुए तैयार करते हैं — न कि एक जैसी वस्तुओं की भाँति बड़ी संख्या में।
-        </p>
-      </div>
+      <div class="row align-items-center">
+        <!-- Left Column: Content & Benefits -->
+        <div class="col-lg-7 mb-5 mb-lg-0">
+          <div class="section-head mb-4">
+            <span class="eyebrow">हमारे बारे में</span>
+            <h2 class="heading-display section-heading">वास्तु मित्र अभिषेक — एक व्यक्तिगत आध्यात्मिक सेवा</h2>
+            <p class="section-subtext">
+              वास्तु मित्र अभिषेक की स्थापना इस विश्वास के साथ हुई कि यंत्र केवल एक धातु की आकृति नहीं, बल्कि श्रद्धा और संकल्प का माध्यम है। इसीलिए हम प्रत्येक यंत्र को अलग से, आपके नाम, गोत्र और व्यक्तिगत प्रार्थना को ध्यान में रखते हुए तैयार करते हैं — न कि एक जैसी वस्तुओं की भाँति बड़ी संख्या में।
+            </p>
+          </div>
 
-      <div class="about__cards">
-        <div class="about__card reveal">
-          <span class="icon-tile" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4"/></svg>
-          </span>
-          <p class="about__card-title">व्यक्तिगत नाम एवं गोत्र</p>
-          <p class="about__card-desc">प्रत्येक यंत्र पर आपका नाम व गोत्र सम्मिलित किया जाता है, ताकि संकल्प पूर्णतः आपके लिए हो।</p>
+          <div class="about__benefit-list mt-4">
+            <!-- Benefit 1 -->
+            <div class="about__benefit-item d-flex gap-3 mb-4 reveal">
+              <span class="icon-tile icon-tile--outline" aria-hidden="true" style="margin-bottom: 0; flex-shrink: 0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4"/></svg>
+              </span>
+              <div>
+                <h3 class="about__benefit-title font-weight-bold" style="font-size: 1.15rem; margin-bottom: 0.25rem;">व्यक्तिगत नाम एवं गोत्र</h3>
+                <p class="about__benefit-desc text-muted" style="font-size: 0.95rem;">प्रत्येक यंत्र पर आपका नाम व गोत्र सम्मिलित किया जाता है, ताकि संकल्प पूर्णतः आपके लिए हो।</p>
+              </div>
+            </div>
+            <!-- Benefit 2 -->
+            <div class="about__benefit-item d-flex gap-3 mb-4 reveal">
+              <span class="icon-tile icon-tile--outline" aria-hidden="true" style="margin-bottom: 0; flex-shrink: 0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
+              </span>
+              <div>
+                <h3 class="about__benefit-title font-weight-bold" style="font-size: 1.15rem; margin-bottom: 0.25rem;">व्यक्तिगत संकल्प</h3>
+                <p class="about__benefit-desc text-muted" style="font-size: 0.95rem;">आपकी जानकारी के अनुसार विधिवत संकल्प लेकर ही यंत्र की तैयारी प्रारंभ की जाती है।</p>
+              </div>
+            </div>
+            <!-- Benefit 3 -->
+            <div class="about__benefit-item d-flex gap-3 reveal">
+              <span class="icon-tile icon-tile--outline" aria-hidden="true" style="margin-bottom: 0; flex-shrink: 0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              </span>
+              <div>
+                <h3 class="about__benefit-title font-weight-bold" style="font-size: 1.15rem; margin-bottom: 0.25rem;">विधिवत वैदिक अभिमंत्रण</h3>
+                <p class="about__benefit-desc text-muted" style="font-size: 0.95rem;">यंत्र को उचित मंत्रोच्चारण एवं पारंपरिक विधि के अनुसार अभिमंत्रित किया जाता है।</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="about__card reveal">
-          <span class="icon-tile" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
-          </span>
-          <p class="about__card-title">व्यक्तिगत संकल्प</p>
-          <p class="about__card-desc">आपकी जानकारी के अनुसार विधिवत संकल्प लेकर ही यंत्र की तैयारी प्रारंभ की जाती है।</p>
-        </div>
-        <div class="about__card reveal">
-          <span class="icon-tile" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          </span>
-          <p class="about__card-title">विधिवत वैदिक अभिमंत्रण</p>
-          <p class="about__card-desc">यंत्र को उचित मंत्रोच्चारण एवं पारंपरिक विधि के अनुसार अभिमंत्रित किया जाता है।</p>
-        </div>
-      </div>
 
-      <div class="about__media reveal">
-        <img src="assets/images/hindi-1.jpg" alt="श्री महामृत्युंजय यंत्र" width="1600" height="900" loading="lazy">
+        <!-- Right Column: Banner Media -->
+        <div class="col-lg-5">
+          <div class="about__media reveal" style="margin-top: 0; max-width: 100%;">
+            <img src="assets/images/hindi-1.jpg" alt="श्री महामृत्युंजय यंत्र" width="1600" height="900" loading="lazy">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -229,8 +251,8 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         </p>
       </div>
 
-      <div class="compare">
-        <div class="compare__col compare__col--standard reveal">
+      <div class="row g-4 compare">
+        <div class="col-lg-6 compare__col compare__col--standard reveal">
           <h3 class="compare__title">सामान्य बाज़ार यंत्र</h3>
           <ul class="compare__list">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg> सामान्यतः एक जैसे यंत्र बड़ी संख्या में तैयार किए जाते हैं</li>
@@ -240,7 +262,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
           </ul>
         </div>
 
-        <div class="compare__col compare__col--personal reveal">
+        <div class="col-lg-6 compare__col compare__col--personal reveal">
           <h3 class="compare__title">वास्तु मित्र अभिषेक — व्यक्तिगत सेवा</h3>
           <ul class="compare__list">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> आपके नाम व गोत्र सहित व्यक्तिगत संकल्प के साथ निर्माण</li>
@@ -262,65 +284,75 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
        =================================================================== -->
   <section class="section product-section" id="mahamrityunjay">
     <div class="geo-pattern" aria-hidden="true"></div>
-    <div class="container grid-2">
-      <div class="product-media reveal">
-        <div class="product-media__frame">
-          <img src="assets\images\IMG-20260725-WA0007.jpg" alt="महामृत्युंजय यंत्र — शुद्ध तांबे में व्यक्तिगत रूप से तैयार, नीली आभा के साथ" width="1000" height="1100" loading="lazy">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 product-media reveal">
+          <div class="product-media__frame">
+            <img src="assets\images\IMG-20260725-WA0007.jpg" alt="महामृत्युंजय यंत्र — शुद्ध तांबे में व्यक्तिगत रूप से तैयार, नीली आभा के साथ" width="1000" height="1100" loading="lazy">
+          </div>
         </div>
-      </div>
 
-      <div class="product-content reveal">
-        <span class="eyebrow">प्रथम यंत्र</span>
-        <h2 class="heading-display product-content__title deity-accent--healing">महामृत्युंजय यंत्र</h2>
-        <p class="product-content__desc">
-          महामृत्युंजय यंत्र का संबंध भगवान त्र्यंबकेश्वर से माना जाता है। पारंपरिक मान्यता के अनुसार, इस यंत्र की स्थापना स्वास्थ्य, दीर्घायु एवं आंतरिक शक्ति की प्रार्थना के भाव से जुड़ी है। हम प्रत्येक महामृत्युंजय यंत्र को आपके नाम, गोत्र और संकल्प के साथ अलग से तैयार करते हैं।
-        </p>
+        <div class="col-lg-6 product-content reveal">
+          <span class="eyebrow">प्रथम यंत्र</span>
+          <h2 class="heading-display product-content__title deity-accent--healing">महामृत्युंजय यंत्र</h2>
+          <p class="product-content__desc">
+            महामृत्युंजय यंत्र का संबंध भगवान त्र्यंबकेश्वर से माना जाता है। पारंपरिक मान्यता के अनुसार, इस यंत्र की स्थापना स्वास्थ्य, दीर्घायु एवं आंतरिक शक्ति की प्रार्थना के भाव से जुड़ी है। हम प्रत्येक महामृत्युंजय यंत्र को आपके नाम, गोत्र और संकल्प के साथ अलग से तैयार करते हैं।
+          </p>
 
-        <ul class="attribute-list">
-          <li class="attribute-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg>
-            <div><p class="attribute-list__item-title">भगवान त्र्यंबकेश्वर से जुड़ाव</p><p class="attribute-list__item-desc">यंत्र की परंपरा भगवान शिव के त्र्यंबकेश्वर स्वरूप से संबद्ध मानी जाती है।</p></div>
-          </li>
-          <li class="attribute-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
-            <div><p class="attribute-list__item-title">स्वास्थ्य हेतु प्रार्थना</p><p class="attribute-list__item-desc">मान्यता है कि इस यंत्र की उपासना अच्छे स्वास्थ्य की कामना में सहायक भाव रखती है।</p></div>
-          </li>
-          <li class="attribute-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-            <div><p class="attribute-list__item-title">दीर्घायु की कामना</p><p class="attribute-list__item-desc">पारंपरिक रूप से यह यंत्र दीर्घ एवं स्वस्थ जीवन की प्रार्थना से जोड़ा जाता है।</p></div>
-          </li>
-          <li class="attribute-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5-4 8-8 11Z"/></svg>
-            <div><p class="attribute-list__item-title">आंतरिक शक्ति व पारिवारिक सुख</p><p class="attribute-list__item-desc">परिवार की सुख-समृद्धि एवं मानसिक बल हेतु श्रद्धापूर्वक उपासना की जाती है।</p></div>
-          </li>
-        </ul>
+          <ul class="attribute-list">
+            <li class="attribute-list__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg>
+              <div><p class="attribute-list__item-title">भगवान त्र्यंबकेश्वर से जुड़ाव</p><p class="attribute-list__item-desc">यंत्र की परंपरा भगवान शिव के त्र्यंबकेश्वर स्वरूप से संबद्ध मानी जाती है।</p></div>
+            </li>
+            <li class="attribute-list__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+              <div><p class="attribute-list__item-title">स्वास्थ्य हेतु प्रार्थना</p><p class="attribute-list__item-desc">मान्यता है कि इस यंत्र की उपासना अच्छे स्वास्थ्य की कामना में सहायक भाव रखती है।</p></div>
+            </li>
+            <li class="attribute-list__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              <div><p class="attribute-list__item-title">दीर्घायु की कामना</p><p class="attribute-list__item-desc">पारंपरिक रूप से यह यंत्र दीर्घ एवं स्वस्थ जीवन की प्रार्थना से जोड़ा जाता है।</p></div>
+            </li>
+            <li class="attribute-list__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5-4 8-8 11Z"/></svg>
+              <div><p class="attribute-list__item-title">आंतरिक शक्ति व पारिवारिक सुख</p><p class="attribute-list__item-desc">परिवार की सुख-समृद्धि एवं मानसिक बल हेतु श्रद्धापूर्वक उपासना की जाती है।</p></div>
+            </li>
+          </ul>
 
-        <button type="button" class="btn btn--primary" data-open-order data-yantra="mahamrityunjay">महामृत्युंजय यंत्र ऑर्डर करें</button>
+          <button type="button" class="btn btn--primary" data-open-order data-yantra="mahamrityunjay">महामृत्युंजय यंत्र ऑर्डर करें</button>
+        </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container mt-5">
       <div class="divider-motif" aria-hidden="true"><span class="divider-motif__line"></span>ॐ<span class="divider-motif__line divider-motif__line--right"></span></div>
       <div class="section-head section-head--benefits">
         <span class="eyebrow">महामृत्युंजय यंत्र के भाव</span>
         <h3 class="heading-display" style="font-size:var(--fs-xl)">श्रद्धापूर्वक उपासना से जुड़े मुख्य भाव</h3>
       </div>
-      <div class="benefits-grid benefits--light">
-        <div class="card reveal benefit-card">
-          <p class="benefit-card__title">स्वास्थ्य हेतु प्रार्थना</p>
-          <p class="benefit-card__desc">मान्यता है कि नियमित श्रद्धापूर्वक पूजन अच्छे स्वास्थ्य की कामना में सहायक भाव देता है।</p>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 benefits-grid benefits--light">
+        <div class="col">
+          <div class="card h-100 reveal benefit-card">
+            <p class="benefit-card__title">स्वास्थ्य हेतु प्रार्थना</p>
+            <p class="benefit-card__desc">मान्यता है कि नियमित श्रद्धापूर्वक पूजन अच्छे स्वास्थ्य की कामना में सहायक भाव देता है।</p>
+          </div>
         </div>
-        <div class="card reveal benefit-card">
-          <p class="benefit-card__title">दीर्घायु की कामना</p>
-          <p class="benefit-card__desc">दीर्घ एवं स्वस्थ जीवन हेतु पारंपरिक प्रार्थना का भाव इस यंत्र से जुड़ा है।</p>
+        <div class="col">
+          <div class="card h-100 reveal benefit-card">
+            <p class="benefit-card__title">दीर्घायु की कामना</p>
+            <p class="benefit-card__desc">दीर्घ एवं स्वस्थ जीवन हेतु पारंपरिक प्रार्थना का भाव इस यंत्र से जुड़ा है।</p>
+          </div>
         </div>
-        <div class="card reveal benefit-card">
-          <p class="benefit-card__title">मानसिक शांति</p>
-          <p class="benefit-card__desc">श्रद्धापूर्ण उपासना मन को शांत व स्थिर रखने में सहायक मानी जाती है।</p>
+        <div class="col">
+          <div class="card h-100 reveal benefit-card">
+            <p class="benefit-card__title">मानसिक शांति</p>
+            <p class="benefit-card__desc">श्रद्धापूर्ण उपासना मन को शांत व स्थिर रखने में सहायक मानी जाती है।</p>
+          </div>
         </div>
-        <div class="card reveal benefit-card">
-          <p class="benefit-card__title">पारिवारिक सुख-समृद्धि</p>
-          <p class="benefit-card__desc">परिवार के कल्याण एवं सामंजस्य की प्रार्थना हेतु यह यंत्र पूजनीय माना जाता है।</p>
+        <div class="col">
+          <div class="card h-100 reveal benefit-card">
+            <p class="benefit-card__title">पारिवारिक सुख-समृद्धि</p>
+            <p class="benefit-card__desc">परिवार के कल्याण एवं सामंजस्य की प्रार्थना हेतु यह यंत्र पूजनीय माना जाता है।</p>
+          </div>
         </div>
       </div>
     </div>
@@ -331,65 +363,75 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
        =================================================================== -->
   <section class="section section--dark product-section product-section--reverse" id="kaalbhairav">
     <div class="geo-pattern geo-pattern--dark" aria-hidden="true"></div>
-    <div class="container grid-2">
-      <div class="product-content reveal">
-        <span class="eyebrow eyebrow--on-dark">द्वितीय यंत्र</span>
-        <h2 class="heading-display product-content__title deity-accent--protect" style="color:var(--color-ivory)">काल भैरव यंत्र</h2>
-        <p class="product-content__desc">
-          काल भैरव यंत्र भगवान काल भैरव की उपासना से संबद्ध माना जाता है। पारंपरिक मान्यता के अनुसार यह यंत्र निर्भयता, आध्यात्मिक सुरक्षा के भाव, अनुशासन एवं जीवन की बाधाओं का सामना करने के साहस की प्रार्थना से जुड़ा है। हम इसे भी आपके नाम, गोत्र और संकल्प सहित व्यक्तिगत रूप से तैयार करते हैं।
-        </p>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-1 order-lg-1 product-content reveal">
+          <span class="eyebrow eyebrow--on-dark">द्वितीय यंत्र</span>
+          <h2 class="heading-display product-content__title deity-accent--protect" style="color:var(--color-ivory)">काल भैरव यंत्र</h2>
+          <p class="product-content__desc">
+            काल भैरव यंत्र भगवान काल भैरव की उपासना से संबद्ध माना जाता है। पारंपरिक मान्यता के अनुसार यह यंत्र निर्भयता, आध्यात्मिक सुरक्षा के भाव, अनुशासन एवं जीवन की बाधाओं का सामना करने के साहस की प्रार्थना से जुड़ा है। हम इसे भी आपके नाम, गोत्र और संकल्प सहित व्यक्तिगत रूप से तैयार करते हैं।
+          </p>
 
-        <ul class="attribute-list">
-          <li class="attribute-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg>
-            <div><p class="attribute-list__item-title">भगवान काल भैरव की कृपा</p><p class="attribute-list__item-desc">यह यंत्र भगवान शिव के काल भैरव स्वरूप की उपासना परंपरा से जुड़ा है।</p></div>
-          </li>
-          <li class="attribute-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5.5 3.4 9.7 8 10 4.6-.3 8-4.5 8-10V6l-8-4Z"/></svg>
-            <div><p class="attribute-list__item-title">निर्भयता की भावना</p><p class="attribute-list__item-desc">श्रद्धापूर्वक उपासना निर्भय व स्थिर मनोभाव रखने में सहायक मानी जाती है।</p></div>
-          </li>
-          <li class="attribute-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
-            <div><p class="attribute-list__item-title">आध्यात्मिक सुरक्षा का भाव</p><p class="attribute-list__item-desc">पारंपरिक रूप से यह यंत्र सुरक्षा व संरक्षण की श्रद्धा से जोड़ा जाता है।</p></div>
-          </li>
-          <li class="attribute-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-            <div><p class="attribute-list__item-title">अनुशासन व साहस</p><p class="attribute-list__item-desc">जीवन की बाधाओं का सामना करने हेतु आंतरिक अनुशासन व साहस की प्रार्थना।</p></div>
-          </li>
-        </ul>
+          <ul class="attribute-list">
+            <li class="attribute-list__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg>
+              <div><p class="attribute-list__item-title">भगवान काल भैरव की कृपा</p><p class="attribute-list__item-desc">यह यंत्र भगवान शिव के काल भैरव स्वरूप की उपासना परंपरा से जुड़ा है।</p></div>
+            </li>
+            <li class="attribute-list__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5.5 3.4 9.7 8 10 4.6-.3 8-4.5 8-10V6l-8-4Z"/></svg>
+              <div><p class="attribute-list__item-title">निर्भयता की भावना</p><p class="attribute-list__item-desc">श्रद्धापूर्वक उपासना निर्भय व स्थिर मनोभाव रखने में सहायक मानी जाती है।</p></div>
+            </li>
+            <li class="attribute-list__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
+              <div><p class="attribute-list__item-title">आध्यात्मिक सुरक्षा का भाव</p><p class="attribute-list__item-desc">पारंपरिक रूप से यह यंत्र सुरक्षा व संरक्षण की श्रद्धा से जोड़ा जाता है।</p></div>
+            </li>
+            <li class="attribute-list__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              <div><p class="attribute-list__item-title">अनुशासन व साहस</p><p class="attribute-list__item-desc">जीवन की बाधाओं का सामना करने हेतु आंतरिक अनुशासन व साहस की प्रार्थना।</p></div>
+            </li>
+          </ul>
 
-        <button type="button" class="btn btn--gold" data-open-order data-yantra="kaalbhairav">काल भैरव यंत्र ऑर्डर करें</button>
-      </div>
+          <button type="button" class="btn btn--gold" data-open-order data-yantra="kaalbhairav">काल भैरव यंत्र ऑर्डर करें</button>
+        </div>
 
-      <div class="product-media reveal">
-        <div class="product-media__frame">
-          <img src="assets\images\IMG-20260725-WA0004.jpg" alt="काल भैरव यंत्र — शुद्ध तांबे में व्यक्तिगत रूप से तैयार, गहरी लाल आभा के साथ" width="1000" height="1100" loading="lazy">
+        <div class="col-lg-6 order-0 order-lg-2 mb-5 mb-lg-0 product-media reveal">
+          <div class="product-media__frame">
+            <img src="assets\images\IMG-20260725-WA0004.jpg" alt="काल भैरव यंत्र — शुद्ध तांबे में व्यक्तिगत रूप से तैयार, गहरी लाल आभा के साथ" width="1000" height="1100" loading="lazy">
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container mt-5">
       <div class="divider-motif" aria-hidden="true"><span class="divider-motif__line"></span>ॐ<span class="divider-motif__line divider-motif__line--right"></span></div>
       <div class="section-head">
         <span class="eyebrow eyebrow--on-dark">काल भैरव यंत्र के भाव</span>
         <h3 class="heading-display text-on-dark" style="font-size:var(--fs-xl)">श्रद्धापूर्वक उपासना से जुड़े मुख्य भाव</h3>
       </div>
-      <div class="benefits-grid">
-        <div class="card card--dark reveal benefit-card">
-          <p class="benefit-card__title">निर्भयता की भावना</p>
-          <p class="benefit-card__desc">श्रद्धापूर्ण उपासना मन में निर्भय व स्थिर भाव उत्पन्न करने में सहायक मानी जाती है।</p>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 benefits-grid">
+        <div class="col">
+          <div class="card card--dark h-100 reveal benefit-card">
+            <p class="benefit-card__title">निर्भयता की भावना</p>
+            <p class="benefit-card__desc">श्रद्धापूर्ण उपासना मन में निर्भय व स्थिर भाव उत्पन्न करने में सहायक मानी जाती है।</p>
+          </div>
         </div>
-        <div class="card card--dark reveal benefit-card">
-          <p class="benefit-card__title">आध्यात्मिक सुरक्षा</p>
-          <p class="benefit-card__desc">परंपरागत रूप से यह यंत्र सुरक्षा व संरक्षण के भाव से जोड़ा जाता है।</p>
+        <div class="col">
+          <div class="card card--dark h-100 reveal benefit-card">
+            <p class="benefit-card__title">आध्यात्मिक सुरक्षा</p>
+            <p class="benefit-card__desc">परंपरागत रूप से यह यंत्र सुरक्षा व संरक्षण के भाव से जोड़ा जाता है।</p>
+          </div>
         </div>
-        <div class="card card--dark reveal benefit-card">
-          <p class="benefit-card__title">साहस व अनुशासन</p>
-          <p class="benefit-card__desc">जीवन की चुनौतियों का सामना करने हेतु आंतरिक साहस व अनुशासन की प्रार्थना।</p>
+        <div class="col">
+          <div class="card card--dark h-100 reveal benefit-card">
+            <p class="benefit-card__title">साहस व अनुशासन</p>
+            <p class="benefit-card__desc">जीवन की चुनौतियों का सामना करने हेतु आंतरिक साहस व अनुशासन की प्रार्थना।</p>
+          </div>
         </div>
-        <div class="card card--dark reveal benefit-card">
-          <p class="benefit-card__title">मानसिक दृढ़ता</p>
-          <p class="benefit-card__desc">श्रद्धापूर्वक उपासना मानसिक दृढ़ता एवं आत्मबल हेतु सहायक भाव मानी जाती है।</p>
+        <div class="col">
+          <div class="card card--dark h-100 reveal benefit-card">
+            <p class="benefit-card__title">मानसिक दृढ़ता</p>
+            <p class="benefit-card__desc">श्रद्धापूर्वक उपासना मानसिक दृढ़ता एवं आत्मबल हेतु सहायक भाव मानी जाती है।</p>
+          </div>
         </div>
       </div>
     </div>
@@ -406,26 +448,34 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         <p class="section-subtext section-subtext--center">हर चरण में पारदर्शिता — जानिए आपका व्यक्तिगत यंत्र किस विधि से आप तक पहुँचता है।</p>
       </div>
 
-      <div class="process-flow">
-        <div class="process-step reveal">
-          <div class="process-step__num">1</div>
-          <p class="process-step__title">विवरण प्राप्ति</p>
-          <p class="process-step__desc">आपका नाम, गोत्र, संकल्प एवं यंत्र का चयन ऑर्डर फ़ॉर्म द्वारा प्राप्त किया जाता है।</p>
+      <div class="row process-flow py-4 position-relative">
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="process-step reveal">
+            <div class="process-step__num">1</div>
+            <p class="process-step__title">विवरण प्राप्ति</p>
+            <p class="process-step__desc">आपका नाम, गोत्र, संकल्प एवं यंत्र का चयन ऑर्डर फ़ॉर्म द्वारा प्राप्त किया जाता है।</p>
+          </div>
         </div>
-        <div class="process-step reveal">
-          <div class="process-step__num">2</div>
-          <p class="process-step__title">शुद्ध तांबे का चयन</p>
-          <p class="process-step__desc">प्रीमियम गुणवत्ता का तांबा चुनकर आपके यंत्र पर नाम व गोत्र अंकित किया जाता है।</p>
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="process-step reveal">
+            <div class="process-step__num">2</div>
+            <p class="process-step__title">शुद्ध तांबे का चयन</p>
+            <p class="process-step__desc">प्रीमियम गुणवत्ता का तांबा चुनकर आपके यंत्र पर नाम व गोत्र अंकित किया जाता है।</p>
+          </div>
         </div>
-        <div class="process-step reveal">
-          <div class="process-step__num">3</div>
-          <p class="process-step__title">विधिवत पूजन एवं अभिमंत्रण</p>
-          <p class="process-step__desc">आपके संकल्प के अनुसार पारंपरिक विधि से मंत्रोच्चारण सहित अभिमंत्रण किया जाता है।</p>
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="process-step reveal">
+            <div class="process-step__num">3</div>
+            <p class="process-step__title">विधिवत पूजन एवं अभिमंत्रण</p>
+            <p class="process-step__desc">आपके संकल्प के अनुसार पारंपरिक विधि से मंत्रोच्चारण सहित अभिमंत्रण किया जाता है।</p>
+          </div>
         </div>
-        <div class="process-step reveal">
-          <div class="process-step__num">4</div>
-          <p class="process-step__title">सुरक्षित पैकेजिंग एवं प्रेषण</p>
-          <p class="process-step__desc">यंत्र को सम्मानपूर्वक सुरक्षित पैकेजिंग में आपके पते पर भेजा जाता है।</p>
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="process-step reveal">
+            <div class="process-step__num">4</div>
+            <p class="process-step__title">सुरक्षित पैकेजिंग एवं प्रेषण</p>
+            <p class="process-step__desc">यंत्र को सम्मानपूर्वक सुरक्षित पैकेजिंग में आपके पते पर भेजा जाता है।</p>
+          </div>
         </div>
       </div>
 
@@ -446,44 +496,48 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         <p class="section-subtext section-subtext--center">दोनों आकार महामृत्युंजय यंत्र एवं काल भैरव यंत्र — दोनों के लिए समान मूल्य पर उपलब्ध हैं। ऑर्डर करते समय अपना यंत्र चुनें।</p>
       </div>
 
-      <div class="pricing-grid">
-        <div class="pricing-card reveal">
-          <div class="pricing-card__media">
-            <img src="assets/images/kal-bhairav-yantra-image.png" alt="3 गुणा 3 इंच आकार का व्यक्तिगत तांबे का यंत्र" width="800" height="800" loading="lazy">
-          </div>
-          <div class="pricing-card__body">
-            <p class="pricing-card__size">3 × 3 इंच</p>
-            <div class="pricing-card__price-row">
-              <span class="pricing-card__price">₹1,100</span>
-              <span class="pricing-card__unit">/ यंत्र</span>
+      <div class="row g-4 justify-content-center pricing-grid">
+        <div class="col-md-6 col-lg-5">
+          <div class="pricing-card h-100 reveal">
+            <div class="pricing-card__media">
+              <img src="assets/images/kal-bhairav-yantra-image.png" alt="3 गुणा 3 इंच आकार का व्यक्तिगत तांबे का यंत्र" width="800" height="800" loading="lazy">
             </div>
-            <ul class="pricing-card__features">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>शुद्ध तांबा यंत्र</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>नाम एवं गोत्र अंकन</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>व्यक्तिगत संकल्प एवं अभिमंत्रण</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>सुरक्षित पैकेजिंग</li>
-            </ul>
-            <button type="button" class="btn btn--outline btn--block pricing-card__cta" data-open-order data-size="3x3">यह आकार चुनें</button>
+            <div class="pricing-card__body">
+              <p class="pricing-card__size">3 × 3 इंच</p>
+              <div class="pricing-card__price-row">
+                <span class="pricing-card__price">₹1,100</span>
+                <span class="pricing-card__unit">/ यंत्र</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>शुद्ध तांबा यंत्र</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>नाम एवं गोत्र अंकन</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>व्यक्तिगत संकल्प एवं अभिमंत्रण</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>सुरक्षित पैकेजिंग</li>
+              </ul>
+              <button type="button" class="btn btn--outline btn--block pricing-card__cta" data-open-order data-size="3x3">यह आकार चुनें</button>
+            </div>
           </div>
         </div>
 
-        <div class="pricing-card pricing-card--featured reveal">
-          <div class="pricing-card__media">
-            <img src="assets\images\Maha Mritunjay Ynatra 1.png" alt="5 गुणा 5 इंच आकार का व्यक्तिगत तांबे का यंत्र" width="800" height="800" loading="lazy">
-          </div>
-          <div class="pricing-card__body">
-            <p class="pricing-card__size">5 × 5 इंच</p>
-            <div class="pricing-card__price-row">
-              <span class="pricing-card__price">₹2,100</span>
-              <span class="pricing-card__unit">/ यंत्र</span>
+        <div class="col-md-6 col-lg-5">
+          <div class="pricing-card pricing-card--featured h-100 reveal">
+            <div class="pricing-card__media">
+              <img src="assets\images\Maha Mritunjay Ynatra 1.png" alt="5 गुणा 5 इंच आकार का व्यक्तिगत तांबे का यंत्र" width="800" height="800" loading="lazy">
             </div>
-            <ul class="pricing-card__features">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>शुद्ध तांबा यंत्र — बड़ा आकार</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>नाम एवं गोत्र अंकन</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>व्यक्तिगत संकल्प एवं अभिमंत्रण</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>प्राथमिकता पैकेजिंग</li>
-            </ul>
-            <button type="button" class="btn btn--primary btn--block pricing-card__cta" data-open-order data-size="5x5">यह आकार चुनें</button>
+            <div class="pricing-card__body">
+              <p class="pricing-card__size">5 × 5 इंच</p>
+              <div class="pricing-card__price-row">
+                <span class="pricing-card__price">₹2,100</span>
+                <span class="pricing-card__unit">/ यंत्र</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>शुद्ध तांबा यंत्र — बड़ा आकार</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>नाम एवं गोत्र अंकन</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>व्यक्तिगत संकल्प एवं अभिमंत्रण</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>प्राथमिकता पैकेजिंग</li>
+              </ul>
+              <button type="button" class="btn btn--primary btn--block pricing-card__cta" data-open-order data-size="5x5">यह आकार चुनें</button>
+            </div>
           </div>
         </div>
       </div>
@@ -502,48 +556,60 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         <h2 class="heading-display section-heading section-heading--center text-on-dark">वास्तु मित्र अभिषेक को क्यों चुनें</h2>
       </div>
 
-      <div class="trust-grid">
-        <div class="card card--dark reveal trust-card">
-          <span class="icon-tile icon-tile--outline" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg>
-          </span>
-          <p class="benefit-card__title">पूर्णतः व्यक्तिगत निर्माण</p>
-          <p class="benefit-card__desc">हर यंत्र आपके नाम, गोत्र और संकल्प के अनुसार अलग से तैयार होता है।</p>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 trust-grid">
+        <div class="col">
+          <div class="card card--dark h-100 reveal trust-card">
+            <span class="icon-tile icon-tile--outline" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <p class="benefit-card__title">पूर्णतः व्यक्तिगत निर्माण</p>
+            <p class="benefit-card__desc">हर यंत्र आपके नाम, गोत्र और संकल्प के अनुसार अलग से तैयार होता है।</p>
+          </div>
         </div>
-        <div class="card card--dark reveal trust-card">
-          <span class="icon-tile icon-tile--outline" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 12a8 8 0 0 1 16 0M4 12a8 8 0 0 0 16 0"/></svg>
-          </span>
-          <p class="benefit-card__title">प्रीमियम शुद्ध तांबा</p>
-          <p class="benefit-card__desc">केवल उच्च गुणवत्ता के तांबे का उपयोग, ताकि यंत्र दीर्घकाल तक टिकाऊ रहे।</p>
+        <div class="col">
+          <div class="card card--dark h-100 reveal trust-card">
+            <span class="icon-tile icon-tile--outline" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 12a8 8 0 0 1 16 0M4 12a8 8 0 0 0 16 0"/></svg>
+            </span>
+            <p class="benefit-card__title">प्रीमियम शुद्ध तांबा</p>
+            <p class="benefit-card__desc">केवल उच्च गुणवत्ता के तांबे का उपयोग, ताकि यंत्र दीर्घकाल तक टिकाऊ रहे।</p>
+          </div>
         </div>
-        <div class="card card--dark reveal trust-card">
-          <span class="icon-tile icon-tile--outline" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          </span>
-          <p class="benefit-card__title">विधिवत वैदिक प्रक्रिया</p>
-          <p class="benefit-card__desc">पारंपरिक मंत्रोच्चारण एवं संकल्प विधि का सम्मानपूर्वक पालन किया जाता है।</p>
+        <div class="col">
+          <div class="card card--dark h-100 reveal trust-card">
+            <span class="icon-tile icon-tile--outline" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </span>
+            <p class="benefit-card__title">विधिवत वैदिक प्रक्रिया</p>
+            <p class="benefit-card__desc">पारंपरिक मंत्रोच्चारण एवं संकल्प विधि का सम्मानपूर्वक पालन किया जाता है।</p>
+          </div>
         </div>
-        <div class="card card--dark reveal trust-card">
-          <span class="icon-tile icon-tile--outline" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-          </span>
-          <p class="benefit-card__title">पारदर्शी सेवा</p>
-          <p class="benefit-card__desc">पूरी प्रक्रिया स्पष्ट रूप से साझा — बिना किसी अतिरंजित दावे के।</p>
+        <div class="col">
+          <div class="card card--dark h-100 reveal trust-card">
+            <span class="icon-tile icon-tile--outline" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            </span>
+            <p class="benefit-card__title">पारदर्शी सेवा</p>
+            <p class="benefit-card__desc">पूरी प्रक्रिया स्पष्ट रूप से साझा — बिना किसी अतिरंजित दावे के।</p>
+          </div>
         </div>
-        <div class="card card--dark reveal trust-card">
-          <span class="icon-tile icon-tile--outline" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
-          </span>
-          <p class="benefit-card__title">सुरक्षित एवं सम्मानजनक पैकेजिंग</p>
-          <p class="benefit-card__desc">यंत्र को श्रद्धापूर्वक पैक कर सुरक्षित रूप से आपके पते पर भेजा जाता है।</p>
+        <div class="col">
+          <div class="card card--dark h-100 reveal trust-card">
+            <span class="icon-tile icon-tile--outline" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+            </span>
+            <p class="benefit-card__title">सुरक्षित एवं सम्मानजनक पैकेजिंग</p>
+            <p class="benefit-card__desc">यंत्र को श्रद्धापूर्वक पैक कर सुरक्षित रूप से आपके पते पर भेजा जाता है।</p>
+          </div>
         </div>
-        <div class="card card--dark reveal trust-card">
-          <span class="icon-tile icon-tile--outline" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </span>
-          <p class="benefit-card__title">समर्पित ग्राहक सहयोग</p>
-          <p class="benefit-card__desc">आपके प्रश्नों एवं जानकारी हेतु हमारी टीम सदैव उपलब्ध है।</p>
+        <div class="col">
+          <div class="card card--dark h-100 reveal trust-card">
+            <span class="icon-tile icon-tile--outline" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <p class="benefit-card__title">समर्पित ग्राहक सहयोग</p>
+            <p class="benefit-card__desc">आपके प्रश्नों एवं जानकारी हेतु हमारी टीम सदैव उपलब्ध है।</p>
+          </div>
         </div>
       </div>
     </div>
@@ -627,10 +693,14 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         <div class="final-cta__media" aria-hidden="true">
           <img src="assets/images/final-cta-yantra.webp" alt="" loading="lazy">
         </div>
-        <div class="final-cta__content">
-          <h2 class="heading-display final-cta__title">अपना व्यक्तिगत अभिमंत्रित यंत्र आज ही आरंभ करें</h2>
-          <p class="final-cta__desc">अपना नाम, गोत्र एवं संकल्प साझा करें — शेष प्रक्रिया श्रद्धापूर्वक हमारी टीम पर छोड़ दें।</p>
-          <button type="button" class="btn btn--gold" data-open-order>अभी ऑर्डर करें</button>
+        <div class="row align-items-center position-relative w-100 m-0" style="z-index: 1;">
+          <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0 p-0">
+            <h2 class="heading-display final-cta__title" style="margin-bottom: 0.5rem;">अपना व्यक्तिगत अभिमंत्रित यंत्र आज ही आरंभ करें</h2>
+            <p class="final-cta__desc" style="margin-bottom: 0; max-width: 100%;">अपना नाम, गोत्र एवं संकल्प साझा करें — शेष प्रक्रिया श्रद्धापूर्वक हमारी टीम पर छोड़ दें।</p>
+          </div>
+          <div class="col-lg-4 text-center text-lg-end p-0">
+            <button type="button" class="btn btn--gold" data-open-order>अभी ऑर्डर करें</button>
+          </div>
         </div>
       </div>
     </div>
@@ -643,8 +713,8 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
      ===================================================================== -->
 <footer class="site-footer" id="contact">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
+    <div class="row g-4 footer-grid justify-content-between">
+      <div class="col-lg-4 footer-brand">
         <a href="#top" class="brand" aria-label="वास्तु मित्र अभिषेक — होम">
           <img src="assets/logo/logo.png" alt="वास्तु मित्र अभिषेक" class="brand__logo">
         </a>
@@ -656,7 +726,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         </div>
       </div>
 
-      <div class="footer-col">
+      <div class="col-6 col-md-3 col-lg-2 footer-col">
         <p class="footer-col__title">शीघ्र लिंक</p>
         <ul class="footer-col__list">
           <li><a href="#about">हमारे बारे में</a></li>
@@ -666,7 +736,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         </ul>
       </div>
 
-      <div class="footer-col">
+      <div class="col-6 col-md-3 col-lg-2 footer-col">
         <p class="footer-col__title">हमारे यंत्र</p>
         <ul class="footer-col__list">
           <li><a href="#mahamrityunjay">महामृत्युंजय यंत्र</a></li>
@@ -674,7 +744,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         </ul>
       </div>
 
-      <div class="footer-col">
+      <div class="col-12 col-md-6 col-lg-3 footer-col">
         <p class="footer-col__title">संपर्क करें</p>
         <div class="footer-contact-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>
@@ -691,7 +761,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       </div>
     </div>
 
-    <div class="footer-bottom">
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 mt-5 border-top border-secondary border-opacity-25">
       <span>© <span id="currentYear">2026</span> वास्तु मित्र अभिषेक। सर्वाधिकार सुरक्षित।</span>
       <div class="footer-bottom__links">
         <a href="#">गोपनीयता नीति</a>
@@ -814,6 +884,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
      SCRIPTS
      ===================================================================== -->
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
@@ -1317,10 +1388,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 
 .hero__grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: var(--space-2xl);
-  align-items: center;
+  /* Layout handled by Bootstrap 5 row & cols */
 }
 
 .hero__eyebrow-row { display: flex; gap: var(--space-xs); flex-wrap: wrap; margin-bottom: var(--space-md); }
@@ -1413,9 +1481,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
    8. ABOUT — redesigned matching process section layout
    ------------------------------------------------------------------------- */
 .about__cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-lg);
   margin-top: var(--space-2xl);
 }
 .about__card {
@@ -1467,9 +1532,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
    9. WHY PERSONALIZED — comparison table
    ------------------------------------------------------------------------- */
 .compare {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-lg);
   margin-top: var(--space-2xl);
 }
 .compare__col {
@@ -1551,9 +1613,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
    11. BENEFITS
    ------------------------------------------------------------------------- */
 .benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: var(--space-md);
   margin-top: var(--space-xl);
 }
 .benefit-card { text-align: left; }
@@ -1566,9 +1625,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
    12. PROCESS
    ------------------------------------------------------------------------- */
 .process-flow {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-lg);
   margin-top: var(--space-2xl);
   position: relative;
 }
@@ -1632,9 +1688,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
    13. PRICING
    ------------------------------------------------------------------------- */
 .pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-lg);
   margin-top: var(--space-2xl);
   max-width: 920px;
   margin-inline: auto;
@@ -1700,17 +1753,11 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
    14. WHY CHOOSE US
    ------------------------------------------------------------------------- */
 .trust-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-lg);
   margin-top: var(--space-2xl);
 }
 .trust-card { text-align: left; }
 
 .stats-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-lg);
   margin-top: var(--space-2xl);
   padding-top: var(--space-2xl);
   border-top: 1px solid var(--color-border-dark);
@@ -1775,10 +1822,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   overflow: hidden;
   background: linear-gradient(120deg, var(--color-maroon), var(--color-brown-950));
   padding: var(--space-2xl) var(--space-2xl);
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  align-items: center;
-  gap: var(--space-xl);
   box-shadow: var(--shadow-lifted);
 }
 .final-cta__media {
@@ -1807,9 +1850,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   padding-top: var(--space-2xl);
 }
 .footer-grid {
-  display: grid;
-  grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
-  gap: var(--space-xl);
   padding-bottom: var(--space-xl);
   border-bottom: 1px solid var(--color-border-dark);
 }
@@ -1983,29 +2023,15 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 /* -------------------------------------------------------------------------
    20. RESPONSIVE
    ------------------------------------------------------------------------- */
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   :root { --fs-hero: 3.1rem; --fs-3xl: 2.6rem; --fs-2xl: 2.1rem; }
 
   .main-nav { display: none; }
   .nav-toggle { display: flex; }
 
-  .hero__grid { grid-template-columns: 1fr; }
-  .hero__visual { order: -1; }
   .hero__visual-frame { max-width: 340px; margin-inline: auto; }
-
-  .about__cards { grid-template-columns: repeat(2, 1fr); }
-  .product-section .grid-2 { grid-template-columns: 1fr; }
-  .product-section--reverse .grid-2 { direction: ltr; }
-  .product-media { order: -1; }
-
-  .compare { grid-template-columns: 1fr; }
-  .process-flow { grid-template-columns: repeat(2, 1fr); }
   .process-flow::before { display: none; }
-  .trust-grid { grid-template-columns: repeat(2, 1fr); }
-  .stats-row { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
 
-  .final-cta { grid-template-columns: 1fr; text-align: left; }
   .process-step {
     background: rgba(36, 22, 17, 0.45);
     border: 1px solid rgba(201, 163, 78, 0.08);
@@ -2025,14 +2051,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   :root { --fs-hero: 2.4rem; --fs-2xl: 1.8rem; --fs-xl: 1.6rem; --fs-lg: 1.25rem; }
 
   .hero__trust-row { gap: var(--space-md); }
-  .pricing-grid { grid-template-columns: 1fr; max-width: 380px; }
-  .process-flow { grid-template-columns: 1fr; }
-  .about__cards { grid-template-columns: 1fr; }
-  .trust-grid { grid-template-columns: 1fr; }
-  .stats-row { grid-template-columns: repeat(2, 1fr); gap: var(--space-md); }
-  .footer-grid { grid-template-columns: 1fr; gap: var(--space-lg); }
-  .footer-bottom { flex-direction: column; align-items: flex-start; }
-
   .form-grid { grid-template-columns: 1fr; }
   .order-modal__header { padding: var(--space-md); }
   .order-form { padding: var(--space-md); }

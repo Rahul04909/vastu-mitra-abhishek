@@ -27,6 +27,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 <!-- Stylesheet -->
 <link rel="stylesheet" href="assets/css/style.css">
 
@@ -124,48 +127,50 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
        1. HERO
        =================================================================== -->
   <section class="hero" id="top">
-    <div class="container hero__grid">
-      <div class="hero__text">
-        <div class="hero__eyebrow-row">
-          <span class="badge badge--on-dark">Pure Copper</span>
-          <span class="badge badge--on-dark">Personal Creation</span>
-          <span class="badge badge--on-dark">Vedic Consecration</span>
-        </div>
-        <h1 class="heading-display hero__title">
-          Every Yantra, Crafted with Your <em>Name & Gotra</em>
-        </h1>
-        <p class="hero__desc">
-          At Vastu Mitra Abhishek, we do not mass-produce Yantras. Every Maha Mrityunjaya Yantra is individually prepared with your Name, Gotra, and personal Sankalp, and duly consecrated in pure copper using sacred Vedic rituals.
-        </p>
-        <div class="hero__ctas">
-          <div class="btn-group">
-            <button type="button" class="btn btn--primary" data-open-order>Order Your Yantra — ₹5,100</button>
-            <a href="#process" class="btn btn--outline-on-dark">Learn Our Process</a>
+    <div class="container">
+      <div class="row align-items-center hero__grid">
+        <div class="col-lg-6 hero__text mb-5 mb-lg-0">
+          <div class="hero__eyebrow-row">
+            <span class="badge badge--on-dark">Pure Copper</span>
+            <span class="badge badge--on-dark">Personal Creation</span>
+            <span class="badge badge--on-dark">Vedic Consecration</span>
+          </div>
+          <h1 class="heading-display hero__title">
+            Every Yantra, Crafted with Your <em>Name & Gotra</em>
+          </h1>
+          <p class="hero__desc">
+            At Vastu Mitra Abhishek, we do not mass-produce Yantras. Every Maha Mrityunjaya Yantra is individually prepared with your Name, Gotra, and personal Sankalp, and duly consecrated in pure copper using sacred Vedic rituals.
+          </p>
+          <div class="hero__ctas">
+            <div class="btn-group">
+              <button type="button" class="btn btn--primary" data-open-order>Order Your Yantra — ₹5,100</button>
+              <a href="#process" class="btn btn--outline-on-dark">Learn Our Process</a>
+            </div>
+          </div>
+          <div class="hero__trust-row">
+            <span class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              Personal Name & Gotra Engraving
+            </span>
+            <span class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              Premium Pure Copper Yantra
+            </span>
+            <span class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              Secure All-India Express Delivery
+            </span>
           </div>
         </div>
-        <div class="hero__trust-row">
-          <span class="hero__trust-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-            Personal Name & Gotra Engraving
-          </span>
-          <span class="hero__trust-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-            Premium Pure Copper Yantra
-          </span>
-          <span class="hero__trust-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-            Secure All-India Express Delivery
-          </span>
-        </div>
-      </div>
 
-      <div class="hero__visual">
-        <div class="hero__visual-frame reveal">
-          <img src="assets/images/en/english (4).png" alt="Individually prepared pure copper Maha Mrityunjaya Yantra" width="1100" height="1300" loading="eager">
-          <div class="hero__visual-caption">
-            <div>
-              <strong>Personalized Consecration</strong>
-              <span>Engraved with Name, Gotra & Sankalp</span>
+        <div class="col-lg-6 hero__visual d-flex justify-content-center justify-content-lg-end">
+          <div class="hero__visual-frame reveal">
+            <img src="assets/images/en/english (4).png" alt="Individually prepared pure copper Maha Mrityunjaya Yantra" width="1100" height="1300" loading="eager">
+            <div class="hero__visual-caption">
+              <div>
+                <strong>Personalized Consecration</strong>
+                <span>Engraved with Name, Gotra & Sankalp</span>
+              </div>
             </div>
           </div>
         </div>
@@ -179,40 +184,57 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
   <section class="section" id="about">
     <div class="geo-pattern" aria-hidden="true"></div>
     <div class="container">
-      <div class="section-head section-head--center" style="text-align:center;margin-inline:auto">
-        <span class="eyebrow" style="justify-content:center">About Us</span>
-        <h2 class="heading-display section-heading section-heading--center">Vastu Mitra Abhishek — A Personalized Spiritual Service</h2>
-        <p class="section-subtext section-subtext--center">
-          Vastu Mitra Abhishek was founded on the belief that a Yantra is not merely a piece of metal, but a sacred medium of faith and intention. That is why we prepare each Yantra individually, keeping your specific Name, Gotra, and personal prayers in mind — rather than offering generic mass-produced items.
-        </p>
-      </div>
+      <div class="row align-items-center">
+        <!-- Left Column: Content & Benefits -->
+        <div class="col-lg-7 mb-5 mb-lg-0">
+          <div class="section-head mb-4">
+            <span class="eyebrow">About Us</span>
+            <h2 class="heading-display section-heading">Vastu Mitra Abhishek — A Personalized Spiritual Service</h2>
+            <p class="section-subtext">
+              Vastu Mitra Abhishek was founded on the belief that a Yantra is not merely a piece of metal, but a sacred medium of faith and intention. That is why we prepare each Yantra individually, keeping your specific Name, Gotra, and personal prayers in mind — rather than offering generic mass-produced items.
+            </p>
+          </div>
 
-      <div class="about__cards">
-        <div class="about__card reveal">
-          <span class="icon-tile" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4"/></svg>
-          </span>
-          <p class="about__card-title">Personal Name & Gotra</p>
-          <p class="about__card-desc">Your name and gotra are engraved into the copper Yantra so the spiritual sankalp is performed specifically for you.</p>
+          <div class="about__benefit-list mt-4">
+            <!-- Benefit 1 -->
+            <div class="about__benefit-item d-flex gap-3 mb-4 reveal">
+              <span class="icon-tile icon-tile--outline" aria-hidden="true" style="margin-bottom: 0; flex-shrink: 0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4"/></svg>
+              </span>
+              <div>
+                <h3 class="about__benefit-title font-weight-bold" style="font-size: 1.15rem; margin-bottom: 0.25rem;">Personal Name & Gotra</h3>
+                <p class="about__benefit-desc text-muted" style="font-size: 0.95rem;">Your name and gotra are engraved into the copper Yantra so the spiritual sankalp is performed specifically for you.</p>
+              </div>
+            </div>
+            <!-- Benefit 2 -->
+            <div class="about__benefit-item d-flex gap-3 mb-4 reveal">
+              <span class="icon-tile icon-tile--outline" aria-hidden="true" style="margin-bottom: 0; flex-shrink: 0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
+              </span>
+              <div>
+                <h3 class="about__benefit-title font-weight-bold" style="font-size: 1.15rem; margin-bottom: 0.25rem;">Individual Sankalp</h3>
+                <p class="about__benefit-desc text-muted" style="font-size: 0.95rem;">Preparation begins only after a formal ritual invocation with your specific family details and intention.</p>
+              </div>
+            </div>
+            <!-- Benefit 3 -->
+            <div class="about__benefit-item d-flex gap-3 reveal">
+              <span class="icon-tile icon-tile--outline" aria-hidden="true" style="margin-bottom: 0; flex-shrink: 0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              </span>
+              <div>
+                <h3 class="about__benefit-title font-weight-bold" style="font-size: 1.15rem; margin-bottom: 0.25rem;">Authentic Vedic Consecration</h3>
+                <p class="about__benefit-desc text-muted" style="font-size: 0.95rem;">The Yantra is consecrated with proper Vedic mantras and traditional ceremonial pujas for supreme divine energy.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="about__card reveal">
-          <span class="icon-tile" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
-          </span>
-          <p class="about__card-title">Individual Sankalp</p>
-          <p class="about__card-desc">Preparation begins only after a formal ritual invocation with your specific family details and intention.</p>
-        </div>
-        <div class="about__card reveal">
-          <span class="icon-tile" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          </span>
-          <p class="about__card-title">Authentic Vedic Consecration</p>
-          <p class="about__card-desc">The Yantra is consecrated with proper Vedic mantras and traditional ceremonial pujas for supreme divine energy.</p>
-        </div>
-      </div>
 
-      <div class="about__media reveal">
-        <img src="assets/images/english-2.jpg" alt="Shree Mahamrityunjaya Yantra" width="1600" height="900" loading="lazy">
+        <!-- Right Column: Banner Media -->
+        <div class="col-lg-5">
+          <div class="about__media reveal" style="margin-top: 0; max-width: 100%;">
+            <img src="assets/images/english-2.jpg" alt="Shree Mahamrityunjaya Yantra" width="1600" height="900" loading="lazy">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -230,8 +252,8 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         </p>
       </div>
 
-      <div class="compare">
-        <div class="compare__col compare__col--standard reveal">
+      <div class="row g-4 compare">
+        <div class="col-lg-6 compare__col compare__col--standard reveal">
           <h3 class="compare__title">Standard Market Yantra</h3>
           <ul class="compare__list">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg> Mass produced in bulk with identical machine prints</li>
@@ -241,7 +263,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
           </ul>
         </div>
 
-        <div class="compare__col compare__col--personal reveal">
+        <div class="col-lg-6 compare__col compare__col--personal reveal">
           <h3 class="compare__title">Vastu Mitra Abhishek — Personalized Service</h3>
           <ul class="compare__list">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Handcrafted specifically with your Name, Gotra & Sankalp</li>
@@ -263,65 +285,75 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
        =================================================================== -->
   <section class="section product-section" id="mahamrityunjay">
     <div class="geo-pattern" aria-hidden="true"></div>
-    <div class="container grid-2">
-      <div class="product-media reveal">
-        <div class="product-media__frame">
-          <img src="assets/images/english-1.jpg" alt="Shree Kalbhairav Yantra" width="1600" height="900" loading="lazy">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 product-media reveal">
+          <div class="product-media__frame">
+            <img src="assets/images/english-1.jpg" alt="Shree Kalbhairav Yantra" width="1600" height="900" loading="lazy">
+          </div>
         </div>
-      </div>
 
-      <div class="product-content reveal">
-        <span class="eyebrow">Sacred Consecrated Yantra</span>
-        <h2 class="heading-display product-content__title deity-accent--healing">Maha Mrityunjaya Yantra</h2>
-        <p class="product-content__desc">
-          The Maha Mrityunjaya Yantra is deeply associated with Lord Trimbakeshwar (Lord Shiva). According to sacred Vedic tradition, establishing this Yantra invokes divine blessings for health, protection, longevity, and spiritual strength. We prepare each Maha Mrityunjaya Yantra individually with your personal Name, Gotra, and custom Sankalp.
-        </p>
+        <div class="col-lg-6 product-content reveal">
+          <span class="eyebrow">Sacred Consecrated Yantra</span>
+          <h2 class="heading-display product-content__title deity-accent--healing">Maha Mrityunjaya Yantra</h2>
+          <p class="product-content__desc">
+            The Maha Mrityunjaya Yantra is deeply associated with Lord Trimbakeshwar (Lord Shiva). According to sacred Vedic tradition, establishing this Yantra invokes divine blessings for health, protection, longevity, and spiritual strength. We prepare each Maha Mrityunjaya Yantra individually with your personal Name, Gotra, and custom Sankalp.
+          </p>
 
-        <ul class="attribute-list">
-          <li class="attribute-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg>
-            <div><p class="attribute-list__item-title">Divine Shiva Connection</p><p class="attribute-list__item-desc">Connected with the compassionate Trimbakeshwar form of Lord Shiva.</p></div>
-          </li>
-          <li class="attribute-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
-            <div><p class="attribute-list__item-title">Health & Protection Prayers</p><p class="attribute-list__item-desc">Worshipped for physical well-being, recovery, and shielding from negativity.</p></div>
-          </li>
-          <li class="attribute-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-            <div><p class="attribute-list__item-title">Longevity & Peace</p><p class="attribute-list__item-desc">Traditionally revered for long life, inner harmony, and peace of mind.</p></div>
-          </li>
-          <li class="attribute-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5-4 8-8 11Z"/></svg>
-            <div><p class="attribute-list__item-title">Family Happiness & Resilience</p><p class="attribute-list__item-desc">Helps foster positive environment and resilience against life's obstacles.</p></div>
-          </li>
-        </ul>
+          <ul class="attribute-list">
+            <li class="attribute-list__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg>
+              <div><p class="attribute-list__item-title">Divine Shiva Connection</p><p class="attribute-list__item-desc">Connected with the compassionate Trimbakeshwar form of Lord Shiva.</p></div>
+            </li>
+            <li class="attribute-list__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+              <div><p class="attribute-list__item-title">Health & Protection Prayers</p><p class="attribute-list__item-desc">Worshipped for physical well-being, recovery, and shielding from negativity.</p></div>
+            </li>
+            <li class="attribute-list__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              <div><p class="attribute-list__item-title">Longevity & Peace</p><p class="attribute-list__item-desc">Traditionally revered for long life, inner harmony, and peace of mind.</p></div>
+            </li>
+            <li class="attribute-list__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5-4 8-8 11Z"/></svg>
+              <div><p class="attribute-list__item-title">Family Happiness & Resilience</p><p class="attribute-list__item-desc">Helps foster positive environment and resilience against life's obstacles.</p></div>
+            </li>
+          </ul>
 
-        <button type="button" class="btn btn--primary" data-open-order>Order Maha Mrityunjaya Yantra — ₹5,100</button>
+          <button type="button" class="btn btn--primary" data-open-order>Order Maha Mrityunjaya Yantra — ₹5,100</button>
+        </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container mt-5">
       <div class="divider-motif" aria-hidden="true"><span class="divider-motif__line"></span>ॐ<span class="divider-motif__line divider-motif__line--right"></span></div>
       <div class="section-head section-head--benefits">
         <span class="eyebrow">Spiritual Significance</span>
         <h3 class="heading-display" style="font-size:var(--fs-xl)">Key Blessings Associated with Revered Worship</h3>
       </div>
-      <div class="benefits-grid benefits--light">
-        <div class="card reveal benefit-card">
-          <p class="benefit-card__title">Health & Well-being</p>
-          <p class="benefit-card__desc">Devout worship is believed to foster physical vitality, healing vibes, and protection from illnesses.</p>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 benefits-grid benefits--light">
+        <div class="col">
+          <div class="card h-100 reveal benefit-card">
+            <p class="benefit-card__title">Health & Well-being</p>
+            <p class="benefit-card__desc">Devout worship is believed to foster physical vitality, healing vibes, and protection from illnesses.</p>
+          </div>
         </div>
-        <div class="card reveal benefit-card">
-          <p class="benefit-card__title">Longevity & Protection</p>
-          <p class="benefit-card__desc">Associated with traditional prayers seeking long life, protection from untimely dangers, and peace.</p>
+        <div class="col">
+          <div class="card h-100 reveal benefit-card">
+            <p class="benefit-card__title">Longevity & Protection</p>
+            <p class="benefit-card__desc">Associated with traditional prayers seeking long life, protection from untimely dangers, and peace.</p>
+          </div>
         </div>
-        <div class="card reveal benefit-card">
-          <p class="benefit-card__title">Mental Peace & Clarity</p>
-          <p class="benefit-card__desc">Sincere reverence helps soothe anxiety, granting internal calmness and spiritual focus.</p>
+        <div class="col">
+          <div class="card h-100 reveal benefit-card">
+            <p class="benefit-card__title">Mental Peace & Clarity</p>
+            <p class="benefit-card__desc">Sincere reverence helps soothe anxiety, granting internal calmness and spiritual focus.</p>
+          </div>
         </div>
-        <div class="card reveal benefit-card">
-          <p class="benefit-card__title">Family Harmony</p>
-          <p class="benefit-card__desc">Fosters an atmosphere of unity, prosperity, and auspicious energy in your home or workplace.</p>
+        <div class="col">
+          <div class="card h-100 reveal benefit-card">
+            <p class="benefit-card__title">Family Harmony</p>
+            <p class="benefit-card__desc">Fosters an atmosphere of unity, prosperity, and auspicious energy in your home or workplace.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -338,26 +370,34 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         <p class="section-subtext section-subtext--center">Complete transparency at every step — understand how your sacred Yantra reaches your home.</p>
       </div>
 
-      <div class="process-flow">
-        <div class="process-step reveal">
-          <div class="process-step__num">1</div>
-          <p class="process-step__title">Detail Collection</p>
-          <p class="process-step__desc">Your Name, Gotra, personal Sankalp and address details are recorded upon receiving your order.</p>
+      <div class="row process-flow py-4 position-relative">
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="process-step reveal">
+            <div class="process-step__num">1</div>
+            <p class="process-step__title">Detail Collection</p>
+            <p class="process-step__desc">Your Name, Gotra, personal Sankalp and address details are recorded upon receiving your order.</p>
+          </div>
         </div>
-        <div class="process-step reveal">
-          <div class="process-step__num">2</div>
-          <p class="process-step__title">Pure Copper Engraving</p>
-          <p class="process-step__desc">High-grade pure copper plate is selected and precisely engraved with sacred geometry and your Name & Gotra.</p>
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="process-step reveal">
+            <div class="process-step__num">2</div>
+            <p class="process-step__title">Pure Copper Engraving</p>
+            <p class="process-step__desc">High-grade pure copper plate is selected and precisely engraved with sacred geometry and your Name & Gotra.</p>
+          </div>
         </div>
-        <div class="process-step reveal">
-          <div class="process-step__num">3</div>
-          <p class="process-step__title">Vedic Consecration</p>
-          <p class="process-step__desc">A solemn ritual is conducted with mantra chanting and offerings specifically dedicated to your Sankalp.</p>
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="process-step reveal">
+            <div class="process-step__num">3</div>
+            <p class="process-step__title">Vedic Consecration</p>
+            <p class="process-step__desc">A solemn ritual is conducted with mantra chanting and offerings specifically dedicated to your Sankalp.</p>
+          </div>
         </div>
-        <div class="process-step reveal">
-          <div class="process-step__num">4</div>
-          <p class="process-step__title">Safe Dispatch</p>
-          <p class="process-step__desc">The Yantra is respectfully packed in protective spiritual packaging and shipped via express courier to your doorstep.</p>
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="process-step reveal">
+            <div class="process-step__num">4</div>
+            <p class="process-step__title">Safe Dispatch</p>
+            <p class="process-step__desc">The Yantra is respectfully packed in protective spiritual packaging and shipped via express courier to your doorstep.</p>
+          </div>
         </div>
       </div>
 
@@ -378,24 +418,26 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         <p class="section-subtext section-subtext--center">Fully customized and consecrated pure copper Maha Mrityunjaya Yantra, delivered directly to your doorstep anywhere in India.</p>
       </div>
 
-      <div class="pricing-grid">
-        <div class="pricing-card pricing-card--featured reveal">
-          <div class="pricing-card__media">
-            <img src="assets/images/5-inch-yantra.png" alt="5x5 inch pure copper Maha Mrityunjaya Yantra" width="800" height="800" loading="lazy">
-          </div>
-          <div class="pricing-card__body">
-            <p class="pricing-card__size">5 × 5 Inch</p>
-            <div class="pricing-card__price-row">
-              <span class="pricing-card__price">₹5,100</span>
-              <span class="pricing-card__unit">/ complete package</span>
+      <div class="row justify-content-center pricing-grid">
+        <div class="col-md-6 col-lg-5">
+          <div class="pricing-card pricing-card--featured h-100 reveal">
+            <div class="pricing-card__media">
+              <img src="assets/images/5-inch-yantra.png" alt="5x5 inch pure copper Maha Mrityunjaya Yantra" width="800" height="800" loading="lazy">
             </div>
-            <ul class="pricing-card__features">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Pure Copper Yantra — Larger (5 × 5 Inch)</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Name & Gotra Inscription</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Personal Sankalp & Consecration Rites</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Priority Insured Shipping Across India</li>
-            </ul>
-            <button type="button" class="btn btn--primary btn--block pricing-card__cta" data-open-order data-size="5x5">Select 5 × 5 Inch — ₹5,100</button>
+            <div class="pricing-card__body">
+              <p class="pricing-card__size">5 × 5 Inch</p>
+              <div class="pricing-card__price-row">
+                <span class="pricing-card__price">₹5,100</span>
+                <span class="pricing-card__unit">/ complete package</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Pure Copper Yantra — Larger (5 × 5 Inch)</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Name & Gotra Inscription</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Personal Sankalp & Consecration Rites</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Priority Insured Shipping Across India</li>
+              </ul>
+              <button type="button" class="btn btn--primary btn--block pricing-card__cta" data-open-order data-size="5x5">Select 5 × 5 Inch — ₹5,100</button>
+            </div>
           </div>
         </div>
       </div>
@@ -414,48 +456,60 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         <h2 class="heading-display section-heading section-heading--center text-on-dark">Why Choose Vastu Mitra Abhishek</h2>
       </div>
 
-      <div class="trust-grid">
-        <div class="card card--dark reveal trust-card">
-          <span class="icon-tile icon-tile--outline" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/></svg>
-          </span>
-          <p class="benefit-card__title">100% Personalized Creation</p>
-          <p class="benefit-card__desc">Each Yantra is prepared individually with your Name, Gotra and custom prayer intention.</p>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 trust-grid">
+        <div class="col">
+          <div class="card card--dark h-100 reveal trust-card">
+            <span class="icon-tile icon-tile--outline" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <p class="benefit-card__title">100% Personalized Creation</p>
+            <p class="benefit-card__desc">Each Yantra is prepared individually with your Name, Gotra and custom prayer intention.</p>
+          </div>
         </div>
-        <div class="card card--dark reveal trust-card">
-          <span class="icon-tile icon-tile--outline" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 12a8 8 0 0 1 16 0M4 12a8 8 0 0 0 16 0"/></svg>
-          </span>
-          <p class="benefit-card__title">Premium Pure Copper</p>
-          <p class="benefit-card__desc">Crafted using high-purity copper metal ensuring maximum aesthetic beauty and durability.</p>
+        <div class="col">
+          <div class="card card--dark h-100 reveal trust-card">
+            <span class="icon-tile icon-tile--outline" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 12a8 8 0 0 1 16 0M4 12a8 8 0 0 0 16 0"/></svg>
+            </span>
+            <p class="benefit-card__title">Premium Pure Copper</p>
+            <p class="benefit-card__desc">Crafted using high-purity copper metal ensuring maximum aesthetic beauty and durability.</p>
+          </div>
         </div>
-        <div class="card card--dark reveal trust-card">
-          <span class="icon-tile icon-tile--outline" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          </span>
-          <p class="benefit-card__title">Authentic Vedic Procedures</p>
-          <p class="benefit-card__desc">Traditional mantra recitation and sankalp rituals are conducted with utmost respect.</p>
+        <div class="col">
+          <div class="card card--dark h-100 reveal trust-card">
+            <span class="icon-tile icon-tile--outline" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </span>
+            <p class="benefit-card__title">Authentic Vedic Procedures</p>
+            <p class="benefit-card__desc">Traditional mantra recitation and sankalp rituals are conducted with utmost respect.</p>
+          </div>
         </div>
-        <div class="card card--dark reveal trust-card">
-          <span class="icon-tile icon-tile--outline" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-          </span>
-          <p class="benefit-card__title">Transparent Service</p>
-          <p class="benefit-card__desc">Clear explanation of the preparation process without any false or exaggerated claims.</p>
+        <div class="col">
+          <div class="card card--dark h-100 reveal trust-card">
+            <span class="icon-tile icon-tile--outline" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            </span>
+            <p class="benefit-card__title">Transparent Service</p>
+            <p class="benefit-card__desc">Clear explanation of the preparation process without any false or exaggerated claims.</p>
+          </div>
         </div>
-        <div class="card card--dark reveal trust-card">
-          <span class="icon-tile icon-tile--outline" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
-          </span>
-          <p class="benefit-card__title">Sacred & Safe Packaging</p>
-          <p class="benefit-card__desc">Carefully packed in protective ceremonial packaging to maintain ritual purity during transit.</p>
+        <div class="col">
+          <div class="card card--dark h-100 reveal trust-card">
+            <span class="icon-tile icon-tile--outline" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+            </span>
+            <p class="benefit-card__title">Sacred & Safe Packaging</p>
+            <p class="benefit-card__desc">Carefully packed in protective ceremonial packaging to maintain ritual purity during transit.</p>
+          </div>
         </div>
-        <div class="card card--dark reveal trust-card">
-          <span class="icon-tile icon-tile--outline" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </span>
-          <p class="benefit-card__title">Dedicated Customer Support</p>
-          <p class="benefit-card__desc">Our team is available to assist you with installation instructions or any questions.</p>
+        <div class="col">
+          <div class="card card--dark h-100 reveal trust-card">
+            <span class="icon-tile icon-tile--outline" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <p class="benefit-card__title">Dedicated Customer Support</p>
+            <p class="benefit-card__desc">Our team is available to assist you with installation instructions or any questions.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -530,11 +584,18 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
        =================================================================== -->
   <section class="section">
     <div class="container">
-      <div class="final-cta">
-        <div class="final-cta__content">
-          <h2 class="heading-display final-cta__title">Invoke Divine Protection & Good Health</h2>
-          <p class="final-cta__desc">Order your personalized, pure copper Maha Mrityunjaya Yantra today — handcrafted with your Name, Gotra and sacred Sankalp.</p>
-          <button type="button" class="btn btn--primary btn--lg" data-open-order>Order Now — ₹5,100</button>
+      <div class="final-cta reveal">
+        <div class="final-cta__media" aria-hidden="true">
+          <img src="assets/images/final-cta-yantra.webp" alt="" loading="lazy">
+        </div>
+        <div class="row align-items-center position-relative w-100 m-0" style="z-index: 1;">
+          <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0 p-0">
+            <h2 class="heading-display final-cta__title" style="margin-bottom: 0.5rem;">Invoke Divine Protection & Good Health</h2>
+            <p class="final-cta__desc" style="margin-bottom: 0; max-width: 100%;">Order your personalized, pure copper Maha Mrityunjaya Yantra today — handcrafted with your Name, Gotra and sacred Sankalp.</p>
+          </div>
+          <div class="col-lg-4 text-center text-lg-end p-0">
+            <button type="button" class="btn btn--primary" data-open-order>Order Now — ₹5,100</button>
+          </div>
         </div>
       </div>
     </div>
@@ -547,15 +608,15 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
      ===================================================================== -->
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
+    <div class="row g-4 footer-grid justify-content-between">
+      <div class="col-lg-4 footer-brand">
         <img src="assets/logo/logo.png" alt="Vastu Mitra Abhishek" style="height: 48px; width: auto; margin-bottom: 0.8rem;">
         <p class="footer-brand__desc">
           Dedicated spiritual services offering personalized, authentic Vedic consecrated Yantras and Vastu consultation across India.
         </p>
       </div>
 
-      <div>
+      <div class="col-6 col-md-3 col-lg-2 footer-col">
         <p class="footer-col__title">Quick Links</p>
         <ul class="footer-col__list">
           <li><a href="#about">About Us</a></li>
@@ -566,7 +627,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         </ul>
       </div>
 
-      <div>
+      <div class="col-6 col-md-3 col-lg-2 footer-col">
         <p class="footer-col__title">Policies</p>
         <ul class="footer-col__list">
           <li><a href="privacy-policy.php">Privacy Policy</a></li>
@@ -576,7 +637,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
         </ul>
       </div>
 
-      <div>
+      <div class="col-12 col-md-6 col-lg-3 footer-col">
         <p class="footer-col__title">Contact Us</p>
         <div class="footer-contact-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -589,8 +650,8 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <p>&copy; <span id="currentYear"></span> Vastu Mitra Abhishek. All rights reserved.</p>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 mt-5 border-top border-secondary border-opacity-25">
+      <p class="m-0">&copy; <span id="currentYear"></span> Vastu Mitra Abhishek. All rights reserved.</p>
       <div class="footer-bottom__links">
         <a href="privacy-policy.php">Privacy</a>
         <a href="terms-and-conditions.php">Terms</a>
@@ -1027,6 +1088,7 @@ src="https://www.facebook.com/tr?id=1750915242127392&ev=PageView&noscript=1"
 
 })();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
 
@@ -1475,10 +1537,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 
 .hero__grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: var(--space-2xl);
-  align-items: center;
+  /* Layout handled by Bootstrap 5 row & cols */
 }
 
 .hero__eyebrow-row { display: flex; gap: var(--space-xs); flex-wrap: wrap; margin-bottom: var(--space-md); }
@@ -1561,9 +1620,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .hero__visual-caption span { font-size: var(--fs-xs); color: var(--color-text-on-dark-muted); }
 
 .about__cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-lg);
   margin-top: var(--space-2xl);
 }
 .about__card {
@@ -1612,9 +1668,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .about__media-badge span { font-size: var(--fs-xs); color: var(--color-text-muted); }
 
 .compare {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-lg);
   margin-top: var(--space-2xl);
 }
 .compare__col {
@@ -1699,9 +1752,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .deity-accent--protect { color: var(--color-protect); }
 
 .benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: var(--space-md);
   margin-top: var(--space-xl);
 }
 .benefit-card { text-align: left; }
@@ -1711,9 +1761,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .benefits--light .benefit-card__desc { color: var(--color-text-muted); }
 
 .process-flow {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-lg);
   margin-top: var(--space-2xl);
   position: relative;
 }
@@ -1766,9 +1813,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .process-media img { width: 100%; max-height: 420px; object-fit: cover; }
 
 .pricing-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-lg);
   margin-top: var(--space-2xl);
   max-width: 450px;
   margin-inline: auto;
@@ -1831,17 +1875,11 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 
 .trust-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-lg);
   margin-top: var(--space-2xl);
 }
 .trust-card { text-align: left; }
 
 .stats-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-lg);
   margin-top: var(--space-2xl);
   padding-top: var(--space-2xl);
   border-top: 1px solid var(--color-border-dark);
@@ -1900,10 +1938,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   overflow: hidden;
   background: linear-gradient(120deg, var(--color-maroon), var(--color-brown-950));
   padding: var(--space-2xl) var(--space-2xl);
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  align-items: center;
-  gap: var(--space-xl);
   box-shadow: var(--shadow-lifted);
 }
 .final-cta__media {
@@ -1929,9 +1963,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   padding-top: var(--space-2xl);
 }
 .footer-grid {
-  display: grid;
-  grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
-  gap: var(--space-xl);
   padding-bottom: var(--space-xl);
   border-bottom: 1px solid var(--color-border-dark);
 }
@@ -2096,11 +2127,11 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.9s var(--ease-premium), transform 0.9s var(--ease-premium); }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
-@media (min-width: 1025px) {
+@media (min-width: 1151px) {
   .main-nav { display: block !important; }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   :root { --fs-hero: 3.1rem; --fs-3xl: 2.6rem; --fs-2xl: 2.1rem; }
 
   .main-nav {
@@ -2143,24 +2174,9 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
     transform: scale(0.95);
   }
 
-  .hero__grid { grid-template-columns: 1fr; gap: var(--space-lg); }
-  .hero__visual { order: -1; }
   .hero__visual-frame { max-width: 340px; margin-inline: auto; }
-
-  .about__cards { grid-template-columns: repeat(2, 1fr); }
-  .product-section .grid-2 { grid-template-columns: 1fr; }
-  .product-section--reverse .grid-2 { direction: ltr; }
-  .product-media { order: -1; }
-
-  .compare { grid-template-columns: 1fr; }
-  .process-flow { grid-template-columns: repeat(2, 1fr); }
   .process-flow::before { display: none; }
-  .trust-grid { grid-template-columns: repeat(2, 1fr); }
-  .stats-row { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
 
-  .final-cta { grid-template-columns: 1fr; text-align: left; }
-  .pricing-grid { grid-template-columns: 1fr; max-width: 540px; }
   .process-step {
     background: rgba(36, 22, 17, 0.45);
     border: 1px solid rgba(201, 163, 78, 0.08);
@@ -2180,14 +2196,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   :root { --fs-hero: 2.4rem; --fs-2xl: 1.8rem; --fs-xl: 1.6rem; --fs-lg: 1.25rem; }
 
   .hero__trust-row { gap: var(--space-md); }
-  .pricing-grid { grid-template-columns: 1fr; max-width: 380px; }
-  .process-flow { grid-template-columns: 1fr; }
-  .about__cards { grid-template-columns: 1fr; }
-  .trust-grid { grid-template-columns: 1fr; }
-  .stats-row { grid-template-columns: repeat(2, 1fr); gap: var(--space-md); }
-  .footer-grid { grid-template-columns: 1fr; gap: var(--space-lg); }
-  .footer-bottom { flex-direction: column; align-items: flex-start; }
-
   .form-grid { grid-template-columns: 1fr; }
   .order-modal__header { padding: var(--space-md); }
   .order-form { padding: var(--space-md); }

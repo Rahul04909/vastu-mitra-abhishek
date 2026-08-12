@@ -324,7 +324,6 @@ em.accent{font-style:normal;background:linear-gradient(135deg,var(--gold-l) 20%,
 }
 .hero-img-card img{
   width:100%;height:auto;display:block;
-  aspect-ratio:4/5;object-fit:cover;object-position:center;
   transition:transform .8s var(--ease)
 }
 .hero-img-card:hover img{transform:scale(1.03)}

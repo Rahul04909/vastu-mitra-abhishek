@@ -179,18 +179,27 @@ em.accent{font-style:italic;background:linear-gradient(135deg,var(--gold-l) 20%,
 .hero-trust-item{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--ivory-m)}
 .hero-trust-item svg{width:16px;height:16px;color:var(--gold);flex-shrink:0}
 
-/* Yantra Frame */
-.hero-img-wrap{position:relative;display:flex;justify-content:center;align-items:center}
-.hero-img-ring{position:relative;width:clamp(280px,38vw,480px);aspect-ratio:1;flex-shrink:0}
-.hero-img-ring::before{content:'';position:absolute;inset:-10px;border-radius:50%;border:1.5px solid rgba(212,168,67,.35);animation:spin 20s linear infinite}
-.hero-img-ring::after{content:'';position:absolute;inset:-22px;border-radius:50%;border:1px dashed rgba(212,168,67,.18);animation:spin 40s linear infinite reverse}
-@keyframes spin{to{transform:rotate(360deg)}}
-.hero-img-inner{width:100%;height:100%;border-radius:50%;overflow:hidden;border:2px solid rgba(212,168,67,.4);box-shadow:var(--glow),0 0 0 8px rgba(212,168,67,.06);position:relative}
-.hero-img-inner img{width:100%;height:100%;object-fit:cover}
-.hero-img-badge{position:absolute;bottom:-1.5rem;left:50%;transform:translateX(-50%);background:var(--dark-card2);border:1px solid var(--border-d);border-radius:var(--r-md);padding:.6rem 1.2rem;box-shadow:var(--shadow-sm);white-space:nowrap;min-width:220px;text-align:center}
-.hero-img-badge strong{display:block;font-family:var(--font-d);font-size:.95rem;color:var(--gold-l)}
-.hero-img-badge span{font-size:.78rem;color:var(--ivory-m)}
-@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+/* Yantra Frame — Proper Rectangular Display */
+.hero-img-wrap{position:relative;display:flex;justify-content:center;align-items:center;padding:1.5rem 1.5rem 2.5rem}
+.hero-img-frame-outer{position:relative;flex-shrink:0;width:clamp(260px,38vw,460px);max-width:100%}
+.hero-img-frame-outer::before{content:'';position:absolute;inset:-12px;border-radius:var(--r-xl);border:1px solid rgba(212,168,67,.25);background:radial-gradient(ellipse at center,rgba(212,168,67,.07) 0%,transparent 70%);pointer-events:none}
+.hero-img-frame-outer::after{content:'';position:absolute;inset:-4px;border-radius:calc(var(--r-xl) + 4px);border:1px dashed rgba(212,168,67,.18);pointer-events:none}
+.hero-img-card{border-radius:var(--r-xl);overflow:hidden;border:1.5px solid rgba(212,168,67,.45);box-shadow:0 0 50px rgba(212,168,67,.2),0 24px 60px rgba(0,0,0,.5);background:var(--dark-card);position:relative}
+.hero-img-card img{width:100%;height:auto;display:block;aspect-ratio:4/5;object-fit:cover;object-position:center;transition:transform .8s var(--ease)}
+.hero-img-card:hover img{transform:scale(1.03)}
+.hero-corner{position:absolute;width:24px;height:24px;pointer-events:none}
+.hero-corner::before,.hero-corner::after{content:'';position:absolute;background:var(--gold);border-radius:2px}
+.hero-corner::before{width:100%;height:2px;top:0;left:0}
+.hero-corner::after{width:2px;height:100%;top:0;left:0}
+.hero-corner.tl{top:12px;left:12px}
+.hero-corner.tr{top:12px;right:12px;transform:scaleX(-1)}
+.hero-corner.bl{bottom:12px;left:12px;transform:scaleY(-1)}
+.hero-corner.br{bottom:12px;right:12px;transform:scale(-1)}
+.hero-img-om{position:absolute;bottom:10px;right:14px;font-size:2.2rem;color:rgba(212,168,67,.25);line-height:1;user-select:none;pointer-events:none}
+.hero-img-badge{position:absolute;bottom:-1.25rem;left:50%;transform:translateX(-50%);background:var(--dark-card2);border:1px solid var(--border-d);border-radius:var(--r-md);padding:.55rem 1.25rem;box-shadow:var(--shadow-sm);white-space:nowrap;min-width:210px;text-align:center;z-index:2}
+.hero-img-badge strong{display:block;font-family:var(--font-d);font-size:.9rem;color:var(--gold-l)}
+.hero-img-badge span{font-size:.76rem;color:var(--ivory-m)}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 .hero-float{animation:floatY 5s ease-in-out infinite}
 
 /* ── ABOUT ─────────────────────────────────────── */
@@ -342,6 +351,71 @@ em.accent{font-style:italic;background:linear-gradient(135deg,var(--gold-l) 20%,
 /* Toast */
 .toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(20px);background:var(--dark);color:var(--ivory);border:1px solid var(--gold);padding:.85rem 1.5rem;border-radius:999px;font-size:.88rem;box-shadow:var(--shadow-sm);z-index:3000;opacity:0;visibility:hidden;transition:opacity .4s var(--ease),transform .4s var(--ease),visibility .4s var(--ease)}
 .toast.is-visible{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+
+/* ──────────────────────────────────────────────────────
+MOBILE RESPONSIVENESS
+────────────────────────────────────────────────────── */
+@media(max-width:991px){
+  .hero-section{padding-top:3.5rem;padding-bottom:3rem}
+  .hero-img-wrap{padding:1rem 1rem 2.5rem}
+  .hero-img-frame-outer{width:min(320px,80vw)}
+  .hero-title{font-size:clamp(2rem,6vw,2.8rem)}
+  .hero-desc{font-size:.95rem;max-width:100%}
+  .hero-cta-row{flex-direction:column;align-items:stretch}
+  .hero-cta-row .btn-primary-vma,.hero-cta-row .btn-outline-vma{justify-content:center;text-align:center}
+  .hero-trust{gap:.75rem}
+  .heading-lg{font-size:clamp(1.6rem,5vw,2.2rem)}
+  .section-py{padding-top:clamp(3rem,7vw,5rem);padding-bottom:clamp(3rem,7vw,5rem)}
+  .compare-card{padding:1.5rem}
+  .process-step-card{padding:1.5rem 1.25rem}
+  .final-cta-box{padding:2rem 1.5rem;border-radius:var(--r-lg)}
+  .final-cta-box::before{display:none}
+}
+@media(max-width:767px){
+  .hero-img-frame-outer{width:min(280px,85vw)}
+  .hero-title{font-size:clamp(1.85rem,7vw,2.3rem)}
+  .hero-pill-row{gap:.4rem}
+  .product-img-frame{margin-bottom:.5rem}
+  .about-img-frame{margin-bottom:1rem}
+  .attr-item{padding:.7rem 0;gap:.75rem}
+  .attr-icon{width:32px;height:32px}
+  .attr-icon svg{width:15px;height:15px}
+  .compare-list li{font-size:.88rem}
+  .trust-card{padding:1.5rem}
+  .faq-item__question{padding:1rem 1.25rem;font-size:.92rem}
+  .faq-item__answer p{padding:0 1.25rem 1rem}
+  .pricing-body{padding:1.25rem}
+  .pricing-price{font-size:1.8rem}
+  .order-form{padding:1.25rem 1.25rem 1.5rem}
+  .order-modal__header{padding:1.25rem}
+  .final-cta-title{font-size:1.6rem}
+  .section-py{padding-top:2.5rem;padding-bottom:2.5rem}
+  .btn-primary-vma,.btn-outline-vma,.btn-light-vma{padding:.8rem 1.5rem;font-size:.9rem}
+  .om-divider{margin:1.75rem 0}
+  .process-num{width:48px;height:48px;font-size:1.2rem}
+}
+@media(max-width:480px){
+  .hero-section{padding-top:2.5rem;padding-bottom:2rem}
+  .hero-img-frame-outer{width:min(250px,88vw)}
+  .hero-title{font-size:clamp(1.6rem,8vw,2rem)}
+  .pill-badge{font-size:.72rem;padding:.28rem .8rem}
+  .hero-trust{flex-direction:column;gap:.5rem}
+  .hero-trust-item{font-size:.8rem}
+  .heading-lg{font-size:clamp(1.45rem,6vw,1.85rem)}
+  .eyebrow-vma{font-size:.72rem}
+  .compare-card{padding:1rem}
+  .trust-card{padding:1.25rem}
+  .trust-icon{width:44px;height:44px}
+  .trust-icon svg{width:20px;height:20px}
+  .process-step-card{padding:1.25rem 1rem}
+  .pricing-media img{max-height:140px}
+  .order-modal{border-radius:var(--r-lg)}
+  .order-modal__header{border-radius:var(--r-lg) var(--r-lg) 0 0}
+  .hero-img-badge{min-width:180px;padding:.5rem 1rem}
+  .hero-img-badge strong{font-size:.82rem}
+  .footer-bottom{flex-direction:column;text-align:center;gap:.75rem}
+  .footer-bottom-links{justify-content:center}
+}
 </style>
 </head>
 <body>
@@ -406,9 +480,14 @@ em.accent{font-style:italic;background:linear-gradient(135deg,var(--gold-l) 20%,
       </div>
       <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center reveal-right">
         <div class="hero-img-wrap">
-          <div class="hero-img-ring hero-float">
-            <div class="hero-img-inner">
+          <div class="hero-img-frame-outer hero-float">
+            <div class="hero-img-card">
               <img src="assets/images/IMG-20260725-WA0001.jpg" alt="Individually prepared pure copper Maha Mrityunjaya Yantra" loading="eager">
+              <div class="hero-img-om" aria-hidden="true">ॐ</div>
+              <div class="hero-corner tl" aria-hidden="true"></div>
+              <div class="hero-corner tr" aria-hidden="true"></div>
+              <div class="hero-corner bl" aria-hidden="true"></div>
+              <div class="hero-corner br" aria-hidden="true"></div>
             </div>
           </div>
           <div class="hero-img-badge">

@@ -296,40 +296,65 @@ em.accent{font-style:normal;background:linear-gradient(135deg,var(--gold-l) 20%,
 .hero-trust-item{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--ivory-m)}
 .hero-trust-item svg{width:16px;height:16px;color:var(--gold);flex-shrink:0}
 
-/* Yantra Image Frame */
-.hero-img-wrap{position:relative;display:flex;justify-content:center;align-items:center}
-.hero-img-ring{
-  position:relative;width:clamp(280px,38vw,480px);aspect-ratio:1;flex-shrink:0
+/* Yantra Image Frame — Proper Rectangular Display */
+.hero-img-wrap{position:relative;display:flex;justify-content:center;align-items:center;padding:1.5rem 1.5rem 2.5rem}
+.hero-img-frame-outer{
+  position:relative;flex-shrink:0;
+  width:clamp(260px,38vw,460px);max-width:100%
 }
-.hero-img-ring::before{
-  content:'';position:absolute;inset:-10px;
-  border-radius:50%;border:1.5px solid rgba(212,168,67,0.35);
-  animation:spin 20s linear infinite
+/* Outer decorative glow card */
+.hero-img-frame-outer::before{
+  content:'';position:absolute;inset:-12px;
+  border-radius:var(--r-xl);border:1px solid rgba(212,168,67,.25);
+  background:radial-gradient(ellipse at center,rgba(212,168,67,.07) 0%,transparent 70%);
+  pointer-events:none
 }
-.hero-img-ring::after{
-  content:'';position:absolute;inset:-22px;
-  border-radius:50%;border:1px dashed rgba(212,168,67,.18);
-  animation:spin 40s linear infinite reverse
+/* Dashed outer accent */
+.hero-img-frame-outer::after{
+  content:'';position:absolute;inset:-4px;
+  border-radius:calc(var(--r-xl) + 4px);
+  border:1px dashed rgba(212,168,67,.18);
+  pointer-events:none
 }
-@keyframes spin{to{transform:rotate(360deg)}}
-.hero-img-inner{
-  width:100%;height:100%;border-radius:50%;overflow:hidden;
-  border:2px solid rgba(212,168,67,0.4);
-  box-shadow:var(--glow),0 0 0 8px rgba(212,168,67,.06);
-  position:relative
+.hero-img-card{
+  border-radius:var(--r-xl);overflow:hidden;
+  border:1.5px solid rgba(212,168,67,.45);
+  box-shadow:0 0 50px rgba(212,168,67,.2),0 24px 60px rgba(0,0,0,.5);
+  background:var(--dark-card);position:relative
 }
-.hero-img-inner img{width:100%;height:100%;object-fit:cover}
+.hero-img-card img{
+  width:100%;height:auto;display:block;
+  aspect-ratio:4/5;object-fit:cover;object-position:center;
+  transition:transform .8s var(--ease)
+}
+.hero-img-card:hover img{transform:scale(1.03)}
+/* Corner accent lines */
+.hero-corner{position:absolute;width:24px;height:24px;pointer-events:none}
+.hero-corner::before,.hero-corner::after{content:'';position:absolute;background:var(--gold);border-radius:2px}
+.hero-corner::before{width:100%;height:2px;top:0;left:0}
+.hero-corner::after{width:2px;height:100%;top:0;left:0}
+.hero-corner.tl{top:12px;left:12px}
+.hero-corner.tr{top:12px;right:12px;transform:scaleX(-1)}
+.hero-corner.bl{bottom:12px;left:12px;transform:scaleY(-1)}
+.hero-corner.br{bottom:12px;right:12px;transform:scale(-1)}
+/* Om symbol watermark */
+.hero-img-om{
+  position:absolute;bottom:10px;right:14px;
+  font-family:var(--font-hi);font-size:2.2rem;color:rgba(212,168,67,.25);
+  line-height:1;user-select:none;pointer-events:none
+}
 .hero-img-badge{
-  position:absolute;bottom:-1.5rem;left:50%;transform:translateX(-50%);
+  position:absolute;bottom:-1.25rem;left:50%;transform:translateX(-50%);
   background:var(--dark-card2);border:1px solid var(--border-d);
-  border-radius:var(--r-md);padding:.6rem 1.2rem;
-  box-shadow:var(--shadow-sm);white-space:nowrap;min-width:220px;text-align:center
+  border-radius:var(--r-md);padding:.55rem 1.25rem;
+  box-shadow:var(--shadow-sm);white-space:nowrap;min-width:210px;text-align:center;
+  z-index:2
 }
-.hero-img-badge strong{display:block;font-family:var(--font-hi);font-size:.95rem;color:var(--gold-l)}
-.hero-img-badge span{font-size:.78rem;color:var(--ivory-m)}
+.hero-img-badge strong{display:block;font-family:var(--font-hi);font-size:.9rem;color:var(--gold-l)}
+.hero-img-badge span{font-size:.76rem;color:var(--ivory-m)}
 
 /* Float animation */
-@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 .hero-float{animation:floatY 5s ease-in-out infinite}
 
 /* ──────────────────────────────────────────────────────
@@ -760,9 +785,14 @@ em.accent{font-style:normal;background:linear-gradient(135deg,var(--gold-l) 20%,
 
       <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center reveal-right">
         <div class="hero-img-wrap">
-          <div class="hero-img-ring hero-float">
-            <div class="hero-img-inner">
+          <div class="hero-img-frame-outer hero-float">
+            <div class="hero-img-card">
               <img src="assets/images/IMG-20260725-WA0001.jpg" alt="व्यक्तिगत रूप से तैयार शुद्ध तांबे का महामृत्युंजय यंत्र" loading="eager">
+              <div class="hero-img-om" aria-hidden="true">ॐ</div>
+              <div class="hero-corner tl" aria-hidden="true"></div>
+              <div class="hero-corner tr" aria-hidden="true"></div>
+              <div class="hero-corner bl" aria-hidden="true"></div>
+              <div class="hero-corner br" aria-hidden="true"></div>
             </div>
           </div>
           <div class="hero-img-badge">

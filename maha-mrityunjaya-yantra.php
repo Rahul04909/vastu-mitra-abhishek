@@ -1388,6 +1388,13 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   overflow: hidden;
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-card);
+  align-self: center;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.about__media:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: var(--shadow-gold-glow);
+  border-color: var(--color-gold);
 }
 .about__media img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 .about__media-badge {
@@ -1547,6 +1554,14 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   overflow: hidden;
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-card);
+  max-width: 900px;
+  margin-inline: auto;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.process-media:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: var(--shadow-gold-glow);
+  border-color: var(--color-gold);
 }
 .process-media img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 

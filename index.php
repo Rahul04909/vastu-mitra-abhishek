@@ -1,0 +1,55 @@
+<?php require_once __DIR__ . '/database/db_config.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vastu Mitra Abhishek | Astrology & Vastu Expert</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Hero Slider CSS -->
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <!-- Footer CSS -->
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <!-- About Section CSS -->
+    <link rel="stylesheet" href="assets/css/about_section.css">
+    <!-- Services Section CSS -->
+    <link rel="stylesheet" href="assets/css/services_section.css">
+    <!-- Why Choose Us CSS -->
+    <link rel="stylesheet" href="assets/css/why_choose_us.css">
+    <!-- Testimonials CSS -->
+    <link rel="stylesheet" href="assets/css/testimonials.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Newsletter Popup CSS -->
+    <link rel="stylesheet" href="assets/css/newsletter-popup.css">
+</head>
+
+<body>
+
+    <?php include 'includes/header.php'; ?>
+    <?php include 'components/hero.php'; ?>
+    <?php include 'components/about_section.php'; ?>
+    <?php include 'components/services_section.php'; ?>
+    <?php include 'components/why_choose_us.php'; ?>
+    <?php include 'components/testimonials.php'; ?>
+
+    <?php include 'includes/footer.php'; ?>
+
+    <?php include 'components/newsletter_popup.php'; ?>
+
+    <!-- Scripts -->
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/hero.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Newsletter Popup JS -->
+    <script src="assets/js/newsletter-popup.js"></script>
+</body>
+
+</html>

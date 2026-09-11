@@ -1,0 +1,122 @@
+.hero-slider {
+    width: 100%;
+    margin-top: var(--header-height);
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    position: relative;
+    background: #fff;
+}
+
+.slide {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+
+/* Navigation Buttons */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 20px 15px;
+    cursor: pointer;
+    z-index: 30;
+    transition: var(--transition);
+    border-radius: 0 5px 5px 0;
+}
+
+.next-btn {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: var(--secondary-color);
+}
+
+/* Dots */
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 30;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.dot.active {
+    background: var(--secondary-color);
+    transform: scale(1.2);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .prev-btn, .next-btn {
+        padding: 12px 8px;
+        font-size: 18px;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    
+    .slider-dots {
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .prev-btn, .next-btn {
+        display: none;
+    }
+    
+    .slider-dots {
+        bottom: 8px;
+        gap: 8px;
+    }
+    
+    .dot {
+        width: 7px;
+        height: 7px;
+    }
+}

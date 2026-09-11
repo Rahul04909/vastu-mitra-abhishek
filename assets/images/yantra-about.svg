@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf3e0"/>
+      <stop offset="100%" stop-color="#fff8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="500" fill="url(#g1)" rx="20"/>
+  <circle cx="300" cy="250" r="200" fill="none" stroke="#d4a017" stroke-width="2" opacity="0.2"/>
+  <circle cx="300" cy="250" r="160" fill="none" stroke="#d4a017" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="300" cy="250" r="120" fill="none" stroke="#d4a017" stroke-width="2" opacity="0.4"/>
+  <circle cx="300" cy="250" r="80" fill="none" stroke="#d4a017" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="300" cy="250" r="40" fill="none" stroke="#b8860b" stroke-width="2"/>
+  <polygon points="300,90 420,350 180,350" fill="none" stroke="#d4a017" stroke-width="2" opacity="0.4"/>
+  <polygon points="300,410 420,150 180,150" fill="none" stroke="#b8860b" stroke-width="2" opacity="0.4"/>
+  <circle cx="300" cy="250" r="10" fill="#d4a017" opacity="0.6"/>
+  <circle cx="300" cy="250" r="4" fill="#b8860b"/>
+  <text x="300" y="250" text-anchor="middle" fill="#d4a017" font-size="48" font-family="serif" opacity="0.15" dominant-baseline="central">ॐ</text>
+  <text x="300" y="470" text-anchor="middle" fill="#b8860b" font-size="13" font-family="serif">Maha Mrityunjaya Yantra - Sacred Vedic Geometry</text>
+</svg>

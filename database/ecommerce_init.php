@@ -35,6 +35,15 @@ try {
         }
     }
 
+    // Explicitly enforce DECIMAL(10,2) precision on price and sale_price to prevent float rounding bugs (e.g. 15 becoming 14.99)
+    try {
+        $dbh->exec("ALTER TABLE `products` MODIFY COLUMN `price` DECIMAL(10,2) NOT NULL DEFAULT 0.00");
+    } catch (Exception $e) {}
+
+    try {
+        $dbh->exec("ALTER TABLE `products` MODIFY COLUMN `sale_price` DECIMAL(10,2) NULL DEFAULT NULL");
+    } catch (Exception $e) {}
+
     // 2. Ensure `shop_orders` table exists
     $dbh->exec("CREATE TABLE IF NOT EXISTS `shop_orders` (
         `id` INT AUTO_INCREMENT PRIMARY KEY,

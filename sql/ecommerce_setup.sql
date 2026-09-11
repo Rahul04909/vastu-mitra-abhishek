@@ -10,6 +10,11 @@ ALTER TABLE `products`
     ADD COLUMN IF NOT EXISTS `stock_status` ENUM('in_stock', 'out_of_stock') NOT NULL DEFAULT 'in_stock' AFTER `sale_price`,
     ADD COLUMN IF NOT EXISTS `sku` VARCHAR(100) NULL DEFAULT NULL AFTER `stock_status`;
 
+-- Ensure DECIMAL(10,2) exact precision (fixes float rounding issues like 15 -> 14.99)
+ALTER TABLE `products`
+    MODIFY COLUMN `price` DECIMAL(10,2) NOT NULL DEFAULT 0.00,
+    MODIFY COLUMN `sale_price` DECIMAL(10,2) NULL DEFAULT NULL;
+
 -- 2. Create Shop Orders Table
 CREATE TABLE IF NOT EXISTS `shop_orders` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,

@@ -43,8 +43,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     $seo_description = $_POST['seo_description'] ?? '';
     $seo_keywords = $_POST['seo_keywords'] ?? '';
     $seo_schema = $_POST['seo_schema'] ?? '';
-    $price = (float)($_POST['price'] ?? 0);
-    $sale_price = (!empty($_POST['sale_price'])) ? (float)$_POST['sale_price'] : null;
+    $price = (isset($_POST['price']) && trim((string)$_POST['price']) !== '' && is_numeric($_POST['price']))
+        ? number_format((float)$_POST['price'], 2, '.', '')
+        : '0.00';
+    $sale_price = (isset($_POST['sale_price']) && trim((string)$_POST['sale_price']) !== '' && is_numeric($_POST['sale_price']))
+        ? number_format((float)$_POST['sale_price'], 2, '.', '')
+        : null;
     $stock_status = ($_POST['stock_status'] ?? 'in_stock') === 'out_of_stock' ? 'out_of_stock' : 'in_stock';
     $sku = trim($_POST['sku'] ?? '');
     
@@ -196,13 +200,13 @@ include __DIR__ . '/../header.php';
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="price">Regular Price / MRP (₹) <span class="text-danger">*</span></label>
-                                        <input type="number" step="0.01" class="form-control" id="price" name="price" value="<?= htmlspecialchars($product['price'] ?? '0.00') ?>" required>
+                                        <input type="number" step="0.01" class="form-control" id="price" name="price" value="<?= ($product['price'] !== null && $product['price'] !== '') ? htmlspecialchars(number_format((float)$product['price'], 2, '.', '')) : '0.00' ?>" required>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="sale_price">Sale / Offer Price (₹)</label>
-                                        <input type="number" step="0.01" class="form-control" id="sale_price" name="sale_price" value="<?= htmlspecialchars($product['sale_price'] ?? '') ?>">
+                                        <input type="number" step="0.01" class="form-control" id="sale_price" name="sale_price" value="<?= ($product['sale_price'] !== null && $product['sale_price'] !== '') ? htmlspecialchars(number_format((float)$product['sale_price'], 2, '.', '')) : '' ?>">
                                         <small class="text-muted">Leave empty if not on sale.</small>
                                     </div>
                                 </div>

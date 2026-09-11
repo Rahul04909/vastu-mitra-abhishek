@@ -102,6 +102,7 @@ $og_image = $product['og_image'] ? "admin/uploads/products/seo/" . $product['og_
                 <span class="product-category-label"><?= htmlspecialchars($product['category_name']) ?></span>
                 <h1 class="product-title"><?= htmlspecialchars($product['name']) ?></h1>
                 
+<<<<<<< HEAD
                 <?php
                     $price = (float)($product['price'] ?? 0);
                     $salePrice = ($product['sale_price'] !== null && (float)$product['sale_price'] > 0) ? (float)$product['sale_price'] : null;
@@ -164,6 +165,8 @@ $og_image = $product['og_image'] ? "admin/uploads/products/seo/" . $product['og_
                     </div>
                 <?php endif; ?>
 
+=======
+>>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
                 <!-- Enquiry Form Card -->
                 <div class="enquiry-card">
                     <h3>Enquire About This Product</h3>
@@ -276,6 +279,7 @@ $og_image = $product['og_image'] ? "admin/uploads/products/seo/" . $product['og_
                 submitBtn.innerHTML = originalBtnContent;
             });
         });
+<<<<<<< HEAD
 
         function adjustDetailQty(delta) {
             const input = document.getElementById('detailQtyInput');
@@ -343,6 +347,8 @@ $og_image = $product['og_image'] ? "admin/uploads/products/seo/" . $product['og_
             const qty = parseInt(document.getElementById('detailQtyInput')?.value) || 1;
             window.location.href = 'checkout.php?buy_now=' + productId + '&qty=' + qty;
         }
+=======
+>>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
     </script>
 </body>
 </html>

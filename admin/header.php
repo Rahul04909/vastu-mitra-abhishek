@@ -24,12 +24,16 @@ $menuItems = [
         "icon" => "fas fa-box",
         "pages" => [
             ["title" => "Manage Products", "url" => "products/index.php"],
+<<<<<<< HEAD
             ["title" => "Shop Orders", "url" => "orders/index.php"],
+=======
+>>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
             ["title" => "Product Enquiries", "url" => "products/enquiries.php"],
             ["title" => "Categories", "url" => "products/add-product-category.php"]
         ],
     ],
     [
+<<<<<<< HEAD
         "menuTitle" => "Shop Orders",
         "icon" => "fas fa-shopping-cart",
         "pages" => [
@@ -37,6 +41,8 @@ $menuItems = [
         ],
     ],
     [
+=======
+>>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
         "menuTitle" => "Blogs",
         "icon" => "fas fa-newspaper",
         "pages" => [

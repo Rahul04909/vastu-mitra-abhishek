@@ -118,6 +118,7 @@
     font-size: 1.05rem;
 }
 
+<<<<<<< HEAD
 /* eCommerce Buy Box & Pricing */
 .product-buy-card {
     background: #ffffff;
@@ -301,6 +302,11 @@
 
 .product-features-checklist li i {
     color: #28a745;
+=======
+.description-content ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+>>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
 }
 
 /* Enquiry Form Container */

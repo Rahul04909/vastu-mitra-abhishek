@@ -165,8 +165,11 @@ include __DIR__ . '/../header.php';
                             <th>Image</th>
                             <th>Name</th>
                             <th>Category</th>
+<<<<<<< HEAD
                             <th>Price</th>
                             <th>Stock</th>
+=======
+>>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
                             <th>Date Created</th>
                             <th style="width: 150px">Actions</th>
                         </tr>
@@ -174,7 +177,11 @@ include __DIR__ . '/../header.php';
                     <tbody>
                         <?php if (empty($products)): ?>
                             <tr>
+<<<<<<< HEAD
                                 <td colspan="8" class="text-center">No products found.</td>
+=======
+                                <td colspan="6" class="text-center">No products found.</td>
+>>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
                             </tr>
                         <?php else: ?>
                             <?php foreach ($products as $p): ?>
@@ -182,6 +189,7 @@ include __DIR__ . '/../header.php';
                                     <td><?= $p['id'] ?></td>
                                     <td>
                                         <img src="<?= BASE_URL ?>/admin/uploads/products/<?= htmlspecialchars($p['main_image']) ?>" 
+<<<<<<< HEAD
                                              class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;"
                                              onerror="this.src='<?= BASE_URL ?>/assets/logo/logo.png'">
                                     </td>
@@ -204,6 +212,12 @@ include __DIR__ . '/../header.php';
                                             <span class="badge badge-success">In Stock</span>
                                         <?php endif; ?>
                                     </td>
+=======
+                                             class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                                    </td>
+                                    <td><strong><?= htmlspecialchars($p['name']) ?></strong></td>
+                                    <td><span class="badge badge-info shadow-sm" style="background-color: #28a645;"><?= htmlspecialchars($p['category_name']) ?></span></td>
+>>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
                                     <td><?= date('d M Y', strtotime($p['created_at'])) ?></td>
                                     <td>
                                         <div class="d-flex" style="gap: 5px;">

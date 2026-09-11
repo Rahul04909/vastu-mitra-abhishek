@@ -49,6 +49,7 @@ if (!defined('BASE_URL')) {
     define('BASE_URL', $base_url);
 }
 
+<<<<<<< HEAD
 // Start PHP Session safely if not already active
 if (session_status() === PHP_SESSION_NONE && !headers_sent()) {
     session_start();
@@ -59,3 +60,5 @@ require_once __DIR__ . '/razorpay_config.php';
 
 // Safe auto-migration for eCommerce products & orders schema
 require_once __DIR__ . '/ecommerce_init.php';
+=======
+>>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656

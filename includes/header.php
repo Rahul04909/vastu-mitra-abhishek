@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 <?php
 if (!function_exists('get_cart_count')) {
     require_once __DIR__ . '/cart_functions.php';
 }
 $cart_badge_count = get_cart_count();
 ?>
+=======
+>>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
 <header>
     <div class="container">
         <div class="logo">
@@ -41,6 +44,7 @@ $cart_badge_count = get_cart_count();
             </ul>
         </nav>
 
+<<<<<<< HEAD
         <div class="header-actions" style="display: flex; align-items: center; gap: 18px;">
             <a href="<?= BASE_URL ?>/cart.php" class="header-cart-link" title="View Cart" style="position: relative; color: var(--text-dark); font-size: 1.3rem; text-decoration: none; display: flex; align-items: center;">
                 <i class="fas fa-shopping-bag"></i>
@@ -53,6 +57,13 @@ $cart_badge_count = get_cart_count();
                 <span></span>
             </button>
         </div>
+=======
+        <button class="mobile-toggle" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+>>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
     </div>
 </header>
 
@@ -83,12 +94,15 @@ $cart_badge_count = get_cart_count();
             </ul>
         </li>
         <li><a href="<?= BASE_URL ?>/shop.php" class="sidebar-link">Shop</a></li>
+<<<<<<< HEAD
         <li>
             <a href="<?= BASE_URL ?>/cart.php" class="sidebar-link" style="display:flex; justify-content:space-between; align-items:center;">
                 <span><i class="fas fa-shopping-bag mr-2"></i> Cart</span>
                 <span class="badge cart-badge" style="background:#28a745; color:#fff; border-radius:12px; padding:2px 8px; font-size:0.75rem; display:<?= $cart_badge_count > 0 ? 'inline-block' : 'none' ?>;"><?= $cart_badge_count ?></span>
             </a>
         </li>
+=======
+>>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
         <li><a href="<?= BASE_URL ?>/about.php" class="sidebar-link">About us</a></li>
         <li><a href="<?= BASE_URL ?>/contact.php" class="sidebar-link">Contact us</a></li>
         <li><a href="<?= BASE_URL ?>/blog.php" class="sidebar-link">Blog</a></li>

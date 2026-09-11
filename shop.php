@@ -94,7 +94,6 @@ $page_title = "Shop - Vastu Mitra Abhishek";
                     </div>
                 <?php else: ?>
                     <?php foreach ($products as $p): ?>
-<<<<<<< HEAD
                         <?php
                             $price = (float)($p['price'] ?? 0);
                             $salePrice = ($p['sale_price'] !== null && (float)$p['sale_price'] > 0) ? (float)$p['sale_price'] : null;
@@ -152,16 +151,6 @@ $page_title = "Shop - Vastu Mitra Abhishek";
                                         <a href="product-details.php?slug=<?= $p['slug'] ?>" class="view-btn" style="width: 100%;">View Details</a>
                                     <?php endif; ?>
                                 </div>
-=======
-                        <article class="product-card">
-                            <div class="product-image-container">
-                                <span class="category-tag"><?= htmlspecialchars($p['category_name']) ?></span>
-                                <img src="admin/uploads/products/<?= htmlspecialchars($p['main_image']) ?>" alt="<?= htmlspecialchars($p['name']) ?>">
-                            </div>
-                            <div class="product-info">
-                                <h4><?= htmlspecialchars($p['name']) ?></h4>
-                                <a href="product-details.php?slug=<?= $p['slug'] ?>" class="view-btn">View Details</a>
->>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
                             </div>
                         </article>
                     <?php endforeach; ?>
@@ -172,7 +161,6 @@ $page_title = "Shop - Vastu Mitra Abhishek";
 
     <?php include 'includes/footer.php'; ?>
 
-<<<<<<< HEAD
     <!-- SweetAlert2 & Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/header.js"></script>
@@ -198,7 +186,6 @@ $page_title = "Shop - Vastu Mitra Abhishek";
             .then(res => res.json())
             .then(data => {
                 if (data.status === 'success') {
-                    // Update global navbar cart badge
                     const navBadges = document.querySelectorAll('.cart-badge');
                     navBadges.forEach(b => {
                         b.textContent = data.cart_count;
@@ -229,9 +216,5 @@ $page_title = "Shop - Vastu Mitra Abhishek";
             });
         }
     </script>
-=======
-    <!-- Scripts -->
-    <script src="assets/js/header.js"></script>
->>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
 </body>
 </html>

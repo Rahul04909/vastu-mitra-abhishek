@@ -21,13 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     $seo_description = $_POST['seo_description'] ?? '';
     $seo_keywords = $_POST['seo_keywords'] ?? '';
     $seo_schema = $_POST['seo_schema'] ?? '';
-<<<<<<< HEAD
     $price = (float)($_POST['price'] ?? 0);
     $sale_price = (!empty($_POST['sale_price'])) ? (float)$_POST['sale_price'] : null;
     $stock_status = ($_POST['stock_status'] ?? 'in_stock') === 'out_of_stock' ? 'out_of_stock' : 'in_stock';
     $sku = trim($_POST['sku'] ?? '');
-=======
->>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
     
     // Generate Slug
     $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $name), '-'));
@@ -65,17 +62,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
         }
 
         // Insert Product
-<<<<<<< HEAD
         $sql = "INSERT INTO products (category_id, name, slug, description, price, sale_price, stock_status, sku, main_image, seo_title, seo_description, seo_keywords, seo_schema, og_image) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = $dbh->prepare($sql);
         $stmt->execute([$category_id, $name, $slug, $description, $price, $sale_price, $stock_status, $sku, $main_image, $seo_title, $seo_description, $seo_keywords, $seo_schema, $og_image]);
-=======
-        $sql = "INSERT INTO products (category_id, name, slug, description, main_image, seo_title, seo_description, seo_keywords, seo_schema, og_image) 
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-        $stmt = $dbh->prepare($sql);
-        $stmt->execute([$category_id, $name, $slug, $description, $main_image, $seo_title, $seo_description, $seo_keywords, $seo_schema, $og_image]);
->>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
         $product_id = $dbh->lastInsertId();
 
         // Handle Gallery Uploads
@@ -149,7 +139,6 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
 
-<<<<<<< HEAD
                     <!-- Pricing & Inventory Section -->
                     <div class="card card-outline card-success">
                         <div class="card-header">
@@ -188,9 +177,6 @@ include __DIR__ . '/../header.php';
                             </div>
                         </div>
                     </div>
-
-=======
->>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
                     <!-- Gallery Section -->
                     <div class="card card-outline card-info">
                         <div class="card-header">

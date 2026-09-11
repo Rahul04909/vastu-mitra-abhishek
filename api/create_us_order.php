@@ -47,13 +47,8 @@ $size_display = $size_labels[$size] ?? '3 × 3 Inch';
 $amount = 5100.00;
 $amount_paisa = 5100 * 100;
 
-<<<<<<< HEAD
 $razorpay_key_id = defined('RAZORPAY_KEY_ID') ? RAZORPAY_KEY_ID : 'rzp_live_TG7x0BMoscKTID';
 $razorpay_key_secret = defined('RAZORPAY_KEY_SECRET') ? RAZORPAY_KEY_SECRET : 'rWAMd0HsJ9YZMByXCgHwajlF';
-=======
-$razorpay_key_id = 'rzp_live_TG7x0BMoscKTID';
-$razorpay_key_secret = 'rWAMd0HsJ9YZMByXCgHwajlF';
->>>>>>> a44388a9e7bfc45154d928e1ea0a5c1ac673f656
 
 try {
     $api = new Razorpay\Api\Api($razorpay_key_id, $razorpay_key_secret);
